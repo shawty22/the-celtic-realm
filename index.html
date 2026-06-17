@@ -88,6 +88,23 @@
         <strong>LOW</strong> = mythological placement only
       </div>
 
+
+      <!-- ═══ 3D Flythrough overlay ════════════════════════════════════════ -->
+      <div id="flythrough-overlay" aria-hidden="true">
+        <div id="ft3d-container"></div>
+        <div id="ft3d-loading">
+          <div class="ft3d-spinner"></div>
+          <p>Flying to <strong id="ft3d-place-name"></strong></p>
+        </div>
+        <div id="ft3d-hud">
+          <span id="ft3d-loc-label"></span>
+          <div id="ft3d-hud-right">
+            <span class="ft3d-hint">ESC to exit</span>
+            <button id="exit-3d">Exit 3D ↙</button>
+          </div>
+        </div>
+      </div>
+
     </div>
     <script type="module" src="./src/main.js"></script>
   </body>

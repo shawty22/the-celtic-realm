@@ -14,10 +14,20 @@ const CONFIDENCE_TEXT = {
   low:    'Symbolic or mythological — no physical location assigned',
 }
 
-export function initPanel() {
-  closeBtn.addEventListener('click', hidePanel)
+// Entries with a real physical location are flyable
+function isFlyable(e) {
+  return (
+    e.confidence !== 'low' &&
+    !e.county?.includes('Mythological') &&
+    !e.county?.includes('Western Sea')
+  )
+}
 
-  // Close on map click (delegated via custom event from main.js)
+let _flyTo = null
+
+export function initPanel(flyToFn) {
+  _flyTo = flyToFn || null
+  closeBtn.addEventListener('click', hidePanel)
   document.addEventListener('atlas:mapclick', hidePanel)
 }
 
@@ -26,6 +36,11 @@ export function showPanel(entry) {
   panel.classList.add('is-open')
   panel.setAttribute('aria-hidden', 'false')
   panel.scrollTop = 0
+
+  if (_flyTo && isFlyable(entry)) {
+    const btn = content.querySelector('.fly-3d-btn')
+    if (btn) btn.addEventListener('click', () => _flyTo(entry))
+  }
 }
 
 export function hidePanel() {
@@ -77,11 +92,16 @@ function buildHTML(e) {
     ? `<p class="panel-notes">${x(e.notes)}</p>`
     : ''
 
+  const flyBtn = (_flyTo && isFlyable(e))
+    ? `<button class="fly-3d-btn" aria-label="Open 3D flythrough for ${x(e.name)}">3D ↗</button>`
+    : ''
+
   return `
     <div class="panel-header layer-${x(e.layer)}">
       <div class="panel-meta">
         <span class="panel-cycle-badge">${x(cycleLabel)}</span>
         <span class="panel-type-badge">${x(e.type || '')}</span>
+        ${flyBtn}
       </div>
       <h2 class="panel-title">${x(e.name)}</h2>
       ${e.nameIrish ? `<p class="panel-irish">${x(e.nameIrish)}</p>` : ''}

@@ -8,12 +8,14 @@ import { initMap }              from './atlas/map.js'
 import { buildLayers, toggleLayer } from './atlas/layers.js'
 import { buildRoute, showRoute, hideRoute } from './atlas/route.js'
 import { initPanel, showPanel, hidePanel } from './atlas/panel.js'
+import { initFlythrough, flyTo }           from './atlas/flythrough.js'
 
 // ── Boot ─────────────────────────────────────────────────────────────────── //
 
 const map = initMap()
 
-initPanel()
+initPanel((entry) => flyTo(entry))
+initFlythrough()
 
 const allData = {
   mythological: mythData,
