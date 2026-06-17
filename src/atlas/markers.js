@@ -44,7 +44,7 @@ export function makeIcon(entry) {
   const glyphColor  = other ? col.fill   : col.text
   const glyphSize   = Math.round(d * 0.5)
 
-  const svg = `<svg viewBox="0 0 ${d} ${d}" width="${d}" height="${d}" xmlns="http://www.w3.org/2000/svg">
+  const svg = `<div class="marker-inner"><svg viewBox="0 0 ${d} ${d}" width="${d}" height="${d}" xmlns="http://www.w3.org/2000/svg">
     <circle cx="${r}" cy="${r}" r="${r - 1.5}"
       fill="${fillColor}" fill-opacity="${fillOpacity}"
       stroke="${col.fill}" stroke-width="1.5"
@@ -56,7 +56,7 @@ export function makeIcon(entry) {
       fill="${glyphColor}"
       font-family="system-ui"
     >${glyph}</text>
-  </svg>`
+  </svg></div>`
 
   return L.divIcon({
     html: svg,
