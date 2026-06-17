@@ -1,36 +1,57 @@
-/* =========================================================================
-   main.js — light the hearth.
-   Wires the three-layer realm world, the realm nav, UI panels and starts
-   the animation loop.
-   ========================================================================= */
+import './styles/atlas.css'
+import mythData from './data/mythological.json'
+import ulsterData from './data/ulster.json'
+import fenianData from './data/fenian.json'
+import tainRouteData from './data/tain-route.json'
 
-import './styles/fonts.css'
-import { Store } from './state/store.js'
-import { World } from './world/world.js'
-import { UI } from './ui/ui.js'
-import { RealmNav } from './ui/nav.js'
-import { Story } from './story/story.js'
+import { initMap }              from './atlas/map.js'
+import { buildLayers, toggleLayer } from './atlas/layers.js'
+import { buildRoute, showRoute, hideRoute } from './atlas/route.js'
+import { initPanel, showPanel, hidePanel } from './atlas/panel.js'
 
-const bgCanvas    = document.getElementById('bg')
-const atmCanvas   = document.getElementById('atm')
-const worldCanvas = document.getElementById('world')
+// ── Boot ─────────────────────────────────────────────────────────────────── //
 
-const store = new Store()
-const world = new World(bgCanvas, atmCanvas, worldCanvas, store)
-const ui    = new UI(world)
-const nav   = new RealmNav(world)
-const story = new Story(world, ui)
-ui.story    = story  // give UI its back-reference
+const map = initMap()
 
-// Clicking a creature opens its card
-world.onSelect = (c) => ui.showCreature(c)
+initPanel()
 
-world.start()
+const allData = {
+  mythological: mythData,
+  ulster:       ulsterData,
+  fenian:       fenianData,
+}
 
-// Retire hint after first interaction
-const hint = document.getElementById('hint')
-worldCanvas.addEventListener('click', () => hint?.classList.add('fade'), { once: true })
-setTimeout(() => hint?.classList.add('fade'), 8000)
+buildLayers(map, allData, (entry) => showPanel(entry))
 
-// Dev handle
-if (import.meta.env?.DEV) window.__hearth = { world, ui, nav, store, story }
+const tainRoute = buildRoute(map, tainRouteData)
+let tainVisible = false
+
+// Close panel on bare map click
+map.on('click', () => {
+  document.dispatchEvent(new Event('atlas:mapclick'))
+})
+
+// ── Layer toggles ─────────────────────────────────────────────────────────── //
+
+document.querySelectorAll('.layer-toggle[data-layer]').forEach((btn) => {
+  const layerId = btn.dataset.layer
+
+  btn.addEventListener('click', () => {
+    if (layerId === 'tain') {
+      tainVisible = !tainVisible
+      if (tainVisible) showRoute(map, tainRoute)
+      else             hideRoute(map, tainRoute)
+      btn.classList.toggle('is-active', tainVisible)
+      btn.setAttribute('aria-pressed', String(tainVisible))
+    } else {
+      const nowActive = toggleLayer(layerId, map)
+      btn.classList.toggle('is-active', nowActive)
+      btn.setAttribute('aria-pressed', String(nowActive))
+    }
+  })
+})
+
+// ── Dev handle ───────────────────────────────────────────────────────────── //
+if (import.meta.env?.DEV) {
+  window.__atlas = { map, allData, tainRouteData }
+}

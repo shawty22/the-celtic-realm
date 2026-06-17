@@ -1,0 +1,73 @@
+{
+  "id": "tain-route",
+  "name": "The Táin Route",
+  "description": "Approximate interpretive route of Medb's army from Rathcroghan (Cruachan) east to the Cooley Peninsula. This is a scholarly reconstruction — the Táin's exact geography is debated and some locations are symbolic rather than precise. Key stopping points are derived from the text; intermediate waypoints are approximate.",
+  "source": "Táin Bó Cúailnge (Book of the Dun Cow recension)",
+  "confidence": "interpretive",
+  "waypoints": [
+    {
+      "id": "start",
+      "name": "Rathcroghan (Cruachan)",
+      "description": "Start of the march — Medb and Ailill muster the armies of Connacht.",
+      "lat": 53.7744,
+      "lng": -8.4278,
+      "label": true
+    },
+    {
+      "id": "shannon",
+      "name": "Shannon Crossing",
+      "description": "The army crosses the Shannon near Carrick-on-Shannon — entering Leinster/Ulster territory.",
+      "lat": 53.9167,
+      "lng": -8.0833,
+      "label": true
+    },
+    {
+      "id": "granard",
+      "name": "Granard — Co. Longford",
+      "description": "Through the midlands — first skirmishes with Ulster scouts.",
+      "lat": 53.7833,
+      "lng": -7.5000,
+      "label": true
+    },
+    {
+      "id": "westmeath",
+      "name": "Westmeath Crossing",
+      "description": "Through the plain of Westmeath — scouts report Ulster's debility, the march continues.",
+      "lat": 53.7833,
+      "lng": -7.1000,
+      "label": false
+    },
+    {
+      "id": "kells",
+      "name": "Meath — towards Ulster border",
+      "description": "Approaching Ulster — Cú Chulainn begins his single-combat defence of the fords.",
+      "lat": 53.7833,
+      "lng": -6.8500,
+      "label": false
+    },
+    {
+      "id": "ardee",
+      "name": "Áth Fhirdia (Ford of Ferdia)",
+      "description": "The climactic four-day duel between Cú Chulainn and Ferdia mac Daman.",
+      "lat": 53.8583,
+      "lng": -6.5417,
+      "label": true
+    },
+    {
+      "id": "dundalk",
+      "name": "Dún Dealgan — Muirthemne Plain",
+      "description": "Cú Chulainn's home territory — the army reaches the borders of Cooley.",
+      "lat": 54.0000,
+      "lng": -6.4167,
+      "label": false
+    },
+    {
+      "id": "cooley",
+      "name": "Cuailnge (Cooley Peninsula)",
+      "description": "Objective reached — the Brown Bull is taken. Ulster warriors begin to recover from the curse.",
+      "lat": 54.0500,
+      "lng": -6.3833,
+      "label": true
+    }
+  ]
+}

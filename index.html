@@ -3,67 +3,92 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>The Otherworld Hearth — The Celtic Realm</title>
-    <meta name="description" content="Five realms of the Irish Otherworld — an interactive animated painting. Chapter I of The Celtic Realm." />
-    <link rel="stylesheet" href="./src/styles/main.css" />
+    <title>Living Atlas of Irish Mythology</title>
+    <meta name="description" content="An interactive atlas of Ireland's three great mythology cycles — places, people, and stories mapped and explored." />
   </head>
   <body>
     <div id="app">
 
-      <!-- ═══ Three-layer canvas stack ═══════════════════════════════════ -->
-
-      <!-- Layer 0: full-screen background image / painted placeholder -->
-      <canvas id="bg" aria-hidden="true"></canvas>
-
-      <!-- Layer 1: WebGL transparent atmosphere (mist, glow, particles, shafts) -->
-      <canvas id="atm" aria-hidden="true"></canvas>
-
-      <!-- Layer 2: 2D creatures + click targets -->
-      <canvas id="world" aria-label="The Otherworld — click a creature to meet it"></canvas>
-
-      <!-- ═══ CSS overlays ════════════════════════════════════════════════ -->
-      <div class="overlay grain" aria-hidden="true"></div>
-      <div class="overlay vignette" aria-hidden="true"></div>
-
-      <!-- ═══ Realm navigation ════════════════════════════════════════════ -->
-      <nav id="realm-nav" aria-label="Realms of the Otherworld"></nav>
-
-      <!-- ═══ Title plate ════════════════════════════════════════════════ -->
-      <header class="plate" id="title-plate" aria-hidden="true">
-        <h1>The Otherworld Hearth</h1>
-        <p class="sub">The Celtic Realm · Chapter I</p>
+      <!-- ═══ Header ══════════════════════════════════════════════════════ -->
+      <header id="atlas-header">
+        <div class="header-brand">
+          <h1 class="atlas-title">Living Atlas of Irish Mythology</h1>
+          <p class="atlas-sub">Three cycles · fifty places · one island</p>
+        </div>
+        <nav class="layer-nav" aria-label="Mythology cycle layers">
+          <button class="layer-toggle is-active" data-layer="mythological" aria-pressed="true">
+            <span class="toggle-pip"></span>
+            <span class="toggle-names">
+              <span class="toggle-label">Mythological</span>
+              <span class="toggle-sub">The God-Age</span>
+            </span>
+          </button>
+          <button class="layer-toggle" data-layer="ulster" aria-pressed="false">
+            <span class="toggle-pip"></span>
+            <span class="toggle-names">
+              <span class="toggle-label">Ulster Cycle</span>
+              <span class="toggle-sub">Age of Heroes</span>
+            </span>
+          </button>
+          <button class="layer-toggle" data-layer="fenian" aria-pressed="false">
+            <span class="toggle-pip"></span>
+            <span class="toggle-names">
+              <span class="toggle-label">Fenian Cycle</span>
+              <span class="toggle-sub">The Fianna</span>
+            </span>
+          </button>
+          <button class="layer-toggle tain-toggle" id="tain-toggle" data-layer="tain" aria-pressed="false">
+            <span class="toggle-pip tain-pip"></span>
+            <span class="toggle-names">
+              <span class="toggle-label">Táin Route</span>
+              <span class="toggle-sub">Interpretive</span>
+            </span>
+          </button>
+        </nav>
       </header>
 
-      <!-- ═══ Bottom dock ════════════════════════════════════════════════ -->
-      <div class="dock" role="toolbar" aria-label="Companion panels">
-        <button class="dock-btn" data-panel="journal" title="World Journal">
-          <span class="dock-glyph">❦</span><span class="dock-label">Journal</span>
-        </button>
-        <button class="dock-btn" data-panel="glossary" title="Mythology Glossary">
-          <span class="dock-glyph">✦</span><span class="dock-label">Glossary</span>
-        </button>
-        <button class="dock-btn" data-panel="tain" title="The Táin · Prelude">
-          <span class="dock-glyph">⚔</span><span class="dock-label">Táin</span>
-        </button>
-        <button class="dock-btn" data-panel="about" title="About the Hearth">
-          <span class="dock-glyph">☘</span><span class="dock-label">About</span>
-        </button>
+      <!-- ═══ Map ═════════════════════════════════════════════════════════ -->
+      <main id="map-container">
+        <div id="map" aria-label="Interactive map of Irish mythology locations"></div>
+      </main>
+
+      <!-- ═══ Detail panel ════════════════════════════════════════════════ -->
+      <aside id="detail-panel" aria-label="Location detail" aria-hidden="true">
+        <button id="panel-close" aria-label="Close detail panel">✕</button>
+        <div id="panel-content"></div>
+      </aside>
+
+      <!-- ═══ Legend ══════════════════════════════════════════════════════ -->
+      <div id="atlas-legend" aria-label="Map legend">
+        <div class="legend-row">
+          <span class="legend-dot myth-dot"></span><span class="legend-text">Mythological Cycle</span>
+        </div>
+        <div class="legend-row">
+          <span class="legend-dot ulster-dot"></span><span class="legend-text">Ulster Cycle</span>
+        </div>
+        <div class="legend-row">
+          <span class="legend-dot fenian-dot"></span><span class="legend-text">Fenian Cycle</span>
+        </div>
+        <div class="legend-row">
+          <span class="legend-dash tain-dash"></span><span class="legend-text">Táin Route</span>
+        </div>
+        <div class="legend-types">
+          <span class="legend-type-row"><span class="legend-sym">◉</span> Location</span>
+          <span class="legend-type-row"><span class="legend-sym">◎</span> Person</span>
+          <span class="legend-type-row"><span class="legend-sym">❊</span> Group</span>
+          <span class="legend-type-row"><span class="legend-sym">◆</span> Event</span>
+          <span class="legend-type-row"><span class="legend-sym">◈</span> Story</span>
+        </div>
       </div>
 
-      <!-- ═══ Creature card (right slide) ════════════════════════════════ -->
-      <aside class="panel card-panel" id="creature-card" hidden></aside>
-
-      <!-- ═══ Slide-over panels (left) ════════════════════════════════════ -->
-      <aside class="panel slide-panel" id="slide-panel" hidden></aside>
-
-      <!-- ═══ Táin story bar (bottom, above nav) ════════════════════════════ -->
-      <div class="story-bar" id="story-bar" hidden></div>
-
-      <!-- ═══ Hint ════════════════════════════════════════════════════════ -->
-      <p class="hint" id="hint">click a creature to meet it · use the realm tabs to wander</p>
+      <!-- ═══ Accuracy notice ═════════════════════════════════════════════ -->
+      <div id="accuracy-note">
+        <strong>HIGH</strong> = archaeologically or textually confirmed ·
+        <strong>MEDIUM</strong> = traditional identification ·
+        <strong>LOW</strong> = mythological placement only
+      </div>
 
     </div>
-
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

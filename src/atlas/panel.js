@@ -1,0 +1,106 @@
+const panel   = document.getElementById('detail-panel')
+const content = document.getElementById('panel-content')
+const closeBtn = document.getElementById('panel-close')
+
+const CYCLE_LABELS = {
+  mythological: 'Mythological Cycle',
+  ulster:       'Ulster Cycle',
+  fenian:       'Fenian Cycle',
+}
+
+const CONFIDENCE_TEXT = {
+  high:   'Well-attested in medieval sources',
+  medium: 'Traditional identification — location approximate',
+  low:    'Symbolic or mythological — no physical location assigned',
+}
+
+export function initPanel() {
+  closeBtn.addEventListener('click', hidePanel)
+
+  // Close on map click (delegated via custom event from main.js)
+  document.addEventListener('atlas:mapclick', hidePanel)
+}
+
+export function showPanel(entry) {
+  content.innerHTML = buildHTML(entry)
+  panel.classList.add('is-open')
+  panel.setAttribute('aria-hidden', 'false')
+  panel.scrollTop = 0
+}
+
+export function hidePanel() {
+  panel.classList.remove('is-open')
+  panel.setAttribute('aria-hidden', 'true')
+  document.querySelectorAll('.atlas-marker.is-selected')
+    .forEach((el) => el.classList.remove('is-selected'))
+}
+
+function buildHTML(e) {
+  const cycleLabel = CYCLE_LABELS[e.layer] || e.cycle || ''
+  const confText   = CONFIDENCE_TEXT[e.confidence] || ''
+  const imagePath  = e.imageFile ? `/assets/${e.layer}/${e.imageFile}` : null
+  const isOther    = e.county?.includes('Mythological') || e.county?.includes('Western Sea')
+
+  const locationHTML = e.county
+    ? isOther
+      ? `<div class="panel-location"><span class="loc-mythological">✦ Mythological location — western sea</span></div>`
+      : `<div class="panel-location"><span class="loc-pin">📍</span><span>${x(e.county)}${e.province ? `, ${x(e.province)}` : ''}</span></div>`
+    : ''
+
+  const imageHTML = imagePath
+    ? `<div class="panel-image-wrap" id="img-wrap">
+        <img class="panel-image" src="${imagePath}" alt="${x(e.name)}"
+          onerror="document.getElementById('img-wrap').classList.add('image-missing')" />
+        <div class="panel-image-placeholder">
+          <div class="placeholder-border"></div>
+          <span class="placeholder-label">${x(e.name)}</span>
+          <span class="placeholder-sub">Artwork pending</span>
+        </div>
+      </div>`
+    : ''
+
+  const sourcesHTML = e.sources?.length
+    ? `<div class="panel-section">
+        <h3 class="panel-section-h">Primary Sources</h3>
+        <ul class="panel-sources">${e.sources.map((s) => `<li>${x(s)}</li>`).join('')}</ul>
+      </div>`
+    : ''
+
+  const confHTML = e.confidence
+    ? `<div class="confidence-badge confidence-${x(e.confidence)}">
+        <span class="conf-label">${x(e.confidence.toUpperCase())} CONFIDENCE</span>
+        <span class="conf-text">${x(confText)}</span>
+      </div>`
+    : ''
+
+  const notesHTML = e.notes
+    ? `<p class="panel-notes">${x(e.notes)}</p>`
+    : ''
+
+  return `
+    <div class="panel-header layer-${x(e.layer)}">
+      <div class="panel-meta">
+        <span class="panel-cycle-badge">${x(cycleLabel)}</span>
+        <span class="panel-type-badge">${x(e.type || '')}</span>
+      </div>
+      <h2 class="panel-title">${x(e.name)}</h2>
+      ${e.nameIrish ? `<p class="panel-irish">${x(e.nameIrish)}</p>` : ''}
+    </div>
+
+    <div class="panel-body">
+      ${imageHTML}
+      ${locationHTML}
+      <p class="panel-summary">${x(e.shortSummary)}</p>
+      <p class="panel-explanation">${x(e.explanation)}</p>
+      ${sourcesHTML}
+      ${confHTML}
+      ${notesHTML}
+    </div>
+  `
+}
+
+function x(s) {
+  return String(s ?? '').replace(/[&<>"]/g, (c) =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])
+  )
+}

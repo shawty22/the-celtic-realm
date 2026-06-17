@@ -1,109 +1,130 @@
-# The Celtic Realm
+# Living Atlas of Irish Mythology
 
-### Chapter I · The Otherworld Hearth
-
-A whimsical, hand-drawn Irish-folklore companion diorama that runs entirely in your
-browser. It is meant to be **left open in the corner of a working day** — alive without
-demanding attention. Click a wandering creature to learn a small, true piece of Irish
-folklore; open the Táin prelude to begin the great cattle-raid story, beat by beat.
-
-No backend. No login. No build step beyond Vite. All state lives in `localStorage`.
+An interactive browser-based atlas of Ireland's three great mythology cycles — places, people, stories, and creatures, mapped across the real island with sourced, researched markers.
 
 ---
 
-## Run it locally
+## Running
 
 ```bash
 npm install
 npm run dev
 ```
 
-Vite opens it at <http://localhost:3010>. To make a static build:
-
-```bash
-npm run build      # outputs to dist/
-npm run preview    # serve the build
-```
-
-> Type is loaded from Google Fonts when online and falls back to refined system serifs
-> (Iowan Old Style / Palatino / Georgia) when offline — so it still looks handcrafted
-> with no network at all.
+Opens on **localhost:3010** (configured in `.claude/launch.json`).
 
 ---
 
-## What's here
+## What's in it
 
-### The Garden (V1)
-A living storybook map with **five places** and **five good folk** who wander between them.
+**50 researched entries** across three layers:
 
-- **Creatures** — Selkie, Púca, Merrow, Aos Sí (Faerie), Will-o'-the-Wisp.
-  Each has four traits (curiosity, mischief, sociability, calm) that bias how it wanders,
-  who it greets, and what mood it drifts into.
-- **Places** — Moon Pond, Fairy Mound, Stone Circle, Mist Gate, Glowing Kelp Grove.
-- **Memory** — as creatures arrive somewhere or meet each other they collect small memory
-  tags ("visited the Moon Pond", "traded a riddle with the Púca"). These persist between
-  visits and feed the **World Journal**.
-- Click any creature for its card: name, species, traits, current mood, recent memories,
-  and a short folklore note.
-- **Glossary** — plain, accurate notes on the words and beings of the lore.
+| Layer | Colour | Entries |
+|---|---|---|
+| Mythological Cycle (The God-Age) | Gold | 18 — Tuatha Dé Danann, Fomorians, Tara, Newgrange, Lugh, Brigid, the Morrígan… |
+| Ulster Cycle (Age of Heroes) | Crimson | 17 — Emain Macha, Cú Chulainn, Queen Medb, the Táin, Rathcroghan, the Ford of Ferdia… |
+| Fenian Cycle (The Fianna) | Forest green | 15 — Hill of Allen, Ben Bulben, Fionn, Oisín, Diarmuid, the Pursuit, Battle of Gabhra… |
 
-### The Táin · Prelude (V2)
-A calm, 6-beat introduction to *Táin Bó Cúailnge*, the Cattle Raid of Cooley — **only the
-prelude**, not the full epic:
-
-1. The Pillow Talk · 2. The Reckoning · 3. The White Bull Defects · 4. Word of the Brown
-Bull · 5. The Bargain Fails · 6. The Hosting of Connacht.
-
-Characters appear as symbolic figures on the map. Click a figure (or a cast chip) for a
-plain-language explanation. The **"What just happened?"** button summarises the current beat.
-Cú Chulainn is only hinted — a shadow at the border — not yet staged.
+Plus a **Táin Route** toggle — an interpretive dotted line tracing Medb's army from Rathcroghan east to Cooley.
 
 ---
 
-## Folder structure
+## Data structure
 
+Each entry lives in `src/data/{mythological,ulster,fenian}.json`:
+
+```jsonc
+{
+  "id": "tara",               // kebab-case unique ID
+  "name": "Hill of Tara",
+  "nameIrish": "Teamhair na Rí",
+  "layer": "mythological",    // "mythological" | "ulster" | "fenian"
+  "cycle": "Mythological Cycle",
+  "type": "location",         // location | person | deity | group | story | event | artifact | creature
+  "lat": 53.5794,
+  "lng": -6.6148,
+  "county": "Meath",
+  "province": "Leinster",
+  "era": "Mythological / Iron Age",
+  "shortSummary": "...",      // 1–2 sentences (shown prominently)
+  "explanation": "...",       // 3–5 sentences (full detail)
+  "associatedFigures": [],    // IDs of related entries
+  "relatedLocations": [],
+  "imageFile": "tara.webp",   // filename only — see artwork section
+  "sources": ["Lebor Gabála Érenn", "Cath Maige Tuired"],
+  "confidence": "high",       // "high" | "medium" | "low"
+  "notes": "..."              // caveats / uncertainty
+}
 ```
-The Celtic Realm/
-├─ index.html              # shell: canvas, dock, panels
-├─ vite.config.js
-├─ src/
-│  ├─ main.js              # bootstrap: wires world + UI + story
-│  ├─ data/                # ALL content lives here as JSON (see ADDING.md)
-│  │  ├─ creatures.json
-│  │  ├─ locations.json
-│  │  ├─ memories.json     # phrasing templates for memory tags
-│  │  ├─ glossary.json
-│  │  ├─ story-beats.json
-│  │  ├─ characters.json
-│  │  └─ artifacts.json
-│  ├─ world/
-│  │  ├─ world.js          # orchestrator + single render loop + input
-│  │  ├─ scene.js          # painted backdrop, mist, ambient motes
-│  │  ├─ creature.js       # wandering behaviour, traits, mood, memory
-│  │  └─ glyphs.js         # all procedural drawing (no image assets)
-│  ├─ ui/ui.js             # creature card, journal, glossary, about
-│  ├─ story/story.js       # Story Mode: the Táin prelude
-│  ├─ state/store.js       # localStorage persistence
-│  └─ styles/
-│     ├─ main.css
-│     └─ fonts.css
-├─ ADDING.md               # how to add creatures, places and story cycles
-└─ README.md
-```
+
+### Adding a new entry
+
+1. Add the JSON object to the right cycle file in `src/data/`.
+2. Give it a unique `id` in kebab-case.
+3. Set `confidence` honestly — see the scale below.
+4. Drop artwork in `public/assets/{layer}/` matching the `imageFile` field.
+5. Reload — the map picks it up automatically.
+
+### Adding a new cycle layer
+
+1. Create `src/data/yourcycle.json`.
+2. Import and add it to `allData` in `src/main.js`.
+3. Add a colour variable in `src/styles/atlas.css` and extend `LAYER_COLORS` in `src/atlas/markers.js`.
+4. Add a toggle button in `index.html`.
 
 ---
 
-## Art direction
+## Artwork
 
-Whimsical Irish folklore as an illustrated storybook map. Soft coastal palette — moss
-green, sea blue, mist grey, peat brown, moon gold. Handcrafted, warm, calm, slightly
-mysterious. Everything is drawn procedurally with Canvas paths and soft glows; there are
-no sprites or stock art. Not Disney, not anime, not a Cartoon Saloon clone.
+```
+public/assets/mythological/   ← Mythological Cycle images
+public/assets/ulster/         ← Ulster Cycle images
+public/assets/fenian/         ← Fenian Cycle images
+public/assets/places/         ← Photography reserve
+```
 
-## On the lore
+**Format:** `.webp`, 16:9 aspect ratio, minimum 800×450px.  
+**Naming:** must match `imageFile` exactly.
 
-Every creature, place, glossary entry and story beat is drawn from recorded Irish tradition,
-kept simple but accurate. Nothing is AI-invented and presented as old. Sources are noted in
-the glossary and on the story bar.
+When absent, the panel shows a dark placeholder with the entry name and "Artwork pending." The data stands alone without illustration.
 
-See **[ADDING.md](ADDING.md)** to extend the world.
+---
+
+## What is accurate vs approximate
+
+**HIGH** — Location archaeologically confirmed or explicitly named in a primary medieval text. Examples: Hill of Tara, Emain Macha (Navan Fort), Rathcroghan, Newgrange, Kildare, Slieve Gullion, Ben Bulben.
+
+**MEDIUM** — Traditional identification recorded in medieval or early modern Irish sources, but exact coordinates are approximate or scholarly consensus is not settled. Examples: the two Battle of Mag Tuired locations, Ford of Ferdia (Ardee), Battle of Gabhra site.
+
+**LOW** — Mythological or symbolic. No physical location can be assigned. The marker represents a concept placed in approximate geography. Examples: Tír na nÓg (western sea), Manannán mac Lir.
+
+### The Táin Route
+The route from Rathcroghan to Cooley is **interpretive** — the Táin names some places but its exact geography remains debated. Waypoints are plausible, not authoritative. Always shown as a dashed line, always labelled "Interpretive."
+
+---
+
+## Lore policy
+
+> *Every entry is drawn from recorded Irish tradition. Nothing is invented and passed off as old.*
+
+- Sources per entry are real medieval texts or identified later folk tradition.
+- Where an association is post-medieval (e.g. Fionn and the Giant's Causeway), the entry says so explicitly.
+- Do not add entries without citing a source. Uncertain associations get `confidence: low` and a note.
+
+---
+
+## Next sprint
+
+- **Artwork pass** — 50 illustrations for the placeholder slots
+- **Entry search** — text search across names, summaries, counties
+- **Related entries** — click a name in `associatedFigures` to jump to that entry
+- **Diarmuid & Gráinne route** — equivalent route trace to the Táin, tracking the Pursuit
+- **Oisín's return** — animated route from Tír na nÓg to Lough Leane
+- **Cycle era timeline** — horizontal bar showing the three cycles relative to each other and to early history
+- **Mobile swipe-to-dismiss** panel
+
+---
+
+## Previous chapter
+
+The Otherworld Hearth (Chapter I — animated creature diorama) is preserved on the `archive/otherworld-hearth-prototype` branch and tagged `v0.1-otherworld-hearth`. Fully recoverable.
