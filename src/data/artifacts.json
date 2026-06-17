@@ -1,0 +1,45 @@
+{
+  "$schema": "Objects of note — folklore items and story relics. Surfaced when referenced by creatures or story beats. 'realm' tags whether it belongs to the garden or the Táin.",
+  "artifacts": [
+    {
+      "id": "selkie-skin",
+      "name": "The Sealskin",
+      "realm": "garden",
+      "glyph": "pelt",
+      "plain": "A selkie's sealskin is her whole self folded small. Worn, it returns her to the sea; lost or hidden, it strands her on land. Many tales hinge on a husband who locks the skin away.",
+      "related": ["selkie"]
+    },
+    {
+      "id": "cohuleen-druith",
+      "name": "The Cohuleen Druith",
+      "realm": "garden",
+      "glyph": "cap",
+      "plain": "The red feathered cap of the Merrow. With it she dives the deep; without it she is bound to walk the shore. To take one is to take the sea-maiden's freedom.",
+      "related": ["merrow"]
+    },
+    {
+      "id": "wisp-ember",
+      "name": "The Cold Ember",
+      "realm": "garden",
+      "glyph": "ember",
+      "plain": "The lantern-light a will-o'-the-wisp is said to carry — a coal that gives no warmth, taken from a fire that belongs to neither this world nor the next.",
+      "related": ["wisp"]
+    },
+    {
+      "id": "royal-treasures",
+      "name": "The Royal Treasures of Cruachan",
+      "realm": "tain",
+      "glyph": "hoard",
+      "plain": "The cups, rings, brooches, fine cloth, flocks and herds that Medb and Ailill lay out to be counted. Matched piece for piece — proof that wealth alone could not settle their rivalry.",
+      "related": ["medb", "ailill"]
+    },
+    {
+      "id": "donn-cuailnge-bull",
+      "name": "Donn Cúailnge, the Brown Bull",
+      "realm": "tain",
+      "glyph": "bull-brown",
+      "plain": "Not merely livestock but a being of power and temper — the one prize in Ireland worth a war. To the people of Cooley he is a guardian; to Medb, an obsession.",
+      "related": ["donn-cuailnge", "daire"]
+    }
+  ]
+}

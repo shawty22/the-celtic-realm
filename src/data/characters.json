@@ -1,0 +1,65 @@
+{
+  "$schema": "Symbolic figures for Story Mode. glyph drives a simple icon. side groups them. 'plain' is accessible explanation shown on click.",
+  "characters": [
+    {
+      "id": "medb",
+      "name": "Medb",
+      "pronunciation": "MAYV",
+      "title": "Queen of Connacht",
+      "glyph": "crown",
+      "side": "connacht",
+      "palette": { "glow": "#c2728a", "deep": "#5a2a3a" },
+      "plain": "Medb (often anglicised Maeve) is the proud, formidable queen who rules Connacht from Cruachan. She insists on being her husband's equal in every possession — and that insistence sets the whole war in motion."
+    },
+    {
+      "id": "ailill",
+      "name": "Ailill",
+      "pronunciation": "AL-yil",
+      "title": "King of Connacht",
+      "glyph": "shield",
+      "side": "connacht",
+      "palette": { "glow": "#9a8c5a", "deep": "#3f3a22" },
+      "plain": "Ailill is Medb's husband and co-ruler. Good-humoured but competitive, he is the one who points out that his herd holds a bull Medb cannot match — the spark of the quarrel."
+    },
+    {
+      "id": "finnbhennach",
+      "name": "Finnbhennach",
+      "pronunciation": "finn-VEN-ach",
+      "title": "The White-Horned Bull",
+      "glyph": "bull-white",
+      "side": "connacht",
+      "palette": { "glow": "#e8e2d2", "deep": "#7a7058" },
+      "plain": "The White-Horned Bull was born into Medb's herd but, too proud to be owned by a woman, walked over to Ailill's cattle. His defection is exactly what unbalances the royal couple's wealth."
+    },
+    {
+      "id": "donn-cuailnge",
+      "name": "Donn Cúailnge",
+      "pronunciation": "down COOL-nyuh",
+      "title": "The Brown Bull of Cooley",
+      "glyph": "bull-brown",
+      "side": "ulster",
+      "palette": { "glow": "#a86b3c", "deep": "#4a2c16" },
+      "plain": "The Brown Bull of Cooley is the only beast in Ireland to equal the White-Horned Bull. He belongs to Ulster, and winning him — by purchase or by force — becomes Medb's single aim."
+    },
+    {
+      "id": "daire",
+      "name": "Dáire mac Fiachna",
+      "pronunciation": "DAW-ra mac FEE-ach-na",
+      "title": "Lord of the Brown Bull",
+      "glyph": "house",
+      "side": "ulster",
+      "palette": { "glow": "#6f8f6a", "deep": "#2c3a28" },
+      "plain": "Dáire is the Ulster lord who owns the Brown Bull. He first agrees to lend it to Medb — until a drunken boast from her messengers insults him, and he refuses outright."
+    },
+    {
+      "id": "cu-chulainn",
+      "name": "Cú Chulainn",
+      "pronunciation": "koo HULL-in",
+      "title": "The Hound of Ulster (awaited)",
+      "glyph": "spear",
+      "side": "ulster",
+      "palette": { "glow": "#c0c8d0", "deep": "#3a4048" },
+      "plain": "Cú Chulainn is the young champion of Ulster — only seventeen, but unmatched. When Medb's army marches, the grown men of Ulster lie helpless under an ancient curse, and the boy alone will stand at the border. In the prelude he is only a shadow on the horizon, not yet upon the stage."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "Traits are 0..1. They bias wandering, mood and social behaviour. 'home' references a location id. 'glyph' drives the procedural drawing. Add a creature by appending here; the world picks it up with no code changes.",
+  "creatures": [
+    {
+      "id": "selkie",
+      "name": "Branna",
+      "species": "Selkie",
+      "glyph": "selkie",
+      "home": "moon-pond",
+      "palette": { "body": "#7ab8d8", "glow": "#b8dcf0", "trim": "#e0f0ff" },
+      "traits": { "curiosity": 0.60, "mischief": 0.15, "sociability": 0.45, "calm": 0.88 },
+      "folklore": "Branna is a Selkie who can shed her seal skin to walk the shores of Manannán's realm. She is gentle, curious and carries the scent of the sea and ancient memories. Selkies are seal-folk — hide a selkie's skin and they cannot return to the sea.",
+      "voice": "speaks slowly, as if through water"
+    },
+    {
+      "id": "puca",
+      "name": "Puck",
+      "species": "Púca",
+      "glyph": "puca",
+      "home": "mist-gate",
+      "palette": { "body": "#2a3820", "glow": "#c87c2a", "trim": "#e8a840" },
+      "traits": { "curiosity": 0.82, "mischief": 0.95, "sociability": 0.55, "calm": 0.15 },
+      "folklore": "A mischievous shapeshifter and guardian of crossroads. Puck delights in riddles and mischief, leading the careless astray — or to exactly where they need to be. After Samhain, any berries left in the hedgerows are the Púca's, and not to be picked.",
+      "voice": "laughs before it answers"
+    },
+    {
+      "id": "aos-si",
+      "name": "Aoife",
+      "species": "Mist Faerie",
+      "glyph": "faerie",
+      "home": "fairy-mound",
+      "palette": { "body": "#c8a8e0", "glow": "#e8d8f8", "trim": "#f8d0f0" },
+      "traits": { "curiosity": 0.65, "mischief": 0.32, "sociability": 0.72, "calm": 0.76 },
+      "folklore": "Aoife drifts on the mists between worlds. She knows the language of flowers, dreams and forgotten lullabies. She appears to those with kind hearts. The Aos Sí are the people of the mounds — descendants of the Tuatha Dé Danann who withdrew into the hills.",
+      "voice": "chooses each word like a coin"
+    },
+    {
+      "id": "wisp",
+      "name": "Náiri",
+      "species": "Will-o'-Wisp",
+      "glyph": "wisp",
+      "home": "fairy-mound",
+      "palette": { "body": "#90c8f8", "glow": "#b8e0ff", "trim": "#d8f0ff" },
+      "traits": { "curiosity": 0.92, "mischief": 0.68, "sociability": 0.38, "calm": 0.32 },
+      "folklore": "Náiri is a Will-o'-Wisp born from the breath of ancient bogs and forgotten places. Náiri guides wanderers, lights hidden paths and remembers every story. The wisp — tine ghealáin, 'bright fire' — is a cold flame that drifts over bog and marsh.",
+      "voice": "flickers; you are never sure it spoke"
+    },
+    {
+      "id": "raven",
+      "name": "Lughan",
+      "species": "Raven Spirit",
+      "glyph": "raven",
+      "home": "tir-na-nog",
+      "palette": { "body": "#181428", "glow": "#5a38e8", "trim": "#8868f8" },
+      "traits": { "curiosity": 0.44, "mischief": 0.22, "sociability": 0.30, "calm": 0.94 },
+      "folklore": "Lughan watches all paths and remembers all stories. A messenger between worlds, Lughan brings omens, wisdom and the voices of ancestors. Ravens in Irish mythology are companions of the Morrígan, goddess of fate — they perch at the threshold between the living and the dead.",
+      "voice": "speaks in memories, not words"
+    }
+  ]
+}

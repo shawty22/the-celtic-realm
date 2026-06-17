@@ -1,0 +1,23 @@
+{
+  "$schema": "Templates the world uses to phrase memory tags as creatures live. {place}, {other}, {species} are filled at runtime. Kinds: place (on arriving somewhere), meeting (on encountering another creature), idle (ambient flavour). Add lines freely — the world picks one at random.",
+  "templates": {
+    "place": [
+      "visited {place}",
+      "lingered a while at {place}",
+      "watched the light change over {place}",
+      "left a small token at {place}"
+    ],
+    "meeting": [
+      "met {other}",
+      "shared a long silence with {other}",
+      "traded a riddle with {other}",
+      "kept a careful distance from {other}"
+    ],
+    "idle": [
+      "drifted with no errand in mind",
+      "followed a sound that wasn't there",
+      "counted the stars twice and lost the count",
+      "remembered the sea, or something like it"
+    ]
+  }
+}

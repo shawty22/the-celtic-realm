@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moon Pond — WebGL look test · The Celtic Realm</title>
+  <style>
+    html,body{margin:0;height:100%;background:#05080a;overflow:hidden;font-family:"Cormorant Garamond",Georgia,serif}
+    #gl{display:block;width:100vw;height:100vh}
+    .cap{position:fixed;left:0;right:0;bottom:26px;text-align:center;color:#cdb98a;
+         letter-spacing:.34em;text-transform:uppercase;font-size:12px;pointer-events:none;
+         text-shadow:0 1px 8px rgba(0,0,0,.8)}
+    .cap small{display:block;letter-spacing:.18em;text-transform:none;font-size:13px;color:#8fa6ac;margin-top:8px;font-style:italic}
+  </style>
+</head>
+<body>
+  <canvas id="gl"></canvas>
+  <div class="cap">The Moon Pond — WebGL look test
+    <small>raw GLSL: rippling reflection · moonlight · drifting mist · this is the target quality</small>
+  </div>
+
+  <script id="vert" type="x-shader/x-vertex">
+    attribute vec2 p;
+    void main(){ gl_Position = vec4(p, 0.0, 1.0); }
+  </script>
+
+  <script id="frag" type="x-shader/x-fragment">
+    precision highp float;
+    uniform vec2  iResolution;
+    uniform float iTime;
+
+    // ---- storybook palette (luminous, not photoreal) ----
+    const vec3 SKY_TOP  = vec3(0.055, 0.105, 0.150);
+    const vec3 SKY_HOR  = vec3(0.140, 0.200, 0.215);
+    const vec3 WATER    = vec3(0.045, 0.110, 0.150);
+    const vec3 WATER_DK = vec3(0.020, 0.050, 0.070);
+    const vec3 MOON     = vec3(0.960, 0.910, 0.760);
+    const vec3 MIST     = vec3(0.780, 0.840, 0.840);
+    const vec2 MOONPOS  = vec2(0.70, 0.80);
+
+    // ---- noise toolkit ----
+    float hash(vec2 p){ p=fract(p*vec2(123.34,456.21)); p+=dot(p,p+45.32); return fract(p.x*p.y); }
+    float noise(vec2 p){
+      vec2 i=floor(p), f=fract(p);
+      float a=hash(i), b=hash(i+vec2(1,0)), c=hash(i+vec2(0,1)), d=hash(i+vec2(1,1));
+      vec2 u=f*f*(3.0-2.0*f);
+      return mix(mix(a,b,u.x),mix(c,d,u.x),u.y);
+    }
+    float fbm(vec2 p){
+      float s=0.0, a=0.5;
+      for(int i=0;i<5;i++){ s+=a*noise(p); p*=2.02; a*=0.5; }
+      return s;
+    }
+
+    // moon + its soft halo
+    float moonGlow(vec2 uv, vec2 m, float core, float halo){
+      float d=length((uv-m)*vec2(iResolution.x/iResolution.y,1.0));
+      return smoothstep(core,0.0,d) + 0.5*exp(-d*halo);
+    }
+
+    // a patch of sky (used directly above the horizon and reflected below)
+    vec3 skyColor(vec2 uv){
+      float t=clamp((uv.y-0.5)/0.5,0.0,1.0);
+      vec3 col=mix(SKY_HOR, SKY_TOP, pow(t,0.8));
+      // drifting clouds
+      float cl=fbm(uv*vec2(3.0,6.0)+vec2(iTime*0.012,0.0));
+      col=mix(col, SKY_TOP*1.15, smoothstep(0.55,0.95,cl)*0.25*t);
+      // stars — soft round points, one per grid cell
+      vec2 g=uv*vec2(iResolution.x/iResolution.y,1.0)*140.0;
+      vec2 ci=floor(g), cf=fract(g)-0.5;
+      float h=hash(ci);
+      float star=step(0.90,h)*smoothstep(0.38,0.0,length(cf));
+      float tw=0.5+0.5*sin(iTime*2.0+h*40.0);
+      col+=vec3(0.9,0.93,1.0)*star*tw*smoothstep(0.5,0.95,uv.y);
+      // moon
+      float mg=moonGlow(uv,MOONPOS,0.045,9.0);
+      col+=MOON*mg;
+      col+=MOON*0.10*exp(-length((uv-MOONPOS)*vec2(iResolution.x/iResolution.y,1.0))*2.2);
+      return col;
+    }
+
+    void main(){
+      vec2 uv = gl_FragCoord.xy/iResolution.xy;
+      float horizon=0.5;
+      vec3 col;
+
+      if(uv.y>horizon){
+        col=skyColor(uv);
+        // soft mist sitting on the horizon
+        float m=exp(-(uv.y-horizon)*16.0)*(0.6+0.4*fbm(vec2(uv.x*4.0+iTime*0.05,iTime*0.1)));
+        col=mix(col, MIST*0.5, m*0.5);
+      } else {
+        // ---- water: reflect the sky, distorted by ripples ----
+        float depth=(horizon-uv.y)/horizon;              // 0 at shore-far ... 1 near viewer
+        float amp=0.006+0.05*depth;                      // ripples grow toward viewer
+        vec2 rp=vec2(uv.x*14.0, uv.y*26.0+iTime*0.5);
+        float ripple=fbm(rp)+0.5*sin(uv.x*40.0 - iTime*1.3 + fbm(rp)*6.0);
+        float rx=(fbm(rp*0.7+9.0)-0.5);
+
+        vec2 refl=vec2(uv.x+rx*amp, horizon+(horizon-uv.y) + ripple*amp);
+        col=skyColor(refl)*vec3(0.82,0.88,0.96);         // water tints reflection cooler
+
+        // base water body darkening with depth
+        col=mix(col, mix(WATER,WATER_DK,depth), 0.45+0.25*depth);
+
+        // elongated moonlight column on the water
+        float colmn=exp(-pow((uv.x-MOONPOS.x)*5.5,2.0));
+        float shimmer=smoothstep(0.55,1.0, fbm(vec2(uv.x*30.0, uv.y*60.0-iTime*1.2)) );
+        col+=MOON*colmn*shimmer*(0.5+0.6*depth);
+
+        // sparkle glints near the column — soft round, not blocky
+        vec2 sg=vec2(uv.x*120.0, uv.y*210.0-iTime*1.6);
+        vec2 si=floor(sg), sf=fract(sg)-0.5;
+        float glint=step(0.90,hash(si))*smoothstep(0.42,0.0,length(sf));
+        col+=MOON*glint*colmn*(0.7+0.5*depth);
+
+        // fresnel: water brightens at grazing angle near the horizon
+        col=mix(col, MIST*0.7, smoothstep(0.5,0.5- 0.06,uv.y)*0.0); // (kept subtle)
+        col+=MIST*0.10*exp(-(horizon-uv.y)*22.0);
+
+        // gentle vignette into the foreground
+        col*=mix(1.0,0.7,smoothstep(0.0,0.5, (horizon-uv.y)));
+      }
+
+      // overall soft vignette
+      vec2 q=uv-0.5;
+      col*=1.0-dot(q,q)*0.6;
+      // filmic-ish lift + gentle gamma for a painted glow
+      col=pow(col, vec3(0.92));
+      gl_FragColor=vec4(col,1.0);
+    }
+  </script>
+
+  <script>
+    const cv=document.getElementById('gl');
+    const gl=cv.getContext('webgl');
+    function compile(type,src){const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);
+      if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))console.error(gl.getShaderInfoLog(s));return s;}
+    const prog=gl.createProgram();
+    gl.attachShader(prog,compile(gl.VERTEX_SHADER,document.getElementById('vert').textContent));
+    gl.attachShader(prog,compile(gl.FRAGMENT_SHADER,document.getElementById('frag').textContent));
+    gl.linkProgram(prog);gl.useProgram(prog);
+    const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+    gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+    const loc=gl.getAttribLocation(prog,'p');gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+    const uRes=gl.getUniformLocation(prog,'iResolution'), uTime=gl.getUniformLocation(prog,'iTime');
+    function resize(){const dpr=Math.min(devicePixelRatio||1,2);cv.width=innerWidth*dpr;cv.height=innerHeight*dpr;
+      gl.viewport(0,0,cv.width,cv.height);}
+    addEventListener('resize',resize);resize();
+    const t0=performance.now();
+    (function frame(){gl.uniform2f(uRes,cv.width,cv.height);gl.uniform1f(uTime,(performance.now()-t0)/1000);
+      gl.drawArrays(gl.TRIANGLES,0,3);requestAnimationFrame(frame);})();
+  </script>
+</body>
+</html>

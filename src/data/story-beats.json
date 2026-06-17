@@ -1,0 +1,55 @@
+{
+  "$schema": "Story Mode timeline. Each beat: title, scene (one evocative line), plain (accessible summary used by 'What just happened?'), cast (character ids on stage), artifacts (ids referenced). Beats are ordered. This is ONLY the prelude to the Táin — not the full epic.",
+  "cycle": "The Táin — Prelude",
+  "source": "After the Recension I text of Táin Bó Cúailnge (Book of Leinster / Lebor na hUidre tradition).",
+  "beats": [
+    {
+      "id": "pillow-talk",
+      "title": "The Pillow Talk",
+      "scene": "In the great bed at Cruachan, two royals begin to count what they own.",
+      "plain": "The story opens with Medb and Ailill in bed, idly arguing over which of them is the wealthier. Ailill claims Medb is better off for having married him. Medb, a queen in her own right, takes that as a challenge.",
+      "cast": ["medb", "ailill"],
+      "artifacts": []
+    },
+    {
+      "id": "the-reckoning",
+      "title": "The Reckoning",
+      "scene": "Servants carry out every cup, ring, fleece and herd to be matched, piece for piece.",
+      "plain": "To settle it, they have all their possessions brought out and compared — clothing, jewellery, vessels, flocks and herds. Item for item, the two are exactly equal. Medb is satisfied; the matter seems closed.",
+      "cast": ["medb", "ailill"],
+      "artifacts": ["royal-treasures"]
+    },
+    {
+      "id": "finnbhennach",
+      "title": "The White Bull Defects",
+      "scene": "One great bull will not stand in a woman's herd, and crosses to the king's side.",
+      "plain": "Then one difference appears: Ailill owns Finnbhennach, the White-Horned Bull — a magnificent animal that had actually been born among Medb's cattle but refused to be owned by a woman and joined the king's herd. Medb has nothing to match him. Her victory is spoiled.",
+      "cast": ["medb", "ailill", "finnbhennach"],
+      "artifacts": []
+    },
+    {
+      "id": "the-search",
+      "title": "Word of the Brown Bull",
+      "scene": "Her herald Mac Roth names a single beast in all Ireland fit to answer the white one.",
+      "plain": "Medb asks whether any bull in Ireland can equal the White-Horned. Her chief messenger, Mac Roth, tells her of one: Donn Cúailnge, the Brown Bull of Cooley, away in Ulster. Medb decides she must have him — and learns his owner is Dáire mac Fiachna.",
+      "cast": ["medb", "donn-cuailnge"],
+      "artifacts": []
+    },
+    {
+      "id": "the-bargain-fails",
+      "title": "The Bargain Fails",
+      "scene": "A fair offer, a cup too many, a boast overheard — and the door is shut.",
+      "plain": "Medb sends messengers to borrow the Brown Bull for a year, offering land, treasure and her own friendship. Dáire agrees gladly — until that night her men drink too much and boast that, had he refused, they would simply have taken the bull by force. Dáire hears of it and sends them home empty-handed.",
+      "cast": ["medb", "daire", "donn-cuailnge"],
+      "artifacts": ["donn-cuailnge-bull"]
+    },
+    {
+      "id": "the-hosting",
+      "title": "The Hosting of Connacht",
+      "scene": "If not by bargain, then by spear. The host gathers — and far off, a boy watches the ford.",
+      "plain": "Refused, Medb resolves to take the Brown Bull by force. She raises the army of Connacht and its allies for a great cattle-raid into Ulster. As the host assembles, a shadow falls across the border: the men of Ulster lie under an old curse, and only a seventeen-year-old, Cú Chulainn, stands ready to meet the invasion. The epic proper is about to begin.",
+      "cast": ["medb", "ailill", "cu-chulainn"],
+      "artifacts": ["royal-treasures"]
+    }
+  ]
+}

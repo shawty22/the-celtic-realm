@@ -1,0 +1,15 @@
+{
+  "name": "the-celtic-realm",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The Celtic Realm — Chapter I: The Otherworld Hearth. A whimsical Irish-folklore companion diorama.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "$schema": "Five full-screen realm screens. Each realm is its own world. 'atmosphereMode' drives GLSL uniforms: 0=water 1=forest 2=mound 3=mist 4=golden. 'moon' is GLSL UV: y=0 bottom, y=1 top.",
+  "realms": [
+    {
+      "id": "moon-pond",
+      "name": "Moon Pond",
+      "subtitle": "Loch na Gealaí",
+      "background": "/assets/backgrounds/moon-pond-background.webp",
+      "atmosphereMode": 0,
+      "creatures": ["selkie"],
+      "creaturePositions": {
+        "selkie": { "x": 0.42, "y": 0.74 }
+      },
+      "atmosphere": {
+        "mistColor": [0.06, 0.18, 0.50],
+        "mistStrength": 0.52,
+        "glowA": [0.08, 0.35, 0.85],
+        "glowB": [0.22, 0.62, 0.95],
+        "moon": [0.50, 0.82]
+      },
+      "placeholder": {
+        "skyStops": ["#030c18", "#08183a", "#102458", "#1a3872"],
+        "groundStops": ["#050c08", "#08140a"],
+        "pondColor": "#060e28"
+      }
+    },
+    {
+      "id": "brigids-grove",
+      "name": "Brigid's Grove",
+      "subtitle": "Garrán Bhríde",
+      "background": "/assets/backgrounds/brigids-grove-background.webp",
+      "atmosphereMode": 1,
+      "creatures": ["aos-si"],
+      "creaturePositions": {
+        "aos-si": { "x": 0.50, "y": 0.62 }
+      },
+      "atmosphere": {
+        "mistColor": [0.04, 0.18, 0.08],
+        "mistStrength": 0.60,
+        "glowA": [0.22, 0.60, 0.14],
+        "glowB": [0.55, 0.88, 0.22],
+        "moon": [0.40, 0.80]
+      },
+      "placeholder": {
+        "skyStops": ["#071008", "#0f1e10", "#172c18"],
+        "groundStops": ["#060e04", "#0e1a08"],
+        "pondColor": null
+      }
+    },
+    {
+      "id": "fairy-mound",
+      "name": "Fairy Mound",
+      "subtitle": "Sí an Bhrocaigh",
+      "background": "/assets/backgrounds/fairy-mound-background.webp",
+      "atmosphereMode": 2,
+      "creatures": ["wisp"],
+      "creaturePositions": {
+        "wisp": { "x": 0.50, "y": 0.60 }
+      },
+      "atmosphere": {
+        "mistColor": [0.20, 0.14, 0.38],
+        "mistStrength": 0.45,
+        "glowA": [0.80, 0.44, 0.06],
+        "glowB": [0.92, 0.78, 0.16],
+        "moon": [0.62, 0.84]
+      },
+      "placeholder": {
+        "skyStops": ["#0c0a22", "#181238", "#221850"],
+        "groundStops": ["#0e1606", "#182210"],
+        "pondColor": null
+      }
+    },
+    {
+      "id": "mist-gate",
+      "name": "Mist Gate",
+      "subtitle": "Geata an Cheo",
+      "background": "/assets/backgrounds/mist-gate-background.webp",
+      "atmosphereMode": 3,
+      "creatures": ["puca"],
+      "creaturePositions": {
+        "puca": { "x": 0.50, "y": 0.70 }
+      },
+      "atmosphere": {
+        "mistColor": [0.12, 0.20, 0.30],
+        "mistStrength": 0.85,
+        "glowA": [0.58, 0.38, 0.14],
+        "glowB": [0.88, 0.62, 0.20],
+        "moon": [0.50, 0.74]
+      },
+      "placeholder": {
+        "skyStops": ["#080e14", "#101a24", "#18263a"],
+        "groundStops": ["#0c1420", "#141e2c"],
+        "pondColor": null
+      }
+    },
+    {
+      "id": "tir-na-nog",
+      "name": "Tír na nÓg",
+      "subtitle": "The Eternal Land",
+      "background": "/assets/backgrounds/tir-na-nog-meadow-background.webp",
+      "atmosphereMode": 4,
+      "creatures": ["raven"],
+      "creaturePositions": {
+        "raven": { "x": 0.62, "y": 0.58 }
+      },
+      "atmosphere": {
+        "mistColor": [0.58, 0.40, 0.06],
+        "mistStrength": 0.28,
+        "glowA": [0.92, 0.68, 0.10],
+        "glowB": [1.00, 0.92, 0.32],
+        "moon": [0.66, 0.88]
+      },
+      "placeholder": {
+        "skyStops": ["#c07020", "#e09828", "#f0b838", "#f8d850"],
+        "groundStops": ["#184808", "#266010"],
+        "pondColor": null
+      }
+    }
+  ]
+}

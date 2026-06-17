@@ -1,0 +1,4 @@
+/* Storybook type. Loaded from Google Fonts when online; the CSS stack in
+   main.css falls back to refined system serifs (Iowan / Palatino / Georgia)
+   when offline, so the hearth still looks handcrafted with no network. */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");

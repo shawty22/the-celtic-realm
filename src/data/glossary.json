@@ -1,0 +1,83 @@
+{
+  "$schema": "Plain-language mythology glossary. term + pronunciation + plain explanation + optional source note. Surfaced in the Glossary panel and linked from creature/story text.",
+  "entries": [
+    {
+      "term": "Aos Sí",
+      "pronunciation": "ees shee",
+      "meaning": "The fairy folk of Ireland — 'the people of the mounds'. Often linked to the Tuatha Dé Danann, who were said to withdraw into the hills.",
+      "note": "Also written aes sídhe. Singular dwelling: a sídhe (shee)."
+    },
+    {
+      "term": "Sídhe",
+      "pronunciation": "shee",
+      "meaning": "A fairy mound or hill — frequently a real neolithic passage tomb — understood as a doorway to the Otherworld.",
+      "note": "Newgrange (Brú na Bóinne) is the most famous such mound."
+    },
+    {
+      "term": "Cohuleen Druith",
+      "pronunciation": "cuh-LEEN drih",
+      "meaning": "The red feathered cap a Merrow wears to travel beneath the waves. Without it she cannot return to the sea.",
+      "note": "Recorded by Thomas Crofton Croker in the 1820s."
+    },
+    {
+      "term": "Selkie",
+      "pronunciation": "SEL-kee",
+      "meaning": "Seal-folk who shed their skin to take human form. The hidden-sealskin motif is shared across Ireland, Scotland and the Northern Isles.",
+      "note": "From Scots selich, 'seal'."
+    },
+    {
+      "term": "Púca",
+      "pronunciation": "POO-kah",
+      "meaning": "A shapeshifting spirit, by turns helpful and mischievous. Gives its name to Puck in English folklore.",
+      "note": "The month of November is Mí na Samhna; the Púca claims the hedgerow fruit after Samhain."
+    },
+    {
+      "term": "Tír na nÓg",
+      "pronunciation": "teer na NOHG",
+      "meaning": "The 'Land of the Young' — an Otherworld realm of endless youth and plenty, reached over or under the western sea.",
+      "note": "Home of Niamh, who took Oisín there in the Fenian Cycle."
+    },
+    {
+      "term": "Samhain",
+      "pronunciation": "SOW-in",
+      "meaning": "The festival marking the end of harvest and the dark half of the year, when the veil between worlds was thinnest.",
+      "note": "Falls around 1 November; an ancestor of Halloween."
+    },
+    {
+      "term": "Táin Bó Cúailnge",
+      "pronunciation": "TAWN boh COOL-nyuh",
+      "meaning": "'The Cattle Raid of Cooley' — the central epic of the Ulster Cycle, in which Queen Medb of Connacht invades Ulster to seize a prize bull.",
+      "note": "Survives in the 12th-century Book of Leinster and earlier sources."
+    },
+    {
+      "term": "Tuatha Dé Danann",
+      "pronunciation": "TOO-aha day DAH-nun",
+      "meaning": "'The folk of the goddess Danu' — a divine race who ruled Ireland before the Milesians, later remembered as the Aos Sí.",
+      "note": "Their stories fill the Mythological Cycle."
+    },
+    {
+      "term": "Morrígan",
+      "pronunciation": "MOR-ree-gan",
+      "meaning": "A goddess of fate, war and sovereignty. Her raven companions perch at the threshold between the living and the dead, witnessing all.",
+      "note": "Often appears as a triple goddess: Badb, Macha and Nemain."
+    },
+    {
+      "term": "Manannán mac Lir",
+      "pronunciation": "MAN-uh-NAWN mak LEER",
+      "meaning": "Lord of the sea and guardian of the Otherworld. He rides the waves on a chariot and lends his name to the Isle of Man.",
+      "note": "The selkie Branna dwells at the edge of his realm."
+    },
+    {
+      "term": "Tine Ghealáin",
+      "pronunciation": "CHIN-uh yah-LAWN",
+      "meaning": "'Bright fire' — the Irish name for the will-o'-wisp. A cold, wandering flame seen over bogs and marshes after dark.",
+      "note": "Believed to be the breath of forgotten places or the souls of unbaptised children."
+    },
+    {
+      "term": "Otherworld",
+      "pronunciation": "an tír eile (un teer EL-uh)",
+      "meaning": "The realm beyond the visible world — reached through fairy mounds, across the sea, or at liminal moments. Neither heaven nor hell, but parallel to the living world.",
+      "note": "Called Tír na nÓg, Mag Mell, Tír Tairngire and many other names depending on the tale."
+    }
+  ]
+}

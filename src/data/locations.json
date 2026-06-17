@@ -1,0 +1,60 @@
+{
+  "$schema": "A location is a place on the storybook map. x/y are 0..1 fractions of the world canvas. glyph drives the procedural illustration. palette tints the local glow.",
+  "locations": [
+    {
+      "id": "moon-pond",
+      "name": "The Moon Pond",
+      "glyph": "pond",
+      "x": 0.24,
+      "y": 0.66,
+      "radius": 0.16,
+      "palette": { "glow": "#cfe3ef", "deep": "#2b4a63", "accent": "#e9d8a6" },
+      "blurb": "A still black mirror that only ever shows the moon, even at noon. Selkies come here to remember the shape of the sea.",
+      "lore": "Holy and haunted wells dot the Irish landscape; their reflective stillness was said to be a thin place where the Otherworld pressed close."
+    },
+    {
+      "id": "fairy-mound",
+      "name": "The Fairy Mound",
+      "glyph": "mound",
+      "x": 0.7,
+      "y": 0.34,
+      "radius": 0.17,
+      "palette": { "glow": "#e9d8a6", "deep": "#3a5a40", "accent": "#c9a86a" },
+      "blurb": "A green hill that hums on quiet evenings. Beneath it lies a hall longer than the hill is wide.",
+      "lore": "A sídhe (shee) is a fairy mound — often a neolithic passage tomb. The Aos Sí, 'the people of the mounds', were thought to live within."
+    },
+    {
+      "id": "stone-circle",
+      "name": "The Stone Circle",
+      "glyph": "stones",
+      "x": 0.5,
+      "y": 0.62,
+      "radius": 0.15,
+      "palette": { "glow": "#d9d2c5", "deep": "#4a4036", "accent": "#9aa0a6" },
+      "blurb": "Nine grey sentinels keeping a count no one living remembers. The grass inside them never frosts.",
+      "lore": "Ireland's stone circles, like Drombeg in Cork, are aligned to the turning year. Folklore made them dancers turned to stone for revelling on the Sabbath."
+    },
+    {
+      "id": "mist-gate",
+      "name": "The Mist Gate",
+      "glyph": "gate",
+      "x": 0.8,
+      "y": 0.72,
+      "radius": 0.16,
+      "palette": { "glow": "#cdd6d8", "deep": "#48535a", "accent": "#bfcad0" },
+      "blurb": "Where the fog stands up like a doorway. Step through on the wrong evening and you come out a hundred years late.",
+      "lore": "The veil between worlds was thinnest at thresholds and at Samhain. Travellers feared the 'stray sod' that turned a known path strange."
+    },
+    {
+      "id": "kelp-grove",
+      "name": "The Glowing Kelp Grove",
+      "glyph": "kelp",
+      "x": 0.34,
+      "y": 0.26,
+      "radius": 0.16,
+      "palette": { "glow": "#9fe3c9", "deep": "#1f5145", "accent": "#7ad0b4" },
+      "blurb": "A drowned forest of light just under the tide. The Merrow tend it like a garden of green lamps.",
+      "lore": "Beneath the waves lay Tír fo Thuinn, the 'Land under Wave' — one of many names for the Irish Otherworld, as real as any island."
+    }
+  ]
+}
