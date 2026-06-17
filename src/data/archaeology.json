@@ -1,0 +1,5686 @@
+[
+  {
+    "id": "arch-288790478",
+    "name": "Prehistoric stones",
+    "type": "dolmen",
+    "lat": 54.5402,
+    "lng": -5.94986
+  },
+  {
+    "id": "arch-311290122",
+    "name": "Ballybrack Dolmen",
+    "type": "dolmen",
+    "lat": 53.24511,
+    "lng": -6.12232,
+    "wikidata": "Q33123177"
+  },
+  {
+    "id": "arch-315637702",
+    "name": "Vinegar Hill",
+    "type": "site",
+    "lat": 52.5017,
+    "lng": -6.55317,
+    "wikidata": "Q31856630"
+  },
+  {
+    "id": "arch-316422583",
+    "name": "Aideen's Dolmen",
+    "type": "dolmen",
+    "lat": 53.37955,
+    "lng": -6.08223
+  },
+  {
+    "id": "arch-318364784",
+    "name": "Killakee Wedge Tomb",
+    "type": "megalith",
+    "lat": 53.24738,
+    "lng": -6.31699
+  },
+  {
+    "id": "arch-392669837",
+    "name": "Bullaun Stone",
+    "type": "site",
+    "lat": 53.22218,
+    "lng": -6.31086
+  },
+  {
+    "id": "arch-393422975",
+    "name": "Graves of the Leinstermen",
+    "type": "site",
+    "lat": 52.85126,
+    "lng": -8.39913
+  },
+  {
+    "id": "arch-410615488",
+    "name": "The Coffin Stone",
+    "type": "dolmen",
+    "lat": 53.13248,
+    "lng": -6.24982
+  },
+  {
+    "id": "arch-415377155",
+    "name": "King's Grave",
+    "type": "cairn",
+    "lat": 54.21803,
+    "lng": -5.97816
+  },
+  {
+    "id": "arch-415979070",
+    "name": "Legananny Dolmen",
+    "type": "dolmen",
+    "lat": 54.32305,
+    "lng": -6.02017,
+    "wikidata": "Q6517664",
+    "wikipedia": "Legananny Dolmen",
+    "heritage": true
+  },
+  {
+    "id": "arch-428119020",
+    "name": "Shielmartin Hill Cairn",
+    "type": "site",
+    "lat": 53.37321,
+    "lng": -6.08341
+  },
+  {
+    "id": "arch-472673333",
+    "name": "Kenmare Stone Circle",
+    "type": "stone_circle",
+    "lat": 51.87844,
+    "lng": -9.58821
+  },
+  {
+    "id": "arch-473153792",
+    "name": "Derreenataggart Stone Circle",
+    "type": "megalith",
+    "lat": 51.65385,
+    "lng": -9.92896,
+    "wikidata": "Q15055799",
+    "heritage": true
+  },
+  {
+    "id": "arch-486876209",
+    "name": "Haroldstown Dolmen",
+    "type": "dolmen",
+    "lat": 52.84507,
+    "lng": -6.66391,
+    "wikidata": "Q1335706",
+    "heritage": true
+  },
+  {
+    "id": "arch-523982997",
+    "name": "Ranachan Hill",
+    "type": "fort",
+    "lat": 55.46355,
+    "lng": -5.65814
+  },
+  {
+    "id": "arch-523982998",
+    "name": "Ballywilline Hill",
+    "type": "fort",
+    "lat": 55.45479,
+    "lng": -5.61239
+  },
+  {
+    "id": "arch-559743279",
+    "name": "Carrowkeel neolithic site",
+    "type": "site",
+    "lat": 54.05707,
+    "lng": -8.37928,
+    "wikidata": "Q261318",
+    "wikipedia": "en:Carrowkeel Megalithic Cemetery"
+  },
+  {
+    "id": "arch-559985905",
+    "name": "Stone row",
+    "type": "site",
+    "lat": 51.61175,
+    "lng": -10.13255
+  },
+  {
+    "id": "arch-566647910",
+    "name": "Stonecircle",
+    "type": "stone_circle",
+    "lat": 51.75722,
+    "lng": -9.81473
+  },
+  {
+    "id": "arch-566647911",
+    "name": "Stonecircle",
+    "type": "stone_circle",
+    "lat": 51.75711,
+    "lng": -9.81373
+  },
+  {
+    "id": "arch-659795151",
+    "name": "Toberfeheen",
+    "type": "site",
+    "lat": 53.53083,
+    "lng": -10.16899,
+    "heritage": true
+  },
+  {
+    "id": "arch-703696092",
+    "name": "Hillsborough Fort",
+    "type": "site",
+    "lat": 54.46065,
+    "lng": -6.08099
+  },
+  {
+    "id": "arch-769315559",
+    "name": "Hag's Chair",
+    "type": "megalith",
+    "lat": 53.74487,
+    "lng": -7.11227
+  },
+  {
+    "id": "arch-843892488",
+    "name": "Saint Molaise's House",
+    "type": "site",
+    "lat": 54.3707,
+    "lng": -7.65564
+  },
+  {
+    "id": "arch-843892502",
+    "name": "Saint Mary's Augustinian Priory",
+    "type": "site",
+    "lat": 54.37007,
+    "lng": -7.65722
+  },
+  {
+    "id": "arch-843892877",
+    "name": "Teampull M\u00f3r",
+    "type": "site",
+    "lat": 54.37074,
+    "lng": -7.65544
+  },
+  {
+    "id": "arch-850933486",
+    "name": "Katesbridge Mound",
+    "type": "tumulus",
+    "lat": 54.30205,
+    "lng": -6.14202
+  },
+  {
+    "id": "arch-982606081",
+    "name": "Dooey's Cairn",
+    "type": "site",
+    "lat": 55.00166,
+    "lng": -6.40448
+  },
+  {
+    "id": "arch-988347917",
+    "name": "Caisle\u00e1n Chill Torr\u00f3g",
+    "type": "site",
+    "lat": 53.34385,
+    "lng": -8.90664
+  },
+  {
+    "id": "arch-1002847056",
+    "name": "The Moat",
+    "type": "fort",
+    "lat": 54.64396,
+    "lng": -5.54061
+  },
+  {
+    "id": "arch-1023587379",
+    "name": "Crew stone",
+    "type": "site",
+    "lat": 54.56197,
+    "lng": -6.16841
+  },
+  {
+    "id": "arch-1121956264",
+    "name": "An Chrois",
+    "type": "site",
+    "lat": 53.30154,
+    "lng": -9.07335
+  },
+  {
+    "id": "arch-1162312931",
+    "name": "Ring Enclosoure",
+    "type": "site",
+    "lat": 52.90404,
+    "lng": -9.00408
+  },
+  {
+    "id": "arch-1194033366",
+    "name": "Kiltiernan Portal Tomb",
+    "type": "dolmen",
+    "lat": 53.23882,
+    "lng": -6.20715,
+    "wikidata": "Q25248161",
+    "wikipedia": "en:Kiltiernan Tomb",
+    "heritage": true
+  },
+  {
+    "id": "arch-1211210182",
+    "name": "Brownshill Dolmen",
+    "type": "megalith",
+    "lat": 52.83752,
+    "lng": -6.88112,
+    "wikidata": "Q33313",
+    "wikipedia": "en:Brownshill dolmen",
+    "heritage": true
+  },
+  {
+    "id": "arch-1300740774",
+    "name": "Kilmashogue Wedge Tomb",
+    "type": "dolmen",
+    "lat": 53.2577,
+    "lng": -6.27557,
+    "wikidata": "Q33123071",
+    "heritage": true
+  },
+  {
+    "id": "arch-1315977884",
+    "name": "Cloghagaddy Stone",
+    "type": "standing_stone",
+    "lat": 54.21903,
+    "lng": -7.34079
+  },
+  {
+    "id": "arch-1322755816",
+    "name": "Tetrapod Trackway",
+    "type": "site",
+    "lat": 51.93097,
+    "lng": -10.34308
+  },
+  {
+    "id": "arch-1322755921",
+    "name": "Tetrapod Trackway",
+    "type": "site",
+    "lat": 51.93093,
+    "lng": -10.34367
+  },
+  {
+    "id": "arch-1357775993",
+    "name": "Lissivigeen Stone Circle",
+    "type": "site",
+    "lat": 52.05878,
+    "lng": -9.46257,
+    "wikidata": "Q2341269"
+  },
+  {
+    "id": "arch-1359631584",
+    "name": "Dromatouk stone circle",
+    "type": "site",
+    "lat": 51.88321,
+    "lng": -9.52566
+  },
+  {
+    "id": "arch-1384932791",
+    "name": "Uragh Stone Circle",
+    "type": "site",
+    "lat": 51.81155,
+    "lng": -9.69547,
+    "wikidata": "Q1133801",
+    "wikipedia": "en:Uragh Stone Circle"
+  },
+  {
+    "id": "arch-1408498905",
+    "name": "Ballinageeragh Dolmen",
+    "type": "megalith",
+    "lat": 52.17769,
+    "lng": -7.27689,
+    "wikidata": "Q17747856",
+    "wikipedia": "en:Ballynageeragh Portal Tomb",
+    "heritage": true
+  },
+  {
+    "id": "arch-1417203016",
+    "name": "Stone Circle ( Maulathanavalla )",
+    "type": "site",
+    "lat": 51.64643,
+    "lng": -9.06428
+  },
+  {
+    "id": "arch-1417204856",
+    "name": "Stone circle ( Glanbrack )",
+    "type": "site",
+    "lat": 51.6483,
+    "lng": -9.05282
+  },
+  {
+    "id": "arch-1424286340",
+    "name": "Carrigcleena",
+    "type": "site",
+    "lat": 52.06242,
+    "lng": -8.69183
+  },
+  {
+    "id": "arch-1424326441",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 51.94894,
+    "lng": -8.61089
+  },
+  {
+    "id": "arch-1481776061",
+    "name": "Moat",
+    "type": "site",
+    "lat": 52.78204,
+    "lng": -6.32195
+  },
+  {
+    "id": "arch-1502217198",
+    "name": "Moat",
+    "type": "site",
+    "lat": 52.47984,
+    "lng": -6.34663
+  },
+  {
+    "id": "arch-1549634759",
+    "name": "the Doagh Holestone",
+    "type": "megalith",
+    "lat": 54.74876,
+    "lng": -6.07247
+  },
+  {
+    "id": "arch-1556231252",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 54.80058,
+    "lng": -6.18432
+  },
+  {
+    "id": "arch-1556354939",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 55.26818,
+    "lng": -7.15395
+  },
+  {
+    "id": "arch-1569570209",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.83598,
+    "lng": -6.30872
+  },
+  {
+    "id": "arch-1574287829",
+    "name": "Moville Old Church and Cross",
+    "type": "site",
+    "lat": 55.18891,
+    "lng": -7.06112
+  },
+  {
+    "id": "arch-1578763717",
+    "name": "Tamlaght Old Church",
+    "type": "site",
+    "lat": 55.04015,
+    "lng": -6.98056
+  },
+  {
+    "id": "arch-1585009971",
+    "name": "Bellaghy Bawn",
+    "type": "site",
+    "lat": 54.80593,
+    "lng": -6.51834
+  },
+  {
+    "id": "arch-1585010094",
+    "name": "Ballyscullion House",
+    "type": "site",
+    "lat": 54.80848,
+    "lng": -6.49645
+  },
+  {
+    "id": "arch-1585010119",
+    "name": "Church Island",
+    "type": "site",
+    "lat": 54.79027,
+    "lng": -6.48568
+  },
+  {
+    "id": "arch-1587454562",
+    "name": "Desertlynn Old Graveyard",
+    "type": "site",
+    "lat": 54.69467,
+    "lng": -6.67215
+  },
+  {
+    "id": "arch-1587588593",
+    "name": "Distillery",
+    "type": "site",
+    "lat": 52.94376,
+    "lng": -8.05012
+  },
+  {
+    "id": "arch-1587752139",
+    "name": "Mud-walled cottage",
+    "type": "site",
+    "lat": 54.45608,
+    "lng": -6.71168
+  },
+  {
+    "id": "arch-1605507555",
+    "name": "Harryville Mote and Bailey",
+    "type": "site",
+    "lat": 54.85884,
+    "lng": -6.26884
+  },
+  {
+    "id": "arch-1659752769",
+    "name": "Mainham Forge",
+    "type": "site",
+    "lat": 53.31333,
+    "lng": -6.69749
+  },
+  {
+    "id": "arch-1659752774",
+    "name": "Mainham Village",
+    "type": "site",
+    "lat": 53.3143,
+    "lng": -6.69731
+  },
+  {
+    "id": "arch-1662443981",
+    "name": "Irish High Cross",
+    "type": "site",
+    "lat": 54.5311,
+    "lng": -6.81325
+  },
+  {
+    "id": "arch-1685159462",
+    "name": "Slidderyford Dolmen",
+    "type": "site",
+    "lat": 54.23953,
+    "lng": -5.86316
+  },
+  {
+    "id": "arch-1721256386",
+    "name": "Ballyclog Church",
+    "type": "site",
+    "lat": 54.60424,
+    "lng": -6.66099
+  },
+  {
+    "id": "arch-1773677170",
+    "name": "Gregory's Well",
+    "type": "site",
+    "lat": 52.25086,
+    "lng": -8.46438
+  },
+  {
+    "id": "arch-1781362634",
+    "name": "The Cat Stone",
+    "type": "megalith",
+    "lat": 53.48691,
+    "lng": -7.56547,
+    "wikidata": "Q116535113",
+    "heritage": true
+  },
+  {
+    "id": "arch-1795609246",
+    "name": "Midden",
+    "type": "site",
+    "lat": 51.81332,
+    "lng": -8.30105
+  },
+  {
+    "id": "arch-1813766860",
+    "name": "Mary Frasier's",
+    "type": "site",
+    "lat": 52.25192,
+    "lng": -8.47396
+  },
+  {
+    "id": "arch-1853209375",
+    "name": "Old lime kiln",
+    "type": "site",
+    "lat": 53.98294,
+    "lng": -6.13862
+  },
+  {
+    "id": "arch-1854628648",
+    "name": "Megalithic Tomb",
+    "type": "megalith",
+    "lat": 51.51006,
+    "lng": -9.26766
+  },
+  {
+    "id": "arch-1867019702",
+    "name": "Tobermaconry (site of)",
+    "type": "site",
+    "lat": 53.25723,
+    "lng": -9.10463,
+    "heritage": true
+  },
+  {
+    "id": "arch-1880695005",
+    "name": "Cairn A",
+    "type": "cairn",
+    "lat": 54.04445,
+    "lng": -8.39376
+  },
+  {
+    "id": "arch-1886030972",
+    "name": "Iron Age Promontory Fort",
+    "type": "site",
+    "lat": 55.30293,
+    "lng": -7.15441
+  },
+  {
+    "id": "arch-1925210950",
+    "name": "Thornhill Neolithic mound",
+    "type": "site",
+    "lat": 53.78361,
+    "lng": -9.68182
+  },
+  {
+    "id": "arch-1947491595",
+    "name": "Armagh Friary",
+    "type": "site",
+    "lat": 54.34426,
+    "lng": -6.65337
+  },
+  {
+    "id": "arch-1974353251",
+    "name": "Drumskinny Stone Circle",
+    "type": "site",
+    "lat": 54.58437,
+    "lng": -7.69008,
+    "wikidata": "Q1261327",
+    "wikipedia": "en:Drumskinny"
+  },
+  {
+    "id": "arch-1976319788",
+    "name": "Sweep's Rock",
+    "type": "site",
+    "lat": 53.22773,
+    "lng": -6.31848
+  },
+  {
+    "id": "arch-1976319798",
+    "name": "Shed Stone",
+    "type": "site",
+    "lat": 53.21822,
+    "lng": -6.32912
+  },
+  {
+    "id": "arch-1976319804",
+    "name": "Cnocan Ruad",
+    "type": "site",
+    "lat": 53.21508,
+    "lng": -6.3286
+  },
+  {
+    "id": "arch-1976338678",
+    "name": "Finn McCoole's Stone",
+    "type": "site",
+    "lat": 53.2186,
+    "lng": -6.33941
+  },
+  {
+    "id": "arch-1976338681",
+    "name": "Cairn",
+    "type": "site",
+    "lat": 53.25172,
+    "lng": -6.3303
+  },
+  {
+    "id": "arch-1976350671",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 53.25201,
+    "lng": -6.32379
+  },
+  {
+    "id": "arch-2005208928",
+    "name": "Saint Mogue's Well",
+    "type": "site",
+    "lat": 52.59092,
+    "lng": -6.49192,
+    "wikidata": "Q55029939"
+  },
+  {
+    "id": "arch-2014170549",
+    "name": "Ballinran Court Tomb",
+    "type": "site",
+    "lat": 54.07369,
+    "lng": -6.17568
+  },
+  {
+    "id": "arch-2014176562",
+    "name": "Kilbroney Standing Stone",
+    "type": "site",
+    "lat": 54.10988,
+    "lng": -6.18575
+  },
+  {
+    "id": "arch-2092725715",
+    "name": "Glascarrig Abbey",
+    "type": "site",
+    "lat": 52.58187,
+    "lng": -6.20741,
+    "wikidata": "Q130618074"
+  },
+  {
+    "id": "arch-2093350096",
+    "name": "Longtown Moat",
+    "type": "fort",
+    "lat": 53.2764,
+    "lng": -6.71723
+  },
+  {
+    "id": "arch-2129310009",
+    "name": "McArt's Fort",
+    "type": "fort",
+    "lat": 54.64703,
+    "lng": -5.94812
+  },
+  {
+    "id": "arch-2147851394",
+    "name": "Ruined Church",
+    "type": "site",
+    "lat": 51.56627,
+    "lng": -8.97273
+  },
+  {
+    "id": "arch-2147861025",
+    "name": "Wart Well",
+    "type": "site",
+    "lat": 51.57517,
+    "lng": -8.97456
+  },
+  {
+    "id": "arch-2278161906",
+    "name": "Bear Pit",
+    "type": "site",
+    "lat": 54.62684,
+    "lng": -5.83244
+  },
+  {
+    "id": "arch-2284756276",
+    "name": "Kilgorman Well",
+    "type": "site",
+    "lat": 52.70912,
+    "lng": -6.17718
+  },
+  {
+    "id": "arch-2308306473",
+    "name": "Cromlech",
+    "type": "site",
+    "lat": 52.98814,
+    "lng": -9.09554,
+    "wikidata": "Q15058369",
+    "heritage": true
+  },
+  {
+    "id": "arch-2347151749",
+    "name": "Dungravenen",
+    "type": "site",
+    "lat": 54.50276,
+    "lng": -8.2024
+  },
+  {
+    "id": "arch-2391742038",
+    "name": "Dromore Church Ruin",
+    "type": "site",
+    "lat": 54.512,
+    "lng": -7.46176
+  },
+  {
+    "id": "arch-2394405922",
+    "name": "O'Cahan's Fort",
+    "type": "site",
+    "lat": 55.02627,
+    "lng": -6.94199
+  },
+  {
+    "id": "arch-2394406151",
+    "name": "Mullagh Hill Site of the Convention of Drumceatt",
+    "type": "site",
+    "lat": 55.03799,
+    "lng": -6.95801
+  },
+  {
+    "id": "arch-2407325653",
+    "name": "Saint Bridget's Church",
+    "type": "site",
+    "lat": 52.347,
+    "lng": -6.59567
+  },
+  {
+    "id": "arch-2410482082",
+    "name": "Doline",
+    "type": "site",
+    "lat": 53.0405,
+    "lng": -9.13917
+  },
+  {
+    "id": "arch-2410482117",
+    "name": "Fire Pit",
+    "type": "site",
+    "lat": 53.04085,
+    "lng": -9.1394
+  },
+  {
+    "id": "arch-2431191838",
+    "name": "Cnocan Sithean Cairn",
+    "type": "tumulus",
+    "lat": 55.42304,
+    "lng": -5.72362,
+    "wikidata": "Q56667846"
+  },
+  {
+    "id": "arch-2464057149",
+    "name": "Drumanagh Promontory Fort",
+    "type": "site",
+    "lat": 53.5407,
+    "lng": -6.07867,
+    "wikidata": "Q1261245",
+    "wikipedia": "en:Drumanagh"
+  },
+  {
+    "id": "arch-2534390811",
+    "name": "Druid's Altar",
+    "type": "site",
+    "lat": 53.89102,
+    "lng": -7.84165
+  },
+  {
+    "id": "arch-2558525796",
+    "name": "Cairn",
+    "type": "site",
+    "lat": 54.06209,
+    "lng": -8.43931,
+    "wikidata": "Q17576792",
+    "heritage": true
+  },
+  {
+    "id": "arch-2562995437",
+    "name": "Perry's Well",
+    "type": "site",
+    "lat": 52.56665,
+    "lng": -7.70051
+  },
+  {
+    "id": "arch-2578251196",
+    "name": "Mount Venus Dolmen",
+    "type": "site",
+    "lat": 53.26137,
+    "lng": -6.31045,
+    "wikidata": "Q2104938",
+    "wikipedia": "en:Mount Venus"
+  },
+  {
+    "id": "arch-2581944238",
+    "name": "Abandoned Miners' Village",
+    "type": "site",
+    "lat": 53.07708,
+    "lng": -6.3006
+  },
+  {
+    "id": "arch-2585892052",
+    "name": "Strongbow's Cap",
+    "type": "site",
+    "lat": 52.17347,
+    "lng": -6.83208
+  },
+  {
+    "id": "arch-2585892053",
+    "name": "Strongbow's Tent",
+    "type": "site",
+    "lat": 52.17501,
+    "lng": -6.82649
+  },
+  {
+    "id": "arch-2598871692",
+    "name": "Cross",
+    "type": "site",
+    "lat": 53.24458,
+    "lng": -6.38995
+  },
+  {
+    "id": "arch-2620018900",
+    "name": "Castle (Site of)",
+    "type": "fort",
+    "lat": 52.21031,
+    "lng": -6.79305
+  },
+  {
+    "id": "arch-2620337383",
+    "name": "Tide Mill",
+    "type": "site",
+    "lat": 54.49891,
+    "lng": -5.64604,
+    "wikidata": "Q3325726",
+    "wikipedia": "en:Nendrum Monastery mill"
+  },
+  {
+    "id": "arch-2621909433",
+    "name": "Red Bay Castle",
+    "type": "site",
+    "lat": 55.06739,
+    "lng": -6.05509,
+    "wikidata": "Q2781823",
+    "wikipedia": "en:Red Bay Castle"
+  },
+  {
+    "id": "arch-2625394315",
+    "name": "Lime Kiln",
+    "type": "site",
+    "lat": 55.24378,
+    "lng": -6.36911
+  },
+  {
+    "id": "arch-2675601585",
+    "name": "Fort Hill",
+    "type": "fort",
+    "lat": 54.27179,
+    "lng": -7.55104
+  },
+  {
+    "id": "arch-2697887507",
+    "name": "Giants Grave",
+    "type": "site",
+    "lat": 54.12812,
+    "lng": -8.66223
+  },
+  {
+    "id": "arch-2806966323",
+    "name": "Labbacallee Wedge Tomb",
+    "type": "passage_tomb",
+    "lat": 52.17418,
+    "lng": -8.33454,
+    "wikidata": "Q1799383",
+    "wikipedia": "en:Labbacallee wedge tomb",
+    "heritage": true
+  },
+  {
+    "id": "arch-2918980387",
+    "name": "Megalithic Tomb",
+    "type": "site",
+    "lat": 54.0,
+    "lng": -10.06015
+  },
+  {
+    "id": "arch-2927912468",
+    "name": "Cup-marked boulder",
+    "type": "site",
+    "lat": 55.47135,
+    "lng": -5.67286
+  },
+  {
+    "id": "arch-2929948735",
+    "name": "Lisblake",
+    "type": "site",
+    "lat": 54.27139,
+    "lng": -7.74773
+  },
+  {
+    "id": "arch-2943947180",
+    "name": "Cloughbeach Stone Circle",
+    "type": "site",
+    "lat": 54.32293,
+    "lng": -7.86437
+  },
+  {
+    "id": "arch-2944680104",
+    "name": "Newtown Fort",
+    "type": "site",
+    "lat": 51.68779,
+    "lng": -9.45147
+  },
+  {
+    "id": "arch-2962309421",
+    "name": "Carrowmore 58",
+    "type": "megalith",
+    "lat": 54.25031,
+    "lng": -8.51737
+  },
+  {
+    "id": "arch-2968005834",
+    "name": "Drumanone Dolmen",
+    "type": "dolmen",
+    "lat": 53.97014,
+    "lng": -8.35437
+  },
+  {
+    "id": "arch-3008903847",
+    "name": "Bullock's Track",
+    "type": "site",
+    "lat": 52.22828,
+    "lng": -6.3255
+  },
+  {
+    "id": "arch-3022559628",
+    "name": "Boheh Stone",
+    "type": "megalith",
+    "lat": 53.74763,
+    "lng": -9.55417,
+    "wikidata": "Q27868393",
+    "wikipedia": "en:Boheh Stone",
+    "heritage": true
+  },
+  {
+    "id": "arch-3054560859",
+    "name": "Knockacarrin Cairn",
+    "type": "site",
+    "lat": 51.696,
+    "lng": -9.61595
+  },
+  {
+    "id": "arch-3093764638",
+    "name": "famine farm",
+    "type": "site",
+    "lat": 51.68023,
+    "lng": -9.84459
+  },
+  {
+    "id": "arch-3093934129",
+    "name": "Donaghmore (Souterrain)",
+    "type": "site",
+    "lat": 54.00337,
+    "lng": -6.45889,
+    "wikidata": "Q26926947",
+    "wikipedia": "en:Donaghmore Souterrain",
+    "heritage": true
+  },
+  {
+    "id": "arch-3100693083",
+    "name": "Brusselstown Ring",
+    "type": "fort",
+    "lat": 52.96288,
+    "lng": -6.61746,
+    "wikidata": "Q994370"
+  },
+  {
+    "id": "arch-3101765929",
+    "name": "Gaulstown Portal Tomb",
+    "type": "dolmen",
+    "lat": 52.20563,
+    "lng": -7.21047,
+    "wikidata": "Q1496224",
+    "wikipedia": "en:Gaulstown Portal Tomb",
+    "heritage": true
+  },
+  {
+    "id": "arch-3103133029",
+    "name": "Cloghanmore",
+    "type": "site",
+    "lat": 54.68918,
+    "lng": -8.74667,
+    "wikidata": "Q1102172",
+    "wikipedia": "en:Cloghanmore"
+  },
+  {
+    "id": "arch-3103783129",
+    "name": "Large round enclosure",
+    "type": "site",
+    "lat": 51.69533,
+    "lng": -9.91676
+  },
+  {
+    "id": "arch-3104496776",
+    "name": "Court Tomb",
+    "type": "site",
+    "lat": 55.20726,
+    "lng": -7.99675
+  },
+  {
+    "id": "arch-3144681997",
+    "name": "Sandhill Mass Rock",
+    "type": "site",
+    "lat": 55.17686,
+    "lng": -7.94255
+  },
+  {
+    "id": "arch-3149485764",
+    "name": "Glantane East",
+    "type": "site",
+    "lat": 52.00441,
+    "lng": -9.04483,
+    "wikidata": "Q1531169",
+    "wikipedia": "en:Glantane East"
+  },
+  {
+    "id": "arch-3149489565",
+    "name": "Craigs Dolmen",
+    "type": "site",
+    "lat": 54.99346,
+    "lng": -6.47903,
+    "wikidata": "Q1235918",
+    "wikipedia": "en:Craigs Dolmen"
+  },
+  {
+    "id": "arch-3151444991",
+    "name": "Richardstown Castle",
+    "type": "site",
+    "lat": 53.31309,
+    "lng": -6.66848
+  },
+  {
+    "id": "arch-3151848064",
+    "name": "Saint Patricks Well",
+    "type": "site",
+    "lat": 53.73732,
+    "lng": -8.49972
+  },
+  {
+    "id": "arch-3153409217",
+    "name": "Ballyglass Castle",
+    "type": "fort",
+    "lat": 53.67937,
+    "lng": -8.50858
+  },
+  {
+    "id": "arch-3157313392",
+    "name": "Castle Bellew",
+    "type": "fort",
+    "lat": 53.46562,
+    "lng": -8.56432
+  },
+  {
+    "id": "arch-3173797822",
+    "name": "Giants Grave",
+    "type": "site",
+    "lat": 54.19224,
+    "lng": -8.41297,
+    "wikidata": "Q112264280"
+  },
+  {
+    "id": "arch-3175698772",
+    "name": "Fern Hall",
+    "type": "site",
+    "lat": 53.7646,
+    "lng": -8.35785
+  },
+  {
+    "id": "arch-3197179882",
+    "name": "Site of Church",
+    "type": "site",
+    "lat": 52.25352,
+    "lng": -6.45505
+  },
+  {
+    "id": "arch-3197622126",
+    "name": "Lisnagade",
+    "type": "site",
+    "lat": 54.33367,
+    "lng": -6.33007,
+    "wikidata": "Q1828013",
+    "wikipedia": "en:Lisnagade"
+  },
+  {
+    "id": "arch-3215812454",
+    "name": "Giants Graves",
+    "type": "site",
+    "lat": 54.06741,
+    "lng": -8.43325
+  },
+  {
+    "id": "arch-3225709262",
+    "name": "Ice Pit",
+    "type": "site",
+    "lat": 52.2698,
+    "lng": -8.29328
+  },
+  {
+    "id": "arch-3231501618",
+    "name": "Doonogan Castle",
+    "type": "fort",
+    "lat": 52.80518,
+    "lng": -9.35605
+  },
+  {
+    "id": "arch-3231565952",
+    "name": "Knockanalban Castle",
+    "type": "fort",
+    "lat": 52.81456,
+    "lng": -9.37566
+  },
+  {
+    "id": "arch-3234565119",
+    "name": "Kilcorcoran Grave Yard",
+    "type": "site",
+    "lat": 52.85827,
+    "lng": -9.37245
+  },
+  {
+    "id": "arch-3244420996",
+    "name": "Druids Altar",
+    "type": "site",
+    "lat": 54.24556,
+    "lng": -8.92495
+  },
+  {
+    "id": "arch-3258036932",
+    "name": "Duneany Motte",
+    "type": "site",
+    "lat": 54.96093,
+    "lng": -6.37905
+  },
+  {
+    "id": "arch-3349892560",
+    "name": "Colm Cille Old Abbey",
+    "type": "site",
+    "lat": 55.03318,
+    "lng": -7.77307
+  },
+  {
+    "id": "arch-3398349943",
+    "name": "Slievenaglasha Wedge Tomb",
+    "type": "dolmen",
+    "lat": 53.01734,
+    "lng": -9.05178,
+    "wikidata": "Q28654005",
+    "wikipedia": "en:Slievenaglasha Wedge Tomb",
+    "heritage": true
+  },
+  {
+    "id": "arch-3443736652",
+    "name": "Annadorn Dolmen",
+    "type": "megalith",
+    "lat": 54.34197,
+    "lng": -5.80364,
+    "wikidata": "Q4767769",
+    "wikipedia": "en:Annadorn Dolmen"
+  },
+  {
+    "id": "arch-3448971416",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 52.96709,
+    "lng": -9.12594,
+    "heritage": true
+  },
+  {
+    "id": "arch-3449000481",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 52.9775,
+    "lng": -9.12101,
+    "heritage": true
+  },
+  {
+    "id": "arch-3454875399",
+    "name": "Reenascreena Stone Circle",
+    "type": "stone_circle",
+    "lat": 51.61782,
+    "lng": -9.06328
+  },
+  {
+    "id": "arch-3472772813",
+    "name": "Victorian Well",
+    "type": "site",
+    "lat": 54.67509,
+    "lng": -5.92378
+  },
+  {
+    "id": "arch-3474964905",
+    "name": "Standing Stone",
+    "type": "standing_stone",
+    "lat": 52.83172,
+    "lng": -8.34256
+  },
+  {
+    "id": "arch-3475199113",
+    "name": "Dunglady Fort",
+    "type": "site",
+    "lat": 54.87642,
+    "lng": -6.60363
+  },
+  {
+    "id": "arch-3475217029",
+    "name": "Dermot & Grania's Bed",
+    "type": "site",
+    "lat": 52.9946,
+    "lng": -9.08932,
+    "heritage": true
+  },
+  {
+    "id": "arch-3499937356",
+    "name": "Fannantemple Fort",
+    "type": "site",
+    "lat": 54.96764,
+    "lng": -6.72183
+  },
+  {
+    "id": "arch-3503043448",
+    "name": "Star Shaped Fort",
+    "type": "fort",
+    "lat": 51.53057,
+    "lng": -9.17035
+  },
+  {
+    "id": "arch-3548080793",
+    "name": "Corliss Fort",
+    "type": "site",
+    "lat": 54.09356,
+    "lng": -6.63636
+  },
+  {
+    "id": "arch-3551184725",
+    "name": "Lisglynn Fort",
+    "type": "site",
+    "lat": 54.29472,
+    "lng": -6.7558
+  },
+  {
+    "id": "arch-3602683114",
+    "name": "Portal Tomb",
+    "type": "site",
+    "lat": 54.68117,
+    "lng": -7.43213
+  },
+  {
+    "id": "arch-3623495261",
+    "name": "Vicar's Cairn",
+    "type": "site",
+    "lat": 54.29829,
+    "lng": -6.59682
+  },
+  {
+    "id": "arch-3658713094",
+    "name": "Doonbane",
+    "type": "site",
+    "lat": 55.14815,
+    "lng": -7.73763
+  },
+  {
+    "id": "arch-3661484943",
+    "name": "Wedge grave",
+    "type": "dolmen",
+    "lat": 51.61304,
+    "lng": -10.0665,
+    "wikidata": "Q20758250",
+    "heritage": true
+  },
+  {
+    "id": "arch-3669147526",
+    "name": "Lisdoart",
+    "type": "site",
+    "lat": 54.44526,
+    "lng": -7.04003
+  },
+  {
+    "id": "arch-3699912014",
+    "name": "Gortin Fort",
+    "type": "site",
+    "lat": 54.65684,
+    "lng": -6.79467
+  },
+  {
+    "id": "arch-3726256750",
+    "name": "Hill Fort",
+    "type": "fort",
+    "lat": 54.37356,
+    "lng": -7.61085
+  },
+  {
+    "id": "arch-3788165528",
+    "name": "Rathdonnell Fort",
+    "type": "site",
+    "lat": 54.99029,
+    "lng": -7.81541
+  },
+  {
+    "id": "arch-3812018357",
+    "name": "Irish National Heritage Park",
+    "type": "site",
+    "lat": 52.34781,
+    "lng": -6.51776
+  },
+  {
+    "id": "arch-3812019657",
+    "name": "Ferrycarrig Tower House",
+    "type": "site",
+    "lat": 52.35132,
+    "lng": -6.5096
+  },
+  {
+    "id": "arch-3836567761",
+    "name": "Killane Old Church Site",
+    "type": "site",
+    "lat": 53.33309,
+    "lng": -7.06873
+  },
+  {
+    "id": "arch-3894925003",
+    "name": "Glendruid Dolmen",
+    "type": "dolmen",
+    "lat": 53.25381,
+    "lng": -6.15875,
+    "wikidata": "Q1235911",
+    "wikipedia": "en:Brennanstown Portal Tomb",
+    "heritage": true
+  },
+  {
+    "id": "arch-3924549372",
+    "name": "Timahoe Castle (site of)",
+    "type": "site",
+    "lat": 53.33245,
+    "lng": -6.83902,
+    "heritage": true
+  },
+  {
+    "id": "arch-4088393543",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.37396,
+    "lng": -5.58498
+  },
+  {
+    "id": "arch-4100273154",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 52.18618,
+    "lng": -9.05892
+  },
+  {
+    "id": "arch-4208742086",
+    "name": "Johnston's Fort",
+    "type": "site",
+    "lat": 54.32708,
+    "lng": -6.30182
+  },
+  {
+    "id": "arch-4234066002",
+    "name": "Pallis Castle",
+    "type": "site",
+    "lat": 52.08065,
+    "lng": -9.62852
+  },
+  {
+    "id": "arch-4255741589",
+    "name": "Megalithic tomb",
+    "type": "dolmen",
+    "lat": 53.8059,
+    "lng": -9.96419
+  },
+  {
+    "id": "arch-4293159973",
+    "name": "Glencolumbkille Turas",
+    "type": "site",
+    "lat": 54.71084,
+    "lng": -8.72485,
+    "wikidata": "Q30220962",
+    "heritage": true
+  },
+  {
+    "id": "arch-4367033521",
+    "name": "Passage tomb",
+    "type": "megalith",
+    "lat": 54.25793,
+    "lng": -8.57485
+  },
+  {
+    "id": "arch-4367050052",
+    "name": "Carrowmore 48",
+    "type": "dolmen",
+    "lat": 54.24755,
+    "lng": -8.52016,
+    "heritage": true
+  },
+  {
+    "id": "arch-4367050065",
+    "name": "Carrowmore 22",
+    "type": "megalith",
+    "lat": 54.24818,
+    "lng": -8.51317
+  },
+  {
+    "id": "arch-4367050073",
+    "name": "Carrowmore 20",
+    "type": "stone_circle",
+    "lat": 54.24843,
+    "lng": -8.51388
+  },
+  {
+    "id": "arch-4367050108",
+    "name": "Carrowmore 54a",
+    "type": "dolmen",
+    "lat": 54.24985,
+    "lng": -8.52006,
+    "heritage": true
+  },
+  {
+    "id": "arch-4367050151",
+    "name": "Carrowmore 14",
+    "type": "megalith",
+    "lat": 54.25167,
+    "lng": -8.51664,
+    "heritage": true
+  },
+  {
+    "id": "arch-4367050158",
+    "name": "Carrowmore 13",
+    "type": "dolmen",
+    "lat": 54.25199,
+    "lng": -8.51633,
+    "heritage": true
+  },
+  {
+    "id": "arch-4395955695",
+    "name": "Ardamore Stone Row",
+    "type": "site",
+    "lat": 52.13224,
+    "lng": -10.15644
+  },
+  {
+    "id": "arch-4395989692",
+    "name": "Graigue Standing Stone",
+    "type": "megalith",
+    "lat": 52.13618,
+    "lng": -10.14525,
+    "wikidata": "Q33125986",
+    "heritage": true
+  },
+  {
+    "id": "arch-4461367458",
+    "name": "Kealkill Stone Circle",
+    "type": "stone_circle",
+    "lat": 51.74518,
+    "lng": -9.3705,
+    "wikidata": "Q96385551"
+  },
+  {
+    "id": "arch-4500847619",
+    "name": "Glenorn Well",
+    "type": "site",
+    "lat": 54.35124,
+    "lng": -6.4731
+  },
+  {
+    "id": "arch-4500994884",
+    "name": "Kitchen Bridge",
+    "type": "site",
+    "lat": 54.37744,
+    "lng": -6.47176
+  },
+  {
+    "id": "arch-4601188042",
+    "name": "Mortimer's Castle",
+    "type": "site",
+    "lat": 53.64858,
+    "lng": -7.34138,
+    "wikidata": "Q26743438",
+    "wikipedia": "en:Mortimer's Castle",
+    "heritage": true
+  },
+  {
+    "id": "arch-4651579274",
+    "name": "Tamnyrankin Court Tomb",
+    "type": "passage_tomb",
+    "lat": 54.93318,
+    "lng": -6.69994
+  },
+  {
+    "id": "arch-4949222728",
+    "name": "Labbadermot",
+    "type": "megalith",
+    "lat": 53.55885,
+    "lng": -10.12909,
+    "heritage": true
+  },
+  {
+    "id": "arch-4956857776",
+    "name": "Knockbrack",
+    "type": "fort",
+    "lat": 53.57185,
+    "lng": -6.25899
+  },
+  {
+    "id": "arch-4971152116",
+    "name": "Knockeen Portal Tomb",
+    "type": "dolmen",
+    "lat": 52.20747,
+    "lng": -7.15909,
+    "wikidata": "Q17984614",
+    "wikipedia": "en:Knockeen Portal Tomb",
+    "heritage": true
+  },
+  {
+    "id": "arch-5144602644",
+    "name": "Leopardstown Standing Stone",
+    "type": "site",
+    "lat": 53.28002,
+    "lng": -6.19541
+  },
+  {
+    "id": "arch-5157332304",
+    "name": "Tibberaghny Standing Stone",
+    "type": "megalith",
+    "lat": 52.34346,
+    "lng": -7.35277
+  },
+  {
+    "id": "arch-5160874403",
+    "name": "Cappagh Ringfort (rath)",
+    "type": "fort",
+    "lat": 52.44822,
+    "lng": -7.13874
+  },
+  {
+    "id": "arch-5160986814",
+    "name": "Condonstown Ringfort (rath)",
+    "type": "fort",
+    "lat": 52.4168,
+    "lng": -7.26657
+  },
+  {
+    "id": "arch-5161133189",
+    "name": "Cussan Ringfort (rath)",
+    "type": "fort",
+    "lat": 52.43463,
+    "lng": -7.36834
+  },
+  {
+    "id": "arch-5161133215",
+    "name": "Deerpark Ringfort (rath)",
+    "type": "fort",
+    "lat": 52.35498,
+    "lng": -7.17079
+  },
+  {
+    "id": "arch-5162894840",
+    "name": "Harristown Standing Stone",
+    "type": "megalith",
+    "lat": 52.40285,
+    "lng": -7.2637,
+    "wikidata": "Q140188180"
+  },
+  {
+    "id": "arch-5164935204",
+    "name": "Rathpatrick Fulacht Fia",
+    "type": "site",
+    "lat": 52.78481,
+    "lng": -7.62805
+  },
+  {
+    "id": "arch-5181411876",
+    "name": "Ballybarrack Ogham Stone",
+    "type": "site",
+    "lat": 53.97181,
+    "lng": -6.48631
+  },
+  {
+    "id": "arch-5238525558",
+    "name": "Sess Kilgreen",
+    "type": "passage_tomb",
+    "lat": 54.47195,
+    "lng": -7.06871
+  },
+  {
+    "id": "arch-5243919305",
+    "name": "Celbridge Union Workhouse, site of",
+    "type": "site",
+    "lat": 53.34413,
+    "lng": -6.54013
+  },
+  {
+    "id": "arch-5325638551",
+    "name": "Scotia's Grave",
+    "type": "site",
+    "lat": 52.22829,
+    "lng": -9.70427,
+    "wikidata": "Q7435570",
+    "wikipedia": "en:Scotia's Grave"
+  },
+  {
+    "id": "arch-5330120399",
+    "name": "two standing stones",
+    "type": "megalith",
+    "lat": 51.57708,
+    "lng": -9.70081,
+    "heritage": true
+  },
+  {
+    "id": "arch-5359100811",
+    "name": "Letterdeen Standing Stone",
+    "type": "megalith",
+    "lat": 53.50613,
+    "lng": -10.04064,
+    "wikidata": "Q30247372"
+  },
+  {
+    "id": "arch-5384356317",
+    "name": "Boulder Burial",
+    "type": "megalith",
+    "lat": 51.54269,
+    "lng": -9.65337,
+    "wikipedia": "en:List of archaeological sites in County Cork"
+  },
+  {
+    "id": "arch-5396226337",
+    "name": "Billy Church",
+    "type": "site",
+    "lat": 55.18183,
+    "lng": -6.49613
+  },
+  {
+    "id": "arch-5418269436",
+    "name": "Toberpatrick",
+    "type": "site",
+    "lat": 53.14156,
+    "lng": -9.03451
+  },
+  {
+    "id": "arch-5492234236",
+    "name": "Stone Cross",
+    "type": "site",
+    "lat": 53.67875,
+    "lng": -6.44953
+  },
+  {
+    "id": "arch-5530066674",
+    "name": "Boulder Graveyard",
+    "type": "megalith",
+    "lat": 54.26642,
+    "lng": -7.88395
+  },
+  {
+    "id": "arch-5530066675",
+    "name": "Tullygobban Tomb",
+    "type": "dolmen",
+    "lat": 54.26615,
+    "lng": -7.88667,
+    "wikidata": "Q30145019"
+  },
+  {
+    "id": "arch-5530149144",
+    "name": "Matthewstown Passage Tomb",
+    "type": "dolmen",
+    "lat": 52.1759,
+    "lng": -7.22723,
+    "wikidata": "Q28225977",
+    "wikipedia": "en:Matthewstown Passage Tomb",
+    "heritage": true
+  },
+  {
+    "id": "arch-5531263229",
+    "name": "The White Lady",
+    "type": "standing_stone",
+    "lat": 52.1378,
+    "lng": -7.04623,
+    "wikidata": "Q7774523",
+    "wikipedia": "en:The White Lady (Ireland)"
+  },
+  {
+    "id": "arch-5531263230",
+    "name": "Harristown Passage Tomb",
+    "type": "passage_tomb",
+    "lat": 52.18417,
+    "lng": -7.01223
+  },
+  {
+    "id": "arch-5602515721",
+    "name": "Gleninshing tomb",
+    "type": "site",
+    "lat": 53.06018,
+    "lng": -9.14854
+  },
+  {
+    "id": "arch-5620034065",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 52.98202,
+    "lng": -6.34352
+  },
+  {
+    "id": "arch-5622327928",
+    "name": "Stone Row",
+    "type": "megalith",
+    "lat": 51.58699,
+    "lng": -9.69529,
+    "wikidata": "Q51075832"
+  },
+  {
+    "id": "arch-5640311876",
+    "name": "Giant's Grave",
+    "type": "megalith",
+    "lat": 54.98023,
+    "lng": -7.1093
+  },
+  {
+    "id": "arch-5643683928",
+    "name": "Giant's Grave",
+    "type": "site",
+    "lat": 52.95751,
+    "lng": -6.29411
+  },
+  {
+    "id": "arch-5672723429",
+    "name": "St Mary's Church, (site of)",
+    "type": "site",
+    "lat": 53.56685,
+    "lng": -6.93266
+  },
+  {
+    "id": "arch-5672723430",
+    "name": "St. Margaret's Church Girley (C of I) site of",
+    "type": "site",
+    "lat": 53.6656,
+    "lng": -6.92632
+  },
+  {
+    "id": "arch-5672723466",
+    "name": "St Peter's Church (site of)",
+    "type": "site",
+    "lat": 53.77573,
+    "lng": -6.74013
+  },
+  {
+    "id": "arch-5676156902",
+    "name": "Bullaun Stone",
+    "type": "megalith",
+    "lat": 51.83236,
+    "lng": -9.51268
+  },
+  {
+    "id": "arch-5676156905",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 51.83219,
+    "lng": -9.51384,
+    "heritage": true
+  },
+  {
+    "id": "arch-5682758514",
+    "name": "Ballycommon Church (C of I), site of",
+    "type": "site",
+    "lat": 53.29184,
+    "lng": -7.37014
+  },
+  {
+    "id": "arch-5693835837",
+    "name": "Site of Kilmainhamwood Parish Church",
+    "type": "site",
+    "lat": 53.85142,
+    "lng": -6.81072
+  },
+  {
+    "id": "arch-5695166507",
+    "name": "Site of Kineagh Church (C of I)",
+    "type": "site",
+    "lat": 52.9235,
+    "lng": -6.7773
+  },
+  {
+    "id": "arch-5696847567",
+    "name": "Site of Carragh Parish Church (C of I)",
+    "type": "site",
+    "lat": 53.23837,
+    "lng": -6.7285
+  },
+  {
+    "id": "arch-5716057796",
+    "name": "Bullaun Stone",
+    "type": "site",
+    "lat": 54.29069,
+    "lng": -7.90902
+  },
+  {
+    "id": "arch-5760747775",
+    "name": "Castletown House",
+    "type": "site",
+    "lat": 51.97164,
+    "lng": -8.02176
+  },
+  {
+    "id": "arch-5808026753",
+    "name": "Kilclooney More II",
+    "type": "dolmen",
+    "lat": 54.81755,
+    "lng": -8.43308
+  },
+  {
+    "id": "arch-5811032155",
+    "name": "Giant's Grave",
+    "type": "passage_tomb",
+    "lat": 54.26592,
+    "lng": -7.88002
+  },
+  {
+    "id": "arch-5833480740",
+    "name": "Ballykeel Dolmen",
+    "type": "dolmen",
+    "lat": 54.13143,
+    "lng": -6.4782,
+    "wikidata": "Q805410"
+  },
+  {
+    "id": "arch-5874253879",
+    "name": "Kilmanahin Church site",
+    "type": "site",
+    "lat": 52.38242,
+    "lng": -7.32198
+  },
+  {
+    "id": "arch-5890957151",
+    "name": "Newmarket Portal tomb",
+    "type": "dolmen",
+    "lat": 52.46667,
+    "lng": -7.25869,
+    "wikidata": "Q29627936"
+  },
+  {
+    "id": "arch-5895060396",
+    "name": "Clontygora Cairn",
+    "type": "site",
+    "lat": 54.11218,
+    "lng": -6.3208
+  },
+  {
+    "id": "arch-5901444001",
+    "name": "Doonpeter Holy Well",
+    "type": "megalith",
+    "lat": 52.05849,
+    "lng": -8.44665
+  },
+  {
+    "id": "arch-5977761519",
+    "name": "Ceremonial rock",
+    "type": "megalith",
+    "lat": 54.25903,
+    "lng": -8.57467
+  },
+  {
+    "id": "arch-5977761520",
+    "name": "Ceremonial rock",
+    "type": "megalith",
+    "lat": 54.25843,
+    "lng": -8.57446
+  },
+  {
+    "id": "arch-5977761522",
+    "name": "Passage tomb",
+    "type": "megalith",
+    "lat": 54.25744,
+    "lng": -8.57488
+  },
+  {
+    "id": "arch-6005466241",
+    "name": "Carnearny Cairn",
+    "type": "tumulus",
+    "lat": 54.76843,
+    "lng": -6.17302
+  },
+  {
+    "id": "arch-6009729526",
+    "name": "Macharioch Motte",
+    "type": "fort",
+    "lat": 55.32612,
+    "lng": -5.5845,
+    "wikidata": "Q20712917",
+    "wikipedia": "en:Macharioch Motte"
+  },
+  {
+    "id": "arch-6131747033",
+    "name": "Picnic Rock",
+    "type": "site",
+    "lat": 53.37867,
+    "lng": -6.04935
+  },
+  {
+    "id": "arch-6147152156",
+    "name": "The Long Stone",
+    "type": "megalith",
+    "lat": 52.18933,
+    "lng": -6.36775
+  },
+  {
+    "id": "arch-6166768001",
+    "name": "St. Vauk's Stone",
+    "type": "dolmen",
+    "lat": 52.17435,
+    "lng": -6.36088
+  },
+  {
+    "id": "arch-6247048015",
+    "name": "Knockdhu Promontory Fort",
+    "type": "fort",
+    "lat": 54.89247,
+    "lng": -5.91122
+  },
+  {
+    "id": "arch-6247477551",
+    "name": "Lissunenon Fort",
+    "type": "fort",
+    "lat": 54.24909,
+    "lng": -6.39792
+  },
+  {
+    "id": "arch-6276815351",
+    "name": "Linford Barrows",
+    "type": "site",
+    "lat": 54.89483,
+    "lng": -5.92425
+  },
+  {
+    "id": "arch-6278307261",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.74832,
+    "lng": -7.1438
+  },
+  {
+    "id": "arch-6292193564",
+    "name": "Lowtown Fort",
+    "type": "site",
+    "lat": 54.82822,
+    "lng": -5.8838
+  },
+  {
+    "id": "arch-6302306538",
+    "name": "Clough Castle",
+    "type": "site",
+    "lat": 54.96772,
+    "lng": -6.29042
+  },
+  {
+    "id": "arch-6310878450",
+    "name": "Dunmaul Fort",
+    "type": "site",
+    "lat": 55.04597,
+    "lng": -5.96572
+  },
+  {
+    "id": "arch-6374694613",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.06753,
+    "lng": -6.48938
+  },
+  {
+    "id": "arch-6375888242",
+    "name": "Cairn",
+    "type": "site",
+    "lat": 54.66354,
+    "lng": -7.44141
+  },
+  {
+    "id": "arch-6396689477",
+    "name": "Cairn",
+    "type": "site",
+    "lat": 54.64436,
+    "lng": -7.10588
+  },
+  {
+    "id": "arch-6396689478",
+    "name": "Cairn",
+    "type": "site",
+    "lat": 54.64176,
+    "lng": -7.10722
+  },
+  {
+    "id": "arch-6407766756",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.12499,
+    "lng": -6.60521
+  },
+  {
+    "id": "arch-6413699348",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.70192,
+    "lng": -6.54934
+  },
+  {
+    "id": "arch-6413699381",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.71072,
+    "lng": -6.55232
+  },
+  {
+    "id": "arch-6413730756",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.70343,
+    "lng": -6.54328
+  },
+  {
+    "id": "arch-6414271219",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.8118,
+    "lng": -6.3719
+  },
+  {
+    "id": "arch-6414271384",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.85805,
+    "lng": -6.43619
+  },
+  {
+    "id": "arch-6414356452",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.90192,
+    "lng": -6.45585
+  },
+  {
+    "id": "arch-6417108176",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 53.07407,
+    "lng": -9.03078
+  },
+  {
+    "id": "arch-6417554608",
+    "name": "Grave of Saint Mac Duagh's Servant",
+    "type": "site",
+    "lat": 53.08354,
+    "lng": -8.99601
+  },
+  {
+    "id": "arch-6419267003",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 51.8862,
+    "lng": -8.43406
+  },
+  {
+    "id": "arch-6422979526",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.71815,
+    "lng": -6.69493
+  },
+  {
+    "id": "arch-6422979540",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.71876,
+    "lng": -6.69396
+  },
+  {
+    "id": "arch-6423103721",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.69887,
+    "lng": -6.71137
+  },
+  {
+    "id": "arch-6423103722",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.69714,
+    "lng": -6.71762
+  },
+  {
+    "id": "arch-6423411189",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 55.21514,
+    "lng": -6.49372
+  },
+  {
+    "id": "arch-6423411246",
+    "name": "Carnkirk Castle",
+    "type": "fort",
+    "lat": 55.21848,
+    "lng": -6.49703
+  },
+  {
+    "id": "arch-6423411792",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 55.22111,
+    "lng": -6.43252
+  },
+  {
+    "id": "arch-6423560598",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 55.17814,
+    "lng": -6.37847
+  },
+  {
+    "id": "arch-6426305745",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.37519,
+    "lng": -6.5843
+  },
+  {
+    "id": "arch-6443152378",
+    "name": "Rath",
+    "type": "site",
+    "lat": 55.13585,
+    "lng": -6.82122
+  },
+  {
+    "id": "arch-6443152550",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 55.12936,
+    "lng": -6.81695
+  },
+  {
+    "id": "arch-6443219813",
+    "name": "Motte and Bailey",
+    "type": "site",
+    "lat": 55.14794,
+    "lng": -6.69113
+  },
+  {
+    "id": "arch-6446053914",
+    "name": "Rath",
+    "type": "site",
+    "lat": 55.14942,
+    "lng": -6.57723
+  },
+  {
+    "id": "arch-6446132246",
+    "name": "Rath",
+    "type": "site",
+    "lat": 55.14205,
+    "lng": -6.53442
+  },
+  {
+    "id": "arch-6449263364",
+    "name": "Rath",
+    "type": "site",
+    "lat": 55.21058,
+    "lng": -6.40645
+  },
+  {
+    "id": "arch-6449716584",
+    "name": "Rath",
+    "type": "site",
+    "lat": 55.19312,
+    "lng": -6.28751
+  },
+  {
+    "id": "arch-6450112376",
+    "name": "Motte",
+    "type": "fort",
+    "lat": 55.17959,
+    "lng": -6.27506
+  },
+  {
+    "id": "arch-6450112586",
+    "name": "Motte",
+    "type": "fort",
+    "lat": 55.18262,
+    "lng": -6.27148
+  },
+  {
+    "id": "arch-6450197477",
+    "name": "Cloghanmurry Motte",
+    "type": "fort",
+    "lat": 55.17229,
+    "lng": -6.29978
+  },
+  {
+    "id": "arch-6450442958",
+    "name": "Giant's Wedge",
+    "type": "site",
+    "lat": 53.12316,
+    "lng": -7.61441
+  },
+  {
+    "id": "arch-6450489402",
+    "name": "Rath",
+    "type": "site",
+    "lat": 55.15238,
+    "lng": -6.29035
+  },
+  {
+    "id": "arch-6450755059",
+    "name": "Killaleenan Grave",
+    "type": "site",
+    "lat": 55.21388,
+    "lng": -6.16001
+  },
+  {
+    "id": "arch-6450755241",
+    "name": "Craiganalbanagh",
+    "type": "site",
+    "lat": 55.21037,
+    "lng": -6.15467
+  },
+  {
+    "id": "arch-6450832443",
+    "name": "Altagore Cashel",
+    "type": "fort",
+    "lat": 55.14536,
+    "lng": -6.04113
+  },
+  {
+    "id": "arch-6451803922",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.87971,
+    "lng": -7.20146
+  },
+  {
+    "id": "arch-6452708988",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.85317,
+    "lng": -7.24795
+  },
+  {
+    "id": "arch-6452790932",
+    "name": "Cashelbane Cairn",
+    "type": "site",
+    "lat": 54.85687,
+    "lng": -7.197
+  },
+  {
+    "id": "arch-6454941824",
+    "name": "Lisbough",
+    "type": "fort",
+    "lat": 54.27733,
+    "lng": -7.07237
+  },
+  {
+    "id": "arch-6455438892",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.87427,
+    "lng": -7.09059
+  },
+  {
+    "id": "arch-6455439073",
+    "name": "Tireighter Wedge Tomb",
+    "type": "megalith",
+    "lat": 54.86185,
+    "lng": -7.08027
+  },
+  {
+    "id": "arch-6455439155",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.872,
+    "lng": -7.03376
+  },
+  {
+    "id": "arch-6455439171",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.86613,
+    "lng": -7.05129
+  },
+  {
+    "id": "arch-6455439195",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.866,
+    "lng": -7.06002
+  },
+  {
+    "id": "arch-6459898311",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.73781,
+    "lng": -7.3614
+  },
+  {
+    "id": "arch-6459898350",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.73751,
+    "lng": -7.35266
+  },
+  {
+    "id": "arch-6459898361",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.73723,
+    "lng": -7.35468
+  },
+  {
+    "id": "arch-6463124139",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.7701,
+    "lng": -7.26802
+  },
+  {
+    "id": "arch-6466669436",
+    "name": "Ring Barrow",
+    "type": "tumulus",
+    "lat": 54.69589,
+    "lng": -7.30771
+  },
+  {
+    "id": "arch-6467039106",
+    "name": "Gardenhill Fort",
+    "type": "fort",
+    "lat": 54.32113,
+    "lng": -5.83865
+  },
+  {
+    "id": "arch-6467092163",
+    "name": "Rays Fort",
+    "type": "site",
+    "lat": 54.33668,
+    "lng": -5.82941
+  },
+  {
+    "id": "arch-6468153410",
+    "name": "Tirkane Sweat House",
+    "type": "site",
+    "lat": 54.86303,
+    "lng": -6.71341
+  },
+  {
+    "id": "arch-6468189040",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.7091,
+    "lng": -7.15237
+  },
+  {
+    "id": "arch-6473047747",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.31089,
+    "lng": -7.43919
+  },
+  {
+    "id": "arch-6473047760",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.30868,
+    "lng": -7.43447
+  },
+  {
+    "id": "arch-6473047761",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.31207,
+    "lng": -7.40932
+  },
+  {
+    "id": "arch-6477813223",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.14943,
+    "lng": -7.50698
+  },
+  {
+    "id": "arch-6479226914",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.69991,
+    "lng": -7.04429
+  },
+  {
+    "id": "arch-6479226915",
+    "name": "Ogham Stone",
+    "type": "megalith",
+    "lat": 54.69941,
+    "lng": -7.04258
+  },
+  {
+    "id": "arch-6480553578",
+    "name": "Ring Rath",
+    "type": "site",
+    "lat": 54.8777,
+    "lng": -6.6892
+  },
+  {
+    "id": "arch-6480673671",
+    "name": "Chambered Graves",
+    "type": "site",
+    "lat": 54.74577,
+    "lng": -7.23252
+  },
+  {
+    "id": "arch-6480832055",
+    "name": "Lisdoo rath",
+    "type": "fort",
+    "lat": 54.72741,
+    "lng": -7.21931
+  },
+  {
+    "id": "arch-6481267767",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.7316,
+    "lng": -7.11307
+  },
+  {
+    "id": "arch-6482283080",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.77987,
+    "lng": -7.22705
+  },
+  {
+    "id": "arch-6482362494",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.81431,
+    "lng": -7.23803
+  },
+  {
+    "id": "arch-6483003812",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.8717,
+    "lng": -7.0738
+  },
+  {
+    "id": "arch-6483502807",
+    "name": "Tandragee Fort",
+    "type": "fort",
+    "lat": 54.8888,
+    "lng": -7.01232
+  },
+  {
+    "id": "arch-6483528822",
+    "name": "Enclosure",
+    "type": "site",
+    "lat": 54.88881,
+    "lng": -7.00377
+  },
+  {
+    "id": "arch-6484039500",
+    "name": "Lisard Rath",
+    "type": "site",
+    "lat": 54.89908,
+    "lng": -7.01744
+  },
+  {
+    "id": "arch-6484344940",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.90292,
+    "lng": -6.96135
+  },
+  {
+    "id": "arch-6484372065",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.89578,
+    "lng": -6.95516
+  },
+  {
+    "id": "arch-6486658383",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.95258,
+    "lng": -6.96075
+  },
+  {
+    "id": "arch-6491360561",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.14232,
+    "lng": -7.51736
+  },
+  {
+    "id": "arch-6491503641",
+    "name": "altar",
+    "type": "site",
+    "lat": 53.97909,
+    "lng": -8.54046
+  },
+  {
+    "id": "arch-6495473365",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.18157,
+    "lng": -7.58444
+  },
+  {
+    "id": "arch-6495513696",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.1691,
+    "lng": -7.55081
+  },
+  {
+    "id": "arch-6497576965",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.19569,
+    "lng": -7.53836
+  },
+  {
+    "id": "arch-6497576977",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.19151,
+    "lng": -7.53719
+  },
+  {
+    "id": "arch-6501126067",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.89356,
+    "lng": -7.0931
+  },
+  {
+    "id": "arch-6502186564",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.90616,
+    "lng": -7.16535
+  },
+  {
+    "id": "arch-6502187485",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.91798,
+    "lng": -7.18292
+  },
+  {
+    "id": "arch-6504680012",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.86167,
+    "lng": -7.31718
+  },
+  {
+    "id": "arch-6505601704",
+    "name": "Fort",
+    "type": "site",
+    "lat": 54.21488,
+    "lng": -7.49755
+  },
+  {
+    "id": "arch-6506076254",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.20458,
+    "lng": -7.56627
+  },
+  {
+    "id": "arch-6506516983",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.2046,
+    "lng": -7.58218
+  },
+  {
+    "id": "arch-6506532432",
+    "name": "Giant's Grave",
+    "type": "site",
+    "lat": 54.21606,
+    "lng": -7.57346
+  },
+  {
+    "id": "arch-6506532541",
+    "name": "Cairn",
+    "type": "site",
+    "lat": 54.21951,
+    "lng": -7.58171
+  },
+  {
+    "id": "arch-6512122343",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.84096,
+    "lng": -7.28472
+  },
+  {
+    "id": "arch-6512180577",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.83476,
+    "lng": -7.28629
+  },
+  {
+    "id": "arch-6512181021",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.82369,
+    "lng": -7.28838
+  },
+  {
+    "id": "arch-6512203459",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.80446,
+    "lng": -7.30216
+  },
+  {
+    "id": "arch-6512941741",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.23155,
+    "lng": -7.62732
+  },
+  {
+    "id": "arch-6512941764",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.23131,
+    "lng": -7.63484
+  },
+  {
+    "id": "arch-6513390034",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.20925,
+    "lng": -7.62077
+  },
+  {
+    "id": "arch-6513752721",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.848,
+    "lng": -7.2894
+  },
+  {
+    "id": "arch-6513844392",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.84143,
+    "lng": -7.26209
+  },
+  {
+    "id": "arch-6514103004",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.83434,
+    "lng": -7.24705
+  },
+  {
+    "id": "arch-6514103304",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.82355,
+    "lng": -7.23514
+  },
+  {
+    "id": "arch-6514133476",
+    "name": "White Rocks Grave",
+    "type": "site",
+    "lat": 54.81251,
+    "lng": -7.24845
+  },
+  {
+    "id": "arch-6518860918",
+    "name": "Cashel Fort",
+    "type": "site",
+    "lat": 55.02007,
+    "lng": -7.15376
+  },
+  {
+    "id": "arch-6519026258",
+    "name": "Giants Grave",
+    "type": "site",
+    "lat": 55.0174,
+    "lng": -7.14432
+  },
+  {
+    "id": "arch-6534024128",
+    "name": "Fiddown Castle (site of)",
+    "type": "fort",
+    "lat": 52.32933,
+    "lng": -7.31698
+  },
+  {
+    "id": "arch-6534074232",
+    "name": "Motte and BAiley",
+    "type": "site",
+    "lat": 54.98873,
+    "lng": -7.25648
+  },
+  {
+    "id": "arch-6535082499",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 54.96194,
+    "lng": -7.19525
+  },
+  {
+    "id": "arch-6535082612",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.95823,
+    "lng": -7.19357
+  },
+  {
+    "id": "arch-6535274833",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 54.96414,
+    "lng": -7.17509
+  },
+  {
+    "id": "arch-6535275262",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.96944,
+    "lng": -7.16746
+  },
+  {
+    "id": "arch-6535275263",
+    "name": "Stone Circle",
+    "type": "site",
+    "lat": 54.96753,
+    "lng": -7.16757
+  },
+  {
+    "id": "arch-6535275286",
+    "name": "Cairn",
+    "type": "site",
+    "lat": 54.96635,
+    "lng": -7.16915
+  },
+  {
+    "id": "arch-6535275292",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.96736,
+    "lng": -7.16855
+  },
+  {
+    "id": "arch-6535544456",
+    "name": "Rath",
+    "type": "site",
+    "lat": 55.02088,
+    "lng": -7.08051
+  },
+  {
+    "id": "arch-6537160031",
+    "name": "Vitrified Fort",
+    "type": "site",
+    "lat": 54.01419,
+    "lng": -7.29201
+  },
+  {
+    "id": "arch-6537190347",
+    "name": "Lord Galmoy's castle (site)",
+    "type": "fort",
+    "lat": 52.62887,
+    "lng": -7.01486
+  },
+  {
+    "id": "arch-6540244499",
+    "name": "White Castle (site)",
+    "type": "fort",
+    "lat": 52.47351,
+    "lng": -7.08409
+  },
+  {
+    "id": "arch-6543248127",
+    "name": "Barnastick",
+    "type": "standing_stone",
+    "lat": 52.52042,
+    "lng": -6.94573,
+    "heritage": true
+  },
+  {
+    "id": "arch-6544495739",
+    "name": "Marconi Wireless Radio Station",
+    "type": "site",
+    "lat": 53.44631,
+    "lng": -10.02232
+  },
+  {
+    "id": "arch-6545561286",
+    "name": "Clone Castle (site)",
+    "type": "fort",
+    "lat": 52.75636,
+    "lng": -7.3796
+  },
+  {
+    "id": "arch-6547537962",
+    "name": "Bonnetstown Castle",
+    "type": "fort",
+    "lat": 52.66905,
+    "lng": -7.30841,
+    "heritage": true
+  },
+  {
+    "id": "arch-6549066799",
+    "name": "Crowbally Castle",
+    "type": "fort",
+    "lat": 52.40601,
+    "lng": -7.17807
+  },
+  {
+    "id": "arch-6552916394",
+    "name": "Clone Castle (site)",
+    "type": "fort",
+    "lat": 52.47817,
+    "lng": -7.30205
+  },
+  {
+    "id": "arch-6552975644",
+    "name": "Clonconey House (site of)",
+    "type": "site",
+    "lat": 52.33193,
+    "lng": -7.2745
+  },
+  {
+    "id": "arch-6553526227",
+    "name": "Clogaralt Castle (site of)",
+    "type": "fort",
+    "lat": 52.46999,
+    "lng": -6.93352
+  },
+  {
+    "id": "arch-6555406053",
+    "name": "Castletown Castle (ruins)",
+    "type": "fort",
+    "lat": 52.72323,
+    "lng": -7.68634
+  },
+  {
+    "id": "arch-6557797234",
+    "name": "Castlekelly Castle (site of)",
+    "type": "fort",
+    "lat": 52.64427,
+    "lng": -7.01859
+  },
+  {
+    "id": "arch-6563387027",
+    "name": "Danganbeg Castle (site of)",
+    "type": "fort",
+    "lat": 52.49815,
+    "lng": -7.247
+  },
+  {
+    "id": "arch-6563394762",
+    "name": "Pollrone House (site of)",
+    "type": "site",
+    "lat": 52.28912,
+    "lng": -7.2789
+  },
+  {
+    "id": "arch-6564948797",
+    "name": "Ballyconra Hall (site of)",
+    "type": "site",
+    "lat": 52.80063,
+    "lng": -7.34831
+  },
+  {
+    "id": "arch-6700224763",
+    "name": "Calf House Dolmen Tomb",
+    "type": "dolmen",
+    "lat": 54.26493,
+    "lng": -7.8851,
+    "wikidata": "Q28196065"
+  },
+  {
+    "id": "arch-6722761435",
+    "name": "Uragh North Stone Circle",
+    "type": "site",
+    "lat": 51.8138,
+    "lng": -9.68975
+  },
+  {
+    "id": "arch-6762235367",
+    "name": "Giant's Griddle",
+    "type": "dolmen",
+    "lat": 54.19823,
+    "lng": -8.92086
+  },
+  {
+    "id": "arch-7162150752",
+    "name": "Inauguration Stone",
+    "type": "site",
+    "lat": 54.97575,
+    "lng": -6.74213
+  },
+  {
+    "id": "arch-7164576679",
+    "name": "Kilbline Graveyard",
+    "type": "site",
+    "lat": 52.5749,
+    "lng": -7.15401
+  },
+  {
+    "id": "arch-7179842345",
+    "name": "Punchestown Longstone",
+    "type": "megalith",
+    "lat": 53.19183,
+    "lng": -6.62838,
+    "wikidata": "Q24196389",
+    "wikipedia": "en:Punchestown Longstone",
+    "heritage": true
+  },
+  {
+    "id": "arch-7182328800",
+    "name": "Clochafarmore",
+    "type": "megalith",
+    "lat": 53.97449,
+    "lng": -6.46592,
+    "wikidata": "Q28232348",
+    "wikipedia": "en:Clochafarmore"
+  },
+  {
+    "id": "arch-7203653793",
+    "name": "Ardristan Stone",
+    "type": "megalith",
+    "lat": 52.78678,
+    "lng": -6.75372,
+    "wikidata": "Q30136884",
+    "heritage": true
+  },
+  {
+    "id": "arch-7261613576",
+    "name": "Saw Mill (site of)",
+    "type": "site",
+    "lat": 52.5125,
+    "lng": -7.5058
+  },
+  {
+    "id": "arch-7296600397",
+    "name": "Lough Gur Wedge tomb",
+    "type": "megalith",
+    "lat": 52.51254,
+    "lng": -8.52318,
+    "heritage": true
+  },
+  {
+    "id": "arch-7304430889",
+    "name": "Tirnony Dolmen",
+    "type": "site",
+    "lat": 54.85621,
+    "lng": -6.69209
+  },
+  {
+    "id": "arch-7465100555",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.28127,
+    "lng": -7.40652
+  },
+  {
+    "id": "arch-7492575687",
+    "name": "Sweat House",
+    "type": "site",
+    "lat": 52.56784,
+    "lng": -7.08482
+  },
+  {
+    "id": "arch-7506106529",
+    "name": "Glengra Castle",
+    "type": "fort",
+    "lat": 52.52639,
+    "lng": -8.6037
+  },
+  {
+    "id": "arch-7536814837",
+    "name": "Druid's Altar",
+    "type": "megalith",
+    "lat": 54.34135,
+    "lng": -8.61731
+  },
+  {
+    "id": "arch-7536814838",
+    "name": "Druid's Altar",
+    "type": "megalith",
+    "lat": 54.33966,
+    "lng": -8.60689
+  },
+  {
+    "id": "arch-7536824514",
+    "name": "Tober Columbkille",
+    "type": "site",
+    "lat": 54.31479,
+    "lng": -8.48559
+  },
+  {
+    "id": "arch-7537094356",
+    "name": "Tober Patrick",
+    "type": "site",
+    "lat": 54.34665,
+    "lng": -8.50346
+  },
+  {
+    "id": "arch-7537112335",
+    "name": "Tobervogue",
+    "type": "site",
+    "lat": 54.35022,
+    "lng": -8.52128
+  },
+  {
+    "id": "arch-7553579506",
+    "name": "Carnduff",
+    "type": "site",
+    "lat": 54.43238,
+    "lng": -8.42068
+  },
+  {
+    "id": "arch-7553981527",
+    "name": "Cromlech",
+    "type": "site",
+    "lat": 54.41857,
+    "lng": -8.2985
+  },
+  {
+    "id": "arch-7554652946",
+    "name": "Giant's Grave",
+    "type": "megalith",
+    "lat": 54.39116,
+    "lng": -8.14225
+  },
+  {
+    "id": "arch-7560040207",
+    "name": "Giant's Grave",
+    "type": "megalith",
+    "lat": 54.2905,
+    "lng": -7.94207
+  },
+  {
+    "id": "arch-7569549745",
+    "name": "Laghtadamel",
+    "type": "site",
+    "lat": 54.25557,
+    "lng": -7.86095
+  },
+  {
+    "id": "arch-7661807604",
+    "name": "Kilmagar Church (site of)",
+    "type": "site",
+    "lat": 52.67317,
+    "lng": -7.15335
+  },
+  {
+    "id": "arch-7663657332",
+    "name": "Lacken Castle (site of)",
+    "type": "fort",
+    "lat": 52.66864,
+    "lng": -7.32875,
+    "wikidata": "Q137711828"
+  },
+  {
+    "id": "arch-7667098168",
+    "name": "Farrantemple Castle (possible site of)",
+    "type": "fort",
+    "lat": 52.45487,
+    "lng": -6.95666
+  },
+  {
+    "id": "arch-7670727081",
+    "name": "Kilmademoge Castle (site of)",
+    "type": "fort",
+    "lat": 52.71318,
+    "lng": -7.24705,
+    "heritage": true
+  },
+  {
+    "id": "arch-7687246169",
+    "name": "Ballybriest Dual Court Tomb",
+    "type": "site",
+    "lat": 54.73934,
+    "lng": -6.818
+  },
+  {
+    "id": "arch-7687788186",
+    "name": "Giant's Grave (Callann)",
+    "type": "site",
+    "lat": 54.73825,
+    "lng": -6.81765
+  },
+  {
+    "id": "arch-7691155681",
+    "name": "Giant's Grave",
+    "type": "site",
+    "lat": 54.61546,
+    "lng": -6.74322
+  },
+  {
+    "id": "arch-7773790996",
+    "name": "St. Patrick's Borstal Institution (site of)",
+    "type": "site",
+    "lat": 52.35421,
+    "lng": -7.69906,
+    "wikipedia": "en:Clonmel Borstal"
+  },
+  {
+    "id": "arch-7773871822",
+    "name": "Creamery (site of)",
+    "type": "site",
+    "lat": 52.35147,
+    "lng": -7.70352
+  },
+  {
+    "id": "arch-7998173115",
+    "name": "Domhaill's Grave",
+    "type": "site",
+    "lat": 54.18133,
+    "lng": -9.87185
+  },
+  {
+    "id": "arch-7998173116",
+    "name": "Dun Domhnaill",
+    "type": "fort",
+    "lat": 54.18121,
+    "lng": -9.87137
+  },
+  {
+    "id": "arch-8019135733",
+    "name": "St. Columba's Church (site of)",
+    "type": "site",
+    "lat": 53.69727,
+    "lng": -10.09622
+  },
+  {
+    "id": "arch-8035567391",
+    "name": "Glenroan Portal Tomb",
+    "type": "site",
+    "lat": 54.76734,
+    "lng": -7.14887
+  },
+  {
+    "id": "arch-8063738139",
+    "name": "Lime kiln (location of)",
+    "type": "site",
+    "lat": 52.5908,
+    "lng": -7.12016
+  },
+  {
+    "id": "arch-8112839797",
+    "name": "Kilderry Church (site of)",
+    "type": "site",
+    "lat": 52.6903,
+    "lng": -7.17511
+  },
+  {
+    "id": "arch-8147768682",
+    "name": "Radestown Church (site of)",
+    "type": "site",
+    "lat": 52.68776,
+    "lng": -7.2446
+  },
+  {
+    "id": "arch-8147768683",
+    "name": "Kilkieran Church (site of)",
+    "type": "site",
+    "lat": 52.69667,
+    "lng": -7.19617
+  },
+  {
+    "id": "arch-8158794272",
+    "name": "Monastery (site of)",
+    "type": "site",
+    "lat": 53.75845,
+    "lng": -6.26976
+  },
+  {
+    "id": "arch-8162415406",
+    "name": "The Broad Stone (Craigs)",
+    "type": "megalith",
+    "lat": 54.99578,
+    "lng": -6.47066
+  },
+  {
+    "id": "arch-8258328516",
+    "name": "Kilfenora Church (site of)",
+    "type": "site",
+    "lat": 52.27822,
+    "lng": -9.83522
+  },
+  {
+    "id": "arch-8265151688",
+    "name": "Emling's Hall (site of)",
+    "type": "site",
+    "lat": 52.65392,
+    "lng": -7.25386
+  },
+  {
+    "id": "arch-8275448074",
+    "name": "Claddagh House (site of)",
+    "type": "site",
+    "lat": 52.65163,
+    "lng": -7.13856
+  },
+  {
+    "id": "arch-8278980342",
+    "name": "Oldcastle Castle (site of)",
+    "type": "fort",
+    "lat": 52.44677,
+    "lng": -7.40568
+  },
+  {
+    "id": "arch-8279940753",
+    "name": "Rochestown Castle (site of)",
+    "type": "fort",
+    "lat": 52.31906,
+    "lng": -7.01084
+  },
+  {
+    "id": "arch-8279940759",
+    "name": "Rochestown Church (site of)",
+    "type": "site",
+    "lat": 52.32493,
+    "lng": -7.01049
+  },
+  {
+    "id": "arch-8279974518",
+    "name": "Mullennahone Castle (site of)",
+    "type": "fort",
+    "lat": 52.35657,
+    "lng": -7.0492
+  },
+  {
+    "id": "arch-8280023082",
+    "name": "Saint Kieran's Church (site of)",
+    "type": "site",
+    "lat": 52.5073,
+    "lng": -7.04957
+  },
+  {
+    "id": "arch-8280023096",
+    "name": "Kilkieran Castle (site of)",
+    "type": "fort",
+    "lat": 52.51526,
+    "lng": -7.04427
+  },
+  {
+    "id": "arch-8297634135",
+    "name": "Dungannon Fort",
+    "type": "site",
+    "lat": 55.15714,
+    "lng": -6.80921,
+    "wikidata": "Q31085048"
+  },
+  {
+    "id": "arch-8319856739",
+    "name": "St. Doran's Well",
+    "type": "site",
+    "lat": 52.5521,
+    "lng": -6.75935
+  },
+  {
+    "id": "arch-8356140199",
+    "name": "Fort Garret & Castle (site of)",
+    "type": "site",
+    "lat": 52.424,
+    "lng": -6.87081
+  },
+  {
+    "id": "arch-8371897230",
+    "name": "St Caoin cross",
+    "type": "site",
+    "lat": 53.25136,
+    "lng": -6.20058,
+    "heritage": true
+  },
+  {
+    "id": "arch-8400148026",
+    "name": "Saint Patrick's Bed",
+    "type": "site",
+    "lat": 53.32537,
+    "lng": -6.58477,
+    "heritage": true
+  },
+  {
+    "id": "arch-8411712387",
+    "name": "Knockmaree Dolmen",
+    "type": "dolmen",
+    "lat": 53.35093,
+    "lng": -6.3407,
+    "wikidata": "Q20850483",
+    "wikipedia": "en:Knockmaree Dolmen"
+  },
+  {
+    "id": "arch-8480125600",
+    "name": "Cane",
+    "type": "site",
+    "lat": 53.20972,
+    "lng": -8.52799
+  },
+  {
+    "id": "arch-8483209669",
+    "name": "Holywood Motte",
+    "type": "fort",
+    "lat": 54.64144,
+    "lng": -5.83077
+  },
+  {
+    "id": "arch-8506707661",
+    "name": "Lime Kiln",
+    "type": "site",
+    "lat": 52.58737,
+    "lng": -7.10598
+  },
+  {
+    "id": "arch-8506707662",
+    "name": "Double lime kiln",
+    "type": "site",
+    "lat": 52.56666,
+    "lng": -7.12533
+  },
+  {
+    "id": "arch-8511962499",
+    "name": "Ballyreddy Castle (site of)",
+    "type": "fort",
+    "lat": 52.40218,
+    "lng": -7.01935
+  },
+  {
+    "id": "arch-8512047020",
+    "name": "Tullagher Castle (site of)",
+    "type": "fort",
+    "lat": 52.42994,
+    "lng": -7.05182
+  },
+  {
+    "id": "arch-8512077751",
+    "name": "Kilcoan Church (site of)",
+    "type": "site",
+    "lat": 52.37662,
+    "lng": -7.04378
+  },
+  {
+    "id": "arch-8513026200",
+    "name": "Carrigagulla Row East",
+    "type": "megalith",
+    "lat": 51.99588,
+    "lng": -8.89781
+  },
+  {
+    "id": "arch-8513026201",
+    "name": "Carrigagulla NE",
+    "type": "stone_circle",
+    "lat": 52.00364,
+    "lng": -8.91457
+  },
+  {
+    "id": "arch-8513073941",
+    "name": "Knocknakilla Cairn",
+    "type": "megalith",
+    "lat": 52.00625,
+    "lng": -9.02401
+  },
+  {
+    "id": "arch-8526489981",
+    "name": "Sheepstown Castle (site of)",
+    "type": "site",
+    "lat": 52.48461,
+    "lng": -7.25217
+  },
+  {
+    "id": "arch-8530116286",
+    "name": "Killarney Church (site of)",
+    "type": "site",
+    "lat": 52.5555,
+    "lng": -7.17356
+  },
+  {
+    "id": "arch-8572839130",
+    "name": "Saint Scoithin's Church (site of)",
+    "type": "site",
+    "lat": 52.68225,
+    "lng": -7.11671
+  },
+  {
+    "id": "arch-8584170206",
+    "name": "Mass Pit",
+    "type": "site",
+    "lat": 52.96408,
+    "lng": -7.36847
+  },
+  {
+    "id": "arch-8598645157",
+    "name": "Tulla Castle (site of)",
+    "type": "fort",
+    "lat": 53.05129,
+    "lng": -7.71984
+  },
+  {
+    "id": "arch-8608147010",
+    "name": "Raheen Castle (site of)",
+    "type": "fort",
+    "lat": 53.21477,
+    "lng": -7.30065
+  },
+  {
+    "id": "arch-8608349129",
+    "name": "Kilmanoge Church",
+    "type": "site",
+    "lat": 53.20741,
+    "lng": -7.31999
+  },
+  {
+    "id": "arch-8608464698",
+    "name": "Templekieran (site of)",
+    "type": "site",
+    "lat": 53.19338,
+    "lng": -7.29532
+  },
+  {
+    "id": "arch-8632192554",
+    "name": "Site of turnpike",
+    "type": "site",
+    "lat": 52.68159,
+    "lng": -7.02072
+  },
+  {
+    "id": "arch-8632787271",
+    "name": "Brophys of the Post",
+    "type": "site",
+    "lat": 52.6831,
+    "lng": -7.02583
+  },
+  {
+    "id": "arch-8688938196",
+    "name": "Round Tower (site of)",
+    "type": "site",
+    "lat": 52.84725,
+    "lng": -7.00161
+  },
+  {
+    "id": "arch-8750124134",
+    "name": "Druid's Altar",
+    "type": "site",
+    "lat": 52.92971,
+    "lng": -7.14546
+  },
+  {
+    "id": "arch-8751002828",
+    "name": "Cromlech",
+    "type": "site",
+    "lat": 51.52313,
+    "lng": -9.34614
+  },
+  {
+    "id": "arch-8792734475",
+    "name": "Carriganine Cromlech",
+    "type": "site",
+    "lat": 51.51846,
+    "lng": -9.62162
+  },
+  {
+    "id": "arch-8825439649",
+    "name": "Lismoyle",
+    "type": "site",
+    "lat": 53.22865,
+    "lng": -8.11559
+  },
+  {
+    "id": "arch-8825439691",
+    "name": "Fulacht Fia",
+    "type": "site",
+    "lat": 53.20902,
+    "lng": -8.10185
+  },
+  {
+    "id": "arch-8825439693",
+    "name": "Enclosure",
+    "type": "site",
+    "lat": 53.22145,
+    "lng": -8.12751
+  },
+  {
+    "id": "arch-8825439695",
+    "name": "Enclosure",
+    "type": "site",
+    "lat": 53.2164,
+    "lng": -8.12577,
+    "heritage": true
+  },
+  {
+    "id": "arch-8825445232",
+    "name": "Barrow",
+    "type": "site",
+    "lat": 53.23351,
+    "lng": -8.11466
+  },
+  {
+    "id": "arch-8825445323",
+    "name": "Killenehy Fort",
+    "type": "site",
+    "lat": 53.20057,
+    "lng": -8.12574
+  },
+  {
+    "id": "arch-8872903936",
+    "name": "Ballylehane Castle",
+    "type": "fort",
+    "lat": 52.92194,
+    "lng": -7.05914
+  },
+  {
+    "id": "arch-8952506953",
+    "name": "Limagrough",
+    "type": "fort",
+    "lat": 52.25008,
+    "lng": -8.75479
+  },
+  {
+    "id": "arch-9018303153",
+    "name": "Promontory Fort",
+    "type": "fort",
+    "lat": 54.2692,
+    "lng": -7.87988
+  },
+  {
+    "id": "arch-9036604835",
+    "name": "Ossian's Grave",
+    "type": "megalith",
+    "lat": 55.08888,
+    "lng": -6.10136
+  },
+  {
+    "id": "arch-9045500191",
+    "name": "Boa Island Figure",
+    "type": "site",
+    "lat": 54.50611,
+    "lng": -7.86936
+  },
+  {
+    "id": "arch-9098885803",
+    "name": "Lisduff",
+    "type": "fort",
+    "lat": 53.1767,
+    "lng": -8.57132,
+    "heritage": true
+  },
+  {
+    "id": "arch-9098897233",
+    "name": "Liskeen",
+    "type": "fort",
+    "lat": 53.26521,
+    "lng": -8.1878,
+    "heritage": true
+  },
+  {
+    "id": "arch-9098897235",
+    "name": "Caltragh Fort",
+    "type": "fort",
+    "lat": 53.26491,
+    "lng": -8.179,
+    "heritage": true
+  },
+  {
+    "id": "arch-9098897237",
+    "name": "Lisnaconicaire",
+    "type": "fort",
+    "lat": 53.25908,
+    "lng": -8.20741,
+    "heritage": true
+  },
+  {
+    "id": "arch-9110402649",
+    "name": "Alphabet Stone",
+    "type": "megalith",
+    "lat": 52.18478,
+    "lng": -10.3362,
+    "heritage": true
+  },
+  {
+    "id": "arch-9202227931",
+    "name": "Kilclooney Court Tomb",
+    "type": "megalith",
+    "lat": 54.81756,
+    "lng": -8.44093
+  },
+  {
+    "id": "arch-9267914883",
+    "name": "Druid's Altar",
+    "type": "megalith",
+    "lat": 52.6229,
+    "lng": -6.98416
+  },
+  {
+    "id": "arch-9306596496",
+    "name": "Lough Gur Standing Stone",
+    "type": "megalith",
+    "lat": 52.5171,
+    "lng": -8.53961,
+    "wikidata": "Q116819925",
+    "heritage": true
+  },
+  {
+    "id": "arch-9338824870",
+    "name": "D\u00fan Ceann\u00faigh",
+    "type": "fort",
+    "lat": 51.84476,
+    "lng": -10.34739,
+    "heritage": true
+  },
+  {
+    "id": "arch-9343890071",
+    "name": "D\u00fan Geir",
+    "type": "fort",
+    "lat": 51.81608,
+    "lng": -10.33767
+  },
+  {
+    "id": "arch-9370024145",
+    "name": "Site of Kiltinan Village",
+    "type": "site",
+    "lat": 52.44064,
+    "lng": -7.65943,
+    "heritage": true
+  },
+  {
+    "id": "arch-9393062861",
+    "name": "Fulacht Fiadh",
+    "type": "site",
+    "lat": 51.83136,
+    "lng": -9.51107
+  },
+  {
+    "id": "arch-9439739891",
+    "name": "Tobar Fion\u00e1in",
+    "type": "site",
+    "lat": 51.84625,
+    "lng": -10.3383
+  },
+  {
+    "id": "arch-9467370805",
+    "name": "Garryduff Standing Stone",
+    "type": "standing_stone",
+    "lat": 52.39508,
+    "lng": -7.3152
+  },
+  {
+    "id": "arch-9493710648",
+    "name": "R\u00e1th",
+    "type": "fort",
+    "lat": 51.84149,
+    "lng": -10.32786
+  },
+  {
+    "id": "arch-9493806331",
+    "name": "\u00d3in/Souterrain",
+    "type": "site",
+    "lat": 51.79664,
+    "lng": -10.33827
+  },
+  {
+    "id": "arch-9494692531",
+    "name": "\u00d3in/ Souterrain",
+    "type": "site",
+    "lat": 51.79995,
+    "lng": -10.33607
+  },
+  {
+    "id": "arch-9498014912",
+    "name": "Ogham Stone",
+    "type": "megalith",
+    "lat": 51.84806,
+    "lng": -10.33211
+  },
+  {
+    "id": "arch-9500789917",
+    "name": "Cill Mhaolmhuirne",
+    "type": "site",
+    "lat": 51.84691,
+    "lng": -10.33221
+  },
+  {
+    "id": "arch-9500813571",
+    "name": "Tuama Dingchruthach (Coom Wedge Tomb.)",
+    "type": "site",
+    "lat": 51.8235,
+    "lng": -10.31355,
+    "wikidata": "Q1129722"
+  },
+  {
+    "id": "arch-9503263396",
+    "name": "standing stone",
+    "type": "megalith",
+    "lat": 54.19572,
+    "lng": -6.38306
+  },
+  {
+    "id": "arch-9505888380",
+    "name": "Cloghglass",
+    "type": "standing_stone",
+    "lat": 52.5195,
+    "lng": -8.07113,
+    "heritage": true
+  },
+  {
+    "id": "arch-9506007097",
+    "name": "Templemacduagh",
+    "type": "site",
+    "lat": 52.53041,
+    "lng": -8.09893,
+    "heritage": true
+  },
+  {
+    "id": "arch-9627469276",
+    "name": "Early Christian rath",
+    "type": "fort",
+    "lat": 54.8199,
+    "lng": -6.26735
+  },
+  {
+    "id": "arch-9647897795",
+    "name": "\u00d3in / Souterrain",
+    "type": "site",
+    "lat": 51.85368,
+    "lng": -10.33679
+  },
+  {
+    "id": "arch-9647897796",
+    "name": "Gall\u00e1in/ Standing Stones.",
+    "type": "site",
+    "lat": 51.8524,
+    "lng": -10.33593
+  },
+  {
+    "id": "arch-9647943042",
+    "name": "\u00d3in /Souterrain",
+    "type": "site",
+    "lat": 51.85244,
+    "lng": -10.3393
+  },
+  {
+    "id": "arch-9647951803",
+    "name": "Gall\u00e1n/Standing Stone.",
+    "type": "site",
+    "lat": 51.85423,
+    "lng": -10.33081
+  },
+  {
+    "id": "arch-9647981632",
+    "name": "\u00d3in/Souterrain",
+    "type": "site",
+    "lat": 51.84161,
+    "lng": -10.32789
+  },
+  {
+    "id": "arch-9648016954",
+    "name": "Cloch Oghaim/Ogham Stone.",
+    "type": "site",
+    "lat": 51.84122,
+    "lng": -10.29393
+  },
+  {
+    "id": "arch-9648030597",
+    "name": "\u00d3in / Souterrain",
+    "type": "site",
+    "lat": 51.83294,
+    "lng": -10.32304
+  },
+  {
+    "id": "arch-9648065945",
+    "name": "\u00d3in /Souterrain",
+    "type": "site",
+    "lat": 51.82961,
+    "lng": -10.3186
+  },
+  {
+    "id": "arch-9648078133",
+    "name": "\u00d3in/Souterrain",
+    "type": "site",
+    "lat": 51.82577,
+    "lng": -10.32036
+  },
+  {
+    "id": "arch-9648100596",
+    "name": "\u00d3in /Souterrain",
+    "type": "site",
+    "lat": 51.83542,
+    "lng": -10.3298
+  },
+  {
+    "id": "arch-9648157356",
+    "name": "Gall\u00e1n/ Standing Stone.",
+    "type": "site",
+    "lat": 51.82413,
+    "lng": -10.31986
+  },
+  {
+    "id": "arch-9649396438",
+    "name": "St. John's Well",
+    "type": "site",
+    "lat": 51.82119,
+    "lng": -8.40588
+  },
+  {
+    "id": "arch-9652379693",
+    "name": "Gall\u00e1in/ Standing Stones.",
+    "type": "site",
+    "lat": 51.79689,
+    "lng": -10.32581
+  },
+  {
+    "id": "arch-9656325345",
+    "name": "Gort Castle",
+    "type": "site",
+    "lat": 53.06708,
+    "lng": -8.8171
+  },
+  {
+    "id": "arch-9659439747",
+    "name": "Stookamore",
+    "type": "standing_stone",
+    "lat": 53.70531,
+    "lng": -9.89205
+  },
+  {
+    "id": "arch-9662528147",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 52.87215,
+    "lng": -8.78774
+  },
+  {
+    "id": "arch-9662528148",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 52.87172,
+    "lng": -8.79357
+  },
+  {
+    "id": "arch-9662528149",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 52.86986,
+    "lng": -8.80194
+  },
+  {
+    "id": "arch-9662528150",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 52.86771,
+    "lng": -8.79044
+  },
+  {
+    "id": "arch-9662528187",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 52.8582,
+    "lng": -8.79222
+  },
+  {
+    "id": "arch-9666529632",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 53.93524,
+    "lng": -7.77002,
+    "heritage": true
+  },
+  {
+    "id": "arch-9666529633",
+    "name": "Giant's Grave",
+    "type": "megalith",
+    "lat": 53.93016,
+    "lng": -7.76965
+  },
+  {
+    "id": "arch-9669924867",
+    "name": "Grainne's Stones",
+    "type": "standing_stone",
+    "lat": 52.71892,
+    "lng": -9.33438
+  },
+  {
+    "id": "arch-9670432431",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 55.02581,
+    "lng": -8.11182,
+    "heritage": true
+  },
+  {
+    "id": "arch-9698552490",
+    "name": "Pierce's Gate",
+    "type": "site",
+    "lat": 52.46675,
+    "lng": -7.69368
+  },
+  {
+    "id": "arch-9705023426",
+    "name": "Dermot & Grania's Bed",
+    "type": "megalith",
+    "lat": 52.76377,
+    "lng": -8.14516,
+    "heritage": true
+  },
+  {
+    "id": "arch-9724427660",
+    "name": "Delany's Stone",
+    "type": "standing_stone",
+    "lat": 52.89136,
+    "lng": -7.90274
+  },
+  {
+    "id": "arch-9727025547",
+    "name": "Dermot & Grania's Bed",
+    "type": "site",
+    "lat": 52.20962,
+    "lng": -10.00407,
+    "heritage": true
+  },
+  {
+    "id": "arch-9846663814",
+    "name": "Murphystown Castle",
+    "type": "site",
+    "lat": 53.26703,
+    "lng": -6.20871
+  },
+  {
+    "id": "arch-9934226157",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 55.47096,
+    "lng": -5.64925
+  },
+  {
+    "id": "arch-9935954243",
+    "name": "The Mount Russell Ogham Stone",
+    "type": "site",
+    "lat": 52.42466,
+    "lng": -8.19168
+  },
+  {
+    "id": "arch-9937223182",
+    "name": "Dermot & Grainne's Bed",
+    "type": "megalith",
+    "lat": 53.90881,
+    "lng": -7.9178,
+    "heritage": true
+  },
+  {
+    "id": "arch-10016206028",
+    "name": "Druid's Altar",
+    "type": "megalith",
+    "lat": 54.05957,
+    "lng": -7.84039
+  },
+  {
+    "id": "arch-10080527528",
+    "name": "Giant's Grave",
+    "type": "megalith",
+    "lat": 54.29213,
+    "lng": -7.9377
+  },
+  {
+    "id": "arch-10089197976",
+    "name": "The Deer Stone",
+    "type": "megalith",
+    "lat": 53.00947,
+    "lng": -6.32739
+  },
+  {
+    "id": "arch-10173191395",
+    "name": "Carrowmore 17",
+    "type": "dolmen",
+    "lat": 54.25013,
+    "lng": -8.51491,
+    "heritage": true
+  },
+  {
+    "id": "arch-10173191396",
+    "name": "Carrowmore 16",
+    "type": "dolmen",
+    "lat": 54.25077,
+    "lng": -8.5156,
+    "heritage": true
+  },
+  {
+    "id": "arch-10173191397",
+    "name": "Carrowmore 3",
+    "type": "site",
+    "lat": 54.25133,
+    "lng": -8.51958,
+    "wikipedia": "en:Carrowmore"
+  },
+  {
+    "id": "arch-10228565251",
+    "name": "Cloghmore",
+    "type": "megalith",
+    "lat": 53.92939,
+    "lng": -7.50369
+  },
+  {
+    "id": "arch-10239822580",
+    "name": "Carrickgollogan dolmen/wedge tomb",
+    "type": "megalith",
+    "lat": 53.21529,
+    "lng": -6.15489,
+    "wikidata": "Q106625051"
+  },
+  {
+    "id": "arch-10255234130",
+    "name": "Rath",
+    "type": "site",
+    "lat": 52.12405,
+    "lng": -10.41038
+  },
+  {
+    "id": "arch-10577048485",
+    "name": "rath",
+    "type": "site",
+    "lat": 54.30234,
+    "lng": -5.97172
+  },
+  {
+    "id": "arch-10587608508",
+    "name": "Glencullen Standing Stone",
+    "type": "megalith",
+    "lat": 53.21977,
+    "lng": -6.21739,
+    "wikidata": "Q25248221",
+    "wikipedia": "en:Glencullen Standing Stone",
+    "heritage": true
+  },
+  {
+    "id": "arch-10602420011",
+    "name": "Pluck Standing Stone",
+    "type": "megalith",
+    "lat": 54.93963,
+    "lng": -7.63621,
+    "wikidata": "Q28232431",
+    "wikipedia": "en:Pluck Standing Stone",
+    "heritage": true
+  },
+  {
+    "id": "arch-10633034312",
+    "name": "Shandon Park Mound",
+    "type": "fort",
+    "lat": 54.58424,
+    "lng": -5.85922
+  },
+  {
+    "id": "arch-10634665942",
+    "name": "Maughanasilly Stone Row",
+    "type": "megalith",
+    "lat": 51.7704,
+    "lng": -9.38678,
+    "wikidata": "Q48797064"
+  },
+  {
+    "id": "arch-10638555000",
+    "name": "Gallaunmore",
+    "type": "megalith",
+    "lat": 52.13925,
+    "lng": -10.22284,
+    "wikidata": "Q15051789",
+    "wikipedia": "en:Gallaunmore",
+    "heritage": true
+  },
+  {
+    "id": "arch-10673094171",
+    "name": "The Long Stone",
+    "type": "megalith",
+    "lat": 54.34286,
+    "lng": -5.62692
+  },
+  {
+    "id": "arch-10726337015",
+    "name": "Machrihanish Hillfort",
+    "type": "fort",
+    "lat": 55.42251,
+    "lng": -5.73914
+  },
+  {
+    "id": "arch-10730221360",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.27601,
+    "lng": -6.0494
+  },
+  {
+    "id": "arch-10731149922",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.27398,
+    "lng": -6.06292
+  },
+  {
+    "id": "arch-10735292789",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.32036,
+    "lng": -5.96602
+  },
+  {
+    "id": "arch-10756554354",
+    "name": "Cashel",
+    "type": "fort",
+    "lat": 54.24373,
+    "lng": -5.96575
+  },
+  {
+    "id": "arch-10797132383",
+    "name": "Finnis Souterrain",
+    "type": "fort",
+    "lat": 54.33035,
+    "lng": -6.04236,
+    "wikipedia": "Finnis souterrain"
+  },
+  {
+    "id": "arch-10807928538",
+    "name": "Drumnadrough Rath",
+    "type": "site",
+    "lat": 54.66109,
+    "lng": -5.93972
+  },
+  {
+    "id": "arch-10867493826",
+    "name": "Cloghagadaide",
+    "type": "megalith",
+    "lat": 54.20737,
+    "lng": -8.45917,
+    "wikidata": "Q118221103"
+  },
+  {
+    "id": "arch-10879199392",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.2379,
+    "lng": -5.86748
+  },
+  {
+    "id": "arch-10891406816",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.17637,
+    "lng": -6.23133
+  },
+  {
+    "id": "arch-10896807596",
+    "name": "Turlough Castle",
+    "type": "fort",
+    "lat": 53.09068,
+    "lng": -9.06967
+  },
+  {
+    "id": "arch-10925977202",
+    "name": "cashel",
+    "type": "fort",
+    "lat": 54.31038,
+    "lng": -6.09571
+  },
+  {
+    "id": "arch-10942314925",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 55.29214,
+    "lng": -6.19074
+  },
+  {
+    "id": "arch-10968326517",
+    "name": "souterrain",
+    "type": "fort",
+    "lat": 54.23332,
+    "lng": -5.94385
+  },
+  {
+    "id": "arch-10990397139",
+    "name": "Longstone",
+    "type": "megalith",
+    "lat": 54.1105,
+    "lng": -5.93044
+  },
+  {
+    "id": "arch-10990397140",
+    "name": "Barnmeen Standing Stone",
+    "type": "site",
+    "lat": 54.23264,
+    "lng": -6.20299
+  },
+  {
+    "id": "arch-11004305615",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.29027,
+    "lng": -5.72894
+  },
+  {
+    "id": "arch-11007780841",
+    "name": "The Long Stone",
+    "type": "megalith",
+    "lat": 54.58589,
+    "lng": -5.79506
+  },
+  {
+    "id": "arch-11032276913",
+    "name": "standing stone",
+    "type": "megalith",
+    "lat": 54.31082,
+    "lng": -6.0713
+  },
+  {
+    "id": "arch-11032276914",
+    "name": "standing stone",
+    "type": "megalith",
+    "lat": 54.31049,
+    "lng": -6.0712
+  },
+  {
+    "id": "arch-11032954906",
+    "name": "rath",
+    "type": "fort",
+    "lat": 54.30536,
+    "lng": -6.06361
+  },
+  {
+    "id": "arch-11033497806",
+    "name": "Teampull an Aifrinn",
+    "type": "site",
+    "lat": 54.29884,
+    "lng": -7.84481
+  },
+  {
+    "id": "arch-11037191123",
+    "name": "Lugaree",
+    "type": "site",
+    "lat": 53.68568,
+    "lng": -6.60648,
+    "heritage": true
+  },
+  {
+    "id": "arch-11051601049",
+    "name": "Megalithic Tomb",
+    "type": "site",
+    "lat": 53.99706,
+    "lng": -10.05662
+  },
+  {
+    "id": "arch-11072050428",
+    "name": "Gloonpatrick",
+    "type": "fort",
+    "lat": 52.61943,
+    "lng": -7.20578
+  },
+  {
+    "id": "arch-11143148508",
+    "name": "St. Fiachra's Church",
+    "type": "site",
+    "lat": 52.62188,
+    "lng": -7.19873
+  },
+  {
+    "id": "arch-11153181734",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.74508,
+    "lng": -5.93953
+  },
+  {
+    "id": "arch-11153196807",
+    "name": "Wileys Fort",
+    "type": "site",
+    "lat": 54.74566,
+    "lng": -5.95411
+  },
+  {
+    "id": "arch-11154479497",
+    "name": "Motte",
+    "type": "site",
+    "lat": 54.84474,
+    "lng": -5.88737
+  },
+  {
+    "id": "arch-11159190414",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.80608,
+    "lng": -5.93475
+  },
+  {
+    "id": "arch-11160409382",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.80259,
+    "lng": -5.94286
+  },
+  {
+    "id": "arch-11163585423",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.81177,
+    "lng": -6.01944
+  },
+  {
+    "id": "arch-11165158573",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.83036,
+    "lng": -6.01671
+  },
+  {
+    "id": "arch-11186086993",
+    "name": "Giants Grave",
+    "type": "dolmen",
+    "lat": 53.8658,
+    "lng": -6.93472,
+    "heritage": true
+  },
+  {
+    "id": "arch-11198798669",
+    "name": "Rocking Stone",
+    "type": "site",
+    "lat": 54.2599,
+    "lng": -7.88137
+  },
+  {
+    "id": "arch-11199997082",
+    "name": "Druidical Altar",
+    "type": "site",
+    "lat": 54.26387,
+    "lng": -7.87381
+  },
+  {
+    "id": "arch-11202277111",
+    "name": "Giants Grave",
+    "type": "site",
+    "lat": 53.92558,
+    "lng": -6.83234
+  },
+  {
+    "id": "arch-11203854601",
+    "name": "Giant's Grave",
+    "type": "megalith",
+    "lat": 53.97033,
+    "lng": -6.98491,
+    "wikidata": "Q51075879"
+  },
+  {
+    "id": "arch-11236725467",
+    "name": "Inauguration Site of the Clannaboy O'Neills",
+    "type": "site",
+    "lat": 54.56668,
+    "lng": -5.86814
+  },
+  {
+    "id": "arch-11278085550",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.82695,
+    "lng": -6.81049
+  },
+  {
+    "id": "arch-11348315763",
+    "name": "Rath",
+    "type": "site",
+    "lat": 55.13124,
+    "lng": -6.92263
+  },
+  {
+    "id": "arch-11369671228",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.69252,
+    "lng": -6.15533
+  },
+  {
+    "id": "arch-11373799812",
+    "name": "Ballyaghagan Fort",
+    "type": "fort",
+    "lat": 54.64535,
+    "lng": -5.96882
+  },
+  {
+    "id": "arch-11377860383",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.67946,
+    "lng": -6.13501
+  },
+  {
+    "id": "arch-11378018431",
+    "name": "rATH",
+    "type": "site",
+    "lat": 54.67642,
+    "lng": -6.11923
+  },
+  {
+    "id": "arch-11378018528",
+    "name": "rATH",
+    "type": "site",
+    "lat": 54.67705,
+    "lng": -6.11167
+  },
+  {
+    "id": "arch-11385596287",
+    "name": "Shanganny Castle",
+    "type": "fort",
+    "lat": 52.75689,
+    "lng": -7.28317
+  },
+  {
+    "id": "arch-11385708533",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.72633,
+    "lng": -6.57726
+  },
+  {
+    "id": "arch-11385709860",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.72759,
+    "lng": -6.58175
+  },
+  {
+    "id": "arch-11387545312",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.32295,
+    "lng": -6.64547
+  },
+  {
+    "id": "arch-11387545527",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.31745,
+    "lng": -6.66731
+  },
+  {
+    "id": "arch-11387545570",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.31523,
+    "lng": -6.67754
+  },
+  {
+    "id": "arch-11387545571",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.31223,
+    "lng": -6.6724
+  },
+  {
+    "id": "arch-11387545782",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.30892,
+    "lng": -6.65348
+  },
+  {
+    "id": "arch-11387629845",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.30361,
+    "lng": -6.65917
+  },
+  {
+    "id": "arch-11392526766",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.69085,
+    "lng": -6.66162
+  },
+  {
+    "id": "arch-11392825766",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.69021,
+    "lng": -6.65103
+  },
+  {
+    "id": "arch-11396078542",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.68383,
+    "lng": -6.62371
+  },
+  {
+    "id": "arch-11396546827",
+    "name": "Cromlech",
+    "type": "megalith",
+    "lat": 53.87124,
+    "lng": -7.30306,
+    "wikidata": "Q15793642"
+  },
+  {
+    "id": "arch-11396705313",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.66986,
+    "lng": -6.71657
+  },
+  {
+    "id": "arch-11396908208",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.63144,
+    "lng": -6.66349
+  },
+  {
+    "id": "arch-11400065878",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.74985,
+    "lng": -6.36927
+  },
+  {
+    "id": "arch-11403321535",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.86963,
+    "lng": -6.47919
+  },
+  {
+    "id": "arch-11427061272",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.60251,
+    "lng": -6.73791
+  },
+  {
+    "id": "arch-11428874090",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.56942,
+    "lng": -6.65016
+  },
+  {
+    "id": "arch-11428874286",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.56439,
+    "lng": -6.64027
+  },
+  {
+    "id": "arch-11428874295",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.56482,
+    "lng": -6.64483
+  },
+  {
+    "id": "arch-11434838081",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.54234,
+    "lng": -6.65487
+  },
+  {
+    "id": "arch-11439938704",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.55916,
+    "lng": -6.73752
+  },
+  {
+    "id": "arch-11443404879",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.58669,
+    "lng": -6.71838
+  },
+  {
+    "id": "arch-11458330765",
+    "name": "Ivy Church",
+    "type": "site",
+    "lat": 53.0973,
+    "lng": -7.30247,
+    "heritage": true
+  },
+  {
+    "id": "arch-11477244978",
+    "name": "King's Grave",
+    "type": "megalith",
+    "lat": 55.06102,
+    "lng": -7.49934
+  },
+  {
+    "id": "arch-11483275719",
+    "name": "Labbyfirmore",
+    "type": "site",
+    "lat": 54.05759,
+    "lng": -6.78248,
+    "heritage": true
+  },
+  {
+    "id": "arch-11500733594",
+    "name": "The McMahon Stone",
+    "type": "megalith",
+    "lat": 54.20466,
+    "lng": -7.00278
+  },
+  {
+    "id": "arch-11549689761",
+    "name": "Pollshone Fort",
+    "type": "fort",
+    "lat": 52.61707,
+    "lng": -6.22242,
+    "wikidata": "Q31083340"
+  },
+  {
+    "id": "arch-11573080709",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.47118,
+    "lng": -6.56644
+  },
+  {
+    "id": "arch-11618621040",
+    "name": "Tobermogue",
+    "type": "site",
+    "lat": 54.04475,
+    "lng": -7.47847
+  },
+  {
+    "id": "arch-11620324558",
+    "name": "Cloghard",
+    "type": "site",
+    "lat": 54.09156,
+    "lng": -7.28076
+  },
+  {
+    "id": "arch-11654700938",
+    "name": "Cloghnamnafinna",
+    "type": "megalith",
+    "lat": 51.84388,
+    "lng": -8.86542
+  },
+  {
+    "id": "arch-11688253088",
+    "name": "Bouladuff Hill",
+    "type": "site",
+    "lat": 52.71854,
+    "lng": -7.90493
+  },
+  {
+    "id": "arch-11688505041",
+    "name": "Boney Hill",
+    "type": "site",
+    "lat": 52.77076,
+    "lng": -7.87847
+  },
+  {
+    "id": "arch-11733814122",
+    "name": "Ballaghanea Portal Tomb",
+    "type": "site",
+    "lat": 53.82487,
+    "lng": -7.05249,
+    "wikidata": "Q29981808"
+  },
+  {
+    "id": "arch-11738674352",
+    "name": "Cloch Lia cromleac",
+    "type": "megalith",
+    "lat": 52.36856,
+    "lng": -7.38995
+  },
+  {
+    "id": "arch-11746510877",
+    "name": "Giants Grave",
+    "type": "site",
+    "lat": 54.04316,
+    "lng": -7.38208
+  },
+  {
+    "id": "arch-11749260490",
+    "name": "Moyer Cairn",
+    "type": "tumulus",
+    "lat": 53.90834,
+    "lng": -6.90238
+  },
+  {
+    "id": "arch-11749361088",
+    "name": "Corraweelis Cairn",
+    "type": "tumulus",
+    "lat": 53.90303,
+    "lng": -6.9066
+  },
+  {
+    "id": "arch-11749361097",
+    "name": "Bracklin Cairn",
+    "type": "tumulus",
+    "lat": 53.91463,
+    "lng": -6.89825
+  },
+  {
+    "id": "arch-11765904661",
+    "name": "Giants Grave",
+    "type": "site",
+    "lat": 54.02378,
+    "lng": -7.10396
+  },
+  {
+    "id": "arch-11765904664",
+    "name": "Giants Grave",
+    "type": "site",
+    "lat": 54.02957,
+    "lng": -7.13171
+  },
+  {
+    "id": "arch-11765904741",
+    "name": "Site of Greaghadossan Cross",
+    "type": "site",
+    "lat": 53.90313,
+    "lng": -7.07454
+  },
+  {
+    "id": "arch-11770984644",
+    "name": "King's Grave",
+    "type": "site",
+    "lat": 53.98799,
+    "lng": -7.64568
+  },
+  {
+    "id": "arch-11819569910",
+    "name": "Cnoc\u00e1n an Chrainn",
+    "type": "site",
+    "lat": 53.71269,
+    "lng": -6.77467
+  },
+  {
+    "id": "arch-11847820813",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.06622,
+    "lng": -7.34135
+  },
+  {
+    "id": "arch-11870481427",
+    "name": "Ice House",
+    "type": "site",
+    "lat": 54.01252,
+    "lng": -7.37219
+  },
+  {
+    "id": "arch-11881130041",
+    "name": "Kilnasggart inscribed stone",
+    "type": "megalith",
+    "lat": 54.07227,
+    "lng": -6.3788
+  },
+  {
+    "id": "arch-11884172373",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.49371,
+    "lng": -5.45936
+  },
+  {
+    "id": "arch-11945398264",
+    "name": "Giant's Grave",
+    "type": "site",
+    "lat": 54.23288,
+    "lng": -7.74581
+  },
+  {
+    "id": "arch-11945398267",
+    "name": "Carn",
+    "type": "site",
+    "lat": 54.22831,
+    "lng": -7.73602
+  },
+  {
+    "id": "arch-11945398268",
+    "name": "Giant's Grave",
+    "type": "site",
+    "lat": 54.22861,
+    "lng": -7.71726
+  },
+  {
+    "id": "arch-11945476222",
+    "name": "Giant's Grave",
+    "type": "site",
+    "lat": 54.21173,
+    "lng": -7.73573
+  },
+  {
+    "id": "arch-11960078279",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.80151,
+    "lng": -6.61014
+  },
+  {
+    "id": "arch-11971600043",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.81518,
+    "lng": -6.83084
+  },
+  {
+    "id": "arch-11977971506",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.80334,
+    "lng": -6.74636
+  },
+  {
+    "id": "arch-11977971954",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.7921,
+    "lng": -6.72869
+  },
+  {
+    "id": "arch-11978141028",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.8125,
+    "lng": -6.73676
+  },
+  {
+    "id": "arch-11980240687",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.79557,
+    "lng": -6.827
+  },
+  {
+    "id": "arch-11990797359",
+    "name": "St Columcille's Well",
+    "type": "site",
+    "lat": 54.35684,
+    "lng": -8.64967
+  },
+  {
+    "id": "arch-11997654821",
+    "name": "Lady's Well",
+    "type": "site",
+    "lat": 53.63805,
+    "lng": -8.19744
+  },
+  {
+    "id": "arch-11997654822",
+    "name": "Lord's Well",
+    "type": "site",
+    "lat": 53.63722,
+    "lng": -8.19785
+  },
+  {
+    "id": "arch-12015195480",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.90526,
+    "lng": -5.96815
+  },
+  {
+    "id": "arch-12015310081",
+    "name": "Motte",
+    "type": "site",
+    "lat": 54.93833,
+    "lng": -5.97281
+  },
+  {
+    "id": "arch-12017231675",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.93831,
+    "lng": -6.07923
+  },
+  {
+    "id": "arch-12039729205",
+    "name": "Chambered Grave",
+    "type": "site",
+    "lat": 54.85068,
+    "lng": -6.22521
+  },
+  {
+    "id": "arch-12040080918",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.85066,
+    "lng": -6.18766
+  },
+  {
+    "id": "arch-12043340979",
+    "name": "Souterrain Rath",
+    "type": "site",
+    "lat": 54.82223,
+    "lng": -6.2491
+  },
+  {
+    "id": "arch-12043503102",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.82839,
+    "lng": -6.23621
+  },
+  {
+    "id": "arch-12043503508",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.84004,
+    "lng": -6.24087
+  },
+  {
+    "id": "arch-12043974998",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.80449,
+    "lng": -6.18993
+  },
+  {
+    "id": "arch-12044543467",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.77365,
+    "lng": -6.10015
+  },
+  {
+    "id": "arch-12046715655",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.80259,
+    "lng": -6.20652
+  },
+  {
+    "id": "arch-12070679954",
+    "name": "Ravensdale Stone Circle",
+    "type": "megalith",
+    "lat": 54.07803,
+    "lng": -6.34481,
+    "heritage": true
+  },
+  {
+    "id": "arch-12095153117",
+    "name": "Rarh",
+    "type": "site",
+    "lat": 54.72575,
+    "lng": -6.32245
+  },
+  {
+    "id": "arch-12095307079",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.72841,
+    "lng": -6.31239
+  },
+  {
+    "id": "arch-12095777797",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.73938,
+    "lng": -6.32814
+  },
+  {
+    "id": "arch-12096670959",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.7185,
+    "lng": -6.33846
+  },
+  {
+    "id": "arch-12104387648",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.72235,
+    "lng": -6.3715
+  },
+  {
+    "id": "arch-12104478078",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.7247,
+    "lng": -6.37784
+  },
+  {
+    "id": "arch-12105154212",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.7343,
+    "lng": -6.39773
+  },
+  {
+    "id": "arch-12115479433",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.72449,
+    "lng": -6.41767
+  },
+  {
+    "id": "arch-12115671690",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.72442,
+    "lng": -6.42758
+  },
+  {
+    "id": "arch-12115712055",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.71843,
+    "lng": -6.41424
+  },
+  {
+    "id": "arch-12148487412",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.78995,
+    "lng": -6.42663
+  },
+  {
+    "id": "arch-12155130915",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.75285,
+    "lng": -6.24645
+  },
+  {
+    "id": "arch-12159488697",
+    "name": "The Mount",
+    "type": "fort",
+    "lat": 54.74367,
+    "lng": -6.31709
+  },
+  {
+    "id": "arch-12159515590",
+    "name": "Rath",
+    "type": "fort",
+    "lat": 54.72493,
+    "lng": -6.29356
+  },
+  {
+    "id": "arch-12160028309",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.72956,
+    "lng": -6.27799
+  },
+  {
+    "id": "arch-12160028310",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.73234,
+    "lng": -6.2754
+  },
+  {
+    "id": "arch-12165885811",
+    "name": "Lackabane Standing Stone",
+    "type": "standing_stone",
+    "lat": 52.06635,
+    "lng": -9.04705
+  },
+  {
+    "id": "arch-12166442463",
+    "name": "rath",
+    "type": "site",
+    "lat": 54.05381,
+    "lng": -6.02226
+  },
+  {
+    "id": "arch-12173070219",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.8027,
+    "lng": -6.43415
+  },
+  {
+    "id": "arch-12178731062",
+    "name": "Ringfort",
+    "type": "site",
+    "lat": 53.07917,
+    "lng": -6.06578
+  },
+  {
+    "id": "arch-12193196541",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.7523,
+    "lng": -6.2246
+  },
+  {
+    "id": "arch-12204737696",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.75917,
+    "lng": -6.16863
+  },
+  {
+    "id": "arch-12204776102",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.75445,
+    "lng": -6.13676
+  },
+  {
+    "id": "arch-12205438486",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.75149,
+    "lng": -6.18328
+  },
+  {
+    "id": "arch-12205438589",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.74788,
+    "lng": -6.17482
+  },
+  {
+    "id": "arch-12213528575",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.75169,
+    "lng": -6.25821
+  },
+  {
+    "id": "arch-12223044037",
+    "name": "Megalithic tomb",
+    "type": "megalith",
+    "lat": 53.77612,
+    "lng": -8.99459,
+    "wikidata": "Q51075898",
+    "heritage": true
+  },
+  {
+    "id": "arch-12230354397",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.76973,
+    "lng": -6.24221
+  },
+  {
+    "id": "arch-12230358320",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.76928,
+    "lng": -6.21923
+  },
+  {
+    "id": "arch-12239527475",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.7757,
+    "lng": -6.20262
+  },
+  {
+    "id": "arch-12239527986",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.78713,
+    "lng": -6.19344
+  },
+  {
+    "id": "arch-12246375236",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.77829,
+    "lng": -6.2527
+  },
+  {
+    "id": "arch-12248155518",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.7812,
+    "lng": -6.23869
+  },
+  {
+    "id": "arch-12248277122",
+    "name": "Rath",
+    "type": "site",
+    "lat": 54.78083,
+    "lng": -6.2336
+  },
+  {
+    "id": "arch-12248285340",
+    "name": "Giant's Grave",
+    "type": "dolmen",
+    "lat": 54.09045,
+    "lng": -8.31279,
+    "wikidata": "Q1045004",
+    "heritage": true
+  },
+  {
+    "id": "arch-12273187598",
+    "name": "Grainne's Grave",
+    "type": "site",
+    "lat": 54.16947,
+    "lng": -7.65248
+  },
+  {
+    "id": "arch-12281733218",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 54.23877,
+    "lng": -7.73977
+  },
+  {
+    "id": "arch-12281733339",
+    "name": "Giant's Grave",
+    "type": "site",
+    "lat": 54.24981,
+    "lng": -7.78063
+  },
+  {
+    "id": "arch-12282855648",
+    "name": "White Carn Ancient Burying Place",
+    "type": "site",
+    "lat": 54.24463,
+    "lng": -7.89547
+  },
+  {
+    "id": "arch-12320350277",
+    "name": "Cloghtogle",
+    "type": "megalith",
+    "lat": 55.28969,
+    "lng": -7.32134
+  },
+  {
+    "id": "arch-12327398583",
+    "name": "Old Ship",
+    "type": "site",
+    "lat": 54.34515,
+    "lng": -5.70007
+  },
+  {
+    "id": "arch-12349425084",
+    "name": "The Long Stone",
+    "type": "megalith",
+    "lat": 53.00663,
+    "lng": -6.8494,
+    "wikidata": "Q17502666",
+    "heritage": true
+  },
+  {
+    "id": "arch-12355322101",
+    "name": "Castle Lug",
+    "type": "site",
+    "lat": 54.6888,
+    "lng": -5.86998
+  },
+  {
+    "id": "arch-12400595559",
+    "name": "St Mullin's Oratory",
+    "type": "site",
+    "lat": 52.49932,
+    "lng": -6.91248,
+    "heritage": true
+  },
+  {
+    "id": "arch-12479387565",
+    "name": "Calliagh Virra's House",
+    "type": "megalith",
+    "lat": 53.78667,
+    "lng": -6.40807
+  },
+  {
+    "id": "arch-12486900852",
+    "name": "Standing Stone",
+    "type": "site",
+    "lat": 54.18869,
+    "lng": -7.64813
+  },
+  {
+    "id": "arch-12489302294",
+    "name": "Aghade holed stone",
+    "type": "megalith",
+    "lat": 52.77021,
+    "lng": -6.74677,
+    "wikidata": "Q15108825"
+  },
+  {
+    "id": "arch-12493815673",
+    "name": "Cloghabrona Druids Altar",
+    "type": "dolmen",
+    "lat": 52.64367,
+    "lng": -6.96403,
+    "wikidata": "Q29981807"
+  },
+  {
+    "id": "arch-12554857892",
+    "name": "Castle Loughry",
+    "type": "fort",
+    "lat": 52.50133,
+    "lng": -8.30296
+  },
+  {
+    "id": "arch-12563975389",
+    "name": "Sweat house",
+    "type": "site",
+    "lat": 54.2407,
+    "lng": -7.96804
+  },
+  {
+    "id": "arch-12593729947",
+    "name": "Crehelp standing stone",
+    "type": "megalith",
+    "lat": 53.07208,
+    "lng": -6.62972,
+    "wikidata": "Q20170761"
+  },
+  {
+    "id": "arch-12606998810",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 54.30176,
+    "lng": -7.8731
+  },
+  {
+    "id": "arch-12606998811",
+    "name": "Carn",
+    "type": "megalith",
+    "lat": 54.30088,
+    "lng": -7.87153
+  },
+  {
+    "id": "arch-12606998813",
+    "name": "Bullaun Stone",
+    "type": "site",
+    "lat": 54.29795,
+    "lng": -7.84629
+  },
+  {
+    "id": "arch-12629286088",
+    "name": "Templeboy Church (site of)",
+    "type": "site",
+    "lat": 52.59535,
+    "lng": -6.97632
+  },
+  {
+    "id": "arch-12630332564",
+    "name": "Ladyrath",
+    "type": "fort",
+    "lat": 53.75668,
+    "lng": -6.67757
+  },
+  {
+    "id": "arch-12663190826",
+    "name": "Ice House",
+    "type": "site",
+    "lat": 53.91853,
+    "lng": -6.80022
+  },
+  {
+    "id": "arch-12691425501",
+    "name": "Ruined church",
+    "type": "site",
+    "lat": 53.20926,
+    "lng": -8.85722
+  },
+  {
+    "id": "arch-12694230901",
+    "name": "Passage tomb",
+    "type": "site",
+    "lat": 53.11625,
+    "lng": -9.0219
+  },
+  {
+    "id": "arch-12757475255",
+    "name": "Motte",
+    "type": "site",
+    "lat": 54.55538,
+    "lng": -5.58399
+  },
+  {
+    "id": "arch-12793468865",
+    "name": "Alice McClory's Cottage",
+    "type": "site",
+    "lat": 54.2769,
+    "lng": -6.22365
+  },
+  {
+    "id": "arch-12817284012",
+    "name": "The Black Fort Rath",
+    "type": "site",
+    "lat": 54.67714,
+    "lng": -6.84711
+  },
+  {
+    "id": "arch-12852151649",
+    "name": "Crannog",
+    "type": "crannog",
+    "lat": 55.44002,
+    "lng": -5.67256
+  },
+  {
+    "id": "arch-12852161730",
+    "name": "Crannog",
+    "type": "crannog",
+    "lat": 55.45197,
+    "lng": -5.6907
+  },
+  {
+    "id": "arch-12857877581",
+    "name": "Turas Ghleann Cholm Cille",
+    "type": "site",
+    "lat": 54.71254,
+    "lng": -8.7195
+  },
+  {
+    "id": "arch-12871079554",
+    "name": "Glencolumbkille Turas",
+    "type": "site",
+    "lat": 54.71131,
+    "lng": -8.71125
+  },
+  {
+    "id": "arch-12871079559",
+    "name": "Glencolumbkille Turas",
+    "type": "site",
+    "lat": 54.71123,
+    "lng": -8.71168
+  },
+  {
+    "id": "arch-12871079586",
+    "name": "Glencolumbkille Turas",
+    "type": "site",
+    "lat": 54.70978,
+    "lng": -8.71858
+  },
+  {
+    "id": "arch-12879271025",
+    "name": "Ballyboodan Ogham Stone",
+    "type": "site",
+    "lat": 52.47007,
+    "lng": -7.22264
+  },
+  {
+    "id": "arch-12908938480",
+    "name": "Lephenstrath, dun site",
+    "type": "fort",
+    "lat": 55.31386,
+    "lng": -5.69054
+  },
+  {
+    "id": "arch-12908967005",
+    "name": "High Keil, dun site",
+    "type": "fort",
+    "lat": 55.31141,
+    "lng": -5.65912
+  },
+  {
+    "id": "arch-12909735197",
+    "name": "D\u00f9n Glas, dun site",
+    "type": "fort",
+    "lat": 55.3267,
+    "lng": -5.61904
+  },
+  {
+    "id": "arch-12909909873",
+    "name": "The Bastard, dun site",
+    "type": "fort",
+    "lat": 55.35262,
+    "lng": -5.53323
+  },
+  {
+    "id": "arch-12910660121",
+    "name": "Trench Knowe, dun site",
+    "type": "fort",
+    "lat": 55.47261,
+    "lng": -5.57791
+  },
+  {
+    "id": "arch-12912121685",
+    "name": "Saint Cillan's Fort",
+    "type": "fort",
+    "lat": 54.21816,
+    "lng": -5.90377
+  },
+  {
+    "id": "arch-13022757484",
+    "name": "Site of church",
+    "type": "site",
+    "lat": 52.84015,
+    "lng": -6.16009
+  },
+  {
+    "id": "arch-13076097184",
+    "name": "Kilfeaghan Dolmen",
+    "type": "megalith",
+    "lat": 54.07274,
+    "lng": -6.11848
+  },
+  {
+    "id": "arch-13076435478",
+    "name": "McCartan's Castle",
+    "type": "site",
+    "lat": 54.36211,
+    "lng": -5.89297
+  },
+  {
+    "id": "arch-13081908282",
+    "name": "The Harp Stone",
+    "type": "standing_stone",
+    "lat": 52.22488,
+    "lng": -7.21074
+  },
+  {
+    "id": "arch-13081979853",
+    "name": "Ballymoat Standing Stone",
+    "type": "standing_stone",
+    "lat": 52.19224,
+    "lng": -7.22226
+  },
+  {
+    "id": "arch-13093045314",
+    "name": "Ballydonegan Sweathouse",
+    "type": "site",
+    "lat": 54.86486,
+    "lng": -7.02345
+  },
+  {
+    "id": "arch-13103512955",
+    "name": "Fureys Pier",
+    "type": "site",
+    "lat": 51.6526,
+    "lng": -9.86115
+  },
+  {
+    "id": "arch-13103512956",
+    "name": "Bunker",
+    "type": "site",
+    "lat": 51.65301,
+    "lng": -9.86155
+  },
+  {
+    "id": "arch-13105289927",
+    "name": "Bohatch Dolmen",
+    "type": "dolmen",
+    "lat": 52.96564,
+    "lng": -8.48072,
+    "heritage": true
+  },
+  {
+    "id": "arch-13138191004",
+    "name": "Site of Fardarraghnagranshy's Castle",
+    "type": "site",
+    "lat": 52.82037,
+    "lng": -6.79448
+  },
+  {
+    "id": "arch-13138213050",
+    "name": "Site of Gilbertstown Church",
+    "type": "site",
+    "lat": 52.76973,
+    "lng": -6.82172
+  },
+  {
+    "id": "arch-13138213053",
+    "name": "Ballynunnery Catle",
+    "type": "site",
+    "lat": 52.77243,
+    "lng": -6.83079
+  },
+  {
+    "id": "arch-13138213054",
+    "name": "Site of Castle",
+    "type": "site",
+    "lat": 52.78276,
+    "lng": -6.82682
+  },
+  {
+    "id": "arch-13138213070",
+    "name": "Site of Round Tower",
+    "type": "site",
+    "lat": 52.79223,
+    "lng": -6.83249
+  },
+  {
+    "id": "arch-13138223600",
+    "name": "Site of Ballinree Castle",
+    "type": "site",
+    "lat": 52.64591,
+    "lng": -6.85905
+  },
+  {
+    "id": "arch-13138243676",
+    "name": "Site of Church",
+    "type": "site",
+    "lat": 52.64818,
+    "lng": -6.85341
+  },
+  {
+    "id": "arch-13138260766",
+    "name": "Kyle Church",
+    "type": "site",
+    "lat": 52.57843,
+    "lng": -6.86892
+  },
+  {
+    "id": "arch-13144834606",
+    "name": "Sweat House",
+    "type": "site",
+    "lat": 54.20945,
+    "lng": -7.88811
+  },
+  {
+    "id": "arch-13163243272",
+    "name": "Site of Kilcroan Church",
+    "type": "site",
+    "lat": 52.81376,
+    "lng": -6.58598
+  },
+  {
+    "id": "arch-13164058807",
+    "name": "Site of Acaun Monastery",
+    "type": "site",
+    "lat": 52.84745,
+    "lng": -6.66398
+  },
+  {
+    "id": "arch-13164058891",
+    "name": "Abbey",
+    "type": "site",
+    "lat": 52.85013,
+    "lng": -6.65203
+  },
+  {
+    "id": "arch-13164135414",
+    "name": "Gallaun",
+    "type": "site",
+    "lat": 52.86246,
+    "lng": -6.64658
+  },
+  {
+    "id": "arch-13192239972",
+    "name": "Site of Robertstown Castle",
+    "type": "site",
+    "lat": 52.74355,
+    "lng": -7.88268
+  },
+  {
+    "id": "arch-13196426656",
+    "name": "Standing Stone",
+    "type": "megalith",
+    "lat": 53.74404,
+    "lng": -6.86089
+  },
+  {
+    "id": "arch-13241106233",
+    "name": "Derrynane Caiseal Ringfort",
+    "type": "site",
+    "lat": 51.76206,
+    "lng": -10.13421
+  },
+  {
+    "id": "arch-13319714279",
+    "name": "Carrigcreender",
+    "type": "megalith",
+    "lat": 52.16366,
+    "lng": -10.06303
+  },
+  {
+    "id": "arch-13322971845",
+    "name": "Cloghnaerusha",
+    "type": "megalith",
+    "lat": 52.22883,
+    "lng": -9.8779
+  },
+  {
+    "id": "arch-13337317888",
+    "name": "Sweat House",
+    "type": "site",
+    "lat": 54.19754,
+    "lng": -7.99627
+  }
+]

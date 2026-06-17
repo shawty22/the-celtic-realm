@@ -23,25 +23,35 @@
               <span class="toggle-sub">The God-Age</span>
             </span>
           </button>
-          <button class="layer-toggle" data-layer="ulster" aria-pressed="false">
+          <button class="cycle-info-btn" data-cycle="mythological" aria-label="About the Mythological Cycle" title="About this cycle">ℹ</button>
+          <button class="layer-toggle is-active" data-layer="ulster" aria-pressed="true">
             <span class="toggle-pip"></span>
             <span class="toggle-names">
               <span class="toggle-label">Ulster Cycle</span>
               <span class="toggle-sub">Age of Heroes</span>
             </span>
           </button>
-          <button class="layer-toggle" data-layer="fenian" aria-pressed="false">
+          <button class="cycle-info-btn" data-cycle="ulster" aria-label="About the Ulster Cycle" title="About this cycle">ℹ</button>
+          <button class="layer-toggle is-active" data-layer="fenian" aria-pressed="true">
             <span class="toggle-pip"></span>
             <span class="toggle-names">
               <span class="toggle-label">Fenian Cycle</span>
               <span class="toggle-sub">The Fianna</span>
             </span>
           </button>
+          <button class="cycle-info-btn" data-cycle="fenian" aria-label="About the Fenian Cycle" title="About this cycle">ℹ</button>
           <button class="layer-toggle tain-toggle" id="tain-toggle" data-layer="tain" aria-pressed="false">
             <span class="toggle-pip tain-pip"></span>
             <span class="toggle-names">
               <span class="toggle-label">Táin Route</span>
               <span class="toggle-sub">Interpretive</span>
+            </span>
+          </button>
+          <button class="layer-toggle arch-toggle" id="arch-toggle" aria-pressed="false">
+            <span class="toggle-pip arch-pip"></span>
+            <span class="toggle-names">
+              <span class="toggle-label">Archaeology</span>
+              <span class="toggle-sub">785 confirmed sites</span>
             </span>
           </button>
         </nav>
@@ -88,6 +98,21 @@
         <strong>LOW</strong> = mythological placement only
       </div>
 
+
+      <!-- ═══ Cycle info modal ══════════════════════════════════════════════ -->
+      <div id="cycle-modal" aria-hidden="true" role="dialog">
+        <div class="cycle-modal-backdrop"></div>
+        <div class="cycle-modal-card">
+          <button class="cycle-modal-close" aria-label="Close">✕</button>
+          <div id="cycle-modal-content"></div>
+        </div>
+      </div>
+
+      <!-- ═══ Archaeology panel ══════════════════════════════════════════════ -->
+      <aside id="arch-panel" aria-label="Archaeology site detail" aria-hidden="true">
+        <button id="arch-panel-close" aria-label="Close">✕</button>
+        <div id="arch-panel-content"></div>
+      </aside>
 
       <!-- ═══ 3D Flythrough overlay ════════════════════════════════════════ -->
       <div id="flythrough-overlay" aria-hidden="true">

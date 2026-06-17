@@ -2,9 +2,9 @@ import L from 'leaflet'
 import { placeMarker } from './markers.js'
 
 const state = {
-  mythological: { active: true,  group: null },
-  ulster:       { active: false, group: null },
-  fenian:       { active: false, group: null },
+  mythological: { active: true, group: null },
+  ulster:       { active: true, group: null },
+  fenian:       { active: true, group: null },
 }
 
 export function buildLayers(map, allData, onSelect) {
