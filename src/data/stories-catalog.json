@@ -7,6 +7,15 @@
     "cycleLabel": "Ulster Cycle",
     "hook": "A queen's pride, a stolen bull, and one boy standing alone at every ford.",
     "source": "Táin Bó Cúailnge — Book of Leinster & Lebor na hUidre (c. 1100–1150 CE)",
+    "imageFile": "",
+    "description": "The Táin is Ireland's great national epic — its Iliad. It begins in a bed in Connacht and ends in a catastrophic battle between two bulls, as the armies of four provinces pour across Ulster's border and one seventeen-year-old holds them at every ford. The war is started by a queen's pride but sustained by something larger: the gap between Ulster's old heroic code and the political world driving Medb's ambition. Cú Chulainn's combats at the fords become the heart of the story — each opponent someone with a history, each fight a small tragedy. The greatest is Ferdia, his foster-brother, whom he must kill despite every reluctance. When Ulster finally wakes from Macha's curse and the main battle comes, it is almost anticlimactic. The real story has already been told at the river crossings. The epic ends not with a triumphant king but with two great bulls destroying each other across the landscape of Ireland, the pieces of one scattered from Connacht to Leinster in a geography of ruin.",
+    "sourceTrail": {
+      "primary": "Táin Bó Cúailnge (The Cattle Raid of Cooley)",
+      "earliest": "Book of the Dun Cow (Lebor na hUidre), c. 1100 CE; fuller text in Book of Leinster, c. 1160 CE",
+      "oral": "Part of the Ulster Cycle oral tradition; reached written form after centuries of recitation by professional poets (filí)",
+      "confidence": "high",
+      "notes": "Two main recensions exist. The Book of the Dun Cow version is older and rougher; Book of Leinster more polished. The story as presented follows the composite scholarly reconstruction used by Ciaran Carson (2007) and Thomas Kinsella (1969)."
+    },
     "icon": "⚔",
     "cast": [
       { "characterId": "medb", "role": "Protagonist — her pride and her refusal to accept inferiority drives the whole war" },
@@ -92,6 +101,15 @@
     "cycleLabel": "Mythological Cycle",
     "hook": "Nine hundred years as swans — the most beautiful and most sorrowful story in Ireland.",
     "source": "Oidheadh Chlainne Lir — one of the Trí Truaighe na Scéalaíochta (Three Sorrows of Storytelling)",
+    "imageFile": "",
+    "description": "The longest of the Three Sorrows of Storytelling, Children of Lir is a meditation on endurance. Nine hundred years is not a metaphor — the story insists on the literal number, on what it means to hold together across centuries. The central image of Fionnuala sheltering her brothers under her wings through winter storms on the Sea of Moyle is one of the most powerful in all Irish literature. What makes the story distinctly Irish is its ending: the children die immediately upon their transformation back to human form. There is no recovery. The Christian era that Mochaomhóg represents offers baptism but not restoration. The old world and its magic simply end. Fionnuala holds her brothers in death as she held them in every storm — Mochaomhóg buries them standing, her arms still around them. The image of the four swans singing on Lough Derravaragh — music so beautiful that all grief ceased while it lasted — stands against the centuries of cold that follow.",
+    "sourceTrail": {
+      "primary": "Oidheadh Chlainne Lir (The Tragic Story of the Children of Lir)",
+      "earliest": "Yellow Book of Lecan, c. 1400 CE; the story is certainly older than its surviving manuscripts",
+      "oral": "One of the Trí Truaighe na Scéalaíochta (Three Sorrows of Storytelling), well established in oral tradition by the medieval period",
+      "confidence": "high",
+      "notes": "Classified as a transformation story (aidedh). The Christian frame — a monk, a bell, baptism — reflects the story reaching written form in a monastery. The pagan core (jealous stepmother, druid's curse, the Tuatha Dé Danann) almost certainly predates the Christian additions."
+    },
     "icon": "◎",
     "cast": [
       { "characterId": "fionnuala", "role": "Protagonist — the eldest who holds her siblings together through nine hundred years" },
@@ -183,6 +201,15 @@
     "cycleLabel": "Ulster Cycle",
     "hook": "A king's obsession, a forbidden love, and a beauty prophesied to destroy Ulster.",
     "source": "Longes mac nUislenn (Exile of the Sons of Uisneach) — Book of the Dun Cow. One of the Trí Truaighe na Scéalaíochta.",
+    "imageFile": "",
+    "description": "Deirdre is the most psychologically direct of the Three Sorrows. The tragedy is not supernatural — it is a king's refusal to accept that he cannot have what he wants. Conchobar does not change across the entire story: he claims Deirdre at birth because she is beautiful, and he destroys the sons of Uisneach at the end for exactly the same reason. The prophecy exists not to make the tragedy inevitable but to make it pointed — he had been warned, and he chose his obsession anyway. Deirdre's repeated warnings to Naoise — she dreams treachery, she begs him not to trust the king's amnesty — are not the ominous premonitions of myth but the practical intelligence of a woman who knows Conchobar better than her husband does. Her silence after Naoise's death, her refusal to look at the king, her refusal to smile for a year: these are the only forms of resistance left to her. The yew trees growing from two graves, their branches entwined across a churchyard — the story's final image — are its mercy: the lovers were not separated by death.",
+    "sourceTrail": {
+      "primary": "Longes mac nUislenn (Exile of the Sons of Uisneach)",
+      "earliest": "Book of the Dun Cow (Lebor na hUidre), c. 1100 CE",
+      "oral": "One of the Trí Truaighe na Scéalaíochta; the Ulster Cycle tradition preserved this story alongside the Táin",
+      "confidence": "high",
+      "notes": "W.B. Yeats and J.M. Synge both drew on this story; Synge's Deirdre of the Sorrows (1910) is the most famous modern adaptation. The entwining yew trees appear in some manuscript versions only. The name 'Deirdre' may derive from a word for 'alarm' or 'trouble'."
+    },
     "icon": "◈",
     "cast": [
       { "characterId": "deirdre", "role": "Protagonist — prophesied at birth, she claims her own fate in defiance of the king" },
@@ -270,6 +297,15 @@
     "cycleLabel": "Fenian Cycle",
     "hook": "A geis laid at a feast, sixteen years of flight, and a love Fionn never forgave.",
     "source": "Tóraíocht Dhiarmada agus Ghráinne — oral tradition preserved in 14th-century manuscripts",
+    "imageFile": "",
+    "description": "The Pursuit is the longest continuous narrative in the Fenian Cycle. What begins as a romantic adventure — a young woman escaping an unwanted marriage with a reckless geis at a feast — gradually reveals itself as a tragedy of honour, loyalty, and the limits of greatness. Diarmuid never stops being admirable, which is what makes his end so bitter. Fionn, who begins the story as a great man, ends it as a small one: a hero who possessed the power to heal his old enemy at the cost of nothing, and chose not to exercise it, twice. The hundreds of 'beds of Diarmuid and Gráinne' across Ireland — standing stones and megalithic monuments that tradition assigns to their campsites during sixteen years of flight — make this one of the most landscape-mapped stories in Irish mythology. Gráinne, who placed the geis in a moment of wilfulness, becomes something else entirely by the end: a widow who has outlived the man who pursued her and the man she chose, and who must carry the knowledge of how both stories ended.",
+    "sourceTrail": {
+      "primary": "Tóraíocht Dhiarmada agus Ghráinne (Pursuit of Diarmuid and Gráinne)",
+      "earliest": "No single authoritative manuscript; most complete version in Ossianic manuscripts of the 16th–17th century. Summarised in the Acallam na Senórach, c. 1200 CE.",
+      "oral": "Strong oral tradition; thousands of topographic features across Ireland are named for the story's flight-route",
+      "confidence": "medium",
+      "notes": "The love-spot (ball seirce) on Diarmuid's forehead is a later addition in some versions. The boar of Ben Bulben is Diarmuid's own transformed foster-brother — making the fate-bond more personal than a random enchantment. The story shares structural elements with the Welsh Tristan and Iseult tradition."
+    },
     "icon": "◉",
     "cast": [
       { "characterId": "grainne", "role": "Protagonist — her choice at the feast, and everything that follows from it" },
@@ -342,6 +378,15 @@
     "cycleLabel": "Fenian Cycle",
     "hook": "He rode west into the sea with a goddess — and returned to find three centuries had passed.",
     "source": "Laoi Oisín ar Thír na nÓg — oral tradition; earliest written version by Micheál Coimín (1750). The Acallam na Senórach (c. 1200) preserves the frame.",
+    "imageFile": "",
+    "description": "The Oisín story is Ireland's most explicit meditation on time and loss. What Oisín experiences when he returns to Ireland is not merely grief for absent friends — it is the specific horror of discovering that your entire world has been sealed off while you were elsewhere. The Fianna were real to him an hour ago. The Fall functions as a kind of reverse baptism: the moment his feet touch Irish soil, all the centuries he avoided rush through his body at once. The white horse, gone before anyone can catch it, carries with it the last door back. The frame story — Oisín as an ancient man recounting the vanished world to a young Christian monk — gives the myth its particular resonance. Patrick is not hostile; he is genuinely moved. But Oisín is describing a world Patrick cannot verify, a world that left no monuments except the stories themselves. Each story Oisín tells Patrick is an act of preservation — and everything he describes was already three hundred years old.",
+    "sourceTrail": {
+      "primary": "Laoi Oisín ar Thír na nÓg (Lay of Oisín in the Land of Youth)",
+      "earliest": "Acallam na Senórach (c. 1200 CE) preserves the Oisín-Patrick dialogue frame. Full narrative poem by Micheál Coimín, 1750.",
+      "oral": "The Oisín-Patrick dialogue tradition was widespread in Irish oral tradition for centuries before Coimín's written version",
+      "confidence": "medium",
+      "notes": "Coimín's 1750 poem is partly literary composition and partly preserved oral tradition. The story is among the most widely told in Irish folklore. The three-hundred-year figure appears in most versions; some give 150. Tír na nÓg (Land of Eternal Youth) appears in multiple other Irish myths under various names."
+    },
     "icon": "◎",
     "cast": [
       { "characterId": "oisin", "role": "Protagonist — Fionn's poet-son, who rides west and returns to find his world gone" },
@@ -421,6 +466,15 @@
     "cycleLabel": "Fenian Cycle",
     "hook": "A fish ate the hazelnuts of all wisdom. A boy burned his thumb on its skin. Ireland gained its greatest hero.",
     "source": "Macgnímartha Find (Boyhood Deeds of Fionn) — preserved in the Book of Leinster tradition",
+    "imageFile": "",
+    "description": "The Salmon of Knowledge is simultaneously the simplest and the strangest story here. It operates on a premise familiar from folklore everywhere — the hero who is forbidden to taste something and accidentally does — but gives it an unexpected twist: Finnegas, the man who spent seven years in patient preparation and was destined to receive the knowledge, immediately understands that it is gone, that it belongs to the boy now, and simply gives him the rest of the fish. There is no bitterness in Finnegas. The scene between them — a teacher who recognises that his student has already surpassed him and hands over what he has — is one of the most graceful moments in Irish mythology. The Well of Segais as the mythological source of the River Boyne, the nine hazel trees of wisdom dropping their nuts into the water each year, is a cosmology that appears in other early Irish texts. The Boyne is a real river running through County Meath. Fionn's thumb becomes his lifelong instrument of prophetic knowledge — whenever he needs to perceive a hidden truth, he presses his thumb to his cheek, returning to the instant the salmon's skin burned him on the banks of the river.",
+    "sourceTrail": {
+      "primary": "Macgnímartha Find (The Boyhood Deeds of Fionn)",
+      "earliest": "Book of Leinster tradition, c. 1150 CE",
+      "oral": "The boyhood deeds of Fionn form a distinct cycle of stories that circulated widely in the oral tradition of Leinster and Munster",
+      "confidence": "high",
+      "notes": "The Well of Segais as the mythological source of the River Boyne is attested in multiple early texts. The nine hazel trees of wisdom are a recurring motif in early Irish cosmology. The act of imbas forosnai ('illuminating knowledge') — biting the thumb — is described in several other early Irish texts as a druidic technique."
+    },
     "icon": "◆",
     "cast": [
       { "characterId": "fionn-mac-cumhaill", "role": "The boy — called Demne, son of a dead warrior, who accidentally receives what Finnegas spent seven years waiting for" },

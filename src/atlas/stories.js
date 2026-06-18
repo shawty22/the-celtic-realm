@@ -110,6 +110,34 @@ function _renderDrawer() {
       const c = getCharacter(entry.characterId)
       return c ? `<span class="story-cast-chip cycle-chip-${_x(c.cycle)}" title="${_x(c.title)}">${_x(c.name)}</span>` : ''
     }).join('')
+
+    const narrativeHTML = story.description
+      ? `<details class="story-card-narrative">
+          <summary class="story-card-narrative-toggle">Full story</summary>
+          <div class="story-card-narrative-body">
+            <p>${_x(story.description)}</p>
+          </div>
+         </details>`
+      : ''
+
+    const st = story.sourceTrail
+    const sourceHTML = st
+      ? `<div class="story-card-src-trail">
+          <span class="story-src-conf conf-${_x(st.confidence)}">${_x(st.confidence.toUpperCase())}</span>
+          <span class="story-src-primary">${_x(st.primary)}</span>
+          ${st.earliest || st.oral || st.notes
+            ? `<details class="story-src-detail">
+                <summary>Source details</summary>
+                <div class="story-src-detail-body">
+                  ${st.earliest  ? `<div class="story-src-row"><span class="story-src-key">Earliest ms.</span><span>${_x(st.earliest)}</span></div>` : ''}
+                  ${st.oral      ? `<div class="story-src-row"><span class="story-src-key">Oral tradition</span><span>${_x(st.oral)}</span></div>` : ''}
+                  ${st.notes     ? `<div class="story-src-row story-src-notes">${_x(st.notes)}</div>` : ''}
+                </div>
+               </details>`
+            : ''}
+         </div>`
+      : `<p class="story-card-source">${_x(story.source)}</p>`
+
     return `
     <div class="story-card story-cycle-${story.cycle}">
       <div class="story-card-top">
@@ -118,6 +146,7 @@ function _renderDrawer() {
       </div>
       <div class="story-card-art">
         <div class="story-card-art-placeholder">
+          ${story.imageFile ? `<img src="/assets/stories/${_x(story.imageFile)}" alt="${_x(story.title)}" class="story-card-art-img" loading="lazy" onerror="this.style.display='none'" />` : ''}
           <span class="story-card-art-glyph">${story.icon}</span>
           <span class="story-card-art-label">${_x(story.title)}</span>
           <span class="story-card-art-pending">Artwork pending</span>
@@ -126,8 +155,9 @@ function _renderDrawer() {
       <h3 class="story-card-title">${_x(story.title)}</h3>
       <p class="story-card-sub">${_x(story.titleSub)}</p>
       <p class="story-card-hook">${_x(story.hook)}</p>
+      ${narrativeHTML}
       ${castPreview ? `<div class="story-card-cast">${castPreview}</div>` : ''}
-      <p class="story-card-source">${_x(story.source)}</p>
+      ${sourceHTML}
       <button class="story-card-btn" data-story-id="${story.id}">
         Begin story · ${story.beats.length} parts ↗
       </button>
