@@ -1166,3 +1166,337 @@ button {
 
   #accuracy-note { display: none; }
 }
+
+/* =========================================================================
+   Stories — drawer, strip, cards, panel links
+   ========================================================================= */
+
+/* ── Cycle badge helper (reused across stories + panel) ──────────────────── */
+.cycle-badge-mythological { --cb: var(--myth);      --cb-bg: var(--myth-glow); }
+.cycle-badge-ulster       { --cb: var(--ulster);    --cb-bg: var(--ulster-glow); }
+.cycle-badge-fenian       { --cb: var(--fenian);    --cb-bg: var(--fenian-glow); }
+
+/* ── Stories button in header ────────────────────────────────────────────── */
+#stories-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(200,168,75,0.35);
+  background: rgba(200,168,75,0.08);
+  color: var(--parchment);
+  font-size: 13px;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s;
+}
+#stories-btn:hover {
+  background: rgba(200,168,75,0.16);
+  border-color: rgba(200,168,75,0.55);
+}
+.stories-btn-icon { font-size: 15px; line-height: 1; }
+.stories-btn-label { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* ── Stories drawer ──────────────────────────────────────────────────────── */
+#stories-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  pointer-events: none;
+}
+#stories-drawer.is-open {
+  pointer-events: auto;
+}
+
+.stories-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+#stories-drawer.is-open .stories-drawer-backdrop {
+  opacity: 1;
+}
+
+.stories-drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(440px, 100vw);
+  background: var(--panel-bg);
+  border-left: 1px solid var(--panel-edge);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+#stories-drawer.is-open .stories-drawer-panel {
+  transform: translateX(0);
+}
+
+.stories-drawer-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--panel-edge);
+  flex-shrink: 0;
+}
+.stories-drawer-title {
+  font-family: var(--serif);
+  font-size: 20px;
+  color: var(--parchment);
+  font-weight: 600;
+}
+.stories-drawer-sub {
+  font-size: 11px;
+  color: var(--panel-soft);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+#stories-drawer-close {
+  color: var(--panel-soft);
+  font-size: 16px;
+  padding: 4px 8px;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+#stories-drawer-close:hover { color: var(--parchment); }
+
+.stories-list {
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.stories-list::-webkit-scrollbar { width: 4px; }
+.stories-list::-webkit-scrollbar-thumb { background: rgba(200,168,75,0.25); border-radius: 2px; }
+
+/* ── Story card ──────────────────────────────────────────────────────────── */
+.story-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-left: 3px solid var(--cb, rgba(200,168,75,0.5));
+  border-radius: var(--radius);
+  padding: 14px 14px 12px;
+  transition: background 0.15s;
+}
+.story-card:hover { background: rgba(255,255,255,0.055); }
+
+.story-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.story-card-icon {
+  font-size: 18px;
+  line-height: 1;
+  color: var(--cb, var(--myth));
+}
+.story-cycle-badge {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cb, var(--myth));
+  background: var(--cb-bg, var(--myth-glow));
+  border: 1px solid var(--cb, var(--myth));
+  border-radius: 3px;
+  padding: 2px 6px;
+  opacity: 0.9;
+}
+.story-card-title {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--parchment);
+  line-height: 1.2;
+}
+.story-card-sub {
+  font-size: 11px;
+  color: var(--panel-soft);
+  letter-spacing: 0.04em;
+  font-style: italic;
+  margin-top: 2px;
+}
+.story-card-hook {
+  font-size: 13px;
+  color: var(--panel-text);
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.story-card-source {
+  font-size: 10px;
+  color: var(--panel-soft);
+  margin-top: 6px;
+  line-height: 1.4;
+  opacity: 0.7;
+}
+.story-card-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--cb, var(--myth));
+  background: var(--cb-bg, var(--myth-glow));
+  color: var(--cb, var(--myth));
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background 0.15s, color 0.15s;
+}
+.story-card-btn:hover {
+  background: var(--cb, var(--myth));
+  color: var(--ink);
+}
+
+/* ── Story strip (bottom bar) ────────────────────────────────────────────── */
+#story-strip {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 950;
+  background: rgba(8, 5, 2, 0.96);
+  backdrop-filter: blur(10px);
+  border-top: 2px solid var(--strip-color, var(--myth));
+  padding: 10px 20px 14px;
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;
+  --strip-color: var(--myth);
+}
+#story-strip.is-active { transform: translateY(0); }
+#story-strip[data-cycle="ulster"] { --strip-color: var(--ulster); }
+#story-strip[data-cycle="fenian"] { --strip-color: var(--fenian); }
+
+.strip-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.strip-meta {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+  overflow: hidden;
+}
+.strip-story-title {
+  font-family: var(--serif);
+  font-size: 12px;
+  color: var(--strip-color);
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+.strip-sep {
+  color: var(--panel-soft);
+  font-size: 11px;
+}
+.strip-beat-count {
+  font-size: 11px;
+  color: var(--panel-soft);
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+.strip-nav-btn {
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+  color: var(--panel-text);
+  font-size: 12px;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  flex-shrink: 0;
+}
+.strip-nav-btn:hover:not(:disabled) {
+  background: rgba(255,255,255,0.1);
+  color: var(--parchment);
+  border-color: rgba(255,255,255,0.25);
+}
+.strip-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.strip-exit-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--panel-soft);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  transition: color 0.15s, border-color 0.15s;
+  flex-shrink: 0;
+}
+.strip-exit-btn:hover { color: var(--parchment); border-color: rgba(255,255,255,0.2); }
+
+.strip-content-row {
+  padding-left: 4px;
+}
+.strip-beat-title {
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--parchment);
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+.strip-beat-text {
+  font-size: 12px;
+  color: var(--panel-text);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Panel story links ───────────────────────────────────────────────────── */
+.panel-stories-section {
+  margin-top: 16px;
+}
+.panel-story-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+.panel-story-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--cb, var(--myth));
+  background: var(--cb-bg, var(--myth-glow));
+  color: var(--cb, var(--myth));
+  font-size: 12px;
+  transition: background 0.15s, color 0.15s;
+  cursor: pointer;
+}
+.panel-story-link:hover {
+  background: var(--cb, var(--myth));
+  color: var(--ink);
+}
+
+/* ── Marker pulse (story mode active) ───────────────────────────────────── */
+@keyframes storyPulse {
+  0%   { box-shadow: 0 0 0 0   rgba(200,168,75,0.7); }
+  60%  { box-shadow: 0 0 0 10px rgba(200,168,75,0); }
+  100% { box-shadow: 0 0 0 0   rgba(200,168,75,0); }
+}
+.atlas-marker.story-pulse .marker-inner {
+  animation: storyPulse 1.4s ease-out infinite;
+  border-radius: 50%;
+}
+

@@ -1,3 +1,5 @@
+import { getStoriesForLocation } from './stories.js'
+
 const panel   = document.getElementById('detail-panel')
 const content = document.getElementById('panel-content')
 const closeBtn = document.getElementById('panel-close')
@@ -41,6 +43,15 @@ export function showPanel(entry) {
     const btn = content.querySelector('.fly-3d-btn')
     if (btn) btn.addEventListener('click', () => _flyTo(entry))
   }
+
+  content.querySelectorAll('.panel-story-link').forEach(btn => {
+    btn.addEventListener('click', () => {
+      hidePanel()
+      document.dispatchEvent(new CustomEvent('atlas:enterStory', {
+        detail: { storyId: btn.dataset.storyId, beatIndex: 0 }
+      }))
+    })
+  })
 }
 
 export function hidePanel() {
@@ -96,6 +107,8 @@ function buildHTML(e) {
     ? `<button class="fly-3d-btn" aria-label="Open 3D flythrough for ${x(e.name)}">3D ↗</button>`
     : ''
 
+  const storyLinks = buildStoryLinksHTML(e)
+
   return `
     <div class="panel-header layer-${x(e.layer)}">
       <div class="panel-meta">
@@ -112,9 +125,31 @@ function buildHTML(e) {
       ${locationHTML}
       <p class="panel-summary">${x(e.shortSummary)}</p>
       <p class="panel-explanation">${x(e.explanation)}</p>
+      ${storyLinks}
       ${sourcesHTML}
       ${confHTML}
       ${notesHTML}
+    </div>
+  `
+}
+
+function buildStoryLinksHTML(e) {
+  let stories = []
+  try { stories = getStoriesForLocation(e.id) } catch (_) {}
+  if (!stories.length) return ''
+
+  const links = stories.map(s => `
+    <button class="panel-story-link cycle-badge-${x(s.cycle)}"
+      data-story-id="${x(s.id)}"
+      aria-label="Enter story: ${x(s.title)}">
+      ${x(s.icon)} ${x(s.title)}
+    </button>
+  `).join('')
+
+  return `
+    <div class="panel-section panel-stories-section">
+      <h3 class="panel-section-h">Appears in</h3>
+      <div class="panel-story-links">${links}</div>
     </div>
   `
 }

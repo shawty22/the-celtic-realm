@@ -55,6 +55,10 @@
             </span>
           </button>
         </nav>
+        <button id="stories-btn" aria-label="Open story browser" title="Stories">
+          <span class="stories-btn-icon">◎</span>
+          <span class="stories-btn-label">Stories</span>
+        </button>
         <button id="home-btn" aria-label="Reset to Ireland view" title="Home">⌂</button>
         <div class="bm-switcher" aria-label="Base map style">
           <button class="bm-btn is-active" data-bm="terrain" title="Terrain">⛰</button>
@@ -104,6 +108,39 @@
         <strong>LOW</strong> = mythological placement only
       </div>
 
+
+      <!-- ═══ Stories drawer ═══════════════════════════════════════════════ -->
+      <div id="stories-drawer" aria-hidden="true" role="dialog" aria-label="Story browser">
+        <div class="stories-drawer-backdrop"></div>
+        <aside class="stories-drawer-panel">
+          <div class="stories-drawer-header">
+            <div>
+              <h2 class="stories-drawer-title">The Six Great Stories</h2>
+              <p class="stories-drawer-sub">Enter a story — the map will follow</p>
+            </div>
+            <button id="stories-drawer-close" aria-label="Close story browser">✕</button>
+          </div>
+          <div id="stories-list" class="stories-list"></div>
+        </aside>
+      </div>
+
+      <!-- ═══ Story strip (bottom bar, active during story mode) ══════════ -->
+      <div id="story-strip" aria-live="polite">
+        <div class="strip-nav-row">
+          <button id="strip-prev" class="strip-nav-btn" aria-label="Previous beat">← Prev</button>
+          <div class="strip-meta">
+            <span id="strip-story-title" class="strip-story-title"></span>
+            <span class="strip-sep">·</span>
+            <span id="strip-beat-count" class="strip-beat-count"></span>
+          </div>
+          <button id="strip-next" class="strip-nav-btn" aria-label="Next beat">Next →</button>
+          <button id="strip-exit" class="strip-exit-btn" aria-label="Exit story mode">✕ Exit</button>
+        </div>
+        <div class="strip-content-row">
+          <h3 id="strip-beat-title" class="strip-beat-title"></h3>
+          <p  id="strip-beat-text"  class="strip-beat-text"></p>
+        </div>
+      </div>
 
       <!-- ═══ Cycle info modal ══════════════════════════════════════════════ -->
       <div id="cycle-modal" aria-hidden="true" role="dialog">
