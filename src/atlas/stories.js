@@ -102,6 +102,22 @@ function _buildLocationIndex() {
   }
 }
 
+function _storyLocations(story) {
+  const seen = new Set()
+  const names = []
+  for (const beat of story.beats) {
+    if (beat.locationId && !seen.has(beat.locationId)) {
+      seen.add(beat.locationId)
+      const entry = _findEntry(beat.locationId)
+      if (entry) names.push(entry.name)
+    } else if (!beat.locationId && beat.placeName && !seen.has(beat.placeName)) {
+      seen.add(beat.placeName)
+      names.push(beat.placeName)
+    }
+  }
+  return names
+}
+
 function _renderDrawer() {
   const listEl = document.getElementById('stories-list')
   if (!listEl) return
@@ -110,6 +126,14 @@ function _renderDrawer() {
       const c = getCharacter(entry.characterId)
       return c ? `<span class="story-cast-chip cycle-chip-${_x(c.cycle)}" title="${_x(c.title)}">${_x(c.name)}</span>` : ''
     }).join('')
+
+    const locs = _storyLocations(story)
+    const locationsHTML = locs.length
+      ? `<div class="story-card-locations">
+          <span class="story-locs-label">Locations</span>
+          <div class="story-locs-list">${locs.map(n => `<span class="story-loc-chip">${_x(n)}</span>`).join('')}</div>
+         </div>`
+      : ''
 
     const narrativeHTML = story.description
       ? `<details class="story-card-narrative">
@@ -156,6 +180,7 @@ function _renderDrawer() {
       <p class="story-card-sub">${_x(story.titleSub)}</p>
       <p class="story-card-hook">${_x(story.hook)}</p>
       ${narrativeHTML}
+      ${locationsHTML}
       ${castPreview ? `<div class="story-card-cast">${castPreview}</div>` : ''}
       ${sourceHTML}
       <button class="story-card-btn" data-story-id="${story.id}">
