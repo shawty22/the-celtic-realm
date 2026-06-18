@@ -535,5 +535,906 @@
         "zoom": 10
       }
     ]
+  },
+
+  {
+    "id": "cath-maige-tuired",
+    "title": "Cath Maige Tuired",
+    "titleSub": "The Second Battle of Mag Tuired",
+    "cycle": "mythological",
+    "cycleLabel": "Mythological Cycle",
+    "hook": "The gods of Ireland stood against the Fomorians. One man had to kill his own grandfather to win.",
+    "source": "Cath Maige Tuired, 12th-century manuscript",
+    "imageFile": "",
+    "description": "The Second Battle of Mag Tuired is the definitive conflict of the Mythological Cycle — a war between the Tuatha Dé Danann and the Fomorians that decides who will possess Ireland. It begins with a king who lost his arm, a tyrant who was beautiful but mean, a satire that raised blisters, and a young warrior who could master every art at once. It ends with Lugh sending a sling stone through the eye of Balor — his own grandfather — and the Fomorians driven from Ireland for good. Between those two points lies the full spectrum of Irish divine mythology: politics, jealousy, craft, prophecy, music, and the strange mercy of an ending where even Bres the tyrant is allowed to live if he teaches the conquerors how to plough.",
+    "sourceTrail": {
+      "primary": "Cath Maige Tuired (The Battle of Mag Tuired)",
+      "earliest": "MS Harleian 5280, compiled c. 1416–1417 CE from earlier sources; believed to derive from 9th-century original",
+      "oral": "Lughnasadh (1 August), named for Lugh, is direct evidence of a living cult that predates any manuscript",
+      "confidence": "high",
+      "notes": "Two battles of Mag Tuired exist in the sources. The First (against the Fir Bolg) is near Cong, Co. Mayo; the Second (against the Fomorians) is near Moytirra, Co. Sligo, beside Lough Arrow."
+    },
+    "icon": "⚔",
+    "cast": [
+      { "characterId": "lugh",   "role": "Warrior of light, slayer of Balor" },
+      { "characterId": "nuada",  "role": "King of the Tuatha Dé Danann" },
+      { "characterId": "balor",  "role": "King of the Fomorians" },
+      { "characterId": "dagda",  "role": "Father of the gods, druid of the Tuatha Dé" },
+      { "characterId": "bres",   "role": "Deposed king, unwilling ally of the Fomorians" },
+      { "characterId": "dian-cecht", "role": "Divine physician, keeper of the healing spring" },
+      { "characterId": "goibniu", "role": "Divine smith, forger of deathly weapons" },
+      { "characterId": "the-morrigan", "role": "Goddess of battle, who meets the Dagda before the fight" }
+    ],
+    "beats": [
+      {
+        "id": "lugh-at-tara",
+        "primaryCharacter": "lugh",
+        "castChips": ["nuada"],
+        "title": "The Many-Skilled Arrives",
+        "scene": "At the gate of Tara, the doorkeeper asked a stranger his skill. The stranger named one. They had that. He named another. They had that too.",
+        "plain": "Lugh arrived at the gates of Tara and was refused entry. The doorkeeper's rule was that no one entered without a skill the court did not already possess. Lugh named carpentry — refused. Smithcraft — refused. He named every art and was told they had someone for each one. Then he asked: do you have one man who possesses all of them at once? They did not. He was called Samildánach — master of all crafts together — and the gates were opened.",
+        "locationId": "tara",
+        "zoom": 11
+      },
+      {
+        "id": "healing-spring",
+        "primaryCharacter": "dian-cecht",
+        "castChips": ["nuada", "goibniu"],
+        "title": "The Spring of Slán",
+        "scene": "While the Fomorians had the entire sea between them and Ireland, the Tuatha Dé had a spring. The dead went in. The living came out.",
+        "plain": "As the two armies prepared, the Tuatha Dé had an advantage the Fomorians could not match. Dian Cécht maintained a spring — the Well of Slán — into which the wounded were plunged and from which they rose healed and battle-ready. Every man the Fomorians killed on one day was fighting again the next. Goibniu the smith stood beside a forge and replaced broken weapons on the spot. Each spear he made was guaranteed to kill. The Fomorians could not understand why the Tuatha Dé never ran out of warriors or weapons.",
+        "lat": 54.07,
+        "lng": -8.48,
+        "placeName": "Plain of Mag Tuired",
+        "zoom": 9
+      },
+      {
+        "id": "battle-of-mag-tuired",
+        "primaryCharacter": "lugh",
+        "castChips": ["dagda", "the-morrigan", "nuada"],
+        "title": "The Battle",
+        "scene": "The Morrigan had met the Dagda at the river. She whispered a king's death to him. Then the armies came.",
+        "plain": "The night before the battle, the Dagda met the Morrigan at the River Unshin — she straddling the river, him meeting her there. She prophesied Balor's death and promised her power to the Tuatha Dé side. When morning came the armies met on the plain. Nuada led the Tuatha Dé. Balor led the Fomorians. The battle went back and forth for days. Nuada was killed by Balor's eye. Lugh took command.",
+        "lat": 54.07,
+        "lng": -8.48,
+        "placeName": "Mag Tuired, Co. Sligo",
+        "zoom": 9
+      },
+      {
+        "id": "lugh-kills-balor",
+        "primaryCharacter": "lugh",
+        "castChips": ["balor"],
+        "title": "The Stone Through the Eye",
+        "scene": "Four men raised the great eyelid with an iron hook. The eye opened. A sling stone was already in the air.",
+        "plain": "Balor's eye required four men with a great iron hook to lift the eyelid open. When it opened, the gaze destroyed everything in front of it — entire ranks of warriors simply fell. But Lugh had already released his sling stone. It struck the eye at the moment it opened and drove it back through Balor's head, so that his own army was what it looked upon when it emerged from the other side. Balor died. The Fomorians broke. Lugh had killed his own grandfather exactly as the prophecy had said.",
+        "lat": 54.09,
+        "lng": -8.49,
+        "placeName": "Moytirra, Co. Sligo",
+        "zoom": 10
+      },
+      {
+        "id": "bres-bargains",
+        "primaryCharacter": "bres",
+        "castChips": ["lugh"],
+        "title": "What Bres Offered",
+        "scene": "Bres was captured. He had nothing left except what he knew about the land.",
+        "plain": "Bres was taken captive on the field. He offered his life's value in exchange for mercy — and what he offered was knowledge. He told Lugh the seasons for plowing and reaping and harvesting, the secret rhythms of the Irish soil. Some heard this as the myth of how the Tuatha Dé learned agriculture from the Fomorians they conquered. Bres was given his life. He left Ireland. The Tuatha Dé remained.",
+        "lat": 54.09,
+        "lng": -8.49,
+        "placeName": "Mag Tuired",
+        "zoom": 9
+      }
+    ]
+  },
+
+  {
+    "id": "tochmarc-etaine",
+    "title": "Tochmarc Étaíne",
+    "titleSub": "The Wooing of Étaín",
+    "cycle": "mythological",
+    "cycleLabel": "Mythological Cycle",
+    "hook": "She was transformed three times and blown across Ireland for a thousand years. She forgot everything. He never did.",
+    "source": "Tochmarc Étaíne, Book of the Dun Cow tradition",
+    "imageFile": "",
+    "description": "The Wooing of Étaín is one of the oldest love stories in European literature — a meditation on identity, memory, and desire that spans two lifetimes. Étaín was a woman of the Tuatha Dé Danann, won as a bride by Midir of Brí Léith. His first wife Fuamnach, consumed by jealousy, systematically unmade her through druidic transformation — first to a pool, then a worm, then a fly — and condemned her to a thousand years of wandering. Eventually she fell into a cup, was swallowed, and was reborn as a mortal woman with no memory of who she had been. She became queen of Ireland. When Midir finally found her, she had to choose between a man who remembered everything and a husband who could offer only the life she knew.",
+    "sourceTrail": {
+      "primary": "Tochmarc Étaíne (The Wooing of Étaín)",
+      "earliest": "Oldest complete version in Egerton MS 1782 (c. 1419 CE); fragments in Lebor na hUidre (c. 1100 CE)",
+      "oral": "The story influenced later Otherworld voyage and rebirth traditions throughout the medieval Irish corpus",
+      "confidence": "high",
+      "notes": "Brí Léith, Midir's otherworld mound, is identified in the Dinnshenchas as being near Ardagh, Co. Longford."
+    },
+    "icon": "✦",
+    "cast": [
+      { "characterId": "etain",         "role": "The transformed goddess, born again as a mortal queen" },
+      { "characterId": "midir",         "role": "The otherworld lord who loved her across a thousand years" },
+      { "characterId": "fuamnach",      "role": "Midir's first wife — who unmade Étaín through jealousy" },
+      { "characterId": "eochaid-airem", "role": "The High King who married Étaín without knowing who she was" },
+      { "characterId": "aonghus-og",    "role": "Who sheltered the fly-form Étaín until Fuamnach destroyed that shelter too" }
+    ],
+    "beats": [
+      {
+        "id": "fuamnach-transforms",
+        "primaryCharacter": "fuamnach",
+        "castChips": ["etain", "midir"],
+        "title": "The Rowan Rod",
+        "scene": "Fuamnach struck Étaín with a rod of sacred rowan and said words that had never been said before.",
+        "plain": "When Midir brought Étaín home as his second wife, Fuamnach greeted her and struck her with a rod of rowan. Étaín dissolved into a pool of water on the floor. From the pool emerged a worm. From the worm emerged a fly of extraordinary beauty — every flower it settled on became sweeter, and wherever it rested a man felt a sudden sharp happiness. Then Fuamnach raised a wind and blew the fly out of Ireland.",
+        "lat": 53.73,
+        "lng": -7.68,
+        "placeName": "Brí Léith, Co. Longford",
+        "zoom": 10
+      },
+      {
+        "id": "thousand-years",
+        "primaryCharacter": "etain",
+        "castChips": ["aonghus-og"],
+        "title": "A Thousand Years of Wind",
+        "scene": "For a thousand years she was blown across Ireland, resting nowhere for more than a night.",
+        "plain": "The fly that had been Étaín was driven by Fuamnach's wind across Ireland and Scotland and back again for a thousand years. She rested briefly in the hall of Aonghus Óg at Brú na Bóinne, where he recognized her and built a crystal bower to shelter her. Fuamnach found her there and renewed the wind. The fly wandered for centuries more. Eventually, exhausted over Ulster, she fell into the cup of a noblewoman, who swallowed her without knowing what she drank.",
+        "lat": 53.69,
+        "lng": -6.47,
+        "placeName": "Brú na Bóinne, Co. Meath",
+        "zoom": 10
+      },
+      {
+        "id": "reborn-mortal",
+        "primaryCharacter": "etain",
+        "castChips": [],
+        "title": "Born Again",
+        "scene": "Nine months later, a girl was born who remembered nothing of what she had been.",
+        "plain": "Nine months after the fly fell into her cup, the noblewoman gave birth to a daughter of extraordinary beauty. The child was named Étaín — whether by chance or by some residue of the old name finding its way back through the forgetting. She grew up mortal, married, became the most beautiful woman in Ireland, and eventually was sought as queen. She had no memory of the Tuatha Dé, no memory of Midir, no memory of the thousand years of wind. She was simply herself — which was precisely the tragedy.",
+        "locationId": "emain-macha",
+        "zoom": 10
+      },
+      {
+        "id": "midir-at-tara",
+        "primaryCharacter": "midir",
+        "castChips": ["etain", "eochaid-airem"],
+        "title": "The Chess Match at Tara",
+        "scene": "Midir arrived at Tara requesting a game of chess. He always lost the first game. He always won the last one.",
+        "plain": "Midir found Étaín at Tara, where she was queen to Eochaid Airem, High King of Ireland. He did not announce who he was. He proposed a game of fidchell — the board game that always carried supernatural stakes. He lost the first game deliberately, allowing Eochaid to name outrageous forfeits. He won the second game and named his own forfeit: one kiss from Étaín. Eochaid, certain of his position, agreed.",
+        "locationId": "tara",
+        "zoom": 11
+      },
+      {
+        "id": "two-white-swans",
+        "primaryCharacter": "midir",
+        "castChips": ["etain"],
+        "title": "Two White Swans",
+        "scene": "Midir clasped Étaín. The roof of Tara opened. Two white swans rose through it and were gone into the western sky.",
+        "plain": "Midir came to claim his kiss. He put one arm around Étaín and kissed her. For a moment she was back — not a mortal queen but something older, some part of her that had been blown across Ireland for a thousand years and now felt the wind stop. The roof of Tara opened above them. They rose through it together as two white swans, linked by a golden chain. They flew southwest and disappeared. Eochaid was left with an empty throne and a kingdom that had no explanation for what had just happened.",
+        "locationId": "tara",
+        "zoom": 9
+      }
+    ]
+  },
+
+  {
+    "id": "oidheadh-chlainne-tuireann",
+    "title": "Oidheadh Chlainne Tuireann",
+    "titleSub": "The Fate of the Children of Tuireann",
+    "cycle": "mythological",
+    "cycleLabel": "Mythological Cycle",
+    "hook": "Three brothers killed Lugh's father. The blood-price Lugh set them would take them to the ends of the world — and they would pay every penny of it.",
+    "source": "Oidheadh Chlainne Tuireann, c. 1400 CE",
+    "imageFile": "",
+    "description": "The Fate of the Children of Tuireann is the third of the Trí Truaighe na Scéalaíochta — the Three Sorrows of Storytelling. Three brothers, Brian, Iuchar, and Iucharba, murdered Lugh's father Cian on the Plain of Muirthemne. The eric fine — the blood compensation Lugh demanded — was a list of eight impossible treasures from the far ends of the world: the three apples of the Hesperides, the pig-skin of Tuis, the poisoned spear of Pisear, the chariot of Dobar, the seven pigs of Easal, and more. The brothers completed every quest. They returned to Ireland with all eight items, broken and dying. Lugh refused to give them the healing cauldron that could have saved them. They died on the shore.",
+    "sourceTrail": {
+      "primary": "Oidheadh Chlainne Tuireann (The Fate of the Children of Tuireann)",
+      "earliest": "Earliest manuscript version c. 1400 CE; the story may derive from a much older oral tradition",
+      "oral": "One of the Trí Truaighe na Scéalaíochta — the Three Sorrows of Irish Storytelling",
+      "confidence": "medium",
+      "notes": "The quest structure — eight impossible tasks demanded as eric fine — parallels the labours of Heracles in structure, suggesting a shared Indo-European narrative template."
+    },
+    "icon": "✦",
+    "cast": [
+      { "characterId": "brian",      "role": "Eldest brother — who led the quest and the killing" },
+      { "characterId": "iuchar",     "role": "Second brother" },
+      { "characterId": "iucharba",   "role": "Third brother" },
+      { "characterId": "cian",       "role": "Lugh's father — killed on the Plain of Muirthemne" },
+      { "characterId": "lugh",       "role": "Who set the impossible blood-price and refused to lift it at the end" },
+      { "characterId": "dian-cecht", "role": "Divine healer — whose cauldron could have saved them" }
+    ],
+    "beats": [
+      {
+        "id": "cian-transformed",
+        "primaryCharacter": "cian",
+        "castChips": ["brian"],
+        "title": "The Pig That Ran",
+        "scene": "Cian saw the three brothers on the plain. He knew one of them had to die. He turned himself into a pig and joined a herd.",
+        "plain": "Cian of the Tuatha Dé was crossing the Plain of Muirthemne on Lugh's business when he saw the three sons of Tuireann coming toward him. Old blood-debts between their families made a meeting dangerous. He had no time to run. He struck himself with a druidic wand and became a pig, slipping into a nearby herd. Brian watched the transformation happen. He changed himself and his brothers into three hounds. They ran down the herd, scattered it, cornered the pig that had been Cian.",
+        "locationId": "muirthemne",
+        "zoom": 10
+      },
+      {
+        "id": "cian-dies",
+        "primaryCharacter": "brian",
+        "castChips": ["cian", "iuchar", "iucharba"],
+        "title": "The Last Request",
+        "scene": "Even dying, Cian bargained — and his last bargain was the most expensive thing the brothers ever agreed to.",
+        "plain": "Before they could kill the pig, Cian demanded his human form back — it was his right. Brian granted it. Cian then said: had you killed me as a pig, the fine would have been a pig's worth. Now that I am a man you must pay a man's blood-price. And the eric fine for the man who is Lugh's father will be unlike anything demanded before in Ireland. They killed him anyway. The stones of the plain, the tradition says, each became red with his blood. They buried him seven times before the ground would take him.",
+        "locationId": "muirthemne",
+        "zoom": 10
+      },
+      {
+        "id": "the-eric",
+        "primaryCharacter": "lugh",
+        "castChips": ["brian", "iuchar", "iucharba"],
+        "title": "The Blood-Price",
+        "scene": "Lugh did not grieve in front of them. He listened to their confession and named what they owed.",
+        "plain": "When Lugh demanded the eric fine at Tara, it seemed almost kind — no killing, no exile, just objects to be retrieved. Three apples from the garden at the eastern edge of the world. The pig-skin of the king of Greece that healed any wound. The poisoned spear of the King of Persia. The chariot of the King of Sicily. Seven pigs that could be eaten each night and be whole again each morning. A hound-whelp from the King of Ioruaidh. A cooking spit from the women of Inis Fionnachtaigh. Three shouts on the hill of Miodhchaoin — where Miodhchaoin's sons would kill anyone who shouted. Every item had a death in it.",
+        "locationId": "tara",
+        "zoom": 9
+      },
+      {
+        "id": "the-quests",
+        "primaryCharacter": "brian",
+        "castChips": ["iuchar", "iucharba", "lugh"],
+        "title": "The World's Ends",
+        "scene": "They crossed every sea known to the Irish world, and some that were not. And they brought back everything.",
+        "plain": "The brothers completed every quest. They stole the apples from the garden at the world's edge. They took the pig-skin from the King of Greece after a battle that nearly killed all three of them. They retrieved the spear of Pisear. They drove off the chariot of Dobar. They brought home the seven pigs, the hound-whelp, the cooking spit. They climbed the hill of Miodhchaoin and gave the three shouts — and Miodhchaoin's sons came and they fought for three days and three nights. They won. They sailed back to Ireland with every item Lugh had named, each of them bleeding from wounds that would not stop.",
+        "lat": 53.58,
+        "lng": -6.12,
+        "placeName": "The World's Edge",
+        "zoom": 5
+      },
+      {
+        "id": "the-refusal",
+        "primaryCharacter": "lugh",
+        "castChips": ["brian", "iuchar", "iucharba", "dian-cecht"],
+        "title": "The Refusal",
+        "scene": "They had paid every penny of the blood-price. They asked for the healing cauldron. Lugh closed his face and said no.",
+        "plain": "The brothers returned to Ireland and laid every item of the eric at Lugh's feet. The debt was paid. Brian then asked — one request, outside the eric, from dying men to a victor — for the loan of the pig-skin of healing, to close their wounds. Lugh looked at them. He said that no part of the eric, having been paid, could now be used in reverse. He turned away. The three brothers were carried to their father Tuireann. They died there together. Their father died of grief before the day was out.",
+        "locationId": "tara",
+        "zoom": 10
+      }
+    ]
+  },
+
+  {
+    "id": "voyage-of-bran",
+    "title": "Immram Brain",
+    "titleSub": "The Voyage of Bran mac Febal",
+    "cycle": "mythological",
+    "cycleLabel": "Mythological Cycle",
+    "hook": "A woman came to his hall holding a silver branch of apple blossom. She sang of a land where there is no winter. He was gone by morning.",
+    "source": "Immram Brain maic Febail, c. 8th century CE",
+    "imageFile": "",
+    "description": "The Voyage of Bran is the oldest of the Irish immrama — the supernatural sea-voyage tradition that would eventually produce the Voyage of St Brendan. A woman appears in Bran's hall holding a silver apple branch that plays music, and sings of islands in the western ocean where there is no sickness, no death, no winter, and no grief. Bran sets out the next morning with twenty-seven men. He meets Manannán mac Lir on the sea — standing in his chariot across waves that Manannán walks as a flowering plain. He reaches the Otherworld islands. He returns to Ireland centuries later to find that no one knows his name. When one of his men leaps to shore, he crumbles to dust — he has been gone longer than he knew. Bran calls out his name and his story to the people on the shore, then turns his boat west. He is never seen in Ireland again.",
+    "sourceTrail": {
+      "primary": "Immram Brain maic Febail (The Voyage of Bran Son of Febal)",
+      "earliest": "Harleian MS 5280, c. 1100–1120 CE; believed to be a copy of an 8th-century composition",
+      "oral": "The immrama genre is one of the oldest in Irish literature; Bran's voyage is considered its founding text",
+      "confidence": "high",
+      "notes": "The silver branch of apple blossom as a token of Otherworld origin appears in several other early Irish texts. The islands described — Mag Mell (Plain of Delight) and Tír na mBan (Land of Women) — are the standard geography of the Irish Otherworld."
+    },
+    "icon": "✦",
+    "cast": [
+      { "characterId": "bran-mac-febal",   "role": "The voyager — who heard the song and could not stay" },
+      { "characterId": "manannan-mac-lir", "role": "Lord of the sea — who met Bran on the water and told him what he was sailing into" }
+    ],
+    "beats": [
+      {
+        "id": "silver-branch",
+        "primaryCharacter": "bran-mac-febal",
+        "castChips": [],
+        "title": "The Silver Branch",
+        "scene": "A woman appeared in his hall where no door had opened. She was holding a branch of apple blossom. She sang for a long time.",
+        "plain": "In Bran's hall, a door opened — or seemed to — and a woman entered who had not been there a moment before. She carried a silver branch with white blossoms that played music as she moved. She sang to the assembled company of an island to the west where there is no age, no grief, no winter, and no death — where the horses on the plain are the colour of sea-foam and every day is bright. When she finished, the branch was in Bran's hand. The woman was gone. He looked at the branch for a long time. In the morning he announced he was going west.",
+        "lat": 54.27,
+        "lng": -8.49,
+        "placeName": "A hall in the northwest of Ireland",
+        "zoom": 8
+      },
+      {
+        "id": "manannan-on-the-sea",
+        "primaryCharacter": "manannan-mac-lir",
+        "castChips": ["bran-mac-febal"],
+        "title": "The Man in the Chariot",
+        "scene": "Out past where the sea lost its colour, a chariot was moving across the waves at the same speed as his boat.",
+        "plain": "Three days out from Ireland, Bran saw a chariot moving across the ocean as if across a plain. The man in the chariot looked at Bran's boat without surprise. He said: what looks like sea to you is a flowering plain to me. What seems like waves are meadows. He named himself as Manannán mac Lir and told Bran that the islands he was looking for existed, that the Land of Women was real, and that a long time would pass before he would see Ireland again. He prophesied other things that Bran did not fully understand until later. Then he drove on.",
+        "lat": 54.0,
+        "lng": -11.0,
+        "placeName": "The Western Ocean",
+        "zoom": 6
+      },
+      {
+        "id": "land-of-women",
+        "primaryCharacter": "bran-mac-febal",
+        "castChips": ["manannan-mac-lir"],
+        "title": "The Land of Women",
+        "scene": "They landed on an island where women came to the shore to meet them. They were told to stay.",
+        "plain": "The boat reached an island where women waited at the shore and called Bran by name. They were brought to a hall where no food ran out and no cup was ever empty. The island was everything the woman in Bran's hall had sung of — no sickness, no age, no winter. Time moved differently there, though they did not notice it at first. They stayed for what felt like a year. One man, Nechtan, began to weep for Ireland and would not stop. He said he needed to see it once more. The women warned Bran: if you go back, stay in the boat.",
+        "lat": 54.0,
+        "lng": -16.0,
+        "placeName": "Tír na mBan — the Land of Women",
+        "zoom": 5
+      },
+      {
+        "id": "nechtan-crumbles",
+        "primaryCharacter": "bran-mac-febal",
+        "castChips": [],
+        "title": "The Shore of Ireland",
+        "scene": "They came back to the Irish coast. People on the shore had never heard of Bran mac Febal. But their grandfathers had told stories about him.",
+        "plain": "They sailed back to Ireland and anchored offshore. People came to the beach. Bran called out who he was — Bran mac Febal — and nobody on the shore recognised the name. An old man said: in our ancient stories there is mention of a Bran who voyaged west. That was before memory. Nechtan would not listen to the warning. He jumped from the boat and swam to shore. The moment his feet touched Irish soil, he crumbled to dust — a thousand years of time landing on him at once. Bran looked at the dust and then at Ireland. He called out their story to the people on the shore so it would not be lost. Then he turned the boat west.",
+        "lat": 54.27,
+        "lng": -8.49,
+        "placeName": "The Irish Coast",
+        "zoom": 8
+      }
+    ]
+  },
+
+  {
+    "id": "naming-of-cu-chulainn",
+    "title": "Mac an Óg ag Emain Macha",
+    "titleSub": "The Boyhood Deeds — How Sétanta Became Cú Chulainn",
+    "cycle": "ulster",
+    "cycleLabel": "Ulster Cycle",
+    "hook": "A seven-year-old boy arrived late to a feast. The hound attacked. The boy killed it with a hurley ball driven down its throat. Then he offered to replace it himself.",
+    "source": "Macgnímartha Con Culainn, Book of the Dun Cow, c. 1100 CE",
+    "imageFile": "",
+    "description": "Before he was Cú Chulainn he was Sétanta — a small boy from Muirthemne who arrived at Emain Macha and immediately defeated every boy in the fort at every game they played. He was seven years old. His birth was mysterious: his mother Deichtine disappeared with Conchobar and fifty nobles chasing a flock of birds, sheltered in a house where a woman gave birth, and returned to Ulster with an infant whose real father, some said, was the god Lugh. The name Cú Chulainn — the Hound of Culann — came from a single moment of destruction and repair: a hound killed, a boy who offered himself as its replacement, and a name that would be spoken for two thousand years.",
+    "sourceTrail": {
+      "primary": "Macgnímartha Con Culainn (The Boyhood Deeds of Cú Chulainn)",
+      "earliest": "Lebor na hUidre (Book of the Dun Cow), c. 1100 CE",
+      "oral": "The boyhood deeds circulated as a distinct oral strand, attested in several manuscript versions",
+      "confidence": "high",
+      "notes": "Culann's forge is placed south of Emain Macha. Sétanta's birth-story (Compert Con Culainn) exists in two incompatible versions in the manuscripts — both were preserved."
+    },
+    "icon": "⚔",
+    "cast": [
+      { "characterId": "cu-chulainn", "role": "Sétanta — the boy who would become the Hound of Ulster" },
+      { "characterId": "conchobar",   "role": "King of Ulster — Sétanta's uncle and the king who brought him north" },
+      { "characterId": "culann",      "role": "The smith — whose hound Sétanta killed, and who gave him his name" },
+      { "characterId": "deichtine",   "role": "Sétanta's mother — who brought a divine child into the world" },
+      { "characterId": "cathbad",     "role": "The druid — who prophesied Sétanta's name, his glory, and his short life" }
+    ],
+    "beats": [
+      {
+        "id": "setanta-at-emain",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["conchobar"],
+        "title": "The Boy from Muirthemne",
+        "scene": "He arrived at Emain Macha and walked onto the hurling field, alone, against one hundred and fifty boys. He won.",
+        "plain": "Sétanta was seven years old and had heard stories about the boys' troop at Emain Macha — one hundred and fifty young nobles who played hurling and wrestled in the fort's grounds. Without asking permission he walked onto the field, took up a position, and the ball came to him. He returned it. He did it again. Then again. The boys stopped playing and looked at this one child holding them back. They attacked him all at once. He fought his way through them without a scratch and made all one hundred and fifty tap the ground.",
+        "locationId": "emain-macha",
+        "zoom": 11
+      },
+      {
+        "id": "cathbad-prophesies",
+        "primaryCharacter": "cathbad",
+        "castChips": ["cu-chulainn"],
+        "title": "The Druid's Word",
+        "scene": "Cathbad was teaching his students. A boy interrupted to ask what this day was good for.",
+        "plain": "Cathbad the druid was teaching his pupils when the boy Sétanta interrupted to ask what this particular day was fated for. Cathbad looked at him for a long moment. He said: any youth who takes arms for the first time today will have a name that outlasts every hero Ireland will ever produce — but his life will be short. Sétanta went directly to the king and asked for his first weapons. He was seven years old and already making the choice.",
+        "locationId": "emain-macha",
+        "zoom": 11
+      },
+      {
+        "id": "culanns-feast",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["conchobar", "culann"],
+        "title": "Culann's Gate",
+        "scene": "The king had sent word that the feast was closed. The boy had not received it. He arrived at the gate after dark. The hound was loose.",
+        "plain": "King Conchobar attended a feast at the smith Culann's hall, and Culann asked that no one else be admitted after dark — he would release his watchdog, a hound of extraordinary ferocity that guarded his property and his livelihood. Sétanta had been promised a place at the feast but was delayed at hurling. He arrived after the gate was shut. The hound came at him out of the dark at full charge. Sétanta put his hurley ball into the hound's open mouth with full force, driving it down the animal's throat. The hound fell dead.",
+        "lat": 54.27,
+        "lng": -6.67,
+        "placeName": "Culann's forge, south of Emain Macha",
+        "zoom": 10
+      },
+      {
+        "id": "the-name",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["culann", "conchobar"],
+        "title": "The Hound of Culann",
+        "scene": "The smith's grief was real. The boy's offer was simpler than any apology.",
+        "plain": "Culann came out to find his prize watchdog dead. His grief was genuine and unmanaged — the hound had been his guard, his companion, the thing that made his isolated forge safe. The boy looked at the dead hound and said: I will be your watchdog. Until a pup of his bloodline can be trained to take his place, I will guard your forge and your cattle and your land myself. I will be Cú Culann — the hound of Culann. The druid Cathbad said: that name will be spoken in Ireland longer than any name that has been spoken here before.",
+        "lat": 54.27,
+        "lng": -6.67,
+        "placeName": "Culann's forge",
+        "zoom": 10
+      }
+    ]
+  },
+
+  {
+    "id": "tochmarc-emire",
+    "title": "Tochmarc Emire",
+    "titleSub": "The Wooing of Emer — and the Training with Scáthach",
+    "cycle": "ulster",
+    "cycleLabel": "Ulster Cycle",
+    "hook": "He wanted the only woman who was his equal. Her father sent him to the most dangerous place in the world to get rid of him. He came back better.",
+    "source": "Tochmarc Emire, Book of the Dun Cow, c. 1100 CE",
+    "imageFile": "",
+    "description": "When Cú Chulainn decided to find a wife he wanted a woman who possessed all six gifts: beauty, voice, speech, needlework, wisdom, and chastity. He found Emer at Lusk, daughter of Forgall Manach, and she spoke to him in riddles and he answered each one. Her father, hearing of this, sent Cú Chulainn to train with Scáthach the warrior-woman on the Isle of Skye, confident he would not survive the journey. He crossed the Plain of Ill Luck, leaped the Bridge of Leaps, trained for a year under the hardest teacher alive, fought and defeated Scáthach's rival Aoife, and returned to Ireland with the gáe bolga — the lethal belly-spear — and the full knowledge of what he was. He killed Forgall's guards, took Emer, and married her.",
+    "sourceTrail": {
+      "primary": "Tochmarc Emire (The Wooing of Emer)",
+      "earliest": "Lebor na hUidre (Book of the Dun Cow), c. 1100 CE",
+      "oral": "Scáthach's fortress Dún Scáith on the Isle of Skye is a real ruined promontory fort — Scottish Gaelic tradition preserves her memory there",
+      "confidence": "high",
+      "notes": "The gáe bolga — given to Cú Chulainn by Scáthach — becomes the weapon he uses to kill Ferdia in the Táin Bó Cúailnge, making this story the direct origin of the Táin's most tragic moment."
+    },
+    "icon": "⚔",
+    "cast": [
+      { "characterId": "cu-chulainn",    "role": "The suitor — sent to his death, returned victorious" },
+      { "characterId": "emer",           "role": "The woman who matched him in every way" },
+      { "characterId": "scathach",       "role": "The warrior-woman of Skye — teacher and prophet" },
+      { "characterId": "aoife-warrior",  "role": "Scáthach's rival — defeated by Cú Chulainn, mother of his son" },
+      { "characterId": "forgall-manach", "role": "Emer's father — who tried to use Cú Chulainn's ambition against him" }
+    ],
+    "beats": [
+      {
+        "id": "emer-of-lusk",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["emer", "forgall-manach"],
+        "title": "The Woman Who Spoke in Riddles",
+        "scene": "He drove to Lusk looking for a wife. She walked out to meet him and spoke in a language he had to think about.",
+        "plain": "Cú Chulainn drove his chariot south to the plain of Brega to find Emer, daughter of Forgall Manach, who had been described to him as the only woman in Ireland possessing all six gifts. She came out to the chariot and they spoke — but not plainly. She spoke in allusion and metaphor and the kind of dense poetic language that only the educated could follow, testing whether he was worth speaking to honestly. He kept up with every word. Her father Forgall watched from the walls and understood exactly what was happening.",
+        "lat": 53.57,
+        "lng": -6.16,
+        "placeName": "Lusk, Co. Dublin",
+        "zoom": 11
+      },
+      {
+        "id": "sent-to-scathach",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["forgall-manach"],
+        "title": "The Father's Plan",
+        "scene": "Forgall visited Emain Macha in disguise and suggested to the king that Cú Chulainn should train with a warrior-woman in Scotland called Scáthach.",
+        "plain": "Forgall travelled to Emain Macha in disguise as a Gaulish noble, assessed Cú Chulainn, and suggested — apparently as a compliment — that a warrior of his gifts deserved the finest training available, which meant Scáthach of Dún Scáith in Scotland. No one who sought Scáthach survived the approach. Forgall expected Cú Chulainn to die on the Plain of Ill Luck, or the Bridge of Leaps, or in Scáthach's first test. He returned home satisfied. He had misjudged the man completely.",
+        "locationId": "emain-macha",
+        "zoom": 10
+      },
+      {
+        "id": "dun-scaith",
+        "primaryCharacter": "scathach",
+        "castChips": ["cu-chulainn"],
+        "title": "The Bridge of Leaps",
+        "scene": "The bridge threw him back twice. On the third attempt he ran straight at it, leaped from the centre, and landed at the fortress gate.",
+        "plain": "Cú Chulainn crossed the Plain of Ill Luck — where the grass gripped the feet of those who went slowly and the grass turned to blades for those who went fast. He found Scáthach's fortress on its island, separated from the mainland by the Bridge of Leaps — a rope bridge that collapsed beneath anyone who stepped on it and threw them into the sea. He was thrown back twice. On the third attempt he ran at full speed, leaped from the middle of the bridge when it folded under him, and cleared the gap to the fortress gate. Scáthach was watching from inside. She agreed to train him.",
+        "lat": 57.20,
+        "lng": -5.74,
+        "placeName": "Dún Scáith, Isle of Skye",
+        "zoom": 9
+      },
+      {
+        "id": "aoife-defeated",
+        "primaryCharacter": "aoife-warrior",
+        "castChips": ["cu-chulainn", "scathach"],
+        "title": "The Most Dangerous Woman Alive",
+        "scene": "Aoife was the one person Scáthach feared. Cú Chulainn distracted her, pinned her, and asked for three things.",
+        "plain": "Scáthach's rival Aoife challenged her fortress while Cú Chulainn was training there. Scáthach, afraid Cú Chulainn would be killed, tried to put him to sleep with a draught — but his hero's constitution burned through it in an hour. He found Aoife and they fought. She was the most dangerous woman he had ever faced. He cried out that her chariot-horses had fallen off the cliff — she glanced — and he threw her to the ground. He asked three things: that she make peace with Scáthach, that she sleep with him that night, and that she bear him a son. She agreed.",
+        "lat": 57.20,
+        "lng": -5.74,
+        "placeName": "Dún Scáith, Isle of Skye",
+        "zoom": 9
+      },
+      {
+        "id": "emer-taken",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["emer", "forgall-manach"],
+        "title": "The Fort at Lusk",
+        "scene": "He came back from Scáthach better than he had left. Forgall's plan had made the thing he feared more certain.",
+        "plain": "Cú Chulainn returned to Ireland with the gáe bolga, the full curriculum of Scáthach's war-arts, and a prophecy of his own fate. He drove directly to Forgall's fort at Lusk. He cleared the outer wall in a single salmon-leap and fought his way through three enclosures of guards. Forgall, trying to escape, fell from the battlements and died. Cú Chulainn took Emer and her weight in gold and silver and brought her to Emain Macha. They were married.",
+        "lat": 53.57,
+        "lng": -6.16,
+        "placeName": "Forgall's fort, Lusk",
+        "zoom": 11
+      }
+    ]
+  },
+
+  {
+    "id": "fled-bricrenn",
+    "title": "Fled Bricrenn",
+    "titleSub": "Bricrú's Feast and the Champion's Portion",
+    "cycle": "ulster",
+    "cycleLabel": "Ulster Cycle",
+    "hook": "Bricrú built a hall in Ulster specifically to destroy the peace. He promised the Champion's Portion to three men at once. Ulster nearly tore itself apart.",
+    "source": "Fled Bricrenn, Book of the Dun Cow, c. 1100 CE",
+    "imageFile": "",
+    "description": "Fled Bricrenn is one of the most copied Ulster Cycle tales — a story about the one question Ulster kept refusing to answer: who is actually the greatest warrior? Bricrú of the Poison Tongue built a magnificent hall, invited the king and his champions, and privately promised the Champion's Portion — the prime cut of meat that went to the best man present — to three different warriors: Cú Chulainn, Conall Cernach, and Lóegaire Búadach. Each believed himself the rightful claimant. The resulting chaos required outside judges, three separate journeys, and a final supernatural test — the beheading game — that only Cú Chulainn had the courage to complete. The answer, when it came, was what everyone already knew.",
+    "sourceTrail": {
+      "primary": "Fled Bricrenn (Bricrú's Feast)",
+      "earliest": "Lebor na hUidre (Book of the Dun Cow), c. 1100 CE — one of the longest and best-preserved Ulster tales",
+      "oral": "The Champion's Portion as a real institution at Celtic feasts is attested by Athenaeus (quoting Posidonius) describing Gaulish feasts",
+      "confidence": "high",
+      "notes": "The beheading game in Fled Bricrenn is structurally identical to the Green Knight episode in Sir Gawain and the Green Knight (14th century) — one of the clearest demonstrations of Irish mythology's influence on medieval English romance."
+    },
+    "icon": "⚔",
+    "cast": [
+      { "characterId": "cu-chulainn",      "role": "The true champion — though it takes the entire story to confirm it" },
+      { "characterId": "conall-cernach",   "role": "Second claimant — Cú Chulainn's foster-brother and rival" },
+      { "characterId": "loegaire-buadach", "role": "Third claimant — whose pride outran his patience" },
+      { "characterId": "bricriu",          "role": "The troublemaker — who built the hall to cause exactly this" },
+      { "characterId": "cu-roi",           "role": "The Otherworld judge — who appeared as the giant in the beheading game" },
+      { "characterId": "conchobar",        "role": "King of Ulster — unable to stop what Bricrú set in motion" }
+    ],
+    "beats": [
+      {
+        "id": "bricru-invites",
+        "primaryCharacter": "bricriu",
+        "castChips": ["conchobar", "cu-chulainn", "conall-cernach", "loegaire-buadach"],
+        "title": "The Invitation",
+        "scene": "Bricrú invited the king and every champion of Ulster to his new hall. They did not want to come. He threatened to set father against son if they refused.",
+        "plain": "Bricrú spent seven years building his hall at Dún Rudraige — modelled on the Red Branch house at Emain Macha, with a speaking gallery over the main floor that let him watch every table at once. He invited the king and every champion. They discussed whether to attend at all, knowing Bricrú's reputation. He sent word that if they refused, he would compose satirical verses that would turn every man's father against him, every woman's husband against her, every son against his mother. They came.",
+        "locationId": "emain-macha",
+        "zoom": 10
+      },
+      {
+        "id": "the-portion",
+        "primaryCharacter": "bricriu",
+        "castChips": ["cu-chulainn", "conall-cernach", "loegaire-buadach"],
+        "title": "Three Promises",
+        "scene": "Before the feast began, Bricrú had already spoken to each of the three champions privately. Each had been promised the same thing.",
+        "plain": "Before taking his seat, Bricrú pulled each of the three great champions aside separately: Lóegaire, then Conall, then Cú Chulainn. To each he said the same thing — the Champion's Portion was his by right, greater than any man in the hall. He said this to all three. When the feast began and the Champion's Portion was carried out, all three stood and drew their swords at once. The feast dissolved into three separate duels. Conchobar managed to stop them before anyone was killed, but barely.",
+        "locationId": "emain-macha",
+        "zoom": 10
+      },
+      {
+        "id": "outside-judges",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["conall-cernach", "loegaire-buadach", "cu-roi"],
+        "title": "The Judges",
+        "scene": "Three judges in succession each declared the same winner. The other two refused to accept it.",
+        "plain": "The Ulster champions agreed to seek outside judgment. Ailill and Medb of Connacht judged in Cú Chulainn's favour. Lóegaire and Conall refused the verdict. They went to Cú Roí mac Dáiri of Munster at his fortress Caherconree in Kerry. He judged in Cú Chulainn's favour. They refused again. The argument required a test that could not be refused or disputed.",
+        "lat": 52.18,
+        "lng": -10.27,
+        "placeName": "Caherconree, Co. Kerry",
+        "zoom": 9
+      },
+      {
+        "id": "beheading-game",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["conall-cernach", "loegaire-buadach", "cu-roi"],
+        "title": "The Beheading Game",
+        "scene": "A giant walked into the hall holding a great axe, and offered the same terms to every champion: cut off my head tonight, and come back tomorrow to have yours cut off.",
+        "plain": "A great grey-green giant entered Emain Macha carrying an enormous axe and challenged any champion to the beheading game: let him cut off the giant's head, and return the following night to kneel for the return blow. Lóegaire agreed and beheaded the giant. The giant picked up his head and walked out. Lóegaire did not return. Conall did the same and also fled. Cú Chulainn beheaded the giant. The next night he knelt on the block and waited. The giant — who was Cú Roí in disguise — brought the axe down flat. He declared Cú Chulainn champion of Ireland without reservation.",
+        "locationId": "emain-macha",
+        "zoom": 10
+      }
+    ]
+  },
+
+  {
+    "id": "aided-con-culainn",
+    "title": "Aided Con Culainn",
+    "titleSub": "The Death of Cú Chulainn",
+    "cycle": "ulster",
+    "cycleLabel": "Ulster Cycle",
+    "hook": "The three spears were made. The prophecy said each would kill a king. They were aimed at the greatest king Ulster had ever known.",
+    "source": "Aided Con Culainn, multiple manuscripts from the 12th century onward",
+    "imageFile": "",
+    "description": "The death of Cú Chulainn was prophesied in fragments across his entire life: that he would be short-lived, that he would be destroyed by women's magic, that three spears forged by the children of Calatín would each kill a king. When Queen Medb finally assembled her coalition for the last campaign against Ulster, the prophecies converged. She sent the children of Calatín — trained in every dark art in the east — against Cú Chulainn's mind before his body. He rode out onto the plain knowing he was going to die, bound himself to a standing stone so he would die on his feet, and waited. He was dead before anyone dared approach him. A crow landing on his shoulder was the only signal.",
+    "sourceTrail": {
+      "primary": "Aided Con Culainn (The Death of Cú Chulainn)",
+      "earliest": "Multiple manuscript versions, earliest c. 12th century CE; several incompatible details suggest different oral traditions merged",
+      "oral": "Cú Chulainn's death was one of the most widely told stories in the Ulster tradition — an oral centrepiece",
+      "confidence": "high",
+      "notes": "The standing stone at Knockbridge, Co. Louth, is traditionally identified as the pillar to which Cú Chulainn bound himself. The Morrigan as crow on his shoulder at death is one of the best-known images in Irish mythology."
+    },
+    "icon": "⚔",
+    "cast": [
+      { "characterId": "cu-chulainn",        "role": "Who rode out knowing he would not return" },
+      { "characterId": "the-morrigan",       "role": "The crow on the standing stone — who had warned him, fought him, and outlasted him" },
+      { "characterId": "lugaid-mac-con-roi",  "role": "Who cast the spear that killed the hero's horse, the charioteer, and the man" },
+      { "characterId": "medb",               "role": "Queen of Connacht — who assembled the coalition that brought him down" },
+      { "characterId": "laeg",               "role": "Cú Chulainn's charioteer — killed by the second spear" }
+    ],
+    "beats": [
+      {
+        "id": "children-of-calatin",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["the-morrigan"],
+        "title": "The Daughters of Calatín",
+        "scene": "They made visions for him — smoke, the sound of battle, Ulster burning. He was told to stay in the glen. He could not.",
+        "plain": "Medb sent the daughters of Calatín, trained in sorcery in the east, to break Cú Chulainn with illusion. They surrounded his refuge at Glen na Bodhar with visions of Ulster burning, the sound of screaming women, the smell of smoke from Emain Macha. Emer and his protectors tried to drown it out with music and games. For days he held. Then the visions showed Conall Cernach's body on the field and Laeg dying. He stood up. He called for his chariot. He knew what he was doing.",
+        "locationId": "emain-macha",
+        "zoom": 10
+      },
+      {
+        "id": "ill-omens",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["laeg"],
+        "title": "The Omens",
+        "scene": "Everything that should not have happened happened that morning. His chariot fell apart. The Grey of Macha wept blood against his chest.",
+        "plain": "On the morning he left, the Grey of Macha — his divine horse — came to be harnessed and wept blood-red tears against Cú Chulainn's chest. The chariot fell apart when Laeg tried to hitch it. His mother Deichtine brought him a cup of wine and it turned to blood in the cup. A woman washing bloodied clothing in a ford — a bean nighe, a death-omen — looked up when his chariot passed and he saw that the clothing was his own. He drove on.",
+        "locationId": "muirthemne",
+        "zoom": 10
+      },
+      {
+        "id": "three-spears",
+        "primaryCharacter": "lugaid-mac-con-roi",
+        "castChips": ["cu-chulainn", "laeg"],
+        "title": "The Three Spears",
+        "scene": "The prophecy said each spear would kill a king. They were cast one by one.",
+        "plain": "Lugaid mac Con Roí cast the first spear. It struck the Grey of Macha — king of horses. The horse ran three times around its master with the spear still in it, then went to the Lake of the Grey Horse to die. The second spear killed Laeg — king of charioteers. The third struck Cú Chulainn himself, driving his bowels out. He dismounted, bound himself to a standing stone on the plain so he would die upright, and waited.",
+        "locationId": "muirthemne",
+        "zoom": 10
+      },
+      {
+        "id": "the-pillar-stone",
+        "primaryCharacter": "cu-chulainn",
+        "castChips": ["the-morrigan", "lugaid-mac-con-roi"],
+        "title": "The Pillar Stone",
+        "scene": "For three days no man dared approach the standing stone. A crow settled on his shoulder. That was the signal.",
+        "plain": "Cú Chulainn bound himself to the standing stone at Fochaird Muirthemne with his own belt, so he would face his enemies on his feet. For three days none of Medb's army dared approach him, even clearly dead, because his eyes were still open and his hand still rested on his sword hilt. A crow — the Morrigan in her bird-form — landed on his shoulder. That was when Lugaid crossed the field and took his head. As he raised his sword, Cú Chulainn's falling sword-hand severed his right hand at the wrist. It was the last of him.",
+        "locationId": "muirthemne",
+        "zoom": 11
+      }
+    ]
+  },
+
+  {
+    "id": "togail-bruidne-da-derga",
+    "title": "Togail Bruidne Dá Derga",
+    "titleSub": "The Destruction of Da Derga's Hostel",
+    "cycle": "ulster",
+    "cycleLabel": "Ulster Cycle",
+    "hook": "He was the best king Ireland ever had. He loved his foster-brothers too much to be a perfect king. Each act of mercy required breaking another sacred law. The hostel was waiting.",
+    "source": "Togail Bruidne Dá Derga, Lebor na hUidre, c. 1100 CE",
+    "imageFile": "",
+    "description": "Togail Bruidne Dá Derga is one of the most archaic and formally perfect texts in early Irish literature. Conaire Mór was a High King of Ireland whose reign brought gold-age prosperity. At his inauguration he was given a set of sacred prohibitions — geasa — that bound his kingship to ritual perfection. His foster-brothers were exiled pirates. He could not turn them away. Each act of mercy toward them required breaking one more geis. By the time his road brought him to Da Derga's Hostel on the Dodder river south of Dublin, every prohibition had been violated. The raiders knew where he was. Mac Cécht fought through the night and journeyed across a magically dried-up Ireland for water to bring a dying king — and arrived too late.",
+    "sourceTrail": {
+      "primary": "Togail Bruidne Dá Derga (Destruction of Da Derga's Hostel)",
+      "earliest": "Lebor na hUidre (Book of the Dun Cow), c. 1100 CE — considered one of the most archaic Ulster Cycle texts",
+      "oral": "The bruidhean (hostel) tradition — supernatural hostels that appear at dusk — is one of the oldest strands of Irish oral narrative",
+      "confidence": "high",
+      "notes": "Da Derga's Hostel is traditionally located on the River Dodder south of Dublin, near Bohernabreena. The structural use of broken geasa has been compared to Greek tragic inevitability."
+    },
+    "icon": "⚔",
+    "cast": [
+      { "characterId": "conaire-mor", "role": "High King of Ireland — whose goodness was not enough to save him from his love" },
+      { "characterId": "mac-cecht",   "role": "Champion of Ireland — who fought alone and journeyed for water and arrived too late" },
+      { "characterId": "ingcel",      "role": "The exile — who catalogued the defenders before they died" }
+    ],
+    "beats": [
+      {
+        "id": "the-geasa",
+        "primaryCharacter": "conaire-mor",
+        "castChips": [],
+        "title": "The Sacred Laws",
+        "scene": "At his inauguration, the druids gave him the prohibitions that would make his reign holy.",
+        "plain": "At his inauguration as High King of Ireland, Conaire Mór received his geasa — sacred prohibitions that bound the king to ritual perfection. He must never let three reds precede him to the house of a red man. He must never travel alone after sunset. He must never let exiles go past Tara. He must never let fire be kindled in a house where he was sleeping after sundown without his leave. Each one was clear. Each one would be broken — not by malice or weakness, but by loyalty to the men who had his blood.",
+        "locationId": "tara",
+        "zoom": 10
+      },
+      {
+        "id": "broken-geis-by-geis",
+        "primaryCharacter": "conaire-mor",
+        "castChips": ["ingcel"],
+        "title": "One After Another",
+        "scene": "His foster-brothers were in trouble. He helped them. Each time he helped them, one more prohibition was gone.",
+        "plain": "His foster-brothers — exiled after they raided and burned — sent word from Scotland that they were in danger and needed his protection. He gave it. He gave it again. He gave it each time they asked. The druids watched each geis fall. His road south from Tara required travelling after dark — first geis gone. Three red men rode in front of him to the hostel of a man named Derg — three reds to the house of a red man — second geis gone. Fire was lit. By the time he lay down in the hostel, all of them were broken.",
+        "locationId": "tara",
+        "zoom": 9
+      },
+      {
+        "id": "ingcel-at-the-windows",
+        "primaryCharacter": "ingcel",
+        "castChips": ["conaire-mor", "mac-cecht"],
+        "title": "The Man at the Windows",
+        "scene": "Ingcel moved around the hostel in the dark, looking through every gap, describing what he saw inside.",
+        "plain": "Ingcel, the one-eyed exile from Britain who had joined forces with Conaire's outlawed foster-brothers, moved in the darkness around Da Derga's Hostel and peered through every opening. Inside were the finest warriors of Ireland, gathered around their king. Ingcel described each one to the men behind him — their appearance, their reputation, what wound it would take to kill them. His descriptions are among the most detailed portraits of warriors in early Irish literature. The men he described would be dead by morning.",
+        "lat": 53.25,
+        "lng": -6.38,
+        "placeName": "Da Derga's Hostel, River Dodder, Co. Dublin",
+        "zoom": 12
+      },
+      {
+        "id": "mac-cecht-and-water",
+        "primaryCharacter": "mac-cecht",
+        "castChips": ["conaire-mor"],
+        "title": "The Journey for Water",
+        "scene": "Conaire was dying of thirst. Mac Cécht fought his way out of the hostel and crossed Ireland looking for a river that had not been dried up.",
+        "plain": "Mac Cécht fought through the ring of raiders, killed his way clear of the hostel, and ran north looking for water for his dying king. Every river and lake he reached had been dried up — Medb's druids had emptied them in advance. He ran from river to lake to stream across Ireland, every source bone-dry. At last he found water at the River Liffey. He ran back to the hostel. When he arrived, Conaire was dead — his head separated from his body. Mac Cécht poured the water into the severed head. The head spoke: it praised Mac Cécht's loyalty. Then it was silent.",
+        "lat": 53.35,
+        "lng": -6.26,
+        "placeName": "River Liffey",
+        "zoom": 9
+      }
+    ]
+  },
+
+  {
+    "id": "battle-of-ventry",
+    "title": "Cath Finntrágha",
+    "titleSub": "The Battle of Ventry Harbour",
+    "cycle": "fenian",
+    "cycleLabel": "Fenian Cycle",
+    "hook": "The King of the World came to Ireland with the greatest fleet ever assembled. The Fianna stood alone at the waterline for a year.",
+    "source": "Cath Finntrágha, multiple manuscripts from the 14th century onward",
+    "imageFile": "",
+    "description": "The Battle of Ventry is the great defensive epic of the Fenian Cycle — a year-long siege structured as a sequence of single combats between individual Fenian warriors and the champions of Daire Donn's invading host. Daire Donn, the King of the World, landed at Ventry Harbour on the Dingle Peninsula with an army drawn from every nation that acknowledged him. Fionn mac Cumhaill led the Fianna against them on the shore. Each day brought new champions from the fleet; each day a Fenian warrior killed them. The battle lasted a year. Daire Donn himself was killed by Goll mac Morna — the old enmity set aside for Ireland's survival. The fleet was driven into the sea.",
+    "sourceTrail": {
+      "primary": "Cath Finntrágha (Battle of Ventry)",
+      "earliest": "Multiple manuscript versions from the 14th century CE; earlier references suggest an older oral tradition",
+      "oral": "Strong local oral tradition in Kerry, particularly around the Dingle Peninsula and Ventry Strand",
+      "confidence": "medium",
+      "notes": "Ventry (Ceann Trá, 'Head of the Strand') is a real beach south of Dingle, Co. Kerry. Local tradition still identifies landscape features with events from the battle."
+    },
+    "icon": "◈",
+    "cast": [
+      { "characterId": "fionn-mac-cumhaill", "role": "Leader of the Fianna — who held the line for a year" },
+      { "characterId": "goll-mac-morna",     "role": "Old enemy of Fionn's family — who killed Daire Donn and saved Ireland" },
+      { "characterId": "caolite-mac-ronain", "role": "The swift one — present through all the fighting" },
+      { "characterId": "daire-donn",         "role": "The King of the World — who came for Ireland and never left" }
+    ],
+    "beats": [
+      {
+        "id": "fleet-at-ventry",
+        "primaryCharacter": "daire-donn",
+        "castChips": ["fionn-mac-cumhaill"],
+        "title": "The Fleet",
+        "scene": "They came from the south with two thousand ships. The Fianna counted them from the clifftops at Ventry.",
+        "plain": "Daire Donn came to Ireland with a fleet described as the largest ever assembled — ships from Norway, from France, from Greece, from every nation that paid him tribute. They appeared off the Dingle Peninsula on a morning in summer and anchored in Ventry Harbour. Daire Donn sent word to Fionn mac Cumhaill: Ireland was his to take. Fionn sent back a single word: no. The Fianna moved to the shore. The battle began the next morning.",
+        "lat": 52.13,
+        "lng": -10.35,
+        "placeName": "Ventry Harbour (Ceann Trá), Co. Kerry",
+        "zoom": 11
+      },
+      {
+        "id": "year-of-single-combat",
+        "primaryCharacter": "fionn-mac-cumhaill",
+        "castChips": ["caolite-mac-ronain", "goll-mac-morna", "daire-donn"],
+        "title": "A Year on the Strand",
+        "scene": "Every day a champion came from the fleet. Every day a Fenian warrior killed him. A year passed this way.",
+        "plain": "The battle at Ventry was structured as an endless sequence of single combats — each morning a new champion from Daire Donn's host came ashore and challenged the Fianna, and each morning a different Fenian warrior stepped forward. It went on for a year. The roster of the dead on Daire Donn's side grew longer with every day. Some days were close. But the Fianna held the line of the strand and did not move back.",
+        "lat": 52.13,
+        "lng": -10.35,
+        "placeName": "Ventry Strand",
+        "zoom": 11
+      },
+      {
+        "id": "goll-kills-daire",
+        "primaryCharacter": "goll-mac-morna",
+        "castChips": ["daire-donn", "fionn-mac-cumhaill"],
+        "title": "Goll mac Morna",
+        "scene": "The King of the World came to fight himself. The man who had killed Fionn's father stepped forward to meet him.",
+        "plain": "When the last of his champions had fallen, Daire Donn himself came ashore in full armour. Goll mac Morna — the one-eyed captain of the Clan Morna, the man who had killed Fionn's father Cumhall at Cnucha — walked out of the Fianna line to meet him. They fought on the strand while the armies watched. Goll killed the King of the World with a sword-stroke to the neck. The invasion was over. The fleet broke and sailed south and never came back.",
+        "lat": 52.13,
+        "lng": -10.35,
+        "placeName": "Ventry Strand, Dingle Peninsula",
+        "zoom": 11
+      }
+    ]
+  },
+
+  {
+    "id": "battle-of-gabhair",
+    "title": "Cath Gabhra",
+    "titleSub": "The Battle of Gabhair — End of the Fianna",
+    "cycle": "fenian",
+    "cycleLabel": "Fenian Cycle",
+    "hook": "The High King decided the Fianna had grown too powerful. Oscar killed the king. The king killed Oscar. The Fianna never recovered.",
+    "source": "Cath Gabhra, Acallam na Senórach, c. 1200 CE",
+    "imageFile": "",
+    "description": "The Battle of Gabhair is the end of the Fenian Cycle as a living institution. Cairbre Lifeachair, High King of Ireland, demanded a tribute that the Fianna had never previously been required to pay — a deliberate provocation, because Fionn mac Cumhaill had become too powerful and too autonomous to be handled any other way. Fionn refused. Cairbre declared war. At the Hill of Gabhair near Dublin, the two forces met. Oscar mac Oisín — the greatest individual warrior the Fianna had ever produced — fought his way through to Cairbre and killed him. Cairbre's spear had already mortally wounded Oscar before he fell. Fionn held Oscar as he died. Oisín watched his son die before him. The Fianna staggered away from Gabhair a fraction of what it had been, and never fully rebuilt.",
+    "sourceTrail": {
+      "primary": "Cath Gabhra (Battle of Gabhair); Acallam na Senórach (Colloquy of the Ancients)",
+      "earliest": "Acallam na Senórach, c. 1200 CE — the primary surviving Fenian compilation",
+      "oral": "The Battle of Gabhair and Oscar's death are among the most consistently preserved episodes in the Fenian oral tradition",
+      "confidence": "high",
+      "notes": "Gabhair is traditionally identified with Garristown, Co. Dublin (modern townland of Gabhra), or alternatively near Skryne, Co. Meath."
+    },
+    "icon": "◈",
+    "cast": [
+      { "characterId": "oscar",              "role": "Fionn's grandson — the greatest warrior the Fianna produced, who died winning" },
+      { "characterId": "fionn-mac-cumhaill", "role": "Who held Oscar as he died and knew it was the end" },
+      { "characterId": "oisin",              "role": "Oscar's father — who watched his son die before him" },
+      { "characterId": "cairbre",            "role": "High King of Ireland — who broke the Fianna and was killed doing it" },
+      { "characterId": "caolite-mac-ronain", "role": "Who survived Gabhair and lived to tell it to St Patrick" }
+    ],
+    "beats": [
+      {
+        "id": "cairbres-demand",
+        "primaryCharacter": "cairbre",
+        "castChips": ["fionn-mac-cumhaill"],
+        "title": "The Tribute",
+        "scene": "Cairbre sent his demand to Fionn. He asked for what no king had ever asked before. He was asking for a war.",
+        "plain": "Cairbre Lifeachair had decided the Fianna had grown beyond the High Kingship's control. He demanded a tribute that the Fianna had never paid: a tax on their hunting, their cattle, their halls. Fionn refused. The old compact between king and Fianna, which had worked for generations, was broken. There would have to be a battle.",
+        "lat": 53.60,
+        "lng": -6.33,
+        "placeName": "Gabhair, Co. Dublin",
+        "zoom": 10
+      },
+      {
+        "id": "oscar-through-the-line",
+        "primaryCharacter": "oscar",
+        "castChips": ["cairbre", "fionn-mac-cumhaill"],
+        "title": "The Fight Through",
+        "scene": "Oscar fought his way through Cairbre's line alone, because no one else was going to reach the king in time.",
+        "plain": "At Gabhair the two forces met and the battle was hard from the first moment. Oscar saw that the battle needed an ending, not a gradual grinding down. He drove himself through Cairbre's personal guard alone, taking wounds that should have stopped him, until he stood in front of the High King. Cairbre's spear struck him before he reached the king — drove through his body — and Oscar wrenched it out, kept moving, and put his sword through Cairbre's neck.",
+        "lat": 53.60,
+        "lng": -6.33,
+        "placeName": "Hill of Gabhair",
+        "zoom": 11
+      },
+      {
+        "id": "fionn-holds-oscar",
+        "primaryCharacter": "fionn-mac-cumhaill",
+        "castChips": ["oscar", "oisin", "caolite-mac-ronain"],
+        "title": "Fionn Holds Oscar",
+        "scene": "Oscar fell. Fionn came through the broken battle to where he lay. Oisín stood beside his father and watched his son die.",
+        "plain": "Oscar fell where Cairbre fell. By the time Fionn reached him, the battle had broken around that point — both commanders dead, both armies still. Fionn knelt beside his grandson. Oisín stood behind him. Oscar, bleeding from a wound that no healing could close, looked up at his grandfather. Fionn, who had seen everything Ireland could produce in the way of heroes, could not speak. Oscar died there, in the field, in his grandfather's arms. It was the loudest silence the Fianna had ever heard.",
+        "lat": 53.60,
+        "lng": -6.33,
+        "placeName": "Gabhair",
+        "zoom": 10
+      }
+    ]
+  },
+
+  {
+    "id": "birth-of-fionn",
+    "title": "Mac Cumhaill ag Teacht",
+    "titleSub": "The Death of Cumhall and the Birth of Fionn",
+    "cycle": "fenian",
+    "cycleLabel": "Fenian Cycle",
+    "hook": "His father was killed before he was born. His name was kept secret for years. Ireland's greatest hero began as a child hiding in the forest, raised by two women who were not his mother.",
+    "source": "Macgnímartha Find, Book of Leinster, c. 1150 CE",
+    "imageFile": "",
+    "description": "Before there was a Fianna led by Fionn mac Cumhaill, there was a Fianna led by Cumhall mac Trénmhóir — and Cumhall was killed by Goll mac Morna at the Battle of Cnucha because he had taken the druid's daughter Muirenn without permission. She was already pregnant when Cumhall died. The child — called Deimne at first, to hide him — was given to two women in the wilderness: Bodhmall the druidess and Liath Luachra the warrior. They raised him in the Slieve Bloom mountains, teaching him to hunt, to move unseen, to survive. They kept him alive long enough for him to become what the prophecy said he would be.",
+    "sourceTrail": {
+      "primary": "Macgnímartha Find (Boyhood Deeds of Fionn)",
+      "earliest": "Book of Leinster, c. 1150 CE; related material in earlier Fenian poetry",
+      "oral": "The Slieve Bloom mountains (Sliabh Bladhma) are explicitly named as Fionn's childhood location — a specific geographical tradition",
+      "confidence": "high",
+      "notes": "The Battle of Cnucha (Castleknock, Co. Dublin) is a real location named in multiple texts as the site of Cumhall's death. The enmity between Clan Baiscne (Fionn's family) and Clan Morna (Goll's) is the structural underpinning of the entire Fenian Cycle."
+    },
+    "icon": "◈",
+    "cast": [
+      { "characterId": "fionn-mac-cumhaill", "role": "Born in hiding, raised in secret, waiting to claim his inheritance" },
+      { "characterId": "cumhall",            "role": "Fionn's father — who died at Cnucha before the boy was born" },
+      { "characterId": "muirenn",            "role": "Fionn's mother — who gave him away to keep him alive" },
+      { "characterId": "bodhmall",           "role": "The druidess who raised him in the Slieve Bloom" },
+      { "characterId": "goll-mac-morna",     "role": "Who killed Cumhall at Cnucha — and would one day serve the son he left behind" }
+    ],
+    "beats": [
+      {
+        "id": "cnucha",
+        "primaryCharacter": "cumhall",
+        "castChips": ["goll-mac-morna"],
+        "title": "The Battle of Cnucha",
+        "scene": "At Cnucha — the hill the later city would call Castleknock — two clans met over a woman taken without permission. One captain died.",
+        "plain": "Cumhall mac Trénmhóir, captain of the Fianna and head of the Clan Baiscne, had taken Muirenn, daughter of the druid Tadg mac Nuadat, against her father's wishes. Tadg complained to the High King. The High King gave authority to Goll mac Morna and the Clan Morna to enforce the law. At Cnucha — now Castleknock, west of Dublin — the two forces met. Cumhall was killed. The Clan Morna took control of the Fianna. Muirenn survived. She was pregnant.",
+        "lat": 53.38,
+        "lng": -6.37,
+        "placeName": "Cnucha (Castleknock), Co. Dublin",
+        "zoom": 12
+      },
+      {
+        "id": "muirenn-hides-the-child",
+        "primaryCharacter": "muirenn",
+        "castChips": ["bodhmall"],
+        "title": "The Child in the Forest",
+        "scene": "She could not raise him herself — his name and his bloodline would get him killed. She found two women who could keep him alive.",
+        "plain": "Muirenn gave birth to a son and knew immediately she could not keep him. The Clan Morna would kill Cumhall's heir if they found him. Her father's people would not protect him. She found Bodhmall, a druidess, and Liath Luachra, a warrior-woman, and handed the boy to them. She told them to keep his name secret — he would be called Deimne until it was safe to be Cumhall's son. She went away. The two women took the boy into the forests of the Slieve Bloom mountains and raised him there.",
+        "locationId": "slieve-bloom",
+        "zoom": 10
+      },
+      {
+        "id": "raised-in-wilderness",
+        "primaryCharacter": "fionn-mac-cumhaill",
+        "castChips": ["bodhmall"],
+        "title": "Deimne in the Slieve Bloom",
+        "scene": "He grew up learning to run faster than anyone, to hunt silently, to live without a fire, to move through the mountains without leaving a mark.",
+        "plain": "In the Slieve Bloom he grew up as Deimne — a name that meant nothing to the Clan Morna, which was the point. Bodhmall taught him druidic knowledge. Liath Luachra taught him to run — she was the fastest woman in Ireland and she ran with him until he was faster than she was. He could catch deer on foot. He could move through a forest without disturbing a branch. He was the most dangerous person alive in those hills and nobody outside those hills knew he existed.",
+        "locationId": "slieve-bloom",
+        "zoom": 10
+      },
+      {
+        "id": "fionn-revealed",
+        "primaryCharacter": "fionn-mac-cumhaill",
+        "castChips": [],
+        "title": "The White One",
+        "scene": "His hair turned white overnight — the sign of what he was. He went south to find who he was supposed to be.",
+        "plain": "His foster-mothers eventually told him his real name and his father's death and what was waiting for him. His hair, which had been dark, had turned entirely white — a sign they read as his true nature coming through the disguise, as if the name Fionn (the white one) had been choosing him all along. He left the Slieve Bloom and went south to the Boyne, where a poet named Finnegas had been waiting seven years for a salmon that held all the knowledge in the world. He arrived the morning the fish was caught.",
+        "locationId": "slieve-bloom",
+        "zoom": 9
+      }
+    ]
   }
 ]
