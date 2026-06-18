@@ -72,7 +72,10 @@
     "lng": -6.02017,
     "wikidata": "Q6517664",
     "wikipedia": "Legananny Dolmen",
-    "heritage": true
+    "heritage": true,
+    "summary": "The Legananny Dolmen is a megalithic dolmen or cromlech nine miles southeast of Banbridge and three miles north of Castlewellan, both in County Down, Northern Ireland. It is on the slopes of Slieve Croob near the village of Leitrim in Drumgooland parish, between a farmer's stone wall and a back road. It is a State Care Historic Monument sited in the townland of Legananny, in Banbridge District, at grid ref: J2887 4339.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Legannany_Dolmen_June_2010.jpg/330px-Legannany_Dolmen_June_2010.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Legananny_Dolmen"
   },
   {
     "id": "arch-428119020",
@@ -127,7 +130,10 @@
     "lat": 54.05707,
     "lng": -8.37928,
     "wikidata": "Q261318",
-    "wikipedia": "en:Carrowkeel Megalithic Cemetery"
+    "wikipedia": "en:Carrowkeel Megalithic Cemetery",
+    "summary": "Carrowkeel is a cluster of passage tombs in south County Sligo, Ireland. They were built in the 4th millennium BC, during the Neolithic era. The monuments are on the Bricklieve Hills, overlooking Lough Arrow, and are sometimes called the Bricklieve tombs. They are named after the townland of Carrowkeel in which most of them are located. Nearby are the Caves of Kesh and Heapstown Cairn. The Carrowkeel tombs are protected National Monuments and are considered one of the \"big four\" passage tomb cemeteries in Ireland, along with Carrowmore, Br\u00fa na B\u00f3inne and Loughcrew.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/CarrowkeelIreland.jpg/330px-CarrowkeelIreland.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Carrowkeel_Megalithic_Cemetery"
   },
   {
     "id": "arch-559985905",
@@ -250,7 +256,9 @@
     "lng": -6.20715,
     "wikidata": "Q25248161",
     "wikipedia": "en:Kiltiernan Tomb",
-    "heritage": true
+    "heritage": true,
+    "summary": "Kiltiernan Tomb, also called Kiltiernan Portal Tomb or Kiltiernan Dolmen, is a dolmen located in County Dublin, Ireland. It is a National Monument.",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kiltiernan_Tomb"
   },
   {
     "id": "arch-1211210182",
@@ -260,7 +268,10 @@
     "lng": -6.88112,
     "wikidata": "Q33313",
     "wikipedia": "en:Brownshill dolmen",
-    "heritage": true
+    "heritage": true,
+    "summary": "Brownshill Dolmen is a very large megalithic portal tomb situated 3\u00a0km east of Carlow, in County Carlow, Ireland. Its capstone weighs an estimated 150 metric tons, and is reputed to be the heaviest in Europe. This dolmen has three large uprights and two recumbent stones at the other end. The tomb is listed as a National Monument. Known as the Kernanstown Cromlech, sometimes spelled as Browneshill Dolmen, it is sited on the former estate house of the Browne family from which it takes its name.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Brownshill_Dolmen-1.jpg/330px-Brownshill_Dolmen-1.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Brownshill_dolmen"
   },
   {
     "id": "arch-1300740774",
@@ -314,7 +325,10 @@
     "lat": 51.81155,
     "lng": -9.69547,
     "wikidata": "Q1133801",
-    "wikipedia": "en:Uragh Stone Circle"
+    "wikipedia": "en:Uragh Stone Circle",
+    "summary": "The Uragh Stone Circle is an axial five-stone circle located near Gleninchaquin Park, County Kerry, Ireland. The Bronze Age site includes a multiple stone circle and some boulder burials.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Uragh_Stone_Circle.jpg/330px-Uragh_Stone_Circle.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Uragh_Stone_Circle"
   },
   {
     "id": "arch-1408498905",
@@ -324,7 +338,10 @@
     "lng": -7.27689,
     "wikidata": "Q17747856",
     "wikipedia": "en:Ballynageeragh Portal Tomb",
-    "heritage": true
+    "heritage": true,
+    "summary": "Ballynageeragh Portal Tomb is a dolmen and national monument in County Waterford, Ireland.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/County_Waterford_-_Ballynageeragh_Tomb_-_20190917074738.jpg/330px-County_Waterford_-_Ballynageeragh_Tomb_-_20190917074738.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Ballynageeragh_Portal_Tomb"
   },
   {
     "id": "arch-1417203016",
@@ -581,7 +598,10 @@
     "lat": 54.58437,
     "lng": -7.69008,
     "wikidata": "Q1261327",
-    "wikipedia": "en:Drumskinny"
+    "wikipedia": "en:Drumskinny",
+    "summary": "Drumskinny is the site of a stone circle in the townland of Drumskinny, County Fermanagh, Northern Ireland. With the inclusion of an adjacent cairn and alignment, the stone circle is a State Care Historic Monument in Fermanagh and Omagh district, at grid ref: H\u00a02009\u00a07072. The site was discovered in 1934 and excavated in 1962 and is believed to have been built around 2000 BC.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Drumskinny-stones.jpg/330px-Drumskinny-stones.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Drumskinny"
   },
   {
     "id": "arch-1976319788",
@@ -770,7 +790,10 @@
     "lat": 53.5407,
     "lng": -6.07867,
     "wikidata": "Q1261245",
-    "wikipedia": "en:Drumanagh"
+    "wikipedia": "en:Drumanagh",
+    "summary": "Drumanagh is a headland near the village of Loughshinny, in the north east of County Dublin, Ireland. It features an early 19th-century Martello tower and a large Iron Age promontory fort which has produced Roman artefacts.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Loughshinny_Headland.jpg/330px-Loughshinny_Headland.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Drumanagh"
   },
   {
     "id": "arch-2534390811",
@@ -802,7 +825,9 @@
     "lat": 53.26137,
     "lng": -6.31045,
     "wikidata": "Q2104938",
-    "wikipedia": "en:Mount Venus"
+    "wikipedia": "en:Mount Venus",
+    "summary": "\n\nMount Venus is a megalithic site on the Mount Venus Road in Edmondstown, County Dublin, Ireland. It is a national heritage site.",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mount_Venus"
   },
   {
     "id": "arch-2581944238",
@@ -846,7 +871,10 @@
     "lat": 54.49891,
     "lng": -5.64604,
     "wikidata": "Q3325726",
-    "wikipedia": "en:Nendrum Monastery mill"
+    "wikipedia": "en:Nendrum Monastery mill",
+    "summary": "Nendrum Monastery was a Christian monastery on Mahee Island in Strangford Lough, County Down, Northern Ireland. Medieval records say it was founded in the 5th century, but this is uncertain. The monastery came to an end at some time between 974 and 1178, but its church served a parish until the site was abandoned in the 15th century. Some remains of the monastery can still be seen.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Nendrummonastery.jpg/330px-Nendrummonastery.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Nendrum_Monastery"
   },
   {
     "id": "arch-2621909433",
@@ -1003,7 +1031,10 @@
     "lat": 54.68918,
     "lng": -8.74667,
     "wikidata": "Q1102172",
-    "wikipedia": "en:Cloghanmore"
+    "wikipedia": "en:Cloghanmore",
+    "summary": "Cloghanmore (translated as \"the great stone heap\" is a megalithic chamber tomb of the court tomb type located about 8\u00a0km east from Carrick in Malin More, Glencolmcille, in County Donegal, Ireland.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cloghanmore_Court_Tomb_-_panoramio.jpg/330px-Cloghanmore_Court_Tomb_-_panoramio.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Cloghanmore"
   },
   {
     "id": "arch-3103783129",
@@ -1176,7 +1207,10 @@
     "lat": 54.34197,
     "lng": -5.80364,
     "wikidata": "Q4767769",
-    "wikipedia": "en:Annadorn Dolmen"
+    "wikipedia": "en:Annadorn Dolmen",
+    "summary": "Annadorn Dolmen is a dolmen sited at the Buck's Head near Loughinisland, in the townland of Annadorn. Nearby you can find the old Annadorn school and post office in County Down, Northern Ireland. It is on the north-east shore of Loughinisland Lake, on a hillock overlooking Loughinisland Churches, a group of three ruined churches. The site is a State Care Historic Monument at grid ref: J4289 4591. Co-ordinates: Latitude: 54\u00b0 20' 29.97\" N Longitude: 5\u00b0 48' 8.72\" W",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Annadorn_%2811%29%2C_October_2009.JPG/330px-Annadorn_%2811%29%2C_October_2009.JPG",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Annadorn_Dolmen"
   },
   {
     "id": "arch-3448971416",
@@ -1345,7 +1379,10 @@
     "lng": -6.15875,
     "wikidata": "Q1235911",
     "wikipedia": "en:Brennanstown Portal Tomb",
-    "heritage": true
+    "heritage": true,
+    "summary": "Brennanstown Portal Tomb, also called Glendruid Dolmen or Cabinteely Dolmen, is a dolmen constructed in Prehistoric Ireland and located in County Dublin. It is a National Monument.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Brennanstown_-_Portal_Tomb.jpg/330px-Brennanstown_-_Portal_Tomb.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Brennanstown_Portal_Tomb"
   },
   {
     "id": "arch-3924549372",
@@ -1498,7 +1535,10 @@
     "lng": -7.34138,
     "wikidata": "Q26743438",
     "wikipedia": "en:Mortimer's Castle",
-    "heritage": true
+    "heritage": true,
+    "summary": "Mortimer's Castle is a castle and National Monument located in County Westmeath, Ireland.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Mortimer%27s_Castle.jpg/330px-Mortimer%27s_Castle.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Mortimer's_Castle"
   },
   {
     "id": "arch-4651579274",
@@ -1530,7 +1570,10 @@
     "lng": -7.15909,
     "wikidata": "Q17984614",
     "wikipedia": "en:Knockeen Portal Tomb",
-    "heritage": true
+    "heritage": true,
+    "summary": "The Knockeen Portal Tomb is a megalith in Knockeen, County Waterford, Ireland. It is the largest dolmen in County Waterford exhibiting a double capstone configuration, though it is not the tallest standing stone structure. It is one of the finest examples of a dolmen in Ireland.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Knockeen_Dolmen_IMG_4715.jpg/330px-Knockeen_Dolmen_IMG_4715.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Knockeen_Portal_Tomb"
   },
   {
     "id": "arch-5144602644",
@@ -1617,7 +1660,10 @@
     "lat": 52.22829,
     "lng": -9.70427,
     "wikidata": "Q7435570",
-    "wikipedia": "en:Scotia's Grave"
+    "wikipedia": "en:Scotia's Grave",
+    "summary": "Scotia's Grave or Scota's Grave is a rock feature south of Tralee in County Kerry, Ireland. It is beside a stream called the Finglas, in a wooded glen called Gleann Scoith\u00edn, anglicized 'Glenscoheen' or 'Glanaskagheen'. According to Geoffrey Keating's Foras Feasa ar \u00c9irinn, it is the burial place of Scota, an ancient queen of the Milesians (Gaels) who died there in battle with the Tuatha D\u00e9 Danann. John O'Mahony translated Gleann Scoith\u00edn as \"vale of the little flower\" and said it is the Irish equivalent of the female name Flora. According to the National Monuments Service, \"Following a site inspection in 1999 it was concluded that the evidence was not sufficient to warrant accepting this as an archaeological monument\".",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Scotia%27s_Grave_-_geograph.org.uk_-_1404461.jpg/330px-Scotia%27s_Grave_-_geograph.org.uk_-_1404461.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Scotia's_Grave"
   },
   {
     "id": "arch-5330120399",
@@ -1641,7 +1687,9 @@
     "type": "megalith",
     "lat": 51.54269,
     "lng": -9.65337,
-    "wikipedia": "en:List of archaeological sites in County Cork"
+    "wikipedia": "en:List of archaeological sites in County Cork",
+    "summary": "\n\nA list of archaeological sites in County Cork, Ireland.",
+    "wikiUrl": "https://en.wikipedia.org/wiki/List_of_archaeological_sites_in_County_Cork"
   },
   {
     "id": "arch-5396226337",
@@ -1687,7 +1735,10 @@
     "lng": -7.22723,
     "wikidata": "Q28225977",
     "wikipedia": "en:Matthewstown Passage Tomb",
-    "heritage": true
+    "heritage": true,
+    "summary": "The Matthewstown Passage Tomb is a passage tomb situated in County Waterford, Ireland.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Passage_tomb_at_Matthewstown%2C_Co._Waterford_-_geograph.org.uk_-_1013215.jpg/330px-Passage_tomb_at_Matthewstown%2C_Co._Waterford_-_geograph.org.uk_-_1013215.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Matthewstown_Passage_Tomb"
   },
   {
     "id": "arch-5531263229",
@@ -1696,7 +1747,10 @@
     "lat": 52.1378,
     "lng": -7.04623,
     "wikidata": "Q7774523",
-    "wikipedia": "en:The White Lady (Ireland)"
+    "wikipedia": "en:The White Lady (Ireland)",
+    "summary": "The White Lady is an unusual standing stone, said to resemble a figure, located near the small fishing village of Dunmore East, in County Waterford, Ireland.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/WhiteLadyDunmoreCloseup.jpg/330px-WhiteLadyDunmoreCloseup.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/The_White_Lady_(Ireland)"
   },
   {
     "id": "arch-5531263230",
@@ -1905,7 +1959,9 @@
     "lat": 55.32612,
     "lng": -5.5845,
     "wikidata": "Q20712917",
-    "wikipedia": "en:Macharioch Motte"
+    "wikipedia": "en:Macharioch Motte",
+    "summary": "Macharioch Motte is the remains of a motte-and-bailey castle situated in a field near the farm of Macharioch in Kintyre, Argyll and Bute, Scotland.",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Macharioch_Motte"
   },
   {
     "id": "arch-6131747033",
@@ -2933,7 +2989,10 @@
     "lng": -6.62838,
     "wikidata": "Q24196389",
     "wikipedia": "en:Punchestown Longstone",
-    "heritage": true
+    "heritage": true,
+    "summary": "Punchestown Longstone is a menhir and national monument near Naas in Ireland.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/PUNCHESTOWN_GREAT_STANDING_STONE.JPG/330px-PUNCHESTOWN_GREAT_STANDING_STONE.JPG",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Punchestown_Longstone"
   },
   {
     "id": "arch-7182328800",

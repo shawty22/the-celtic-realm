@@ -2,36 +2,35 @@
 // range = metres camera-to-centre · altitude = metres above sea level
 const CAMERA_HINTS = {
   // Mythological Cycle
-  'tara':              { altitude: 150, range: 1200, tilt: 63, heading: 175 },
-  'bru-na-boinne':     { altitude: 60,  range: 800,  tilt: 68, heading: 45  },
-  'uisneach':          { altitude: 180, range: 1600, tilt: 60, heading: 220 },
-  'tailteann':         { altitude: 100, range: 1000, tilt: 60, heading: 0   },
-  'kildare':           { altitude: 80,  range: 1000, tilt: 58, heading: 0   },
-  'tory-island':       { altitude: 200, range: 2500, tilt: 55, heading: 90  },
-  'lough-derravaragh': { altitude: 150, range: 2200, tilt: 56, heading: 0   },
-  'mag-tuired-south':  { altitude: 350, range: 2500, tilt: 54, heading: 0   },
-  'mag-tuired-north':  { altitude: 300, range: 2000, tilt: 56, heading: 0   },
+  'tara':              { altitude: 80,  range: 600,  tilt: 72, heading: 175 },
+  'bru-na-boinne':     { altitude: 30,  range: 400,  tilt: 75, heading: 45  },
+  'uisneach':          { altitude: 100, range: 900,  tilt: 68, heading: 220 },
+  'tailteann':         { altitude: 60,  range: 700,  tilt: 68, heading: 0   },
+  'kildare':           { altitude: 50,  range: 700,  tilt: 65, heading: 0   },
+  'tory-island':       { altitude: 120, range: 1800, tilt: 62, heading: 90  },
+  'lough-derravaragh': { altitude: 80,  range: 1400, tilt: 63, heading: 0   },
+  'mag-tuired-south':  { altitude: 200, range: 1600, tilt: 60, heading: 0   },
+  'mag-tuired-north':  { altitude: 180, range: 1400, tilt: 62, heading: 0   },
   // Ulster Cycle
-  'emain-macha':       { altitude: 120, range: 1000, tilt: 65, heading: 45  },
-  'rathcroghan':       { altitude: 100, range: 1500, tilt: 60, heading: 0   },
-  'cooley':            { altitude: 400, range: 3000, tilt: 55, heading: 330 },
-  'ath-fhirdia':       { altitude: 30,  range: 600,  tilt: 70, heading: 0   },
-  'dun-dealgan':       { altitude: 80,  range: 900,  tilt: 62, heading: 180 },
-  'knocknarea':        { altitude: 500, range: 2800, tilt: 50, heading: 270 },
-  'slieve-gullion':    { altitude: 450, range: 2200, tilt: 55, heading: 0   },
-  'cave-of-cats':      { altitude: 80,  range: 1200, tilt: 62, heading: 0   },
+  'emain-macha':       { altitude: 60,  range: 600,  tilt: 72, heading: 45  },
+  'rathcroghan':       { altitude: 60,  range: 900,  tilt: 68, heading: 0   },
+  'cooley':            { altitude: 250, range: 2000, tilt: 62, heading: 330 },
+  'ath-fhirdia':       { altitude: 20,  range: 400,  tilt: 75, heading: 0   },
+  'dun-dealgan':       { altitude: 50,  range: 600,  tilt: 70, heading: 180 },
+  'knocknarea':        { altitude: 300, range: 1800, tilt: 58, heading: 270 },
+  'slieve-gullion':    { altitude: 280, range: 1500, tilt: 62, heading: 0   },
+  'cave-of-cats':      { altitude: 50,  range: 800,  tilt: 68, heading: 0   },
   // Fenian Cycle
-  'hill-of-allen':     { altitude: 150, range: 1400, tilt: 60, heading: 0   },
-  'ben-bulben':        { altitude: 600, range: 3000, tilt: 50, heading: 100 },
-  'giants-causeway':   { altitude: 80,  range: 1200, tilt: 58, heading: 200 },
-  'slieve-bloom':      { altitude: 400, range: 3500, tilt: 52, heading: 0   },
-  'lough-leane':       { altitude: 500, range: 5000, tilt: 50, heading: 0   },
-  'boyne-salmon':      { altitude: 60,  range: 800,  tilt: 65, heading: 90  },
+  'hill-of-allen':     { altitude: 80,  range: 900,  tilt: 68, heading: 0   },
+  'ben-bulben':        { altitude: 400, range: 2000, tilt: 57, heading: 100 },
+  'giants-causeway':   { altitude: 50,  range: 800,  tilt: 65, heading: 200 },
+  'slieve-bloom':      { altitude: 250, range: 2500, tilt: 60, heading: 0   },
+  'lough-leane':       { altitude: 300, range: 3500, tilt: 57, heading: 0   },
+  'boyne-salmon':      { altitude: 30,  range: 500,  tilt: 72, heading: 90  },
 }
 
-const DEFAULT_HINT = { altitude: 180, range: 1800, tilt: 60, heading: 0 }
+const DEFAULT_HINT = { altitude: 120, range: 1200, tilt: 65, heading: 0 }
 
-// Entries with no physical location — no fly button
 const NO_FLY = new Set(['manannan', 'tir-na-nog'])
 
 let gmLoaded = false
@@ -56,7 +55,6 @@ export function initFlythrough() {
   })
 }
 
-// Returns true for entries that should show the "Fly to 3D" button
 export function canFly(entry) {
   return (
     entry.confidence !== 'low' &&
@@ -69,7 +67,7 @@ export function canFly(entry) {
 export async function flyTo(entry) {
   const key = import.meta.env.VITE_GOOGLE_MAPS_KEY
   if (!key) {
-    alert('3D flythrough: open .env.local in the project root and add your Google Maps key to VITE_GOOGLE_MAPS_KEY, then restart the dev server.')
+    alert('Add VITE_GOOGLE_MAPS_KEY to .env.local and restart the dev server.')
     return
   }
 
@@ -85,7 +83,7 @@ export async function flyTo(entry) {
   } catch (err) {
     console.error('[flythrough]', err)
     exitFlythrough()
-    alert('3D flythrough unavailable — verify the Maps key is valid and that you are using Chrome or Edge (Firefox does not support WebGL 3D tiles).')
+    alert('3D flythrough unavailable — verify your Maps key and use Chrome or Edge (Firefox lacks WebGL 3D tile support).')
   }
 }
 
@@ -112,26 +110,27 @@ async function ensureGoogleMaps(key) {
 }
 
 async function mountMap(entry) {
-  if (overlayMap) return  // reuse existing element; flyCameraTo will reposition
+  if (!overlayMap) {
+    overlayMap = new Map3DElement_()
+    _container.appendChild(overlayMap)
+  }
 
-  overlayMap = new Map3DElement_()
-  // Initial position: high above the target location for a dramatic swoop-in
-  overlayMap.center  = { lat: entry.lat, lng: entry.lng, altitude: 0 }
+  // Always reset to high orbital position for a dramatic swoop-in
+  overlayMap.center  = { lat: entry.lat, lng: entry.lng, altitude: 6000 }
   overlayMap.range   = 80000
-  overlayMap.tilt    = 0
+  overlayMap.tilt    = 8
   overlayMap.heading = 0
-  _container.appendChild(overlayMap)
 
-  // Brief pause — lets the element register and tile requests begin
-  await new Promise((r) => setTimeout(r, 700))
+  // Give tiles time to begin loading from this high view
+  await new Promise((r) => setTimeout(r, 900))
 }
 
 async function animateFly(entry) {
-  // Reveal 3D view: spinner fades out, map fades in, camera starts moving
   _overlay.classList.remove('is-loading')
 
   const h = CAMERA_HINTS[entry.id] || DEFAULT_HINT
 
+  // Phase 1 — swoop in: high orbital → close ground-level view
   await overlayMap.flyCameraTo({
     endCamera: {
       center:  { lat: entry.lat, lng: entry.lng, altitude: h.altitude },
@@ -139,17 +138,17 @@ async function animateFly(entry) {
       heading: h.heading,
       range:   h.range,
     },
-    durationMillis: 5000,
+    durationMillis: 7000,
   })
 
-  // Gentle 360° orbit after landing — not awaited so exit works immediately
+  // Phase 2 — slow orbit at ground level (not awaited — exit works instantly)
   overlayMap.flyCameraAround({
     camera: {
       center:  { lat: entry.lat, lng: entry.lng, altitude: h.altitude },
       tilt:    h.tilt,
       range:   h.range,
     },
-    durationMillis: 22000,
+    durationMillis: 60000,
     rounds: 1,
   })
 }
