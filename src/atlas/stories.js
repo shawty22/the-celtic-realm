@@ -1,6 +1,7 @@
 import L from 'leaflet'
 import catalog from '../data/stories-catalog.json'
 import { flyHome } from './map.js'
+import { getCharacter, renderPrimaryCharCard, renderCastChips } from './characters.js'
 
 let _map     = null
 let _allData = null
@@ -104,21 +105,35 @@ function _buildLocationIndex() {
 function _renderDrawer() {
   const listEl = document.getElementById('stories-list')
   if (!listEl) return
-  listEl.innerHTML = catalog.map(story => `
+  listEl.innerHTML = catalog.map(story => {
+    const castPreview = (story.cast || []).slice(0, 4).map(entry => {
+      const c = getCharacter(entry.characterId)
+      return c ? `<span class="story-cast-chip cycle-chip-${_x(c.cycle)}" title="${_x(c.title)}">${_x(c.name)}</span>` : ''
+    }).join('')
+    return `
     <div class="story-card story-cycle-${story.cycle}">
       <div class="story-card-top">
         <span class="story-card-icon">${story.icon}</span>
         <span class="story-cycle-badge cycle-badge-${story.cycle}">${_x(story.cycleLabel)}</span>
       </div>
+      <div class="story-card-art">
+        <div class="story-card-art-placeholder">
+          <span class="story-card-art-glyph">${story.icon}</span>
+          <span class="story-card-art-label">${_x(story.title)}</span>
+          <span class="story-card-art-pending">Artwork pending</span>
+        </div>
+      </div>
       <h3 class="story-card-title">${_x(story.title)}</h3>
       <p class="story-card-sub">${_x(story.titleSub)}</p>
       <p class="story-card-hook">${_x(story.hook)}</p>
+      ${castPreview ? `<div class="story-card-cast">${castPreview}</div>` : ''}
       <p class="story-card-source">${_x(story.source)}</p>
       <button class="story-card-btn" data-story-id="${story.id}">
         Begin story · ${story.beats.length} parts ↗
       </button>
     </div>
-  `).join('')
+    `
+  }).join('')
   listEl.querySelectorAll('.story-card-btn').forEach(btn => {
     btn.addEventListener('click', () => enterStory(btn.dataset.storyId))
   })
@@ -131,11 +146,25 @@ function _showBeat(idx) {
   _beatIdx = idx
   const beat = beats[idx]
 
+  // Resolve characters
+  const primaryChar = beat.primaryCharacter ? getCharacter(beat.primaryCharacter) : null
+  const castChipIds = beat.castChips || []
+
   // Update floating panel
   if (titleEl)     titleEl.textContent     = _story.title
   if (beatTitleEl) beatTitleEl.textContent = beat.title
-  if (beatTextEl)  beatTextEl.textContent  = beat.plain
+  if (beatTextEl)  beatTextEl.innerHTML    = _x(beat.plain)
   if (beatCountEl) beatCountEl.textContent = `${idx + 1} / ${beats.length}`
+
+  // Inject character section into beat body
+  const charSectionEl = floatEl?.querySelector('.sf-char-section')
+  if (charSectionEl) {
+    const primaryHTML = renderPrimaryCharCard(primaryChar, _story.id)
+    const chipsHTML   = renderCastChips(castChipIds, _story.id)
+    charSectionEl.innerHTML = (primaryHTML || chipsHTML)
+      ? `${primaryHTML}<div class="sf-cast-row">${chipsHTML ? '<span class="sf-cast-label">Also present</span>' + chipsHTML : ''}</div>`
+      : ''
+  }
 
   if (prevBtn) prevBtn.disabled = (idx === 0)
   if (nextBtn) {

@@ -13,6 +13,7 @@ import { initFlythrough, flyTo }         from './atlas/flythrough.js'
 import { buildArchLayer, toggleArchLayer, TYPE_META, TYPE_DESC } from './atlas/archaeology.js'
 import { initCycleModal }                from './atlas/cycleinfo.js'
 import { initStories }                   from './atlas/stories.js'
+import { initCharacters }               from './atlas/characters.js'
 
 // ── Boot ──────────────────────────────────────────────────────────────────── //
 
@@ -25,6 +26,7 @@ initCycleModal()
 const allData = { mythological: mythData, ulster: ulsterData, fenian: fenianData }
 buildLayers(map, allData, (entry) => showPanel(entry))
 initStories(map, allData)
+initCharacters(map, allData)
 
 const tainRoute = buildRoute(map, tainRouteData)
 let tainVisible = false
