@@ -76,7 +76,8 @@
         "plain": "After the Tuatha Dé Danann were defeated by the Milesians and retreated into the fairy mounds of Ireland, Lir — one of their kings — lived at Sídhe Fionnachaidh. His four children, Fionnuala and her brothers Aodh, Fiachra, and Conn, were the delight of all the Tuatha Dé. When their mother died, Lir married again — and Aoife, his new queen, grew bitterly jealous of them.",
         "lat": 54.37,
         "lng": -6.66,
-        "zoom": 10
+        "zoom": 10,
+        "placeName": "Sídhe Fionnachaidh — Lir's Home"
       },
       {
         "id": "aoifes-curse",
@@ -101,7 +102,8 @@
         "plain": "The Sea of Moyle was a punishment no one could endure but them. Storms tore the siblings apart again and again. Fionnuala, the eldest, would gather her brothers under her wings each time the seas grew calm — holding Conn and Fiachra beneath her breast-feathers, Aodh beneath her head. Three hundred years of cold, homesickness, and separation. Then the curse drove them west again, to the lonely Atlantic shores of Mayo.",
         "lat": 55.05,
         "lng": -5.7,
-        "zoom": 9
+        "zoom": 9,
+        "placeName": "Sea of Moyle"
       },
       {
         "id": "inishglora",
@@ -110,7 +112,8 @@
         "plain": "The last three centuries were spent between Erris and the small island of Inishglora off the Mayo coast. Here, at last, the seas were quieter. The Christian era had come to Ireland. A monk named Mochaomhóg settled on the island. One morning the swans heard the bell of his oratory ring out across the water — the first bell any of them had heard. They flew to it, drawn by something they could not name. Their long exile was nearly over.",
         "lat": 54.22,
         "lng": -10.12,
-        "zoom": 11
+        "zoom": 11,
+        "placeName": "Inishglora — off the Mayo coast"
       },
       {
         "id": "the-ending",
@@ -119,7 +122,8 @@
         "plain": "When a Christian king from Connacht tried to take the swans as a gift for his queen, Mochaomhóg refused to give them up. In the struggle the birds were torn from the monk's care. At that moment the nine hundred years ended. The feathers fell away. Four ancient, white-haired people lay on the shore — Fionnuala and her brothers, impossibly old, barely alive. Mochaomhóg baptised them. They died moments later, together as they had lived through all the centuries of exile. He buried them standing, as was the old custom — Fionnuala with her arms around her brothers, as she had sheltered them from the storms.",
         "lat": 54.22,
         "lng": -10.12,
-        "zoom": 11
+        "zoom": 11,
+        "placeName": "Inishglora"
       }
     ]
   },
@@ -148,7 +152,8 @@
         "plain": "Conchobar had the infant Deirdre hidden away in an isolated house in the Ulster glens, raised by a single foster-mother, seeing no man but the king himself. She learned to read the world through its seasons — birds, storms, the shapes of distant mountains. She was taught that she would be a queen. She was not told that a prophecy had already decided her fate.",
         "lat": 54.12,
         "lng": -6.43,
-        "zoom": 10
+        "zoom": 10,
+        "placeName": "The Ulster Glens"
       },
       {
         "id": "naoise",
@@ -165,7 +170,8 @@
         "plain": "Naoise and his brothers Ardán and Ainle took Deirdre and fled Ireland for Scotland — Alba. They lived in Glen Etive and Glen Orchy, hunting and feasting in the highland glens. Conchobar's anger followed them in his dreams. For years the exiles were content. Then Conchobar sent the warrior Fergus mac Róich — the one man Naoise trusted completely — with word that the king had forgiven them and invited them home.",
         "lat": 55.15,
         "lng": -6.1,
-        "zoom": 9
+        "zoom": 9,
+        "placeName": "Antrim Coast — the road to Scotland"
       },
       {
         "id": "the-betrayal",
@@ -217,8 +223,9 @@
         "scene": "Across every province of Ireland, Fionn's Fianna followed. And yet they never caught them.",
         "plain": "For sixteen years Diarmuid and Gráinne fled across all of Ireland — sleeping in caves and hollows, marking their camps with standing stones. Every morning Diarmuid left a piece of raw meat at the last camp so Fionn would know they had not slept. The legend of their stopping places is written across the landscape — from Connacht to Munster to the west coast, hundreds of 'beds of Diarmuid and Gráinne' in the rock. Eventually an uneasy truce was made, and Diarmuid settled with Gráinne at Rath Gráinne in Kildare.",
         "lat": 53.5,
-        "lng": -9.0,
-        "zoom": 7
+        "lng": -9,
+        "zoom": 7,
+        "placeName": "The Long Pursuit — all of Ireland"
       },
       {
         "id": "the-hunt",
@@ -255,7 +262,8 @@
         "plain": "Fionn and his Fianna were hunting on the shores of Lough Lene — some versions say near the Sligo coast — when a white horse appeared from the direction of the western sea. On its back rode Niamh Chinn Óir — Niamh of the Golden Hair, daughter of the king of Tír na nÓg, the Land of Eternal Youth. She had come for Fionn's son, the poet-warrior Oisín.",
         "lat": 54.27,
         "lng": -8.48,
-        "zoom": 10
+        "zoom": 10,
+        "placeName": "Sligo Coast"
       },
       {
         "id": "niamh",
@@ -264,16 +272,18 @@
         "plain": "Niamh told Oisín of Tír na nÓg: a country beyond the western sea where there was no decay, no old age, no death. She had watched him from her father's halls for years. She asked him to come with her. Oisín looked at his father Fionn, at the mountains he knew, at Ireland spread around him. Then he mounted behind Niamh on the white horse, and they rode west into the sea.",
         "lat": 54.27,
         "lng": -8.48,
-        "zoom": 9
+        "zoom": 9,
+        "placeName": "Sligo Coast"
       },
       {
         "id": "tir-na-nog",
         "title": "Three Hundred Years",
         "scene": "In Tír na nÓg time did not pass. But somewhere behind him, all of Ireland was changing.",
         "plain": "In Tír na nÓg, Oisín lived in a palace of gold and silver, married Niamh, and had children. He was happy. But a longing for Ireland began to grow in him — a longing to see Fionn and the Fianna, to walk the hills of Kildare, to hear the Irish language spoken again. What felt like three years had passed. He asked Niamh if he might ride home. She agreed, but warned him: whatever he did, he must not let his feet touch Irish soil.",
-        "lat": 54.0,
+        "lat": 54,
         "lng": -12.5,
-        "zoom": 7
+        "zoom": 7,
+        "placeName": "Tír na nÓg — beyond the western sea"
       },
       {
         "id": "the-return",
@@ -282,7 +292,8 @@
         "plain": "Oisín rode Niamh's white horse back across the western sea and came to shore near Sligo. Ireland was smaller than he remembered. He asked for the Fianna and was met with blank looks. He asked for Fionn mac Cumhaill, and men told him Fionn had been dead for three hundred years, that the Fianna were gone. He found a group of men trying to lift a flagstone — what had taken two Fianna warriors to move. He leaned from the horse to help them, and the saddle-girth broke.",
         "lat": 54.27,
         "lng": -8.48,
-        "zoom": 9
+        "zoom": 9,
+        "placeName": "Sligo Coast — the return"
       },
       {
         "id": "the-fall",
@@ -291,7 +302,8 @@
         "plain": "Oisín fell from the horse and touched the ground. In an instant he became an ancient man — blind, withered, the three centuries rushing through his body. The white horse turned and galloped west and was gone. The men who had been watching ran for a monk — a man named Patrick, who would later become Ireland's patron saint. Oisín spent his last years telling Patrick the stories of the Fianna, the stories that no one else living still knew. Everything he described was already archaeology.",
         "lat": 53.5,
         "lng": -7.5,
-        "zoom": 8
+        "zoom": 8,
+        "placeName": "The Heartland of Ireland"
       }
     ]
   },
@@ -312,7 +324,8 @@
         "plain": "At the source of the River Boyne — in the mythological geography of Ireland, where the river emerges from the Otherworld — stood the Well of Segais, source of all knowledge. Above the well grew nine hazel trees. Each year the hazelnuts fell into the well, were eaten by the Salmon of Knowledge, and those who ate the salmon received all the wisdom the nuts contained. No one had caught the salmon. Until the poet Finnegas.",
         "lat": 53.8,
         "lng": -7.2,
-        "zoom": 10
+        "zoom": 10,
+        "placeName": "Well of Segais — source of the Boyne"
       },
       {
         "id": "seven-years",

@@ -124,21 +124,23 @@
         </aside>
       </div>
 
-      <!-- ═══ Story strip (bottom bar, active during story mode) ══════════ -->
-      <div id="story-strip" aria-live="polite">
-        <div class="strip-nav-row">
-          <button id="strip-prev" class="strip-nav-btn" aria-label="Previous beat">← Prev</button>
-          <div class="strip-meta">
-            <span id="strip-story-title" class="strip-story-title"></span>
-            <span class="strip-sep">·</span>
-            <span id="strip-beat-count" class="strip-beat-count"></span>
+      <!-- ═══ Floating story panel (draggable, active during story mode) ══ -->
+      <div id="story-float" aria-live="polite" aria-label="Story mode panel">
+        <div class="sf-handle" id="story-float-handle">
+          <span class="sf-grip" title="Drag to move">⠿</span>
+          <div class="sf-meta">
+            <span id="sf-story-title" class="sf-story-title"></span>
+            <span id="sf-beat-count"  class="sf-beat-count"></span>
           </div>
-          <button id="strip-next" class="strip-nav-btn" aria-label="Next beat">Next →</button>
-          <button id="strip-exit" class="strip-exit-btn" aria-label="Exit story mode">✕ Exit</button>
+          <button id="sf-exit" class="sf-exit-btn" aria-label="Exit story mode">✕</button>
         </div>
-        <div class="strip-content-row">
-          <h3 id="strip-beat-title" class="strip-beat-title"></h3>
-          <p  id="strip-beat-text"  class="strip-beat-text"></p>
+        <div class="sf-body">
+          <h3 id="sf-beat-title" class="sf-beat-title"></h3>
+          <p  id="sf-beat-text"  class="sf-beat-text"></p>
+        </div>
+        <div class="sf-footer">
+          <button id="sf-prev" class="sf-nav-btn" aria-label="Previous beat">← Prev</button>
+          <button id="sf-next" class="sf-nav-btn sf-nav-next" aria-label="Next beat">Next →</button>
         </div>
       </div>
 

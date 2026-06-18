@@ -1,15 +1,22 @@
 import L from 'leaflet'
 import catalog from '../data/stories-catalog.json'
+import { flyHome } from './map.js'
 
-let _map      = null
-let _allData  = null
-let _story    = null
-let _beatIdx  = 0
+let _map     = null
+let _allData = null
+let _story   = null
+let _beatIdx = 0
 
-// DOM refs — resolved once in initStories
-let drawerEl, storiesListEl, stripEl
-let stripStoryTitleEl, stripBeatTitleEl, stripBeatTextEl
-let stripCountEl, stripPrevBtn, stripNextBtn, stripExitBtn
+// Leaflet layers for story mode
+let beaconMarker    = null
+let tempPinMarker   = null
+let connectionLine  = null
+
+// Floating panel DOM refs
+let floatEl, handleEl
+let titleEl, beatTitleEl, beatTextEl, beatCountEl
+let prevBtn, nextBtn, exitBtn
+let storiesBtnEl
 
 // Reverse index: locationId → [storyId, ...]
 const locationStories = {}
@@ -20,34 +27,33 @@ export function initStories(map, allData) {
 
   _buildLocationIndex()
 
-  drawerEl       = document.getElementById('stories-drawer')
-  storiesListEl  = document.getElementById('stories-list')
-  stripEl        = document.getElementById('story-strip')
-  stripStoryTitleEl = document.getElementById('strip-story-title')
-  stripBeatTitleEl  = document.getElementById('strip-beat-title')
-  stripBeatTextEl   = document.getElementById('strip-beat-text')
-  stripCountEl      = document.getElementById('strip-beat-count')
-  stripPrevBtn      = document.getElementById('strip-prev')
-  stripNextBtn      = document.getElementById('strip-next')
-  stripExitBtn      = document.getElementById('strip-exit')
+  floatEl      = document.getElementById('story-float')
+  handleEl     = document.getElementById('story-float-handle')
+  titleEl      = document.getElementById('sf-story-title')
+  beatTitleEl  = document.getElementById('sf-beat-title')
+  beatTextEl   = document.getElementById('sf-beat-text')
+  beatCountEl  = document.getElementById('sf-beat-count')
+  prevBtn      = document.getElementById('sf-prev')
+  nextBtn      = document.getElementById('sf-next')
+  exitBtn      = document.getElementById('sf-exit')
+  storiesBtnEl = document.getElementById('stories-btn')
 
   document.getElementById('stories-btn')?.addEventListener('click', openDrawer)
   document.getElementById('stories-drawer-close')?.addEventListener('click', closeDrawer)
-  drawerEl?.querySelector('.stories-drawer-backdrop')?.addEventListener('click', closeDrawer)
+  document.querySelector('.stories-drawer-backdrop')?.addEventListener('click', closeDrawer)
 
-  stripPrevBtn?.addEventListener('click', prevBeat)
-  stripNextBtn?.addEventListener('click', nextBeat)
-  stripExitBtn?.addEventListener('click', exitStory)
+  prevBtn?.addEventListener('click', prevBeat)
+  nextBtn?.addEventListener('click', nextBeat)
+  exitBtn?.addEventListener('click', exitStory)
 
-  // Panel can dispatch this to enter a story at a beat
   document.addEventListener('atlas:enterStory', (e) => {
     enterStory(e.detail?.storyId, e.detail?.beatIndex ?? 0)
   })
 
+  _initDrag()
   _renderDrawer()
 }
 
-// Public API used by panel.js
 export function getStoriesForLocation(locationId) {
   return (locationStories[locationId] || []).map(id => {
     const s = catalog.find(c => c.id === id)
@@ -58,15 +64,10 @@ export function getStoriesForLocation(locationId) {
 export function enterStory(storyId, beatIndex = 0) {
   const story = catalog.find(s => s.id === storyId)
   if (!story) return
-
   _story   = story
   _beatIdx = beatIndex
-
   closeDrawer()
-
-  // Close any open atlas panels
   document.dispatchEvent(new Event('atlas:mapclick'))
-
   _showBeat(_beatIdx)
 }
 
@@ -83,8 +84,6 @@ function _buildLocationIndex() {
       }
     }
   }
-
-  // Also pull associatedStories from the atlas data itself
   const all = [
     ...(_allData?.mythological || []),
     ...(_allData?.ulster       || []),
@@ -103,13 +102,13 @@ function _buildLocationIndex() {
 }
 
 function _renderDrawer() {
-  if (!storiesListEl) return
-
-  storiesListEl.innerHTML = catalog.map(story => `
+  const listEl = document.getElementById('stories-list')
+  if (!listEl) return
+  listEl.innerHTML = catalog.map(story => `
     <div class="story-card story-cycle-${story.cycle}">
       <div class="story-card-top">
         <span class="story-card-icon">${story.icon}</span>
-        <span class="story-cycle-badge cycle-badge-${story.cycle}">${story.cycleLabel}</span>
+        <span class="story-cycle-badge cycle-badge-${story.cycle}">${_x(story.cycleLabel)}</span>
       </div>
       <h3 class="story-card-title">${_x(story.title)}</h3>
       <p class="story-card-sub">${_x(story.titleSub)}</p>
@@ -120,8 +119,7 @@ function _renderDrawer() {
       </button>
     </div>
   `).join('')
-
-  storiesListEl.querySelectorAll('.story-card-btn').forEach(btn => {
+  listEl.querySelectorAll('.story-card-btn').forEach(btn => {
     btn.addEventListener('click', () => enterStory(btn.dataset.storyId))
   })
 }
@@ -130,43 +128,101 @@ function _showBeat(idx) {
   if (!_story) return
   const beats = _story.beats
   if (idx < 0 || idx >= beats.length) return
-
   _beatIdx = idx
   const beat = beats[idx]
 
-  // Update strip content
-  if (stripStoryTitleEl) stripStoryTitleEl.textContent = _story.title
-  if (stripBeatTitleEl)  stripBeatTitleEl.textContent  = beat.title
-  if (stripBeatTextEl)   stripBeatTextEl.textContent   = beat.plain
-  if (stripCountEl)      stripCountEl.textContent      = `${idx + 1} of ${beats.length}`
+  // Update floating panel
+  if (titleEl)     titleEl.textContent     = _story.title
+  if (beatTitleEl) beatTitleEl.textContent = beat.title
+  if (beatTextEl)  beatTextEl.textContent  = beat.plain
+  if (beatCountEl) beatCountEl.textContent = `${idx + 1} / ${beats.length}`
 
-  if (stripPrevBtn) stripPrevBtn.disabled = (idx === 0)
-  if (stripNextBtn) stripNextBtn.disabled = (idx === beats.length - 1)
-  if (stripNextBtn) stripNextBtn.textContent = (idx === beats.length - 1) ? 'Finish' : 'Next →'
+  if (prevBtn) prevBtn.disabled = (idx === 0)
+  if (nextBtn) {
+    nextBtn.disabled    = false
+    nextBtn.textContent = (idx === beats.length - 1) ? 'Finish ✓' : 'Next →'
+  }
 
-  stripEl?.classList.add('is-active')
-  stripEl?.setAttribute('data-cycle', _story.cycle)
+  floatEl?.classList.add('is-active')
+  floatEl?.setAttribute('data-cycle', _story.cycle)
+  storiesBtnEl?.classList.add('story-mode-active')
 
-  // Pan map to beat location
-  _panToBeat(beat)
+  // Resolve coordinates for this beat
+  const entry = beat.locationId ? _findEntry(beat.locationId) : null
+  const lat   = entry?.lat ?? beat.lat
+  const lng   = entry?.lng ?? beat.lng
+  if (!lat || !lng) return
 
-  // Pulse the referenced atlas marker
-  if (beat.locationId) _pulseMarker(beat.locationId)
+  // Pan map
+  _map?.flyTo([lat, lng], beat.zoom ?? 9, { animate: true, duration: 1.4, easeLinearity: 0.4 })
+
+  // Clear old story layers
+  _clearStoryLayers()
+
+  // Place beacon glow at this beat
+  _placeBeacon(lat, lng, _story.cycle)
+
+  // Place a labeled pin for beats with no existing atlas marker
+  if (!beat.locationId && beat.placeName) {
+    _placeTempPin(lat, lng, beat.placeName)
+  }
+
+  // Draw dashed line to the NEXT beat location
+  if (idx < beats.length - 1) {
+    const nb     = beats[idx + 1]
+    const ne     = nb.locationId ? _findEntry(nb.locationId) : null
+    const nLat   = ne?.lat ?? nb.lat
+    const nLng   = ne?.lng ?? nb.lng
+    if (nLat && nLng) _drawLine(lat, lng, nLat, nLng, _story.cycle)
+  }
 }
 
-function _panToBeat(beat) {
-  if (!_map) return
+function _placeBeacon(lat, lng, cycle) {
+  const icon = L.divIcon({
+    html: `<div class="story-beacon cycle-beacon-${cycle}">
+             <div class="story-beacon-ring r1"></div>
+             <div class="story-beacon-ring r2"></div>
+             <div class="story-beacon-core">🔥</div>
+           </div>`,
+    className: '',
+    iconSize:   [64, 64],
+    iconAnchor: [32, 32],
+  })
+  beaconMarker = L.marker([lat, lng], { icon, interactive: false, zIndexOffset: 1000 })
+  if (_map) beaconMarker.addTo(_map)
+}
 
-  let lat, lng
-  if (beat.locationId) {
-    const entry = _findEntry(beat.locationId)
-    if (entry) { lat = entry.lat; lng = entry.lng }
-  }
-  if (!lat && beat.lat) { lat = beat.lat; lng = beat.lng }
-  if (!lat) return
+function _placeTempPin(lat, lng, label) {
+  const icon = L.divIcon({
+    html: `<div class="story-temp-pin">
+             <div class="story-temp-dot"></div>
+             <span class="story-temp-label">${_x(label)}</span>
+           </div>`,
+    className: '',
+    iconSize:   [0, 0],
+    iconAnchor: [4, 8],
+  })
+  tempPinMarker = L.marker([lat, lng], { icon, interactive: false, zIndexOffset: 999 })
+  if (_map) tempPinMarker.addTo(_map)
+}
 
-  const zoom = beat.zoom || 9
-  _map.flyTo([lat, lng], zoom, { animate: true, duration: 1.4, easeLinearity: 0.4 })
+function _drawLine(lat1, lng1, lat2, lng2, cycle) {
+  const colors = { mythological: '#C8A84B', ulster: '#8B2020', fenian: '#3a8c5a' }
+  connectionLine = L.polyline([[lat1, lng1], [lat2, lng2]], {
+    color:       colors[cycle] ?? '#C8A84B',
+    weight:      2,
+    opacity:     0.5,
+    dashArray:   '8, 7',
+    interactive: false,
+  })
+  if (_map) connectionLine.addTo(_map)
+}
+
+function _clearStoryLayers() {
+  beaconMarker?.remove();   beaconMarker   = null
+  tempPinMarker?.remove();  tempPinMarker  = null
+  connectionLine?.remove(); connectionLine = null
+  document.querySelectorAll('.story-pulse').forEach(el => el.classList.remove('story-pulse'))
 }
 
 function _findEntry(locationId) {
@@ -175,56 +231,68 @@ function _findEntry(locationId) {
     ...(_allData?.ulster       || []),
     ...(_allData?.fenian       || []),
   ]
-  return all.find(e => e.id === locationId) || null
+  return all.find(e => e.id === locationId) ?? null
 }
 
-function _pulseMarker(locationId) {
-  // Remove any previous pulse
-  document.querySelectorAll('.story-pulse').forEach(el => el.classList.remove('story-pulse'))
+function _initDrag() {
+  if (!floatEl || !handleEl) return
+  let dragging = false, ox = 0, oy = 0
 
-  // Find and pulse the Leaflet marker element for this locationId
-  // We look in the DOM for the atlas marker whose title matches
-  const entry = _findEntry(locationId)
-  if (!entry) return
-
-  // Atlas markers have a title attribute set to the entry name
-  const allMarkerEls = document.querySelectorAll('.leaflet-marker-icon')
-  for (const el of allMarkerEls) {
-    if (el.title === entry.name) {
-      el.classList.add('story-pulse')
-      break
-    }
+  const startDrag = (cx, cy) => {
+    dragging = true
+    const r = floatEl.getBoundingClientRect()
+    ox = cx - r.left
+    oy = cy - r.top
+    // Unpin from right/bottom anchoring
+    floatEl.style.right  = 'auto'
+    floatEl.style.bottom = 'auto'
   }
+
+  handleEl.addEventListener('mousedown', e => { startDrag(e.clientX, e.clientY); e.preventDefault() })
+  handleEl.addEventListener('touchstart', e => {
+    const t = e.touches[0]
+    startDrag(t.clientX, t.clientY)
+  }, { passive: true })
+
+  const onMove = (cx, cy) => {
+    if (!dragging) return
+    const maxX = window.innerWidth  - floatEl.offsetWidth  - 4
+    const maxY = window.innerHeight - floatEl.offsetHeight - 4
+    floatEl.style.left = Math.max(4, Math.min(maxX, cx - ox)) + 'px'
+    floatEl.style.top  = Math.max(4, Math.min(maxY, cy - oy)) + 'px'
+  }
+
+  document.addEventListener('mousemove', e => onMove(e.clientX, e.clientY))
+  document.addEventListener('touchmove', e => {
+    const t = e.touches[0]
+    onMove(t.clientX, t.clientY)
+  }, { passive: true })
+
+  const stopDrag = () => { dragging = false }
+  document.addEventListener('mouseup',  stopDrag)
+  document.addEventListener('touchend', stopDrag)
 }
 
-function prevBeat() {
-  if (_beatIdx > 0) _showBeat(_beatIdx - 1)
-}
+function prevBeat() { if (_beatIdx > 0) _showBeat(_beatIdx - 1) }
 
 function nextBeat() {
   if (!_story) return
-  if (_beatIdx < _story.beats.length - 1) {
-    _showBeat(_beatIdx + 1)
-  } else {
-    exitStory()
-  }
+  if (_beatIdx < _story.beats.length - 1) _showBeat(_beatIdx + 1)
+  else exitStory()
 }
 
 function exitStory() {
   _story   = null
   _beatIdx = 0
-  stripEl?.classList.remove('is-active')
-  stripEl?.removeAttribute('data-cycle')
-  document.querySelectorAll('.story-pulse').forEach(el => el.classList.remove('story-pulse'))
+  floatEl?.classList.remove('is-active')
+  floatEl?.removeAttribute('data-cycle')
+  storiesBtnEl?.classList.remove('story-mode-active')
+  _clearStoryLayers()
+  flyHome()
 }
 
-function openDrawer() {
-  drawerEl?.classList.add('is-open')
-}
-
-function closeDrawer() {
-  drawerEl?.classList.remove('is-open')
-}
+function openDrawer()  { document.getElementById('stories-drawer')?.classList.add('is-open') }
+function closeDrawer() { document.getElementById('stories-drawer')?.classList.remove('is-open') }
 
 function _x(s) {
   return String(s ?? '').replace(/[&<>"]/g, c =>
