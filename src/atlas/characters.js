@@ -107,6 +107,7 @@ export function renderPrimaryCharCard(char, storyId) {
         <div class="beat-char-art-inner">
           <div class="beat-char-placeholder">
             <span class="beat-char-glyph">${glyph}</span>
+            <span class="beat-char-filename">${_x(char.id)}.webp</span>
           </div>
           ${char.imageFile
             ? `<img src="/assets/characters/${_x(char.imageFile)}" alt="${_x(char.name)}"
@@ -166,6 +167,7 @@ function _buildCharModalHTML(char, roleInStory, story) {
           <span class="cmod-art-glyph">${glyph}</span>
           <span class="cmod-art-name">${_x(char.name)}</span>
           <span class="cmod-art-pending">Artwork pending</span>
+          <span class="cmod-art-filename">${_x(char.imageFile || char.id + '.webp')}</span>
         </div>
         ${char.imageFile
           ? `<img class="cmod-art-img" src="/assets/characters/${_x(char.imageFile)}" alt="${_x(char.name)}"

@@ -174,6 +174,7 @@ function _renderDrawer() {
           <span class="story-card-art-glyph">${story.icon}</span>
           <span class="story-card-art-label">${_x(story.title)}</span>
           <span class="story-card-art-pending">Artwork pending</span>
+          <span class="story-card-art-filename">${_x(story.imageFile || story.id + '.webp')}</span>
         </div>
       </div>
       <h3 class="story-card-title">${_x(story.title)}</h3>

@@ -81,6 +81,7 @@ function buildHTML(e) {
           <div class="placeholder-border"></div>
           <span class="placeholder-label">${x(e.name)}</span>
           <span class="placeholder-sub">Artwork pending</span>
+          <span class="placeholder-filename">${x(e.imageFile)}</span>
         </div>
       </div>`
     : ''
