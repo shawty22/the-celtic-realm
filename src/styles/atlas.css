@@ -710,6 +710,28 @@ button {
   box-shadow: 0 0 16px rgba(200,168,75,0.28);
 }
 
+/* ── Home button ─────────────────────────────────────────────────────────── */
+#home-btn {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--panel-soft);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+  margin-left: auto;
+}
+#home-btn:hover {
+  background: rgba(200,168,75,0.15);
+  color: var(--myth);
+}
+
 /* ── Base map switcher ───────────────────────────────────────────────────── */
 .bm-switcher {
   display: flex;

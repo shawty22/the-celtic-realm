@@ -32,9 +32,9 @@ let _currentTile = null
 
 export function initMap() {
   _map = L.map('map', {
-    center: [53.45, -8.0],
+    center: [53.3, -8.0],
     zoom: 7,
-    minZoom: 5,
+    minZoom: 6,
     maxZoom: 17,
     zoomControl: false,
     attributionControl: true,
@@ -44,9 +44,14 @@ export function initMap() {
 
   L.control.zoom({ position: 'bottomright' }).addTo(_map)
 
-  _map.setMaxBounds([[47.0, -18.0], [57.5, 0.0]])
+  // Constrain to Ireland
+  _map.setMaxBounds([[51.0, -11.2], [55.8, -4.8]])
 
   return _map
+}
+
+export function flyHome() {
+  if (_map) _map.setView([53.3, -8.0], 7, { animate: true, duration: 0.8 })
 }
 
 export function setBaseLayer(name) {
