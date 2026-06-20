@@ -5,7 +5,7 @@ import fenianData from './data/fenian.json'
 import tainRouteData from './data/tain-route.json'
 import archData   from './data/archaeology.json'
 
-import { initMap, setBaseLayer, flyHome } from './atlas/map.js'
+import { initMap, setBaseLayer, flyHome, hasMaptiler } from './atlas/map.js'
 import { buildLayers, toggleLayer }      from './atlas/layers.js'
 import { buildRoute, showRoute, hideRoute } from './atlas/route.js'
 import { initPanel, showPanel }          from './atlas/panel.js'
@@ -70,8 +70,17 @@ document.getElementById('home-btn')?.addEventListener('click', flyHome)
 
 // ── Base map switcher ─────────────────────────────────────────────────────── //
 
+// Mark OSi button as unavailable if no MapTiler API key is configured
+const osiBtn = document.getElementById('bm-osi-btn')
+if (osiBtn && !hasMaptiler()) {
+  osiBtn.disabled = true
+  osiBtn.title = 'OSi map — add VITE_MAPTILER_KEY to .env.local to enable'
+  osiBtn.style.opacity = '0.35'
+}
+
 document.querySelectorAll('.bm-btn').forEach((btn) => {
   btn.addEventListener('click', () => {
+    if (btn.disabled) return
     document.querySelectorAll('.bm-btn').forEach(b => b.classList.remove('is-active'))
     btn.classList.add('is-active')
     setBaseLayer(btn.dataset.bm)

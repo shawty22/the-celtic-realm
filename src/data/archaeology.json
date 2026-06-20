@@ -20,7 +20,8 @@
     "type": "site",
     "lat": 52.5017,
     "lng": -6.55317,
-    "wikidata": "Q31856630"
+    "wikidata": "Q31856630",
+    "wikidataDesc": "hill near Enniscorthy, county Wexford, Ireland"
   },
   {
     "id": "arch-316422583",
@@ -98,7 +99,9 @@
     "lat": 51.65385,
     "lng": -9.92896,
     "wikidata": "Q15055799",
-    "heritage": true
+    "heritage": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/County_Cork_-_Dereenataggart_-_20100618043056.jpg/500px-County_Cork_-_Dereenataggart_-_20100618043056.jpg",
+    "wikidataDesc": "stone circle in County Cork, Ireland"
   },
   {
     "id": "arch-486876209",
@@ -107,7 +110,8 @@
     "lat": 52.84507,
     "lng": -6.66391,
     "wikidata": "Q1335706",
-    "heritage": true
+    "heritage": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Digital_Eye%E2%80%932015%E2%80%93Haroldstown_Portal_Tomb_%28Dolmen%29.jpg/500px-Digital_Eye%E2%80%932015%E2%80%93Haroldstown_Portal_Tomb_%28Dolmen%29.jpg"
   },
   {
     "id": "arch-523982997",
@@ -131,7 +135,7 @@
     "lng": -8.37928,
     "wikidata": "Q261318",
     "wikipedia": "en:Carrowkeel Megalithic Cemetery",
-    "summary": "Carrowkeel is a cluster of passage tombs in south County Sligo, Ireland. They were built in the 4th millennium BC, during the Neolithic era. The monuments are on the Bricklieve Hills, overlooking Lough Arrow, and are sometimes called the Bricklieve tombs. They are named after the townland of Carrowkeel in which most of them are located. Nearby are the Caves of Kesh and Heapstown Cairn. The Carrowkeel tombs are protected National Monuments and are considered one of the \"big four\" passage tomb cemeteries in Ireland, along with Carrowmore, Br\u00fa na B\u00f3inne and Loughcrew.",
+    "summary": "Carrowkeel is a cluster of passage tombs in south County Sligo, Ireland. They were built in the 4th millennium BC, during the Neolithic era. The monuments are on the Bricklieve Hills, overlooking Lough Arrow, and are sometimes called the Bricklieve tombs. They are named after the townland of Carrowkeel in which most of them are located. Nearby are the Caves of Kesh and Heapstown Cairn. The Carrowkeel tombs are protected National Monuments and are considered one of the \"big four\" passage tomb cemeteries in Ireland, along with Carrowmore, Brú na Bóinne and Loughcrew.",
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/CarrowkeelIreland.jpg/330px-CarrowkeelIreland.jpg",
     "wikiUrl": "https://en.wikipedia.org/wiki/Carrowkeel_Megalithic_Cemetery"
   },
@@ -194,7 +198,7 @@
   },
   {
     "id": "arch-843892877",
-    "name": "Teampull M\u00f3r",
+    "name": "Teampull Mór",
     "type": "site",
     "lat": 54.37074,
     "lng": -7.65544
@@ -215,7 +219,7 @@
   },
   {
     "id": "arch-988347917",
-    "name": "Caisle\u00e1n Chill Torr\u00f3g",
+    "name": "Caisleán Chill Torróg",
     "type": "site",
     "lat": 53.34385,
     "lng": -8.90664
@@ -269,7 +273,7 @@
     "wikidata": "Q33313",
     "wikipedia": "en:Brownshill dolmen",
     "heritage": true,
-    "summary": "Brownshill Dolmen is a very large megalithic portal tomb situated 3\u00a0km east of Carlow, in County Carlow, Ireland. Its capstone weighs an estimated 150 metric tons, and is reputed to be the heaviest in Europe. This dolmen has three large uprights and two recumbent stones at the other end. The tomb is listed as a National Monument. Known as the Kernanstown Cromlech, sometimes spelled as Browneshill Dolmen, it is sited on the former estate house of the Browne family from which it takes its name.",
+    "summary": "Brownshill Dolmen is a very large megalithic portal tomb situated 3 km east of Carlow, in County Carlow, Ireland. Its capstone weighs an estimated 150 metric tons, and is reputed to be the heaviest in Europe. This dolmen has three large uprights and two recumbent stones at the other end. The tomb is listed as a National Monument. Known as the Kernanstown Cromlech, sometimes spelled as Browneshill Dolmen, it is sited on the former estate house of the Browne family from which it takes its name.",
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Brownshill_Dolmen-1.jpg/330px-Brownshill_Dolmen-1.jpg",
     "wikiUrl": "https://en.wikipedia.org/wiki/Brownshill_dolmen"
   },
@@ -280,7 +284,8 @@
     "lat": 53.2577,
     "lng": -6.27557,
     "wikidata": "Q33123071",
-    "heritage": true
+    "heritage": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Kilmashogue_Wedge_Tomb_j.JPG/500px-Kilmashogue_Wedge_Tomb_j.JPG"
   },
   {
     "id": "arch-1315977884",
@@ -309,7 +314,8 @@
     "type": "site",
     "lat": 52.05878,
     "lng": -9.46257,
-    "wikidata": "Q2341269"
+    "wikidata": "Q2341269",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Lissivigeen.jpg/500px-Lissivigeen.jpg"
   },
   {
     "id": "arch-1359631584",
@@ -525,7 +531,8 @@
     "lat": 53.48691,
     "lng": -7.56547,
     "wikidata": "Q116535113",
-    "heritage": true
+    "heritage": true,
+    "wikidataDesc": "Ringfort, Barrow & Stone in Co. Offaly"
   },
   {
     "id": "arch-1795609246",
@@ -599,7 +606,7 @@
     "lng": -7.69008,
     "wikidata": "Q1261327",
     "wikipedia": "en:Drumskinny",
-    "summary": "Drumskinny is the site of a stone circle in the townland of Drumskinny, County Fermanagh, Northern Ireland. With the inclusion of an adjacent cairn and alignment, the stone circle is a State Care Historic Monument in Fermanagh and Omagh district, at grid ref: H\u00a02009\u00a07072. The site was discovered in 1934 and excavated in 1962 and is believed to have been built around 2000 BC.",
+    "summary": "Drumskinny is the site of a stone circle in the townland of Drumskinny, County Fermanagh, Northern Ireland. With the inclusion of an adjacent cairn and alignment, the stone circle is a State Care Historic Monument in Fermanagh and Omagh district, at grid ref: H 2009 7072. The site was discovered in 1934 and excavated in 1962 and is believed to have been built around 2000 BC.",
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Drumskinny-stones.jpg/330px-Drumskinny-stones.jpg",
     "wikiUrl": "https://en.wikipedia.org/wiki/Drumskinny"
   },
@@ -651,7 +658,9 @@
     "type": "site",
     "lat": 52.59092,
     "lng": -6.49192,
-    "wikidata": "Q55029939"
+    "wikidata": "Q55029939",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Monument_on_bridge_-_geograph.org.uk_-_469483.jpg/500px-Monument_on_bridge_-_geograph.org.uk_-_469483.jpg",
+    "wikidataDesc": "holy well in County Wexford, Ireland"
   },
   {
     "id": "arch-2014170549",
@@ -673,7 +682,8 @@
     "type": "site",
     "lat": 52.58187,
     "lng": -6.20741,
-    "wikidata": "Q130618074"
+    "wikidata": "Q130618074",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Glascarrig_Priory_2012_10_01.jpg/500px-Glascarrig_Priory_2012_10_01.jpg"
   },
   {
     "id": "arch-2093350096",
@@ -724,7 +734,10 @@
     "lat": 52.98814,
     "lng": -9.09554,
     "wikidata": "Q15058369",
-    "heritage": true
+    "heritage": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Parknabinnia_Wedge_Tomb_Cl_67_NE_2015_09_03.jpg/500px-Parknabinnia_Wedge_Tomb_Cl_67_NE_2015_09_03.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Parknabinnia_(wedge_tomb)",
+    "summary": "Parknabinnia wedge tomb is a prehistoric wedge tomb located in the Burren area of County Clare, Ireland."
   },
   {
     "id": "arch-2347151749",
@@ -781,7 +794,8 @@
     "type": "tumulus",
     "lat": 55.42304,
     "lng": -5.72362,
-    "wikidata": "Q56667846"
+    "wikidata": "Q56667846",
+    "wikidataDesc": "cairn in Argyll and Bute, Scotland, UK"
   },
   {
     "id": "arch-2464057149",
@@ -883,7 +897,10 @@
     "lat": 55.06739,
     "lng": -6.05509,
     "wikidata": "Q2781823",
-    "wikipedia": "en:Red Bay Castle"
+    "wikipedia": "en:Red Bay Castle",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/The_ruins_of_Red_Bay_Castle_-_geograph.org.uk_-_3727864.jpg/500px-The_ruins_of_Red_Bay_Castle_-_geograph.org.uk_-_3727864.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Red_Bay_Castle",
+    "summary": "Red Bay Castle (Irish: Caislen Camus Rhuaidh) is situated in County Antrim, Northern Ireland, on a headland projecting into the sea north of Glenariff situated on the road to Cushendall."
   },
   {
     "id": "arch-2625394315",
@@ -914,13 +931,16 @@
     "lng": -8.33454,
     "wikidata": "Q1799383",
     "wikipedia": "en:Labbacallee wedge tomb",
-    "heritage": true
+    "heritage": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/11._Labbacallee_Wedge_Tomb%2C_Co._Cork.jpg/500px-11._Labbacallee_Wedge_Tomb%2C_Co._Cork.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Labbacallee_wedge_tomb",
+    "summary": "Labbacallee Wedge Tomb (Irish: Leaba Chaillí, meaning 'hag's bed') is a large pre-historic burial monument, located 8 km (5.0 mi) north-west of Fermoy and 2 km (1.2 mi) south-east of Glanworth, County Cork, Ireland. It is the largest Irish wedge tomb and dates from roughly 2300 BC. The tomb is a National Monument in State Care no. 318."
   },
   {
     "id": "arch-2918980387",
     "name": "Megalithic Tomb",
     "type": "site",
-    "lat": 54.0,
+    "lat": 54,
     "lng": -10.06015
   },
   {
@@ -980,7 +1000,9 @@
     "lng": -9.55417,
     "wikidata": "Q27868393",
     "wikipedia": "en:Boheh Stone",
-    "heritage": true
+    "heritage": true,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Boheh_Stone",
+    "summary": "The Boheh Stone, also called St. Patrick's Chair, is a piece of rock art and a National Monument located in County Mayo, Ireland."
   },
   {
     "id": "arch-3054560859",
@@ -1004,7 +1026,9 @@
     "lng": -6.45889,
     "wikidata": "Q26926947",
     "wikipedia": "en:Donaghmore Souterrain",
-    "heritage": true
+    "heritage": true,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Donaghmore_Souterrain",
+    "summary": "Donaghmore Souterrain is a souterrain and National Monument located in County Louth, Ireland."
   },
   {
     "id": "arch-3100693083",
@@ -1012,7 +1036,8 @@
     "type": "fort",
     "lat": 52.96288,
     "lng": -6.61746,
-    "wikidata": "Q994370"
+    "wikidata": "Q994370",
+    "wikidataDesc": "hillfort in County Wicklow, Ireland"
   },
   {
     "id": "arch-3101765929",
@@ -1022,7 +1047,10 @@
     "lng": -7.21047,
     "wikidata": "Q1496224",
     "wikipedia": "en:Gaulstown Portal Tomb",
-    "heritage": true
+    "heritage": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Gaulstown_Dolmen_IMG_4683.jpg/500px-Gaulstown_Dolmen_IMG_4683.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Gaulstown_Portal_Tomb",
+    "summary": "The Gaulstown Portal Tomb or Gaulstown Dolmen is a megalithic portal tomb situated in Gaulstown, Butlerstown in County Waterford, Ireland. It lies about 7 km south west of Waterford City."
   },
   {
     "id": "arch-3103133029",
@@ -1032,7 +1060,7 @@
     "lng": -8.74667,
     "wikidata": "Q1102172",
     "wikipedia": "en:Cloghanmore",
-    "summary": "Cloghanmore (translated as \"the great stone heap\" is a megalithic chamber tomb of the court tomb type located about 8\u00a0km east from Carrick in Malin More, Glencolmcille, in County Donegal, Ireland.",
+    "summary": "Cloghanmore (translated as \"the great stone heap\" is a megalithic chamber tomb of the court tomb type located about 8 km east from Carrick in Malin More, Glencolmcille, in County Donegal, Ireland.",
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cloghanmore_Court_Tomb_-_panoramio.jpg/330px-Cloghanmore_Court_Tomb_-_panoramio.jpg",
     "wikiUrl": "https://en.wikipedia.org/wiki/Cloghanmore"
   },
@@ -1064,7 +1092,10 @@
     "lat": 52.00441,
     "lng": -9.04483,
     "wikidata": "Q1531169",
-    "wikipedia": "en:Glantane East"
+    "wikipedia": "en:Glantane East",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Glantane_East_Wedge_Tomb.jpg/500px-Glantane_East_Wedge_Tomb.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Glantane_East",
+    "summary": "Glantane East (An Gleanntán Thoir) is a megalithic complex situated 6.4 kilometres (4.0 mi) from Millstreet, County Cork, Ireland. It is set in the Keel River valley on the north-west upper slopes of Musherabeg mountain, in the townland of Glantane. The complex includes a wedge tomb, two stone circles (one with 11 stones) and a pair of stone alignments."
   },
   {
     "id": "arch-3149489565",
@@ -1073,7 +1104,10 @@
     "lat": 54.99346,
     "lng": -6.47903,
     "wikidata": "Q1235918",
-    "wikipedia": "en:Craigs Dolmen"
+    "wikipedia": "en:Craigs Dolmen",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Broad_Stone%2C_Parish_of_Finvoy%2C_County_of_Antrim%2C_1834_%28IA_jstor-30004345%29_%28cropped%29.jpg/500px-The_Broad_Stone%2C_Parish_of_Finvoy%2C_County_of_Antrim%2C_1834_%28IA_jstor-30004345%29_%28cropped%29.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Craigs_Dolmen",
+    "summary": "Craigs Dolmen (also known as the Broad Stone) is a megalithic tomb in County Antrim, Northern Ireland. It is 5 mi (8 km) south of Ballymoney, off Finvoy Road, at a height of 200m on the Long Mountain. Craigs Dolmen passage tomb is a State Care Historic Monument in the townland of Craigs, in Borough of Ballymoney."
   },
   {
     "id": "arch-3151444991",
@@ -1109,7 +1143,9 @@
     "type": "site",
     "lat": 54.19224,
     "lng": -8.41297,
-    "wikidata": "Q112264280"
+    "wikidata": "Q112264280",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/2008.09.20-2B.Knockatober.jpg/500px-2008.09.20-2B.Knockatober.jpg",
+    "wikidataDesc": "portal tomb in County Sligo, Ireland"
   },
   {
     "id": "arch-3175698772",
@@ -1132,7 +1168,10 @@
     "lat": 54.33367,
     "lng": -6.33007,
     "wikidata": "Q1828013",
-    "wikipedia": "en:Lisnagade"
+    "wikipedia": "en:Lisnagade",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Lisnagade_fort_near_Scarva_-_geograph.org.uk_-_284954.jpg/500px-Lisnagade_fort_near_Scarva_-_geograph.org.uk_-_284954.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Lisnagade",
+    "summary": "Lisnagade (from Irish  Lios na gCéad 'ringfort of the hundred') is a large multivallate earthen ringfort, three miles west of Banbridge, County Down, Northern Ireland, United Kingdom, just off the Scarva road. Lisnagade Fort rath and annex are State Care Historic Monuments in the townland of Lisnagade, in Banbridge District."
   },
   {
     "id": "arch-3215812454",
@@ -1198,7 +1237,9 @@
     "lng": -9.05178,
     "wikidata": "Q28654005",
     "wikipedia": "en:Slievenaglasha Wedge Tomb",
-    "heritage": true
+    "heritage": true,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Slievenaglasha_Wedge_Tomb",
+    "summary": "Slievenaglasha wedge tomb is a wedge-shaped gallery grave and National Monument located in County Clare, Ireland."
   },
   {
     "id": "arch-3443736652",
@@ -1208,7 +1249,7 @@
     "lng": -5.80364,
     "wikidata": "Q4767769",
     "wikipedia": "en:Annadorn Dolmen",
-    "summary": "Annadorn Dolmen is a dolmen sited at the Buck's Head near Loughinisland, in the townland of Annadorn. Nearby you can find the old Annadorn school and post office in County Down, Northern Ireland. It is on the north-east shore of Loughinisland Lake, on a hillock overlooking Loughinisland Churches, a group of three ruined churches. The site is a State Care Historic Monument at grid ref: J4289 4591. Co-ordinates: Latitude: 54\u00b0 20' 29.97\" N Longitude: 5\u00b0 48' 8.72\" W",
+    "summary": "Annadorn Dolmen is a dolmen sited at the Buck's Head near Loughinisland, in the townland of Annadorn. Nearby you can find the old Annadorn school and post office in County Down, Northern Ireland. It is on the north-east shore of Loughinisland Lake, on a hillock overlooking Loughinisland Churches, a group of three ruined churches. The site is a State Care Historic Monument at grid ref: J4289 4591. Co-ordinates: Latitude: 54° 20' 29.97\" N Longitude: 5° 48' 8.72\" W",
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Annadorn_%2811%29%2C_October_2009.JPG/330px-Annadorn_%2811%29%2C_October_2009.JPG",
     "wikiUrl": "https://en.wikipedia.org/wiki/Annadorn_Dolmen"
   },
@@ -1320,7 +1361,8 @@
     "lat": 51.61304,
     "lng": -10.0665,
     "wikidata": "Q20758250",
-    "heritage": true
+    "heritage": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Killough_Wedge_Tomb_-_geograph.org.uk_-_17445.jpg/500px-Killough_Wedge_Tomb_-_geograph.org.uk_-_17445.jpg"
   },
   {
     "id": "arch-3669147526",
@@ -1434,7 +1476,8 @@
     "lat": 54.71084,
     "lng": -8.72485,
     "wikidata": "Q30220962",
-    "heritage": true
+    "heritage": true,
+    "wikidataDesc": "penitential station in Co. Donagal"
   },
   {
     "id": "arch-4367033521",
@@ -1503,7 +1546,8 @@
     "lat": 52.13618,
     "lng": -10.14525,
     "wikidata": "Q33125986",
-    "heritage": true
+    "heritage": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Graigue_Standing_Stone_-_geograph.org.uk_-_258638.jpg/500px-Graigue_Standing_Stone_-_geograph.org.uk_-_258638.jpg"
   },
   {
     "id": "arch-4461367458",
@@ -1511,7 +1555,9 @@
     "type": "stone_circle",
     "lat": 51.74518,
     "lng": -9.3705,
-    "wikidata": "Q96385551"
+    "wikidata": "Q96385551",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Kealkill_stone_circle",
+    "summary": "Kealkill stone circle is a Bronze Age axial five-stone circle located just outside the village of Kealkill, County Cork in southwest Ireland. When it was excavated in 1938 it was thought the crucial axial stone indicated an alignment to the north, contrary to the general alignment of such stone circles to the southwest. However, later archaeologists have thought it is the comparatively insignificant stone to the southwest that is the axial stone."
   },
   {
     "id": "arch-4500847619",
@@ -1623,7 +1669,9 @@
     "type": "megalith",
     "lat": 52.40285,
     "lng": -7.2637,
-    "wikidata": "Q140188180"
+    "wikidata": "Q140188180",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Kilmogue_standing_stone_%281%29.jpg/500px-Kilmogue_standing_stone_%281%29.jpg",
+    "wikidataDesc": "recumbent standing stone near Kilmogue Passage Tomb, County Kilkenny"
   },
   {
     "id": "arch-5164935204",
@@ -1661,7 +1709,7 @@
     "lng": -9.70427,
     "wikidata": "Q7435570",
     "wikipedia": "en:Scotia's Grave",
-    "summary": "Scotia's Grave or Scota's Grave is a rock feature south of Tralee in County Kerry, Ireland. It is beside a stream called the Finglas, in a wooded glen called Gleann Scoith\u00edn, anglicized 'Glenscoheen' or 'Glanaskagheen'. According to Geoffrey Keating's Foras Feasa ar \u00c9irinn, it is the burial place of Scota, an ancient queen of the Milesians (Gaels) who died there in battle with the Tuatha D\u00e9 Danann. John O'Mahony translated Gleann Scoith\u00edn as \"vale of the little flower\" and said it is the Irish equivalent of the female name Flora. According to the National Monuments Service, \"Following a site inspection in 1999 it was concluded that the evidence was not sufficient to warrant accepting this as an archaeological monument\".",
+    "summary": "Scotia's Grave or Scota's Grave is a rock feature south of Tralee in County Kerry, Ireland. It is beside a stream called the Finglas, in a wooded glen called Gleann Scoithín, anglicized 'Glenscoheen' or 'Glanaskagheen'. According to Geoffrey Keating's Foras Feasa ar Éirinn, it is the burial place of Scota, an ancient queen of the Milesians (Gaels) who died there in battle with the Tuatha Dé Danann. John O'Mahony translated Gleann Scoithín as \"vale of the little flower\" and said it is the Irish equivalent of the female name Flora. According to the National Monuments Service, \"Following a site inspection in 1999 it was concluded that the evidence was not sufficient to warrant accepting this as an archaeological monument\".",
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Scotia%27s_Grave_-_geograph.org.uk_-_1404461.jpg/330px-Scotia%27s_Grave_-_geograph.org.uk_-_1404461.jpg",
     "wikiUrl": "https://en.wikipedia.org/wiki/Scotia's_Grave"
   },
@@ -1679,7 +1727,8 @@
     "type": "megalith",
     "lat": 53.50613,
     "lng": -10.04064,
-    "wikidata": "Q30247372"
+    "wikidata": "Q30247372",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/County_Galway_-_Letterdeen_Standing_Stone_-_20180909142236.jpg/500px-County_Galway_-_Letterdeen_Standing_Stone_-_20180909142236.jpg"
   },
   {
     "id": "arch-5384356317",
@@ -1725,7 +1774,9 @@
     "type": "dolmen",
     "lat": 54.26615,
     "lng": -7.88667,
-    "wikidata": "Q30145019"
+    "wikidata": "Q30145019",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/County_Cavan_-_Tullygobbin_Hill_-_20200827152715.jpg/500px-County_Cavan_-_Tullygobbin_Hill_-_20200827152715.jpg",
+    "wikidataDesc": "wedge tomb in Cavan Burren park"
   },
   {
     "id": "arch-5530149144",
@@ -1779,7 +1830,9 @@
     "type": "megalith",
     "lat": 51.58699,
     "lng": -9.69529,
-    "wikidata": "Q51075832"
+    "wikidata": "Q51075832",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Farranamanagh_Stone_Row_-_geograph.org.uk_-_1774330.jpg/500px-Farranamanagh_Stone_Row_-_geograph.org.uk_-_1774330.jpg",
+    "wikidataDesc": "megalithic row of three stones, County Cork, Ireland"
   },
   {
     "id": "arch-5640311876",
@@ -1893,7 +1946,10 @@
     "type": "dolmen",
     "lat": 54.13143,
     "lng": -6.4782,
-    "wikidata": "Q805410"
+    "wikidata": "Q805410",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ballykeel_Dolmen_-_geograph.org.uk_-_257798.jpg/500px-Ballykeel_Dolmen_-_geograph.org.uk_-_257798.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Ballykeel_Dolmen",
+    "summary": "Ballykeel Dolmen is a Neolithic tripod portal tomb and a State Care Historic Monument at the foot of the western flank of Slieve Gullion in Northern Ireland. It is located above a tributary of the Forkhill river, in the Newry, Mourne and Down District Council area, at grid ref: H9950 2132.\nThe dolmen sits at the southern end of a large cairn, of approximately 30x10 metres, the north end of which also contains a cist."
   },
   {
     "id": "arch-5874253879",
@@ -1908,7 +1964,8 @@
     "type": "dolmen",
     "lat": 52.46667,
     "lng": -7.25869,
-    "wikidata": "Q29627936"
+    "wikidata": "Q29627936",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Newmarket_-_Portal_Tomb.jpg/500px-Newmarket_-_Portal_Tomb.jpg"
   },
   {
     "id": "arch-5895060396",
@@ -2951,7 +3008,10 @@
     "type": "dolmen",
     "lat": 54.26493,
     "lng": -7.8851,
-    "wikidata": "Q28196065"
+    "wikidata": "Q28196065",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/County_Cavan_-_The_Calf_House_-_20170621152040.jpg/500px-County_Cavan_-_The_Calf_House_-_20170621152040.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Calf_House",
+    "summary": "The Calf House or Druid's Altar is a portal tomb or dolmen in Burren Forest, County Cavan, Ireland. It dates from Neolithic times. It is located close to the Giant's Leap wedge tomb."
   },
   {
     "id": "arch-6722761435",
@@ -3001,7 +3061,10 @@
     "lat": 53.97449,
     "lng": -6.46592,
     "wikidata": "Q28232348",
-    "wikipedia": "en:Clochafarmore"
+    "wikipedia": "en:Clochafarmore",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Cloghafarmor.jpg/500px-Cloghafarmor.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Clochafarmore",
+    "summary": "Clochafarmore (Irish: Cloch an Fhir Mhóir, meaning \"stone of the great man\") is a menhir (standing stone) and National Monument in County Louth, Ireland."
   },
   {
     "id": "arch-7203653793",
@@ -3138,7 +3201,8 @@
     "type": "fort",
     "lat": 52.66864,
     "lng": -7.32875,
-    "wikidata": "Q137711828"
+    "wikidata": "Q137711828",
+    "wikidataDesc": "castle ruins in County Kilkenny"
   },
   {
     "id": "arch-7667098168",
@@ -3330,7 +3394,8 @@
     "type": "site",
     "lat": 55.15714,
     "lng": -6.80921,
-    "wikidata": "Q31085048"
+    "wikidata": "Q31085048",
+    "wikidataDesc": "hillfort in Derry"
   },
   {
     "id": "arch-8319856739",
@@ -3369,7 +3434,10 @@
     "lat": 53.35093,
     "lng": -6.3407,
     "wikidata": "Q20850483",
-    "wikipedia": "en:Knockmaree Dolmen"
+    "wikipedia": "en:Knockmaree Dolmen",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Knockmaroon_Tomb_01.jpg/500px-Knockmaroon_Tomb_01.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Knockmaree_Dolmen",
+    "summary": "Knockmaree Dolmen, or Knockmaree Cist, is a prehistoric site of the Neolithic period, in Phoenix Park just north of Chapelizod, near Dublin, Ireland. Other forms of the name are Knockmary or Knockmaroon Dolmen, or Cnoc-Maraidhe."
   },
   {
     "id": "arch-8480125600",
@@ -3678,11 +3746,12 @@
     "lat": 52.5171,
     "lng": -8.53961,
     "wikidata": "Q116819925",
-    "heritage": true
+    "heritage": true,
+    "wikidataDesc": "Standing stone and National monument in Co. Limerick"
   },
   {
     "id": "arch-9338824870",
-    "name": "D\u00fan Ceann\u00faigh",
+    "name": "Dún Ceannúigh",
     "type": "fort",
     "lat": 51.84476,
     "lng": -10.34739,
@@ -3690,7 +3759,7 @@
   },
   {
     "id": "arch-9343890071",
-    "name": "D\u00fan Geir",
+    "name": "Dún Geir",
     "type": "fort",
     "lat": 51.81608,
     "lng": -10.33767
@@ -3712,7 +3781,7 @@
   },
   {
     "id": "arch-9439739891",
-    "name": "Tobar Fion\u00e1in",
+    "name": "Tobar Fionáin",
     "type": "site",
     "lat": 51.84625,
     "lng": -10.3383
@@ -3726,21 +3795,21 @@
   },
   {
     "id": "arch-9493710648",
-    "name": "R\u00e1th",
+    "name": "Ráth",
     "type": "fort",
     "lat": 51.84149,
     "lng": -10.32786
   },
   {
     "id": "arch-9493806331",
-    "name": "\u00d3in/Souterrain",
+    "name": "Óin/Souterrain",
     "type": "site",
     "lat": 51.79664,
     "lng": -10.33827
   },
   {
     "id": "arch-9494692531",
-    "name": "\u00d3in/ Souterrain",
+    "name": "Óin/ Souterrain",
     "type": "site",
     "lat": 51.79995,
     "lng": -10.33607
@@ -3765,7 +3834,10 @@
     "type": "site",
     "lat": 51.8235,
     "lng": -10.31355,
-    "wikidata": "Q1129722"
+    "wikidata": "Q1129722",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/County_Kerry_-_Coom_Tomb_-_20120103160021.jpg/500px-County_Kerry_-_Coom_Tomb_-_20120103160021.jpg",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Coom_Wedge_Tomb",
+    "summary": "Coom Wedge Tomb is a prehistoric site, a wedge tomb on the Iveragh Peninsula in County Kerry, Ireland. It is near the Skellig Ring, a route in the west of the peninsula."
   },
   {
     "id": "arch-9503263396",
@@ -3799,35 +3871,35 @@
   },
   {
     "id": "arch-9647897795",
-    "name": "\u00d3in / Souterrain",
+    "name": "Óin / Souterrain",
     "type": "site",
     "lat": 51.85368,
     "lng": -10.33679
   },
   {
     "id": "arch-9647897796",
-    "name": "Gall\u00e1in/ Standing Stones.",
+    "name": "Galláin/ Standing Stones.",
     "type": "site",
     "lat": 51.8524,
     "lng": -10.33593
   },
   {
     "id": "arch-9647943042",
-    "name": "\u00d3in /Souterrain",
+    "name": "Óin /Souterrain",
     "type": "site",
     "lat": 51.85244,
     "lng": -10.3393
   },
   {
     "id": "arch-9647951803",
-    "name": "Gall\u00e1n/Standing Stone.",
+    "name": "Gallán/Standing Stone.",
     "type": "site",
     "lat": 51.85423,
     "lng": -10.33081
   },
   {
     "id": "arch-9647981632",
-    "name": "\u00d3in/Souterrain",
+    "name": "Óin/Souterrain",
     "type": "site",
     "lat": 51.84161,
     "lng": -10.32789
@@ -3841,35 +3913,35 @@
   },
   {
     "id": "arch-9648030597",
-    "name": "\u00d3in / Souterrain",
+    "name": "Óin / Souterrain",
     "type": "site",
     "lat": 51.83294,
     "lng": -10.32304
   },
   {
     "id": "arch-9648065945",
-    "name": "\u00d3in /Souterrain",
+    "name": "Óin /Souterrain",
     "type": "site",
     "lat": 51.82961,
     "lng": -10.3186
   },
   {
     "id": "arch-9648078133",
-    "name": "\u00d3in/Souterrain",
+    "name": "Óin/Souterrain",
     "type": "site",
     "lat": 51.82577,
     "lng": -10.32036
   },
   {
     "id": "arch-9648100596",
-    "name": "\u00d3in /Souterrain",
+    "name": "Óin /Souterrain",
     "type": "site",
     "lat": 51.83542,
     "lng": -10.3298
   },
   {
     "id": "arch-9648157356",
-    "name": "Gall\u00e1n/ Standing Stone.",
+    "name": "Gallán/ Standing Stone.",
     "type": "site",
     "lat": 51.82413,
     "lng": -10.31986
@@ -3883,7 +3955,7 @@
   },
   {
     "id": "arch-9652379693",
-    "name": "Gall\u00e1in/ Standing Stones.",
+    "name": "Galláin/ Standing Stones.",
     "type": "site",
     "lat": 51.79689,
     "lng": -10.32581
@@ -4084,7 +4156,8 @@
     "type": "megalith",
     "lat": 53.21529,
     "lng": -6.15489,
-    "wikidata": "Q106625051"
+    "wikidata": "Q106625051",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Shankill-070.jpg/500px-Shankill-070.jpg"
   },
   {
     "id": "arch-10255234130",
@@ -4108,7 +4181,9 @@
     "lng": -6.21739,
     "wikidata": "Q25248221",
     "wikipedia": "en:Glencullen Standing Stone",
-    "heritage": true
+    "heritage": true,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Glencullen_Standing_Stone",
+    "summary": "Glencullen Standing Stone is a standing stone and National Monument located in Glencullen, County Dublin, Ireland."
   },
   {
     "id": "arch-10602420011",
@@ -4118,7 +4193,9 @@
     "lng": -7.63621,
     "wikidata": "Q28232431",
     "wikipedia": "en:Pluck Standing Stone",
-    "heritage": true
+    "heritage": true,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Pluck_Standing_Stone",
+    "summary": "Pluck Standing Stone is a standing stone and National Monument located in County Donegal, Ireland."
   },
   {
     "id": "arch-10633034312",
@@ -4133,7 +4210,9 @@
     "type": "megalith",
     "lat": 51.7704,
     "lng": -9.38678,
-    "wikidata": "Q48797064"
+    "wikidata": "Q48797064",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Maughanasilly_Stone_Row",
+    "summary": "Maughanasilly Stone Row is a stone row and National Monument located in County Cork, Ireland."
   },
   {
     "id": "arch-10638555000",
@@ -4143,7 +4222,9 @@
     "lng": -10.22284,
     "wikidata": "Q15051789",
     "wikipedia": "en:Gallaunmore",
-    "heritage": true
+    "heritage": true,
+    "wikiUrl": "https://en.wikipedia.org/wiki/Gallaunmore",
+    "summary": "Gallaunmore is a standing stone and National Monument located in County Kerry, Ireland.\nGallaunmore is located 3 km (1.9 mi) east of Dingle and 4 km (2.5 mi) west of Lispole, south of the N86 and north of the Trabeg Estuary.\nThe stone stands 4.2 m (14 ft) tall and is 1.8 m (5 ft 11 in) wide."
   },
   {
     "id": "arch-10673094171",
@@ -4208,7 +4289,9 @@
     "type": "megalith",
     "lat": 54.20737,
     "lng": -8.45917,
-    "wikidata": "Q118221103"
+    "wikidata": "Q118221103",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Cloghagadaide.jpg/500px-Cloghagadaide.jpg",
+    "wikidataDesc": "Stone row in Ballydawley, Co. Sligo"
   },
   {
     "id": "arch-10879199392",
@@ -4569,7 +4652,8 @@
     "type": "megalith",
     "lat": 53.87124,
     "lng": -7.30306,
-    "wikidata": "Q15793642"
+    "wikidata": "Q15793642",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Carrickacroy_Portal_Tomb.jpg/500px-Carrickacroy_Portal_Tomb.jpg"
   },
   {
     "id": "arch-11396705313",
@@ -4684,7 +4768,8 @@
     "type": "fort",
     "lat": 52.61707,
     "lng": -6.22242,
-    "wikidata": "Q31083340"
+    "wikidata": "Q31083340",
+    "wikidataDesc": "hillfort in Wexford"
   },
   {
     "id": "arch-11573080709",
@@ -4734,7 +4819,9 @@
     "type": "site",
     "lat": 53.82487,
     "lng": -7.05249,
-    "wikidata": "Q29981808"
+    "wikidata": "Q29981808",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ballaghanea_-_Portal_Tomb.jpg/500px-Ballaghanea_-_Portal_Tomb.jpg",
+    "wikidataDesc": "portal tomb in County Cavan, Ireland"
   },
   {
     "id": "arch-11738674352",
@@ -4801,7 +4888,7 @@
   },
   {
     "id": "arch-11819569910",
-    "name": "Cnoc\u00e1n an Chrainn",
+    "name": "Cnocán an Chrainn",
     "type": "site",
     "lat": 53.71269,
     "lng": -6.77467
@@ -5257,7 +5344,9 @@
     "lat": 54.09045,
     "lng": -8.31279,
     "wikidata": "Q1045004",
-    "heritage": true
+    "heritage": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Dolmen_at_Carrickglass%2C_Co._Sligo_-_geograph.org.uk_-_1011926.jpg/500px-Dolmen_at_Carrickglass%2C_Co._Sligo_-_geograph.org.uk_-_1011926.jpg",
+    "wikidataDesc": "dolmen in County Sligo, Ireland"
   },
   {
     "id": "arch-12273187598",
@@ -5308,7 +5397,8 @@
     "lat": 53.00663,
     "lng": -6.8494,
     "wikidata": "Q17502666",
-    "heritage": true
+    "heritage": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/MULLAGHMAST_STANDING_STONE.JPG/500px-MULLAGHMAST_STANDING_STONE.JPG"
   },
   {
     "id": "arch-12355322101",
@@ -5345,7 +5435,9 @@
     "type": "megalith",
     "lat": 52.77021,
     "lng": -6.74677,
-    "wikidata": "Q15108825"
+    "wikidata": "Q15108825",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Aghade_Holed_Stone",
+    "summary": "Aghade Holed Stone or Cloghaphoill is a large holed stone and a national monument located two miles south of Tullow in Aghade, County Carlow, Ireland."
   },
   {
     "id": "arch-12493815673",
@@ -5353,7 +5445,9 @@
     "type": "dolmen",
     "lat": 52.64367,
     "lng": -6.96403,
-    "wikidata": "Q29981807"
+    "wikidata": "Q29981807",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kilgraney_Portal_Tomb.jpg/500px-Kilgraney_Portal_Tomb.jpg",
+    "wikidataDesc": "portal tomb in County Carlow, Ireland"
   },
   {
     "id": "arch-12554857892",
@@ -5375,7 +5469,9 @@
     "type": "megalith",
     "lat": 53.07208,
     "lng": -6.62972,
-    "wikidata": "Q20170761"
+    "wikidata": "Q20170761",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Menhir_von_Crehelp.jpg/500px-Menhir_von_Crehelp.jpg",
+    "wikidataDesc": "standing stone in Crehelp, County Wicklow, Ireland"
   },
   {
     "id": "arch-12606998810",
@@ -5519,7 +5615,7 @@
   },
   {
     "id": "arch-12909735197",
-    "name": "D\u00f9n Glas, dun site",
+    "name": "Dùn Glas, dun site",
     "type": "fort",
     "lat": 55.3267,
     "lng": -5.61904

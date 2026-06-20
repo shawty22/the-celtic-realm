@@ -3,3 +3,9 @@ dist/
 .DS_Store
 *.local
 .env
+
+# Upscaled 4x assets — too large, regenerate locally with Upscayl
+public/assets/**/*-4x.png
+
+# Build logs and temp
+.build/

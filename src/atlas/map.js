@@ -1,6 +1,12 @@
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 
+// OSi (Ordnance Survey Ireland) tiles via MapTiler.
+// Get a free API key at https://cloud.maptiler.com/account/ then add to .env.local:
+//   VITE_MAPTILER_KEY=your_key_here
+// Without the key, the OSi button falls back to terrain.
+const MAPTILER_KEY = import.meta.env?.VITE_MAPTILER_KEY || null
+
 const TILE_LAYERS = {
   terrain: {
     url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
@@ -24,7 +30,18 @@ const TILE_LAYERS = {
       subdomains: 'abcd',
       maxZoom: 19,
     }
-  }
+  },
+  // OSi outdoor map — Irish place names, heritage monument markers, detailed terrain.
+  // Falls back to terrain if no MapTiler key set.
+  osi: MAPTILER_KEY ? {
+    url: `https://api.maptiler.com/maps/outdoor-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}`,
+    opts: {
+      attribution: '© <a href="https://www.maptiler.com/copyright/">MapTiler</a> · © <a href="https://www.osi.ie/">Ordnance Survey Ireland</a>',
+      tileSize: 512,
+      zoomOffset: -1,
+      maxZoom: 21,
+    }
+  } : null,
 }
 
 let _map = null
@@ -55,12 +72,12 @@ export function flyHome() {
 }
 
 export function setBaseLayer(name) {
-  if (!_map || !TILE_LAYERS[name]) return
+  const layer = TILE_LAYERS[name]
+  if (!_map || !layer) return
   if (_currentTile) _map.removeLayer(_currentTile)
-  _currentTile = L.tileLayer(TILE_LAYERS[name].url, TILE_LAYERS[name].opts).addTo(_map)
-  // Satellite needs no muting filter; terrain/classic use the CSS filter
+  _currentTile = L.tileLayer(layer.url, layer.opts).addTo(_map)
   const mapEl = document.getElementById('map')
-  if (mapEl) {
-    mapEl.dataset.baselayer = name
-  }
+  if (mapEl) mapEl.dataset.baselayer = name
 }
+
+export function hasMaptiler() { return Boolean(MAPTILER_KEY) }
