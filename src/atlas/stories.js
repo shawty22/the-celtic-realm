@@ -51,6 +51,13 @@ export function initStories(map, allData) {
     enterStory(e.detail?.storyId, e.detail?.beatIndex ?? 0)
   })
 
+  document.addEventListener('keydown', e => {
+    if (!_story) return
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); nextBeat() }
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); prevBeat() }
+    else if (e.key === 'Escape') exitStory()
+  })
+
   _initDrag()
   _renderDrawer()
 }
@@ -169,13 +176,16 @@ function _renderDrawer() {
         <span class="story-cycle-badge cycle-badge-${story.cycle}">${_x(story.cycleLabel)}</span>
       </div>
       <div class="story-card-art">
-        <div class="story-card-art-placeholder">
-          ${story.imageFile ? `<img src="/assets/stories/${_x(story.imageFile)}" alt="${_x(story.title)}" class="story-card-art-img" loading="lazy" onerror="this.style.display='none'" />` : ''}
-          <span class="story-card-art-glyph">${story.icon}</span>
-          <span class="story-card-art-label">${_x(story.title)}</span>
-          <span class="story-card-art-pending">Artwork pending</span>
-          <span class="story-card-art-filename">${_x(story.imageFile || story.id + '.webp')}</span>
-        </div>
+        ${story.imageFile
+          ? `<img src="/assets/stories/${_x(story.imageFile)}" alt="${_x(story.title)}"
+                 class="story-card-art-img" loading="lazy"
+                 onerror="this.closest('.story-card-art').innerHTML=''" />`
+          : `<div class="story-card-art-placeholder">
+               <span class="story-card-art-glyph">${story.icon}</span>
+               <span class="story-card-art-label">${_x(story.title)}</span>
+               <span class="story-card-art-pending">Artwork pending</span>
+             </div>`
+        }
       </div>
       <h3 class="story-card-title">${_x(story.title)}</h3>
       <p class="story-card-sub">${_x(story.titleSub)}</p>
@@ -211,6 +221,22 @@ function _showBeat(idx) {
   if (beatTitleEl) beatTitleEl.textContent = beat.title
   if (beatTextEl)  beatTextEl.innerHTML    = _x(beat.plain)
   if (beatCountEl) beatCountEl.textContent = `${idx + 1} / ${beats.length}`
+
+  // Scene — evocative setting line above the beat text
+  const sceneEl = floatEl?.querySelector('.sf-beat-scene')
+  if (sceneEl) sceneEl.textContent = beat.scene || ''
+
+  // Progress dots
+  const dotsEl = floatEl?.querySelector('.sf-progress-dots')
+  if (dotsEl) {
+    dotsEl.innerHTML = beats.map((_, i) =>
+      `<button class="sf-dot${i < idx ? ' sf-dot-past' : i === idx ? ' sf-dot-active' : ''}"
+         data-beat="${i}" aria-label="Beat ${i + 1}" title="${_x(beats[i].title)}"></button>`
+    ).join('')
+    dotsEl.querySelectorAll('.sf-dot').forEach(dot => {
+      dot.addEventListener('click', () => _showBeat(Number(dot.dataset.beat)))
+    })
+  }
 
   // Inject character section into beat body
   const charSectionEl = floatEl?.querySelector('.sf-char-section')

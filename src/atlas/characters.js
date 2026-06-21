@@ -104,14 +104,13 @@ export function renderPrimaryCharCard(char, storyId) {
   return `
     <div class="beat-primary-char" data-char-id="${_x(char.id)}" data-story-id="${_x(storyId || '')}">
       <div class="beat-char-art" style="--char-glow:${char.palette?.glow || '#888'}">
-        <div class="beat-char-art-inner">
+        <div class="beat-char-art-inner${char.imageFile ? ' has-art' : ''}">
           <div class="beat-char-placeholder">
             <span class="beat-char-glyph">${glyph}</span>
-            <span class="beat-char-filename">${_x(char.id)}.webp</span>
           </div>
           ${char.imageFile
             ? `<img src="/assets/characters/${_x(char.imageFile)}" alt="${_x(char.name)}"
-                 onerror="this.style.display='none'"
+                 onerror="this.closest('.beat-char-art-inner').classList.remove('has-art')"
                  class="beat-char-img" loading="lazy" />`
             : ''}
         </div>
@@ -161,17 +160,16 @@ function _buildCharModalHTML(char, roleInStory, story) {
 
   const artHTML = `
     <div class="cmod-art" style="--char-glow:${char.palette?.glow || '#888'};--char-deep:${char.palette?.deep || '#333'}">
-      <div class="cmod-art-inner">
+      <div class="cmod-art-inner${char.imageFile ? ' has-art' : ''}">
         <div class="cmod-art-placeholder">
           <div class="cmod-art-border"></div>
           <span class="cmod-art-glyph">${glyph}</span>
           <span class="cmod-art-name">${_x(char.name)}</span>
           <span class="cmod-art-pending">Artwork pending</span>
-          <span class="cmod-art-filename">${_x(char.imageFile || char.id + '.webp')}</span>
         </div>
         ${char.imageFile
           ? `<img class="cmod-art-img" src="/assets/characters/${_x(char.imageFile)}" alt="${_x(char.name)}"
-               loading="lazy" onerror="this.style.display='none'" />`
+               loading="lazy" onerror="this.closest('.cmod-art-inner').classList.remove('has-art')" />`
           : ''}
       </div>
     </div>

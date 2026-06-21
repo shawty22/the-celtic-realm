@@ -1632,12 +1632,13 @@ button {
 /* nav footer */
 .sf-footer {
   display: flex;
-  gap: 8px;
+  align-items: center;
+  gap: 6px;
   padding: 8px 10px 10px;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 .sf-nav-btn {
-  flex: 1;
+  flex: 0 0 auto;
   padding: 7px 10px;
   border-radius: 6px;
   border: 1px solid rgba(255,255,255,0.1);
@@ -1930,9 +1931,10 @@ button {
 /* ── Story card: artwork slot & cast preview ─────────────────────────────── */
 .story-card-art {
   width: 100%;
-  height: 100px;
+  height: 160px;
   border-radius: 6px;
   overflow: hidden;
+  position: relative;
   border: 1px solid var(--panel-edge);
   margin-bottom: 10px;
   background: rgba(16,10,6,0.6);
@@ -2357,6 +2359,81 @@ button {
 /* =========================================================================
    Story cards — full narrative + source trail
    ========================================================================= */
+
+/* ── has-art: hide placeholder when real artwork loaded ─────────────────── */
+.beat-char-art-inner.has-art .beat-char-placeholder { display: none; }
+.cmod-art-inner.has-art .cmod-art-placeholder { display: none; }
+
+/* ── Beat scene line (evocative setting text) ────────────────────────────── */
+.sf-beat-scene {
+  font-family: var(--serif);
+  font-size: 11.5px;
+  font-style: italic;
+  color: rgba(200,168,75,0.7);
+  line-height: 1.45;
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(200,168,75,0.1);
+}
+.sf-beat-scene:empty { display: none; }
+
+/* ── Beat progress dots ──────────────────────────────────────────────────── */
+.sf-progress-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex: 1;
+}
+.sf-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.12s;
+  padding: 0;
+}
+.sf-dot:hover { background: rgba(255,255,255,0.25); transform: scale(1.2); }
+.sf-dot-past  { background: rgba(200,168,75,0.35); border-color: rgba(200,168,75,0.4); }
+.sf-dot-active {
+  background: var(--sf-color, var(--myth));
+  border-color: var(--sf-color, var(--myth));
+  transform: scale(1.25);
+}
+
+/* ── Panel figure chips & location chips ─────────────────────────────────── */
+.panel-fig-chips, .panel-loc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+.panel-fig-chip {
+  font-size: 11px;
+  font-family: var(--serif);
+  font-style: italic;
+  padding: 3px 9px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid rgba(200,168,75,0.22);
+  background: rgba(200,168,75,0.07);
+  color: var(--parchment);
+  transition: background 0.15s;
+}
+.panel-fig-chip:hover { background: rgba(200,168,75,0.18); }
+.panel-loc-chip {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid rgba(80,140,90,0.3);
+  background: rgba(80,140,90,0.07);
+  color: rgba(160,210,170,0.9);
+  transition: background 0.15s;
+}
+.panel-loc-chip:hover { background: rgba(80,140,90,0.2); }
 
 /* ── Story card artwork image (when imageFile provided) ──────────────────── */
 .story-card-art-img {

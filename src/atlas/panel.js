@@ -1,4 +1,11 @@
 import { getStoriesForLocation } from './stories.js'
+import { getCharacter }         from './characters.js'
+import mythData   from '../data/mythological.json'
+import ulsterData from '../data/ulster.json'
+import fenianData from '../data/fenian.json'
+
+const _allEntries = [...mythData, ...ulsterData, ...fenianData]
+function _findEntry(id) { return _allEntries.find(e => e.id === id) ?? null }
 
 const panel   = document.getElementById('detail-panel')
 const content = document.getElementById('panel-content')
@@ -50,6 +57,13 @@ export function showPanel(entry) {
       document.dispatchEvent(new CustomEvent('atlas:enterStory', {
         detail: { storyId: btn.dataset.storyId, beatIndex: 0 }
       }))
+    })
+  })
+
+  content.querySelectorAll('.panel-loc-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const loc = _findEntry(btn.dataset.locId)
+      if (loc) showPanel(loc)
     })
   })
 }
@@ -108,7 +122,9 @@ function buildHTML(e) {
     ? `<button class="fly-3d-btn" aria-label="Open 3D flythrough for ${x(e.name)}">3D ↗</button>`
     : ''
 
-  const storyLinks = buildStoryLinksHTML(e)
+  const storyLinks    = buildStoryLinksHTML(e)
+  const figuresHTML   = buildFiguresHTML(e)
+  const relLocsHTML   = buildRelatedLocsHTML(e)
 
   return `
     <div class="panel-header layer-${x(e.layer)}">
@@ -127,6 +143,8 @@ function buildHTML(e) {
       <p class="panel-summary">${x(e.shortSummary)}</p>
       <p class="panel-explanation">${x(e.explanation)}</p>
       ${storyLinks}
+      ${figuresHTML}
+      ${relLocsHTML}
       ${sourcesHTML}
       ${confHTML}
       ${notesHTML}
@@ -153,6 +171,35 @@ function buildStoryLinksHTML(e) {
       <div class="panel-story-links">${links}</div>
     </div>
   `
+}
+
+function buildFiguresHTML(e) {
+  if (!e.associatedFigures?.length) return ''
+  const chips = e.associatedFigures.map(id => {
+    const c = getCharacter(id)
+    if (!c) return ''
+    return `<button class="char-chip panel-fig-chip cycle-chip-${x(c.cycle)}"
+      data-char-id="${x(c.id)}" aria-label="${x(c.name)}">${x(c.name)}</button>`
+  }).filter(Boolean).join('')
+  if (!chips) return ''
+  return `<div class="panel-section">
+    <h3 class="panel-section-h">Associated figures</h3>
+    <div class="panel-fig-chips">${chips}</div>
+  </div>`
+}
+
+function buildRelatedLocsHTML(e) {
+  if (!e.relatedLocations?.length) return ''
+  const chips = e.relatedLocations.map(id => {
+    const loc = _findEntry(id)
+    if (!loc) return ''
+    return `<button class="panel-loc-chip" data-loc-id="${x(loc.id)}">${x(loc.name)}</button>`
+  }).filter(Boolean).join('')
+  if (!chips) return ''
+  return `<div class="panel-section">
+    <h3 class="panel-section-h">Related places</h3>
+    <div class="panel-loc-chips">${chips}</div>
+  </div>`
 }
 
 function x(s) {
