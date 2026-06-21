@@ -6,16 +6,22 @@
     "layer": "fenian",
     "cycle": "Fenian Cycle",
     "type": "location",
-    "lat": 53.1650,
+    "lat": 53.165,
     "lng": -6.8783,
     "county": "Kildare",
     "province": "Leinster",
     "era": "Early Medieval / Mythological",
     "shortSummary": "The fortified hilltop of Fionn mac Cumhaill — principal base of the Fianna and the starting point of countless Fenian adventures.",
     "explanation": "Almu (Hill of Allen) was Fionn mac Cumhaill's primary residence and the stronghold of the Fianna of Leinster. Many Fenian stories begin or end here. The hill has an ancient provenance — it was associated with magical women who granted or denied sovereignty long before Fionn claimed it. A legend says Fionn sleeps in an enchanted chamber beneath the hill, and will return when Ireland needs him most. Today the Hill of Allen is a conical ridge in the Kildare plain, 196 metres high, with a 19th-century tower at the summit.",
-    "associatedFigures": ["fionn", "oisin", "the-fianna"],
-    "relatedLocations": ["slieve-bloom"],
-    "imageFile": "hill-of-allen.webp",
+    "associatedFigures": [
+      "fionn",
+      "oisin",
+      "the-fianna"
+    ],
+    "relatedLocations": [
+      "slieve-bloom"
+    ],
+    "imageFile": "hill-of-allen.png",
     "sources": [
       "Acallam na Senórach (Colloquy of the Ancients)",
       "Various Fenian lays (fiannaíocht)"
@@ -37,10 +43,18 @@
     "era": "Mythological",
     "shortSummary": "The great limestone table-mountain above Sligo where Diarmuid was killed by the enchanted boar — one of the most dramatic deaths in Irish mythology.",
     "explanation": "Ben Bulben looms flat-topped and sheer above the Sligo coast — one of the most recognisable mountain profiles in Ireland. In the Fenian Cycle it is the site of the death of Diarmuid ua Duibhne, gored by the supernatural boar of Ben Bulben — a boar that was the reincarnation of his foster-brother, who had made a binding fate-oath with him. Fionn, who had the power to heal Diarmuid with healing water held in his hands, arrived in time but delayed too long, letting the water run through his fingers twice while Diarmuid died. W.B. Yeats, who grew up with this mountain visible from his window, asked to be buried in its shadow at Drumcliffe — and was.",
-    "associatedFigures": ["diarmuid", "grainne", "fionn"],
-    "associatedStories": ["pursuit-of-diarmuid"],
-    "relatedLocations": ["hill-of-allen"],
-    "imageFile": "ben-bulben.webp",
+    "associatedFigures": [
+      "diarmuid",
+      "grainne",
+      "fionn"
+    ],
+    "associatedStories": [
+      "pursuit-of-diarmuid"
+    ],
+    "relatedLocations": [
+      "hill-of-allen"
+    ],
+    "imageFile": "ben-bulben.png",
     "sources": [
       "Tóraíocht Dhiarmada agus Ghráinne (Pursuit of Diarmuid and Gráinne)"
     ],
@@ -60,9 +74,14 @@
     "era": "Mythological",
     "shortSummary": "Where the poet Finnéces spent seven years catching the Salmon of Knowledge — and the boy Fionn accidentally tasted it and gained all wisdom.",
     "explanation": "The Salmon of Knowledge (Bradán Feasa) had eaten the nine hazelnuts that fell from the trees of wisdom into the Well of Segais — the cosmological source of all knowledge, from which the Boyne rises. The poet Finnéces (Finnegas) spent seven years on the Boyne trying to catch it. When he finally did, he set the boy Fionn (then called Demne) to cook it while he slept, with strict instructions to eat none. Fionn burned his thumb on the skin, instinctively sucked it, and received the salmon's gift. Ever after, when Fionn pressed his thumb to his cheek (the imbas forosnai, or 'knowledge that illuminates'), he could perceive any truth.",
-    "associatedFigures": ["fionn"],
-    "relatedLocations": ["bru-na-boinne", "hill-of-allen"],
-    "imageFile": "boyne-salmon.webp",
+    "associatedFigures": [
+      "fionn"
+    ],
+    "relatedLocations": [
+      "bru-na-boinne",
+      "hill-of-allen"
+    ],
+    "imageFile": "boyne-salmon.png",
     "sources": [
       "Macgnímartha Find (The Boyhood Deeds of Fionn)"
     ],
@@ -83,9 +102,11 @@
     "era": "Folk Tradition (post-medieval)",
     "shortSummary": "The extraordinary basalt column formation on the Antrim coast — in Irish folk tradition, built by Fionn mac Cumhaill to cross to Scotland.",
     "explanation": "The Giant's Causeway is a UNESCO World Heritage Site consisting of roughly 40,000 interlocking basalt columns, the result of volcanic activity 50–60 million years ago. In Irish and Scottish folk tradition (not the medieval Fenian Cycle texts), Fionn mac Cumhaill built the causeway to walk to Scotland and fight the giant Benandonner. When he saw the size of Benandonner's footprints, he panicked, disguised himself as a baby, and when Benandonner saw the 'infant' he reasoned the father must be monstrous and fled, tearing up the causeway behind him. The corresponding site in Scotland is Fingal's Cave on Staffa.",
-    "associatedFigures": ["fionn"],
+    "associatedFigures": [
+      "fionn"
+    ],
     "relatedLocations": [],
-    "imageFile": "giants-causeway.webp",
+    "imageFile": "giants-causeway.png",
     "sources": [
       "Irish and Scottish folk tradition (17th–19th century; not in medieval Fenian texts)"
     ],
@@ -106,8 +127,11 @@
     "era": "Mythological",
     "shortSummary": "The forested upland heart of Ireland — traditional hunting ground of the Fianna, where they lived between campaigns.",
     "explanation": "The Slieve Bloom Mountains form a compact upland plateau rising from the midland bogs. In the Fenian Cycle they are frequently the setting for the Fianna's hunts, battles with supernatural opponents, and encounters with the fairy folk (aos sí). The forests here were imagined as wild territory between the settled provinces — liminal ground where the Fianna lived as hunters and guardians of the margins of civilised Ireland. The name Bladhma preserves a legendary figure associated with the range in the Dinnshenchas tradition.",
-    "associatedFigures": ["the-fianna", "fionn"],
-    "imageFile": "slieve-bloom.webp",
+    "associatedFigures": [
+      "the-fianna",
+      "fionn"
+    ],
+    "imageFile": "slieve-bloom.png",
     "sources": [
       "Acallam na Senórach"
     ],
@@ -128,9 +152,14 @@
     "era": "Mythological",
     "shortSummary": "Where Niamh Chinn Óir rode from the western sea and took Oisín to Tír na nÓg — from which he returned to find Ireland three hundred years changed.",
     "explanation": "The Killarney lakes and their surroundings are among the most dramatic landscapes in Ireland — mountains, water, and forest — and in the Fenian Cycle they serve as a liminal threshold between Ireland and the western Otherworld. Oisín, Fionn's son and poet of the Fianna, was led away to Tír na nÓg by Niamh Chinn Óir (Niamh of the Golden Hair), a fairy woman who rode from the sea on a white horse. He lived there for what seemed like three years; when he returned, three hundred years had passed and the Fianna were dead. He aged instantly when he fell from his horse and touched Irish soil.",
-    "associatedFigures": ["oisin"],
-    "relatedLocations": ["tir-na-nog", "hill-of-allen"],
-    "imageFile": "lough-leane.webp",
+    "associatedFigures": [
+      "oisin"
+    ],
+    "relatedLocations": [
+      "tir-na-nog",
+      "hill-of-allen"
+    ],
+    "imageFile": "lough-leane.png",
     "sources": [
       "Laoi Oisín ar Thír na nÓg (Oisín in the Land of Youth, Micheál Coimín, c. 1750)"
     ],
@@ -144,15 +173,17 @@
     "layer": "fenian",
     "cycle": "Fenian Cycle",
     "type": "location",
-    "lat": 53.0,
-    "lng": -12.0,
+    "lat": 53,
+    "lng": -12,
     "county": "Mythological / Western Sea",
     "province": "Mythological",
     "era": "Mythological",
     "shortSummary": "The Otherworld paradise of eternal youth in the western ocean — placed here symbolically, where the horizon meets the sea beyond Ireland.",
     "explanation": "Tír na nÓg is the most famous of several names for the Irish Otherworld — a place without death, disease, or grief, where time moves differently from the mortal world. It overlaps with Mag Mell (Plain of Honey), Tír Tairngire (Land of Promise), and Emhain Abhlach (Isle of Apples). It lies somewhere in the western ocean, beyond the edge of the known world. Oisín lived there with Niamh for what felt like three years, but three hundred passed in Ireland. The concept of a western paradise predates Christianity but was absorbed into Irish Christian cosmology with relative ease.",
-    "relatedLocations": ["lough-leane"],
-    "imageFile": "tir-na-nog.webp",
+    "relatedLocations": [
+      "lough-leane"
+    ],
+    "imageFile": "tir-na-nog.png",
     "sources": [
       "Laoi Oisín ar Thír na nÓg",
       "Imram Brain (The Voyage of Bran, c. 700 CE)"
@@ -167,15 +198,21 @@
     "layer": "fenian",
     "cycle": "Fenian Cycle",
     "type": "person",
-    "lat": 53.1650,
+    "lat": 53.165,
     "lng": -6.8783,
     "county": "Kildare",
     "province": "Leinster",
     "era": "Mythological",
     "shortSummary": "Leader of the Fianna — warrior, poet, and seer, whose wisdom came from the Salmon of Knowledge and whose thumb knew every truth.",
     "explanation": "Fionn mac Cumhaill (anglicised Finn MacCool) is the greatest figure of the Fenian Cycle — leader of the Fianna, Ireland's supernatural militia. His father Cumhal was killed before Fionn's birth; his mother sent the infant into hiding with women warriors in the wilderness of Slieve Bloom. He gained wisdom by tasting the Salmon of Knowledge, studied poetry under Finnéces, and gathered around him the most extraordinary warriors in Irish legend. He was also a seer — his thumb of knowledge (imbas forosnai) gave him access to hidden truth. He is both hero and flawed man: his jealousy over Diarmuid and Gráinne is one of the cycle's greatest complications.",
-    "relatedLocations": ["hill-of-allen", "boyne-salmon", "ben-bulben", "giants-causeway", "slieve-bloom"],
-    "imageFile": "fionn.webp",
+    "relatedLocations": [
+      "hill-of-allen",
+      "boyne-salmon",
+      "ben-bulben",
+      "giants-causeway",
+      "slieve-bloom"
+    ],
+    "imageFile": "fionn.png",
     "sources": [
       "Acallam na Senórach",
       "Macgnímartha Find (Boyhood Deeds of Fionn)",
@@ -191,15 +228,19 @@
     "layer": "fenian",
     "cycle": "Fenian Cycle",
     "type": "person",
-    "lat": 53.1650,
+    "lat": 53.165,
     "lng": -6.8783,
     "county": "Kildare",
     "province": "Leinster",
     "era": "Mythological / Early Christian",
     "shortSummary": "Fionn's son, greatest poet of the Fianna, and the only one who survived to the Christian era — bitter and mourning in his conversations with St. Patrick.",
     "explanation": "Oisín was the son of Fionn mac Cumhaill and Sadhbh (a woman enchanted into a deer — hence his name 'little fawn'). He was the Fianna's greatest poet, gifted with language as his father was with wisdom. After his time in Tír na nÓg, he returned to find all his companions dead and Ireland transformed by Christianity. The literary framing device of Acallam na Senórach ('Colloquy of the Ancients') presents Oisín and Caoilte recounting the deeds of the Fianna to St. Patrick, who has them written down. Oisín was bitter: he found the Ireland of monks and bells diminished beyond bearing compared to the world of the Fianna.",
-    "relatedLocations": ["hill-of-allen", "tir-na-nog", "lough-leane"],
-    "imageFile": "oisin.webp",
+    "relatedLocations": [
+      "hill-of-allen",
+      "tir-na-nog",
+      "lough-leane"
+    ],
+    "imageFile": "oisin.png",
     "sources": [
       "Acallam na Senórach",
       "Laoi Oisín ar Thír na nÓg"
@@ -220,9 +261,14 @@
     "era": "Mythological",
     "shortSummary": "The most handsome man of the Fianna, whose love-spot made any woman fall instantly in love with him — and whose death at Ben Bulben was caused by his own tangled fate.",
     "explanation": "Diarmuid was a grandson of Duibhne and foster-son of the love-god Óengus Óg. He bore a luan ghrá (love-spot) on his forehead that caused any woman who saw it to fall uncontrollably in love — he kept it covered with his hair. At the feast of Fionn's wedding to Gráinne, she saw the spot, placed a geis (binding obligation) on Diarmuid to elope with her, and he had no choice but to comply. He and Gráinne fled across Ireland for years while Fionn pursued them. He was killed at Ben Bulben by the supernatural boar — the reincarnated form of his foster-brother — and Fionn, who could have healed him, delayed until it was too late. Their flight route is preserved in dozens of place-names across Ireland.",
-    "relatedLocations": ["ben-bulben", "hill-of-allen"],
-    "associatedStories": ["pursuit-of-diarmuid"],
-    "imageFile": "diarmuid.webp",
+    "relatedLocations": [
+      "ben-bulben",
+      "hill-of-allen"
+    ],
+    "associatedStories": [
+      "pursuit-of-diarmuid"
+    ],
+    "imageFile": "diarmuid.png",
     "sources": [
       "Tóraíocht Dhiarmada agus Ghráinne (MS c. 1750, from older oral tradition)"
     ],
@@ -236,16 +282,21 @@
     "layer": "fenian",
     "cycle": "Fenian Cycle",
     "type": "person",
-    "lat": 54.3500,
-    "lng": -8.4500,
+    "lat": 54.35,
+    "lng": -8.45,
     "county": "Sligo",
     "province": "Connacht",
     "era": "Mythological",
     "shortSummary": "Daughter of the High King, betrothed to Fionn, who placed a binding geis on Diarmuid to flee with her rather than live safely in a loveless marriage.",
     "explanation": "Gráinne is one of the most vivid female characters in the Fenian Cycle. She was betrothed to the aged Fionn mac Cumhaill, but at the wedding feast fell in love with Diarmuid and bound him by geis to flee with her. She was never passive in the pursuit: she drove the flight, made tactical decisions, and her feelings for Diarmuid deepened from convenience into genuine love over their years of running. When Diarmuid died and Fionn renewed his suit, Gráinne eventually accepted — an ending that disturbed later audiences enough that scribes sometimes added notes explaining she acted from necessity. She is closely parallel to Iseult in the Tristan cycle, and to Deirdre in the Ulster Cycle.",
-    "relatedLocations": ["ben-bulben", "hill-of-allen"],
-    "associatedStories": ["pursuit-of-diarmuid"],
-    "imageFile": "grainne.webp",
+    "relatedLocations": [
+      "ben-bulben",
+      "hill-of-allen"
+    ],
+    "associatedStories": [
+      "pursuit-of-diarmuid"
+    ],
+    "imageFile": "grainne.png",
     "sources": [
       "Tóraíocht Dhiarmada agus Ghráinne"
     ],
@@ -258,15 +309,18 @@
     "layer": "fenian",
     "cycle": "Fenian Cycle",
     "type": "person",
-    "lat": 53.6500,
-    "lng": -6.6500,
+    "lat": 53.65,
+    "lng": -6.65,
     "county": "Meath",
     "province": "Leinster",
     "era": "Mythological",
     "shortSummary": "Son of Oisín and grandson of Fionn — mightiest warrior of the last Fianna, killed at Gabhra in the battle that destroyed the Fenian order.",
     "explanation": "Oscar was Oisín's son and the finest warrior of his generation of the Fianna — said to be impossible to wound in ordinary combat. The Battle of Gabhra (traditionally placed near Skryne or Garristown, County Meath) saw the High King Cairbre Lifechair assembling all the kings of Ireland against the Fianna. Oscar killed Cairbre in single combat but was fatally wounded himself in the exchange. Fionn arrived after the battle to find Oscar dying. It is the only time in any text that Fionn wept — he held Oscar as he died. After Gabhra, the Fianna were broken. Oisín left for Tír na nÓg shortly after.",
-    "relatedLocations": ["hill-of-allen", "battle-of-gabhra"],
-    "imageFile": "oscar.webp",
+    "relatedLocations": [
+      "hill-of-allen",
+      "battle-of-gabhra"
+    ],
+    "imageFile": "oscar.png",
     "sources": [
       "Cath Gabhra (The Battle of Gabhra)"
     ],
@@ -280,15 +334,19 @@
     "layer": "fenian",
     "cycle": "Fenian Cycle",
     "type": "group",
-    "lat": 53.1650,
+    "lat": 53.165,
     "lng": -6.8783,
     "county": "Kildare",
     "province": "Leinster",
     "era": "Mythological",
     "shortSummary": "Ireland's legendary hunter-warrior elite — a roving army of champions who lived outside tribal law and defended Ireland from supernatural and earthly threats alike.",
     "explanation": "The Fianna were an all-Ireland warrior band serving the High King as standing army and living outside normal tribal structures. The entry requirements were formidable: memorise twelve books of poetry, run through woodland without cracking a twig or loosening a plait, withstand nine warriors casting spears simultaneously while standing waist-deep in a hole, and extract a thorn from your foot at full sprint. Their code — hospitality, loyalty, the protection of the weak, no plundering after sunset — made them a mythological ideal of warrior virtue. They spent winters as Fionn's guests at Hill of Allen and hunted from spring to autumn, never sleeping in the same shelter twice.",
-    "relatedLocations": ["hill-of-allen", "slieve-bloom", "ben-bulben"],
-    "imageFile": "the-fianna.webp",
+    "relatedLocations": [
+      "hill-of-allen",
+      "slieve-bloom",
+      "ben-bulben"
+    ],
+    "imageFile": "the-fianna.png",
     "sources": [
       "Acallam na Senórach",
       "Various Fenian lays (fiannaíocht)"
@@ -302,16 +360,23 @@
     "layer": "fenian",
     "cycle": "Fenian Cycle",
     "type": "event",
-    "lat": 53.6500,
-    "lng": -6.6500,
+    "lat": 53.65,
+    "lng": -6.65,
     "county": "Meath",
     "province": "Leinster",
     "era": "Mythological (pseudo-historical date c. 284 CE)",
     "shortSummary": "The final battle that destroyed the Fianna — Oscar killed the High King but died in the act, and the age of the Fenian heroes ended.",
     "explanation": "The Battle of Gabhra marked the end of the Fenian order. The High King Cairbre Lifechair, who had grown to resent the Fianna's power and their exactions on the land, assembled the kings of Ireland against them. Oscar — Oisín's son, mightiest of the last Fianna — killed Cairbre in single combat but was mortally wounded. The Fianna's numbers were too reduced to continue as an institution. Fionn arrived to find Oscar dying and wept — the only time in the entire cycle. The battle also marks the transition from the pagan heroic world to the Christian era: Oisín survived and eventually met St. Patrick.",
-    "relatedLocations": ["hill-of-allen", "emain-macha"],
-    "associatedFigures": ["oscar", "the-fianna", "fionn"],
-    "imageFile": "battle-of-gabhra.webp",
+    "relatedLocations": [
+      "hill-of-allen",
+      "emain-macha"
+    ],
+    "associatedFigures": [
+      "oscar",
+      "the-fianna",
+      "fionn"
+    ],
+    "imageFile": "battle-of-gabhra.png",
     "sources": [
       "Cath Gabhra (Battle of Gabhra)"
     ],
@@ -326,15 +391,22 @@
     "cycle": "Fenian Cycle",
     "type": "story",
     "lat": 53.6667,
-    "lng": -8.0000,
+    "lng": -8,
     "county": "Roscommon / Connacht",
     "province": "Connacht",
     "era": "Mythological",
     "shortSummary": "The great pursuit — Gráinne binds Diarmuid by geis to flee with her, and Fionn hunts them across every province of Ireland for years.",
     "explanation": "The Tóraíocht is one of the longest and most geographically richest Fenian tales, encoding dozens of place-names in the flight route of the lovers. It begins at Hill of Allen (Fionn's wedding feast), proceeds through Connacht, Ulster, Munster, and Leinster, and ends at Ben Bulben in Sligo. Along the way Diarmuid and Gráinne slept on a new stone every night — giving rise to megalithic monuments called 'Diarmuid and Gráinne's Bed' across Ireland. The story parallels the Welsh Tristan and Iseult cycle and shares deep structure with the Ulster Cycle's Deirdre tale. Its earliest full manuscript dates to c. 1750 but the tradition is considerably older.",
-    "relatedLocations": ["hill-of-allen", "ben-bulben"],
-    "associatedFigures": ["diarmuid", "grainne", "fionn"],
-    "imageFile": "pursuit-of-diarmuid.webp",
+    "relatedLocations": [
+      "hill-of-allen",
+      "ben-bulben"
+    ],
+    "associatedFigures": [
+      "diarmuid",
+      "grainne",
+      "fionn"
+    ],
+    "imageFile": "pursuit-of-diarmuid.png",
     "sources": [
       "Tóraíocht Dhiarmada agus Ghráinne (MS c. 1750, oral tradition much older)"
     ],

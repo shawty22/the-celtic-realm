@@ -13,10 +13,21 @@
     "era": "Mythological / Iron Age",
     "shortSummary": "Sacred hilltop and ritual seat of the mythological High Kings — where the Lia Fáil cried out for the rightful king.",
     "explanation": "In Irish tradition, Tara was the cosmological centre of the island — the place where kings were inaugurated, gods assembled, and the fate of Ireland decided. The Lia Fáil (Stone of Destiny) stands here, said to roar when touched by the rightful king. Before the Gaels, the Tuatha Dé Danann held court here under the Dagda and Lugh. The site encompasses Neolithic monuments including the Mound of the Hostages (c. 3200 BCE), confirming its ritual importance millennia before the mythological texts were written. It remained a symbolic capital of Ireland into the early historical period.",
-    "associatedFigures": ["lugh", "the-dagda", "nuada", "tuatha-de-danann"],
-    "associatedStories": ["second-battle-of-mag-tuired"],
-    "relatedLocations": ["bru-na-boinne", "uisneach", "tailteann"],
-    "imageFile": "tara.webp",
+    "associatedFigures": [
+      "lugh",
+      "the-dagda",
+      "nuada",
+      "tuatha-de-danann"
+    ],
+    "associatedStories": [
+      "second-battle-of-mag-tuired"
+    ],
+    "relatedLocations": [
+      "bru-na-boinne",
+      "uisneach",
+      "tailteann"
+    ],
+    "imageFile": "tara.png",
     "sources": [
       "Lebor Gabála Érenn (Book of Invasions)",
       "Cath Maige Tuired (Battle of Mag Tuired)",
@@ -39,9 +50,14 @@
     "era": "Neolithic / Mythological",
     "shortSummary": "The Dagda's home on the Boyne — an Otherworld palace inside one of the oldest structures on earth.",
     "explanation": "Newgrange (Sí an Bhrú) is one of the oldest artificial structures on Earth, predating Stonehenge by centuries. In Irish myth it was home to the Dagda, chief of the Tuatha Dé Danann, until his son Óengus Óg won it from him by a clever legal argument about 'a day and a night' meaning all time. The chamber's alignment with the winter solstice sunrise — a feature its builders engineered 5,200 years ago — gave it mythological status as a liminal passage between the living world and the sídh (Otherworld). The wider Brú na Bóinne complex contains Knowth and Dowth as well.",
-    "associatedFigures": ["the-dagda"],
-    "relatedLocations": ["tara", "uisneach"],
-    "imageFile": "bru-na-boinne.webp",
+    "associatedFigures": [
+      "the-dagda"
+    ],
+    "relatedLocations": [
+      "tara",
+      "uisneach"
+    ],
+    "imageFile": "bru-na-boinne.png",
     "sources": [
       "Tochmarc Étaíne (The Wooing of Étaín)",
       "Acallam na Senórach (Colloquy of the Ancients)"
@@ -63,9 +79,14 @@
     "era": "Mythological / Early Medieval",
     "shortSummary": "The navel of Ireland — where the five provinces met, the Bealtaine fire was lit, and Lugh held his sacred assembly.",
     "explanation": "Uisneach was regarded as the cosmological centre of Ireland, the meeting place of all five provinces. The ceremonial fire for Bealtaine (1 May) was traditionally lit here, with all hearth fires in Ireland extinguished and relit from it. The Aill na Míreann (Stone of Divisions), a massive glacial erratic, marks the mythological point from which the provinces were measured. The site has significant archaeological remains including enclosures, a passage tomb, and the 30-tonne Aill na Míreann. The god Lugh is said to have instituted his assembly here.",
-    "associatedFigures": ["lugh", "tuatha-de-danann"],
-    "relatedLocations": ["tara"],
-    "imageFile": "uisneach.webp",
+    "associatedFigures": [
+      "lugh",
+      "tuatha-de-danann"
+    ],
+    "relatedLocations": [
+      "tara"
+    ],
+    "imageFile": "uisneach.png",
     "sources": [
       "Lebor na Cert (Book of Rights)",
       "Dinnshenchas"
@@ -81,15 +102,20 @@
     "cycle": "Mythological Cycle",
     "type": "location",
     "lat": 53.7167,
-    "lng": -6.7250,
+    "lng": -6.725,
     "county": "Meath",
     "province": "Leinster",
     "era": "Mythological / Early Historical",
     "shortSummary": "Site of the Aonach Tailteann — the great games founded by Lugh in honour of his foster-mother Tailtiu.",
     "explanation": "Tailtiu was the foster-mother of Lugh, a goddess of the earth who died of exhaustion after clearing the forests of Ireland for agriculture. Lugh instituted funeral games in her honour at Tailteann — the Aonach Tailteann — which included athletic competitions, marriage contracts, trading, and poetry. These games are mentioned in both mythological and early historical sources, with the last recorded assembly in the 12th century CE. The site near Teltown, County Meath, contains large earthworks including a mound and enclosure.",
-    "associatedFigures": ["lugh"],
-    "relatedLocations": ["tara", "uisneach"],
-    "imageFile": "tailteann.webp",
+    "associatedFigures": [
+      "lugh"
+    ],
+    "relatedLocations": [
+      "tara",
+      "uisneach"
+    ],
+    "imageFile": "tailteann.png",
     "sources": [
       "Lebor Gabála Érenn",
       "Dinnshenchas"
@@ -111,9 +137,13 @@
     "era": "Mythological / Early Christian",
     "shortSummary": "Site of Brigid's perpetual sacred flame, tended from pre-Christian times through St. Brigid's monastery and beyond.",
     "explanation": "Brigid's sacred fire at Kildare is one of the clearest survivals of pre-Christian religious practice in Ireland. The goddess Brigid was associated with the hearth fire, poetry, healing, and smithcraft. Her sanctuary at Kildare maintained a flame never permitted to go out. St. Brigid of Kildare deliberately continued this tradition when she founded her monastery around 480 CE — the overlap between goddess and saint is intentional, not confusion. The flame was extinguished at the Reformation but relit by the Brigidine Sisters in 1993.",
-    "associatedFigures": ["brigid"],
-    "relatedLocations": ["uisneach"],
-    "imageFile": "kildare.webp",
+    "associatedFigures": [
+      "brigid"
+    ],
+    "relatedLocations": [
+      "uisneach"
+    ],
+    "imageFile": "kildare.png",
     "sources": [
       "Gerald of Wales, Topographia Hibernica (c. 1188 CE)",
       "Vita Prima Sanctae Brigitae"
@@ -135,9 +165,14 @@
     "era": "Mythological",
     "shortSummary": "Remote fortress of the Fomorians and stronghold of Balor of the Evil Eye, whose deadly gaze could destroy armies.",
     "explanation": "The Fomorians — primordial beings of chaos and darkness — were associated in myth with the sea and with Tory Island off the Donegal coast. Their chieftain Balor had one eye capable of destroying anything it looked upon directly. A prophecy said he would be killed by his own grandson, so he imprisoned his daughter Eithne on Tory Island to prevent her bearing children. She was visited by Cian of the Tuatha Dé Danann, bore triplets, and Lugh — one of the three — eventually killed Balor at the Second Battle of Mag Tuired with a slingstone through his eye.",
-    "associatedFigures": ["fomorians", "lugh"],
-    "relatedLocations": ["mag-tuired-north"],
-    "imageFile": "tory-island.webp",
+    "associatedFigures": [
+      "fomorians",
+      "lugh"
+    ],
+    "relatedLocations": [
+      "mag-tuired-north"
+    ],
+    "imageFile": "tory-island.png",
     "sources": [
       "Cath Maige Tuired"
     ],
@@ -151,16 +186,22 @@
     "layer": "mythological",
     "cycle": "Mythological Cycle",
     "type": "event",
-    "lat": 53.5500,
-    "lng": -9.2500,
+    "lat": 53.55,
+    "lng": -9.25,
     "county": "Mayo",
     "province": "Connacht",
     "era": "Mythological",
     "shortSummary": "The battle in which the Tuatha Dé Danann defeated the Fir Bolg and took possession of Ireland — but their king Nuada lost his arm.",
     "explanation": "Before the Tuatha Dé Danann could face the Fomorians, they had to displace the Fir Bolg, the previous inhabitants of Ireland. The First Battle of Mag Tuired took place on a plain traditionally located near Cong in County Mayo. The Tuatha Dé Danann won, but their king Nuada lost his arm in combat — disqualifying him from kingship under divine law, since a king had to be physically perfect. The Fir Bolg fled to the western islands. This battle is recounted separately in Cath Maige Tuired Cunga to distinguish it from the more famous second battle.",
-    "associatedFigures": ["nuada", "tuatha-de-danann"],
-    "relatedLocations": ["mag-tuired-north", "tara"],
-    "imageFile": "mag-tuired-south.webp",
+    "associatedFigures": [
+      "nuada",
+      "tuatha-de-danann"
+    ],
+    "relatedLocations": [
+      "mag-tuired-north",
+      "tara"
+    ],
+    "imageFile": "mag-tuired-south.png",
     "sources": [
       "Cath Maige Tuired Cunga",
       "Lebor Gabála Érenn"
@@ -176,15 +217,25 @@
     "cycle": "Mythological Cycle",
     "type": "event",
     "lat": 54.0833,
-    "lng": -8.3500,
+    "lng": -8.35,
     "county": "Sligo",
     "province": "Connacht",
     "era": "Mythological",
     "shortSummary": "The great cosmic battle of the God-Age — Lugh killed Balor of the Evil Eye, the Tuatha Dé Danann defeated the Fomorians.",
     "explanation": "This is the pivotal battle of the Mythological Cycle. The Tuatha Dé Danann, led by the young Lugh Lámhfhada (Lugh of the Long Arm), defeated the Fomorians under Balor. Lugh drove a slingstone through Balor's deadly eye, fulfilling the prophecy. The text is one of the richest mythological narratives in Irish, including the Dagda's ritual combat, the Battle Fury of the Morrígan, and the forging of Goibhniu's weapons. The traditional location is near Lough Arrow in County Sligo, at the hill called Moytirra.",
-    "associatedFigures": ["lugh", "the-dagda", "the-morrigan", "nuada", "tuatha-de-danann", "fomorians"],
-    "relatedLocations": ["tory-island", "tara"],
-    "imageFile": "mag-tuired.webp",
+    "associatedFigures": [
+      "lugh",
+      "the-dagda",
+      "the-morrigan",
+      "nuada",
+      "tuatha-de-danann",
+      "fomorians"
+    ],
+    "relatedLocations": [
+      "tory-island",
+      "tara"
+    ],
+    "imageFile": "mag-tuired.png",
     "sources": [
       "Cath Maige Tuired (Harleian MS 5280, c. 1400 CE, from older source)"
     ],
@@ -198,17 +249,21 @@
     "layer": "mythological",
     "cycle": "Mythological Cycle",
     "type": "location",
-    "lat": 53.6500,
-    "lng": -7.3750,
+    "lat": 53.65,
+    "lng": -7.375,
     "county": "Westmeath",
     "province": "Leinster",
     "era": "Mythological",
     "shortSummary": "Where the Children of Lír spent their first three hundred years as enchanted swans, singing music that could heal the grieving.",
     "explanation": "The Oidheadh Chloinne Lir (Fate of the Children of Lír) tells how Lír's four children — Fionnuala, Aodh, Fiachra, and Conn — were transformed into swans by their jealous stepmother Aoife. They spent three centuries on Lough Derravaragh, three on the stormy Sea of Moyle (between Ireland and Scotland), and three near Erris and Inishglora in Mayo. Their singing was so beautiful that none who heard it could feel grief. The tale is one of the three great sorrows of Irish legend (Trí Truaighe na Scéalaíochta).",
     "associatedFigures": [],
-    "associatedStories": ["children-of-lir"],
-    "relatedLocations": ["tara"],
-    "imageFile": "lough-derravaragh.webp",
+    "associatedStories": [
+      "children-of-lir"
+    ],
+    "relatedLocations": [
+      "tara"
+    ],
+    "imageFile": "lough-derravaragh.png",
     "sources": [
       "Oidheadh Chloinne Lir (earliest MS c. 16th century; oral tradition considerably older)"
     ],
@@ -229,8 +284,12 @@
     "era": "Mythological",
     "shortSummary": "Chief god of the Tuatha Dé Danann — lord of earth and abundance, wielder of the inexhaustible cauldron and the double-ended club of life and death.",
     "explanation": "The Dagda ('the Good God' — good in the sense of being supreme at everything) was the father-figure of the Tuatha Dé Danann. He possessed three treasures: a cauldron (the Undry) that never emptied, a club that killed nine men with one end and restored the dead to life with the other, and a magical harp (Uaithne) that could control the seasons. He lived at Brú na Bóinne until his son Óengus Óg tricked him out of it. Despite his portrayal in some texts as an enormous, comic figure dragging his club across the ground, he was one of the most central deities in the Irish pantheon.",
-    "relatedLocations": ["bru-na-boinne", "tara", "mag-tuired-north"],
-    "imageFile": "the-dagda.webp",
+    "relatedLocations": [
+      "bru-na-boinne",
+      "tara",
+      "mag-tuired-north"
+    ],
+    "imageFile": "the-dagda.png",
     "sources": [
       "Cath Maige Tuired",
       "Tochmarc Étaíne"
@@ -246,14 +305,19 @@
     "cycle": "Mythological Cycle",
     "type": "person",
     "lat": 53.7167,
-    "lng": -6.7250,
+    "lng": -6.725,
     "county": "Meath",
     "province": "Leinster",
     "era": "Mythological",
     "shortSummary": "Solar deity and supreme craftsman-warrior — master of every art, killer of Balor, and the divine father of Cú Chulainn.",
     "explanation": "Lugh is one of the most complex figures in Irish mythology. He arrived at Tara and was admitted by the gatekeeper only when he demonstrated he was master of every craft simultaneously — not just warrior, but smith, harpist, champion, poet, sorcerer, physician, and cup-bearer together. Of mixed Tuatha Dé Danann and Fomorian blood (grandson of Balor himself), he was uniquely powerful. At Mag Tuired he killed Balor with a slingstone through his eye. His name is preserved in the harvest festival Lughnasadh (1 August), and in place-names across the Celtic world — from Lyon (Lugdunum) to Carlisle (Luguvalium).",
-    "relatedLocations": ["tara", "tailteann", "uisneach", "mag-tuired-north"],
-    "imageFile": "lugh.webp",
+    "relatedLocations": [
+      "tara",
+      "tailteann",
+      "uisneach",
+      "mag-tuired-north"
+    ],
+    "imageFile": "lugh.png",
     "sources": [
       "Cath Maige Tuired",
       "Lebor Gabála Érenn"
@@ -275,8 +339,11 @@
     "era": "Mythological",
     "shortSummary": "Daughter of the Dagda — goddess of fire, poetry, healing, and smithcraft, whose sacred flame at Kildare burned without cease.",
     "explanation": "Brigid was a daughter of the Dagda and one of the great goddesses of the Tuatha Dé Danann. She presided over three arts deeply linked in Celtic thought: poetry (the fire of inspiration), healing (fire for purification and cauterization), and smithcraft (the forge's flame). Her festival is Imbolc (1 February), marking the first stirring of spring. The overlap between the goddess Brigid and St. Brigid of Kildare is not confusion but a deliberate layering: her sanctuary at Kildare, with its perpetual flame and its exclusion of men, was absorbed into Christian practice and continued essentially unchanged.",
-    "relatedLocations": ["kildare", "uisneach"],
-    "imageFile": "brigid.webp",
+    "relatedLocations": [
+      "kildare",
+      "uisneach"
+    ],
+    "imageFile": "brigid.png",
     "sources": [
       "Cath Maige Tuired",
       "Cormac's Glossary (Sanas Cormaic, c. 900 CE)"
@@ -298,8 +365,12 @@
     "era": "Mythological / Ulster Cycle",
     "shortSummary": "Triple goddess of fate, war, and sovereignty — crow-shaped, prophetic, connected to the doom of heroes at the Cave of the Cats.",
     "explanation": "The Morrígan appears most often as a crow (badhbh), but also as a beautiful woman or an old hag. She is a goddess of fate who determines the outcome of battles, sometimes appearing to wash the armour of those about to die. She appears in both the Mythological Cycle (Cath Maige Tuired) and the Ulster Cycle, where she repeatedly encounters Cú Chulainn — warning him, trying to seduce him, cursing him when he rejects her. Her cave at Rathcroghan (Oweynagat, the Cave of the Cats) is one of three mythological entrances to the Otherworld. She is sometimes presented as three sisters: Badhbh, Macha, and Nemain.",
-    "relatedLocations": ["rathcroghan", "cave-of-cats", "mag-tuired-north"],
-    "imageFile": "the-morrigan.webp",
+    "relatedLocations": [
+      "rathcroghan",
+      "cave-of-cats",
+      "mag-tuired-north"
+    ],
+    "imageFile": "the-morrigan.png",
     "sources": [
       "Cath Maige Tuired",
       "Táin Bó Cúailnge",
@@ -322,8 +393,12 @@
     "era": "Mythological",
     "shortSummary": "First king of the Tuatha Dé Danann in Ireland, who lost his arm at Mag Tuired and was given a working silver replacement — the first prosthetic limb in mythology.",
     "explanation": "Nuada was the king of the Tuatha Dé Danann when they arrived in Ireland and defeated the Fir Bolg. He lost his arm in that battle, and under divine law a king of the Tuatha Dé Danann had to be physically perfect, so he abdicated. The physician Dian Cécht gave him a silver arm (airgetlám) with full movement, and later Dian Cécht's more skilled son Miach replaced it with living flesh. Nuada eventually reclaimed the throne, reigning until he was killed at the Second Battle of Mag Tuired when Balor's deadly gaze struck him. He corresponds to the Gaulish healer-deity Nodens.",
-    "relatedLocations": ["tara", "mag-tuired-south", "mag-tuired-north"],
-    "imageFile": "nuada.webp",
+    "relatedLocations": [
+      "tara",
+      "mag-tuired-south",
+      "mag-tuired-north"
+    ],
+    "imageFile": "nuada.png",
     "sources": [
       "Cath Maige Tuired",
       "Lebor Gabála Érenn"
@@ -345,8 +420,10 @@
     "era": "Mythological",
     "shortSummary": "God of the sea and liminal spaces — lord of Tír Tairngire and guide of souls to the Otherworld, placed here in the mythological western ocean.",
     "explanation": "Manannán mac Lir was the lord of the sea and of Tír Tairngire (Land of Promise), an Otherworld paradise across the western ocean. He was the original lord of the Isle of Man (which is named from him), and appears in Welsh mythology as Manawydan fab Llŷr. He rode across the sea in his chariot as easily as land, owned a cloak of invisibility, a self-navigating boat, the Sword of Light, and pigs that were slaughtered and eaten each day but alive again the next. He was not a warrior but a guardian of thresholds — between life and death, mortal and immortal, Ireland and the western paradise.",
-    "relatedLocations": ["tara"],
-    "imageFile": "manannan.webp",
+    "relatedLocations": [
+      "tara"
+    ],
+    "imageFile": "manannan.png",
     "sources": [
       "Imram Brain (The Voyage of Bran, c. 700 CE)",
       "Táin Bó Froích"
@@ -368,8 +445,13 @@
     "era": "Mythological",
     "shortSummary": "The divine race who ruled Ireland before the Gaels, now dwelling in the sídh mounds — the gods become the fairy-folk of later tradition.",
     "explanation": "The Tuatha Dé Danann were the fourth race to inhabit Ireland according to the Lebor Gabála Érenn, arriving from four northern islands of learning. They were gods, artists, and poets of supreme ability, expert in magic and warfare. After being defeated by the Gaels (the Milesians), they retreated into the mounds of the earth (the sídh), becoming the aos sí — the fairy folk of later Irish tradition. Their four sacred treasures were: the Lia Fáil (Stone of Destiny), the Spear of Lugh, the Sword of Nuada, and the Cauldron of the Dagda.",
-    "relatedLocations": ["tara", "bru-na-boinne", "uisneach", "mag-tuired-north"],
-    "imageFile": "tuatha-de-danann.webp",
+    "relatedLocations": [
+      "tara",
+      "bru-na-boinne",
+      "uisneach",
+      "mag-tuired-north"
+    ],
+    "imageFile": "tuatha-de-danann.png",
     "sources": [
       "Lebor Gabála Érenn",
       "Cath Maige Tuired"
@@ -391,8 +473,11 @@
     "era": "Mythological",
     "shortSummary": "Primordial beings of chaos and darkness — enemies of order, associated with the sea, the underworld, and the power before civilisation.",
     "explanation": "The Fomorians were a race who preceded or coexisted with the various peoples of mythological Ireland. They are often depicted as monstrous — one eye, one arm, one leg — but also as powerful and wise. Their king Balor was based on Tory Island off Donegal. The term Fomhóraigh may derive from 'under the sea' or 'under demons.' Their conflict with the Tuatha Dé Danann represents a cosmic struggle between order and chaos. Notably, the relationship between the two groups was not entirely hostile — intermarriage occurred (Lugh was half-Fomorian through his grandfather Balor).",
-    "relatedLocations": ["tory-island", "mag-tuired-north"],
-    "imageFile": "fomorians.webp",
+    "relatedLocations": [
+      "tory-island",
+      "mag-tuired-north"
+    ],
+    "imageFile": "fomorians.png",
     "sources": [
       "Cath Maige Tuired",
       "Lebor Gabála Érenn"
@@ -407,15 +492,18 @@
     "layer": "mythological",
     "cycle": "Mythological Cycle",
     "type": "story",
-    "lat": 53.6500,
-    "lng": -7.3750,
+    "lat": 53.65,
+    "lng": -7.375,
     "county": "Westmeath",
     "province": "Leinster",
     "era": "Mythological",
     "shortSummary": "One of the Three Sorrows of Storytelling — Lír's four children transformed into swans for 900 years by a jealous stepmother.",
     "explanation": "Lír, a lord of the Tuatha Dé Danann, had four children — Fionnuala, Aodh, Fiachra, and Conn — by his first wife who died. He remarried Aoife, who transformed the children into swans on Lough Derravaragh out of jealousy. They were condemned to three centuries on Lough Derravaragh, three on the Sea of Moyle (north of Ireland), and three near Erris in Mayo. Their singing was so beautiful it caused all who heard it to weep with joy. Only baptism by a Christian monk would break the spell — at which point three hundred years passed through their bodies at once. One of the Trí Truaighe na Scéalaíochta.",
-    "relatedLocations": ["lough-derravaragh", "tara"],
-    "imageFile": "children-of-lir.webp",
+    "relatedLocations": [
+      "lough-derravaragh",
+      "tara"
+    ],
+    "imageFile": "children-of-lir.png",
     "sources": [
       "Oidheadh Chloinne Lir (earliest MS c. 1500 CE; oral tradition considerably older)"
     ],
