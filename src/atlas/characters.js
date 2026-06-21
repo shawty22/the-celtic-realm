@@ -196,7 +196,7 @@ function _buildCharModalHTML(char, roleInStory, story) {
             const s = catalog.find(c => c.id === sid)
             return s
               ? `<button class="char-story-link cycle-badge-${_x(s.cycle)}" data-story-id="${_x(s.id)}">
-                  ${_x(s.icon)} ${_x(s.title)}
+                  ${_x(s.title)}
                  </button>`
               : ''
           }).join('')}
