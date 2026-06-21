@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Living Atlas of Irish Mythology</title>
+    <meta name="description" content="An interactive atlas of Ireland's three great mythology cycles — places, people, and stories mapped and explored." />
+    <script type="module" crossorigin src="/the-celtic-realm/assets/index-C8hvY6-G.js"></script>
+    <link rel="stylesheet" crossorigin href="/the-celtic-realm/assets/index-CD4yNF4j.css">
+  </head>
+  <body>
+    <div id="app">
+
+      <!-- ═══ Header ══════════════════════════════════════════════════════ -->
+      <header id="atlas-header">
+        <div class="header-brand">
+          <h1 class="atlas-title">Living Atlas of Irish Mythology</h1>
+          <p class="atlas-sub">Three cycles · fifty places · one island</p>
+        </div>
+        <nav class="layer-nav" aria-label="Mythology cycle layers">
+          <button class="layer-toggle is-active" data-layer="mythological" aria-pressed="true">
+            <span class="toggle-pip"></span>
+            <span class="toggle-names">
+              <span class="toggle-label">Mythological</span>
+              <span class="toggle-sub">The God-Age</span>
+            </span>
+          </button>
+          <button class="cycle-info-btn" data-cycle="mythological" aria-label="About the Mythological Cycle" title="About this cycle">ℹ</button>
+          <button class="layer-toggle is-active" data-layer="ulster" aria-pressed="true">
+            <span class="toggle-pip"></span>
+            <span class="toggle-names">
+              <span class="toggle-label">Ulster Cycle</span>
+              <span class="toggle-sub">Age of Heroes</span>
+            </span>
+          </button>
+          <button class="cycle-info-btn" data-cycle="ulster" aria-label="About the Ulster Cycle" title="About this cycle">ℹ</button>
+          <button class="layer-toggle is-active" data-layer="fenian" aria-pressed="true">
+            <span class="toggle-pip"></span>
+            <span class="toggle-names">
+              <span class="toggle-label">Fenian Cycle</span>
+              <span class="toggle-sub">The Fianna</span>
+            </span>
+          </button>
+          <button class="cycle-info-btn" data-cycle="fenian" aria-label="About the Fenian Cycle" title="About this cycle">ℹ</button>
+          <button class="layer-toggle tain-toggle" id="tain-toggle" data-layer="tain" aria-pressed="false">
+            <span class="toggle-pip tain-pip"></span>
+            <span class="toggle-names">
+              <span class="toggle-label">Táin Route</span>
+              <span class="toggle-sub">Interpretive</span>
+            </span>
+          </button>
+          <button class="layer-toggle arch-toggle" id="arch-toggle" aria-pressed="false">
+            <span class="toggle-pip arch-pip"></span>
+            <span class="toggle-names">
+              <span class="toggle-label">Archaeology</span>
+              <span class="toggle-sub">785 confirmed sites</span>
+            </span>
+          </button>
+        </nav>
+        <button id="stories-btn" aria-label="Open story browser" title="Stories">
+          <span class="stories-btn-icon">◎</span>
+          <span class="stories-btn-label">Stories</span>
+        </button>
+        <button id="home-btn" aria-label="Reset to Ireland view" title="Home">⌂</button>
+        <div class="bm-switcher" aria-label="Base map style">
+          <button class="bm-btn is-active" data-bm="terrain" title="Terrain">⛰</button>
+          <button class="bm-btn" data-bm="satellite" title="Satellite">🛰</button>
+          <button class="bm-btn" data-bm="classic" title="Classic">🗺</button>
+          <button class="bm-btn bm-osi" data-bm="osi" title="OSi — Ordnance Survey Ireland" id="bm-osi-btn">🇮🇪</button>
+        </div>
+      </header>
+
+      <!-- ═══ Map ═════════════════════════════════════════════════════════ -->
+      <main id="map-container">
+        <div id="map" aria-label="Interactive map of Irish mythology locations"></div>
+      </main>
+
+      <!-- ═══ Detail panel ════════════════════════════════════════════════ -->
+      <aside id="detail-panel" aria-label="Location detail" aria-hidden="true">
+        <button id="panel-close" aria-label="Close detail panel">✕</button>
+        <div id="panel-content"></div>
+      </aside>
+
+      <!-- ═══ Legend ══════════════════════════════════════════════════════ -->
+      <div id="atlas-legend" aria-label="Map legend">
+        <div class="legend-row">
+          <span class="legend-dot myth-dot"></span><span class="legend-text">Mythological Cycle</span>
+        </div>
+        <div class="legend-row">
+          <span class="legend-dot ulster-dot"></span><span class="legend-text">Ulster Cycle</span>
+        </div>
+        <div class="legend-row">
+          <span class="legend-dot fenian-dot"></span><span class="legend-text">Fenian Cycle</span>
+        </div>
+        <div class="legend-row">
+          <span class="legend-dash tain-dash"></span><span class="legend-text">Táin Route</span>
+        </div>
+        <div class="legend-types">
+          <span class="legend-type-row"><span class="legend-sym">◉</span> Location</span>
+          <span class="legend-type-row"><span class="legend-sym">◎</span> Person</span>
+          <span class="legend-type-row"><span class="legend-sym">❊</span> Group</span>
+          <span class="legend-type-row"><span class="legend-sym">◆</span> Event</span>
+          <span class="legend-type-row"><span class="legend-sym">◈</span> Story</span>
+        </div>
+      </div>
+
+      <!-- ═══ Accuracy notice ═════════════════════════════════════════════ -->
+      <div id="accuracy-note">
+        <strong>HIGH</strong> = archaeologically or textually confirmed ·
+        <strong>MEDIUM</strong> = traditional identification ·
+        <strong>LOW</strong> = mythological placement only
+      </div>
+
+
+      <!-- ═══ Stories drawer ═══════════════════════════════════════════════ -->
+      <div id="stories-drawer" aria-hidden="true" role="dialog" aria-label="Story browser">
+        <div class="stories-drawer-backdrop"></div>
+        <aside class="stories-drawer-panel">
+          <div class="stories-drawer-header">
+            <div>
+              <h2 class="stories-drawer-title">Stories of Ireland</h2>
+              <p class="stories-drawer-sub">Choose a story — the map will guide you</p>
+            </div>
+            <button id="stories-drawer-close" aria-label="Close story browser">✕</button>
+          </div>
+          <div id="stories-list" class="stories-list"></div>
+        </aside>
+      </div>
+
+      <!-- ═══ Floating story panel (draggable, active during story mode) ══ -->
+      <div id="story-float" aria-live="polite" aria-label="Story mode panel">
+        <div class="sf-handle" id="story-float-handle">
+          <span class="sf-grip" title="Drag to move">⠿</span>
+          <div class="sf-meta">
+            <span id="sf-story-title" class="sf-story-title"></span>
+            <span id="sf-beat-count"  class="sf-beat-count"></span>
+          </div>
+          <button id="sf-exit" class="sf-exit-btn" aria-label="Exit story mode">✕</button>
+        </div>
+        <div class="sf-body">
+          <h3 id="sf-beat-title" class="sf-beat-title"></h3>
+          <p class="sf-beat-scene"></p>
+          <div class="sf-char-section"></div>
+          <p  id="sf-beat-text"  class="sf-beat-text"></p>
+        </div>
+        <div class="sf-footer">
+          <button id="sf-prev" class="sf-nav-btn" aria-label="Previous beat">← Prev</button>
+          <div class="sf-progress-dots"></div>
+          <button id="sf-next" class="sf-nav-btn sf-nav-next" aria-label="Next beat">Next →</button>
+        </div>
+      </div>
+
+      <!-- ═══ Cycle info modal ══════════════════════════════════════════════ -->
+      <div id="cycle-modal" aria-hidden="true" role="dialog">
+        <div class="cycle-modal-backdrop"></div>
+        <div class="cycle-modal-card">
+          <button class="cycle-modal-close" aria-label="Close">✕</button>
+          <div id="cycle-modal-content"></div>
+        </div>
+      </div>
+
+      <!-- ═══ Character modal ═════════════════════════════════════════════════ -->
+      <div id="char-modal" aria-hidden="true" role="dialog" aria-label="Character detail">
+        <div class="char-modal-backdrop"></div>
+        <div class="char-modal-card">
+          <button id="char-modal-close" class="char-modal-close" aria-label="Close character panel">✕</button>
+          <div id="char-modal-content" class="char-modal-content"></div>
+        </div>
+      </div>
+
+      <!-- ═══ Archaeology panel ══════════════════════════════════════════════ -->
+      <aside id="arch-panel" aria-label="Archaeology site detail" aria-hidden="true">
+        <button id="arch-panel-close" aria-label="Close">✕</button>
+        <div id="arch-panel-content"></div>
+      </aside>
+
+      <!-- ═══ 3D Flythrough overlay ════════════════════════════════════════ -->
+      <div id="flythrough-overlay" aria-hidden="true">
+        <div id="ft3d-container"></div>
+        <div id="ft3d-loading">
+          <div class="ft3d-spinner"></div>
+          <p>Flying to <strong id="ft3d-place-name"></strong></p>
+        </div>
+        <div id="ft3d-hud">
+          <span id="ft3d-loc-label"></span>
+          <div id="ft3d-hud-right">
+            <span class="ft3d-hint">ESC to exit</span>
+            <button id="exit-3d">Exit 3D ↙</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
