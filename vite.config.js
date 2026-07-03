@@ -6,7 +6,7 @@ export default defineConfig({
   root: '.',
   base: './',
   server: {
-    port: 3010,
+    port: parseInt(process.env.PORT) || 3010,
     open: true
   },
   build: {

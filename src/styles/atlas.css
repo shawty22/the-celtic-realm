@@ -2599,3 +2599,181 @@ button {
   white-space: nowrap;
 }
 
+/* ── Gallery Screen ──────────────────────────────────────────────────────── */
+#gallery-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: #0C0806;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+#gallery-screen.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.gallery-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0;
+  transition: opacity 0.55s ease;
+}
+
+.gallery-img.is-visible {
+  opacity: 1;
+}
+
+.gallery-vignette {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.08) 0%,
+    rgba(0,0,0,0)    30%,
+    rgba(12, 8, 6, 0.55) 65%,
+    rgba(12, 8, 6, 0.96) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 36px 44px;
+  z-index: 2;
+}
+
+.gallery-cycle-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+.gallery-cycle-badge[data-cycle="mythological"] {
+  background: rgba(139,105,20,0.35);
+  color: var(--myth);
+  border: 1px solid rgba(200,168,75,0.5);
+}
+.gallery-cycle-badge[data-cycle="ulster"] {
+  background: rgba(92,15,15,0.4);
+  color: #E88;
+  border: 1px solid rgba(139,32,32,0.6);
+}
+.gallery-cycle-badge[data-cycle="fenian"] {
+  background: rgba(26,61,40,0.4);
+  color: #7BC;
+  border: 1px solid rgba(45,90,61,0.6);
+}
+
+.gallery-title {
+  font-family: var(--serif);
+  font-size: clamp(28px, 5.5vw, 58px);
+  font-weight: 600;
+  color: var(--parchment);
+  line-height: 1.1;
+  margin-bottom: 6px;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.6);
+}
+
+.gallery-subtitle {
+  font-family: var(--serif);
+  font-size: clamp(15px, 2.2vw, 22px);
+  color: var(--myth);
+  font-style: italic;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+}
+
+.gallery-hook {
+  font-size: clamp(13px, 1.5vw, 16px);
+  color: rgba(220, 200, 160, 0.75);
+  line-height: 1.55;
+  max-width: 560px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+}
+
+.gallery-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.gallery-counter {
+  font-size: 13px;
+  color: rgba(200, 175, 130, 0.45);
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+}
+
+.gallery-enter-btn {
+  font-family: var(--serif);
+  font-size: 17px;
+  color: var(--parchment);
+  background: rgba(200,168,75,0.14);
+  border: 1px solid rgba(200,168,75,0.42);
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.gallery-enter-btn:hover,
+.gallery-enter-btn:focus-visible {
+  background: rgba(200,168,75,0.26);
+  border-color: var(--myth);
+  color: var(--myth);
+  outline: none;
+}
+.gallery-enter-btn:active {
+  background: rgba(200,168,75,0.35);
+}
+
+/* Side navigation arrows */
+.gallery-nav {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 3;
+  font-size: 52px;
+  line-height: 1;
+  color: rgba(255,255,255,0.38);
+  padding: 24px 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.gallery-nav:hover  { color: rgba(255,255,255,0.85); }
+.gallery-nav:active { color: #fff; }
+.gallery-prev { left: 0; }
+.gallery-next { right: 0; }
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .gallery-nav { top: 36%; font-size: 40px; padding: 20px 12px; }
+  .gallery-caption { padding: 24px 20px 36px; }
+  .gallery-hook { display: none; }
+  .gallery-title { margin-bottom: 4px; }
+  .gallery-subtitle { margin-bottom: 14px; }
+}
+

@@ -14,8 +14,11 @@ import { buildArchLayer, toggleArchLayer, TYPE_META, TYPE_DESC } from './atlas/a
 import { initCycleModal }                from './atlas/cycleinfo.js'
 import { initStories }                   from './atlas/stories.js'
 import { initCharacters }               from './atlas/characters.js'
+import { initGallery }                  from './atlas/gallery.js'
 
 // ── Boot ──────────────────────────────────────────────────────────────────── //
+
+initGallery(() => {})
 
 const map = initMap()
 
