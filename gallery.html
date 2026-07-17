@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>The Celtic Realm — Paintings from the Irish Mythological Cycles</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0C0806;--parchment:#E8D9B0;--gold:#C8A84B;--gold-dim:rgba(200,168,75,.15);
+  --myth:#C8A84B;--myth-bg:rgba(139,105,20,.35);--myth-bd:rgba(200,168,75,.5);
+  --ulster:#D06060;--ulster-bg:rgba(92,15,15,.4);--ulster-bd:rgba(139,32,32,.6);
+  --fenian:#5BAF7A;--fenian-bg:rgba(26,61,40,.4);--fenian-bd:rgba(45,90,61,.6);
+  --serif:Georgia,'Palatino Linotype',serif;
+  --sans:-apple-system,'Helvetica Neue',Arial,sans-serif;
+  --radius:8px;
+}
+html,body{height:100%;background:var(--ink);color:var(--parchment);font-family:var(--sans);overflow-x:hidden}
+a{color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+/* ── Header ── */
+.site-header{
+  padding:28px 20px 20px;
+  border-bottom:1px solid rgba(200,168,75,.1);
+  max-width:1400px;margin:0 auto;
+}
+.site-title{
+  font-family:var(--serif);font-size:clamp(20px,4vw,32px);
+  font-weight:600;color:var(--parchment);letter-spacing:-.01em;line-height:1.1;
+  margin-bottom:6px;
+}
+.site-sub{
+  font-size:13px;color:rgba(200,168,75,.7);
+  letter-spacing:.08em;text-transform:uppercase;
+}
+.site-count{
+  margin-top:4px;font-size:12px;color:rgba(200,175,130,.4);letter-spacing:.05em;
+}
+
+/* ── Grid ── */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;padding:16px;
+  max-width:1400px;margin:0 auto;
+}
+@media(min-width:600px){
+  .gallery-grid{grid-template-columns:repeat(3,1fr);gap:14px;padding:20px}
+}
+@media(min-width:900px){
+  .gallery-grid{grid-template-columns:repeat(4,1fr);gap:16px;padding:24px}
+}
+@media(min-width:1300px){
+  .gallery-grid{grid-template-columns:repeat(5,1fr)}
+}
+
+/* ── Card ── */
+.card{
+  position:relative;aspect-ratio:2/3;border-radius:var(--radius);
+  overflow:hidden;cursor:pointer;background:#1A1208;
+  transition:transform .2s,box-shadow .2s;
+  -webkit-tap-highlight-color:transparent;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,.6)}
+.card-img{
+  width:100%;height:100%;object-fit:cover;object-position:center top;
+  display:block;transition:transform .4s;
+}
+.card:hover .card-img{transform:scale(1.04)}
+.card-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(transparent 40%,rgba(12,8,6,.88) 80%,rgba(12,8,6,.98) 100%);
+  pointer-events:none;
+}
+.card-caption{
+  position:absolute;bottom:0;left:0;right:0;padding:10px 10px 12px;
+}
+.card-badge{
+  display:inline-block;font-size:8px;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;padding:2px 6px;border-radius:3px;
+  margin-bottom:5px;
+}
+.card-badge[data-cycle=mythological]{background:var(--myth-bg);color:var(--myth);border:1px solid var(--myth-bd)}
+.card-badge[data-cycle=ulster]{background:var(--ulster-bg);color:var(--ulster);border:1px solid var(--ulster-bd)}
+.card-badge[data-cycle=fenian]{background:var(--fenian-bg);color:var(--fenian);border:1px solid var(--fenian-bd)}
+.card-title{
+  font-family:var(--serif);font-size:clamp(12px,1.8vw,15px);
+  color:var(--parchment);line-height:1.2;margin-bottom:3px;
+}
+.card-hook{
+  font-size:clamp(9px,1.3vw,11px);color:rgba(200,175,130,.6);
+  line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;
+  -webkit-box-orient:vertical;overflow:hidden;
+}
+.card-type-tag{
+  position:absolute;top:8px;right:8px;
+  font-size:9px;letter-spacing:.1em;text-transform:uppercase;
+  padding:2px 7px;border-radius:10px;
+  background:rgba(12,8,6,.6);color:rgba(200,175,130,.5);
+  backdrop-filter:blur(4px);
+}
+
+/* ── Lightbox ── */
+#lightbox{
+  position:fixed;inset:0;z-index:1000;
+  background:var(--ink);
+  display:flex;flex-direction:column;
+  opacity:0;pointer-events:none;
+  transition:opacity .3s;
+  overflow:hidden;
+}
+#lightbox.is-open{opacity:1;pointer-events:auto}
+
+.lb-art{
+  position:relative;flex:0 0 46vh;
+  background:#0a0704;overflow:hidden;
+}
+@media(min-width:768px) and (orientation:landscape){
+  #lightbox{flex-direction:row}
+  .lb-art{flex:0 0 48%;height:100%}
+  .lb-scroll{flex:1;height:100%;overflow-y:auto}
+}
+.lb-img{
+  width:100%;height:100%;object-fit:cover;object-position:center top;display:block;
+  transition:opacity .35s;
+}
+.lb-art-vignette{
+  position:absolute;inset:0;
+  background:linear-gradient(transparent 60%,var(--ink) 100%);
+  pointer-events:none;
+}
+.lb-close{
+  position:absolute;top:12px;right:12px;z-index:10;
+  width:36px;height:36px;border-radius:50%;
+  background:rgba(12,8,6,.7);color:var(--parchment);
+  font-size:18px;display:flex;align-items:center;justify-content:center;
+  backdrop-filter:blur(6px);
+  transition:background .2s;
+}
+.lb-close:hover{background:rgba(12,8,6,.95)}
+
+/* Art prev/next — on the art portion */
+.lb-art-nav{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:5;
+  font-size:28px;color:rgba(255,255,255,.45);
+  padding:16px 12px;
+  transition:color .2s;
+  -webkit-tap-highlight-color:transparent;
+}
+.lb-art-nav:hover{color:rgba(255,255,255,.9)}
+.lb-art-prev{left:0}
+.lb-art-next{right:0}
+
+/* ── Lightbox scroll panel ── */
+.lb-scroll{
+  flex:1;overflow-y:auto;padding:20px 24px 80px;
+  -webkit-overflow-scrolling:touch;
+}
+.lb-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:10px;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;padding:3px 10px;border-radius:4px;
+  margin-bottom:14px;
+}
+.lb-badge[data-cycle=mythological]{background:var(--myth-bg);color:var(--myth);border:1px solid var(--myth-bd)}
+.lb-badge[data-cycle=ulster]{background:var(--ulster-bg);color:var(--ulster);border:1px solid var(--ulster-bd)}
+.lb-badge[data-cycle=fenian]{background:var(--fenian-bg);color:var(--fenian);border:1px solid var(--fenian-bd)}
+.lb-type-dot{
+  font-size:9px;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(200,175,130,.4);font-weight:400;
+}
+
+.lb-title{
+  font-family:var(--serif);font-size:clamp(22px,4vw,34px);
+  color:var(--parchment);line-height:1.15;margin-bottom:6px;
+}
+.lb-sub{
+  font-family:var(--serif);font-style:italic;
+  font-size:clamp(14px,2vw,18px);
+  color:var(--gold);margin-bottom:14px;
+}
+.lb-hook{
+  font-size:clamp(13px,1.8vw,15px);
+  color:rgba(220,200,160,.8);font-style:italic;
+  line-height:1.5;margin-bottom:18px;
+  padding-bottom:18px;
+  border-bottom:1px solid rgba(200,168,75,.1);
+}
+.lb-body{
+  font-size:clamp(14px,1.8vw,16px);
+  color:rgba(200,175,130,.75);line-height:1.75;
+}
+
+/* ── Bottom nav bar ── */
+.lb-nav{
+  position:fixed;bottom:0;left:0;right:0;
+  height:60px;display:flex;align-items:center;
+  justify-content:space-between;padding:0 20px;
+  background:rgba(12,8,6,.97);
+  border-top:1px solid rgba(200,168,75,.08);
+  z-index:1001;
+}
+@media(min-width:768px) and (orientation:landscape){
+  .lb-nav{position:sticky;bottom:0;margin-top:auto}
+}
+.lb-nav-btn{
+  font-size:14px;color:rgba(200,175,130,.6);
+  padding:8px 16px;border-radius:6px;
+  border:1px solid rgba(200,168,75,.15);
+  transition:color .2s,border-color .2s;
+  -webkit-tap-highlight-color:transparent;
+}
+.lb-nav-btn:hover{color:var(--parchment);border-color:rgba(200,168,75,.4)}
+.lb-counter{font-size:12px;color:rgba(200,175,130,.35);letter-spacing:.1em}
+
+/* Transitions */
+.lb-img.fading{opacity:0}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1 class="site-title">The Celtic Realm</h1>
+  <p class="site-sub">Paintings from the Irish Mythological Cycles</p>
+  <p class="site-count">30 works &nbsp;·&nbsp; Story &middot; Character &middot; Sacred Site</p>
+</header>
+
+<main class="gallery-grid" id="grid" role="list" aria-label="Gallery of paintings"></main>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork detail" aria-hidden="true">
+  <div class="lb-art">
+    <button class="lb-close" id="lb-close" aria-label="Close">&#x2715;</button>
+    <button class="lb-art-nav lb-art-prev" id="lb-prev" aria-label="Previous">&#8249;</button>
+    <button class="lb-art-nav lb-art-next" id="lb-next" aria-label="Next">&#8250;</button>
+    <img class="lb-img" id="lb-img" alt="" loading="eager"/>
+    <div class="lb-art-vignette"></div>
+  </div>
+  <div class="lb-scroll" id="lb-scroll">
+    <span class="lb-badge" id="lb-badge" data-cycle=""></span>
+    <h2 class="lb-title" id="lb-title"></h2>
+    <p  class="lb-sub"   id="lb-sub"></p>
+    <p  class="lb-hook"  id="lb-hook"></p>
+    <p  class="lb-body"  id="lb-body"></p>
+    <div style="height:20px"></div>
+  </div>
+  <nav class="lb-nav">
+    <button class="lb-nav-btn" id="lb-nav-prev">&#8592; Prev</button>
+    <span class="lb-counter" id="lb-counter"></span>
+    <button class="lb-nav-btn" id="lb-nav-next">Next &#8594;</button>
+  </nav>
+</div>
+
+<script>
+const PIECES = [{"type": "story", "img": "assets/stories/tain-bo-cuailnge.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Táin Bó Cúailnge", "sub": "The Cattle Raid of Cooley", "hook": "A queen's pride, a stolen bull, and one boy standing alone at every ford.", "body": "The Táin is Ireland's great national epic — its Iliad. It begins in a bed in Connacht and ends in a catastrophic battle between two bulls, as the armies of four provinces pour across Ulster's border and one seventeen-year-old holds them at every ford. The war is started by a queen's pride but sustained by something larger: the gap between Ulster's old heroic code and the political world driving Medb's ambition. Cú Chulainn's combats at the fords become the heart of the story — each opponent someone with a history, each fight a small tragedy. The greatest is Ferdia, his foster-brother, whom he must kill despite every reluctance. When Ulster finally wakes from Macha's curse and the main battle comes, it is almost anticlimactic. The real story has already been told at the river crossings. The epic ends not with a triumphant king but with two great bulls destroying each other across the landscape of Ireland, the pieces of one scattered from Connacht to Leinster in a geography of ruin."}, {"type": "story", "img": "assets/stories/children-of-lir.png", "cycle": "mythological", "cycleLabel": "Mythological Cycle", "title": "Children of Lir", "sub": "Oidheadh Chlainne Lir", "hook": "Nine hundred years as swans — the most beautiful and most sorrowful story in Ireland.", "body": "The longest of the Three Sorrows of Storytelling, Children of Lir is a meditation on endurance. Nine hundred years is not a metaphor — the story insists on the literal number, on what it means to hold together across centuries. The central image of Fionnuala sheltering her brothers under her wings through winter storms on the Sea of Moyle is one of the most powerful in all Irish literature. What makes the story distinctly Irish is its ending: the children die immediately upon their transformation back to human form. There is no recovery. The Christian era that Mochaomhóg represents offers baptism but not restoration. The old world and its magic simply end. Fionnuala holds her brothers in death as she held them in every storm — Mochaomhóg buries them standing, her arms still around them. The image of the four swans singing on Lough Derravaragh — music so beautiful that all grief ceased while it lasted — stands against the centuries of cold that follow."}, {"type": "story", "img": "assets/stories/deirdre.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Deirdre of the Sorrows", "sub": "Longes mac nUislenn", "hook": "A king's obsession, a forbidden love, and a beauty prophesied to destroy Ulster.", "body": "Deirdre is the most psychologically direct of the Three Sorrows. The tragedy is not supernatural — it is a king's refusal to accept that he cannot have what he wants. Conchobar does not change across the entire story: he claims Deirdre at birth because she is beautiful, and he destroys the sons of Uisneach at the end for exactly the same reason. The prophecy exists not to make the tragedy inevitable but to make it pointed — he had been warned, and he chose his obsession anyway. Deirdre's repeated warnings to Naoise — she dreams treachery, she begs him not to trust the king's amnesty — are not the ominous premonitions of myth but the practical intelligence of a woman who knows Conchobar better than her husband does. Her silence after Naoise's death, her refusal to look at the king, her refusal to smile for a year: these are the only forms of resistance left to her. The yew trees growing from two graves, their branches entwined across a churchyard — the story's final image — are its mercy: the lovers were not separated by death."}, {"type": "story", "img": "assets/stories/pursuit-of-diarmuid.png", "cycle": "fenian", "cycleLabel": "Fenian Cycle", "title": "Pursuit of Diarmuid and Gráinne", "sub": "Tóraíocht Dhiarmada agus Ghráinne", "hook": "A geis laid at a feast, sixteen years of flight, and a love Fionn never forgave.", "body": "The Pursuit is the longest continuous narrative in the Fenian Cycle. What begins as a romantic adventure — a young woman escaping an unwanted marriage with a reckless geis at a feast — gradually reveals itself as a tragedy of honour, loyalty, and the limits of greatness. Diarmuid never stops being admirable, which is what makes his end so bitter. Fionn, who begins the story as a great man, ends it as a small one: a hero who possessed the power to heal his old enemy at the cost of nothing, and chose not to exercise it, twice. The hundreds of 'beds of Diarmuid and Gráinne' across Ireland — standing stones and megalithic monuments that tradition assigns to their campsites during sixteen years of flight — make this one of the most landscape-mapped stories in Irish mythology. Gráinne, who placed the geis in a moment of wilfulness, becomes something else entirely by the end: a widow who has outlived the man who pursued her and the man she chose, and who must carry the knowledge of how both stories ended."}, {"type": "story", "img": "assets/stories/oisin.png", "cycle": "fenian", "cycleLabel": "Fenian Cycle", "title": "Oisín in Tír na nÓg", "sub": "Laoi Oisín ar Thír na nÓg", "hook": "He rode west into the sea with a goddess — and returned to find three centuries had passed.", "body": "The Oisín story is Ireland's most explicit meditation on time and loss. What Oisín experiences when he returns to Ireland is not merely grief for absent friends — it is the specific horror of discovering that your entire world has been sealed off while you were elsewhere. The Fianna were real to him an hour ago. The Fall functions as a kind of reverse baptism: the moment his feet touch Irish soil, all the centuries he avoided rush through his body at once. The white horse, gone before anyone can catch it, carries with it the last door back. The frame story — Oisín as an ancient man recounting the vanished world to a young Christian monk — gives the myth its particular resonance. Patrick is not hostile; he is genuinely moved. But Oisín is describing a world Patrick cannot verify, a world that left no monuments except the stories themselves. Each story Oisín tells Patrick is an act of preservation — and everything he describes was already three hundred years old."}, {"type": "story", "img": "assets/stories/salmon-of-knowledge.png", "cycle": "fenian", "cycleLabel": "Fenian Cycle", "title": "Salmon of Knowledge", "sub": "Bradán Feasa", "hook": "A fish ate the hazelnuts of all wisdom. A boy burned his thumb on its skin. Ireland gained its greatest hero.", "body": "The Salmon of Knowledge is simultaneously the simplest and the strangest story here. It operates on a premise familiar from folklore everywhere — the hero who is forbidden to taste something and accidentally does — but gives it an unexpected twist: Finnegas, the man who spent seven years in patient preparation and was destined to receive the knowledge, immediately understands that it is gone, that it belongs to the boy now, and simply gives him the rest of the fish. There is no bitterness in Finnegas. The scene between them — a teacher who recognises that his student has already surpassed him and hands over what he has — is one of the most graceful moments in Irish mythology. The Well of Segais as the mythological source of the River Boyne, the nine hazel trees of wisdom dropping their nuts into the water each year, is a cosmology that appears in other early Irish texts. The Boyne is a real river running through County Meath. Fionn's thumb becomes his lifelong instrument of prophetic knowledge — whenever he needs to perceive a hidden truth, he presses his thumb to his cheek, returning to the instant the salmon's skin burned him on the banks of the river."}, {"type": "story", "img": "assets/stories/cath-maige-tuired.png", "cycle": "mythological", "cycleLabel": "Mythological Cycle", "title": "Cath Maige Tuired", "sub": "The Second Battle of Mag Tuired", "hook": "The gods of Ireland stood against the Fomorians. One man had to kill his own grandfather to win.", "body": "The Second Battle of Mag Tuired is the definitive conflict of the Mythological Cycle — a war between the Tuatha Dé Danann and the Fomorians that decides who will possess Ireland. It begins with a king who lost his arm, a tyrant who was beautiful but mean, a satire that raised blisters, and a young warrior who could master every art at once. It ends with Lugh sending a sling stone through the eye of Balor — his own grandfather — and the Fomorians driven from Ireland for good. Between those two points lies the full spectrum of Irish divine mythology: politics, jealousy, craft, prophecy, music, and the strange mercy of an ending where even Bres the tyrant is allowed to live if he teaches the conquerors how to plough."}, {"type": "story", "img": "assets/stories/tochmarc-etaine.png", "cycle": "mythological", "cycleLabel": "Mythological Cycle", "title": "Tochmarc Étaíne", "sub": "The Wooing of Étaín", "hook": "She was transformed three times and blown across Ireland for a thousand years. She forgot everything. He never did.", "body": "The Wooing of Étaín is one of the oldest love stories in European literature — a meditation on identity, memory, and desire that spans two lifetimes. Étaín was a woman of the Tuatha Dé Danann, won as a bride by Midir of Brí Léith. His first wife Fuamnach, consumed by jealousy, systematically unmade her through druidic transformation — first to a pool, then a worm, then a fly — and condemned her to a thousand years of wandering. Eventually she fell into a cup, was swallowed, and was reborn as a mortal woman with no memory of who she had been. She became queen of Ireland. When Midir finally found her, she had to choose between a man who remembered everything and a husband who could offer only the life she knew."}, {"type": "story", "img": "assets/stories/oidheadh-chlainne-tuireann.png", "cycle": "mythological", "cycleLabel": "Mythological Cycle", "title": "Oidheadh Chlainne Tuireann", "sub": "The Fate of the Children of Tuireann", "hook": "Three brothers killed Lugh's father. The blood-price Lugh set them would take them to the ends of the world — and they would pay every penny of it.", "body": "The Fate of the Children of Tuireann is the third of the Trí Truaighe na Scéalaíochta — the Three Sorrows of Storytelling. Three brothers, Brian, Iuchar, and Iucharba, murdered Lugh's father Cian on the Plain of Muirthemne. The eric fine — the blood compensation Lugh demanded — was a list of eight impossible treasures from the far ends of the world: the three apples of the Hesperides, the pig-skin of Tuis, the poisoned spear of Pisear, the chariot of Dobar, the seven pigs of Easal, and more. The brothers completed every quest. They returned to Ireland with all eight items, broken and dying. Lugh refused to give them the healing cauldron that could have saved them. They died on the shore."}, {"type": "story", "img": "assets/stories/voyage-of-bran.png", "cycle": "mythological", "cycleLabel": "Mythological Cycle", "title": "Immram Brain", "sub": "The Voyage of Bran mac Febal", "hook": "A woman came to his hall holding a silver branch of apple blossom. She sang of a land where there is no winter. He was gone by morning.", "body": "The Voyage of Bran is the oldest of the Irish immrama — the supernatural sea-voyage tradition that would eventually produce the Voyage of St Brendan. A woman appears in Bran's hall holding a silver apple branch that plays music, and sings of islands in the western ocean where there is no sickness, no death, no winter, and no grief. Bran sets out the next morning with twenty-seven men. He meets Manannán mac Lir on the sea — standing in his chariot across waves that Manannán walks as a flowering plain. He reaches the Otherworld islands. He returns to Ireland centuries later to find that no one knows his name. When one of his men leaps to shore, he crumbles to dust — he has been gone longer than he knew. Bran calls out his name and his story to the people on the shore, then turns his boat west. He is never seen in Ireland again."}, {"type": "story", "img": "assets/stories/naming-of-cu-chulainn.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Mac an Óg ag Emain Macha", "sub": "The Boyhood Deeds — How Sétanta Became Cú Chulainn", "hook": "A seven-year-old boy arrived late to a feast. The hound attacked. The boy killed it with a hurley ball driven down its throat. Then he offered to replace it himself.", "body": "Before he was Cú Chulainn he was Sétanta — a small boy from Muirthemne who arrived at Emain Macha and immediately defeated every boy in the fort at every game they played. He was seven years old. His birth was mysterious: his mother Deichtine disappeared with Conchobar and fifty nobles chasing a flock of birds, sheltered in a house where a woman gave birth, and returned to Ulster with an infant whose real father, some said, was the god Lugh. The name Cú Chulainn — the Hound of Culann — came from a single moment of destruction and repair: a hound killed, a boy who offered himself as its replacement, and a name that would be spoken for two thousand years."}, {"type": "story", "img": "assets/stories/tochmarc-emire.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Tochmarc Emire", "sub": "The Wooing of Emer — and the Training with Scáthach", "hook": "He wanted the only woman who was his equal. Her father sent him to the most dangerous place in the world to get rid of him. He came back better.", "body": "When Cú Chulainn decided to find a wife he wanted a woman who possessed all six gifts: beauty, voice, speech, needlework, wisdom, and chastity. He found Emer at Lusk, daughter of Forgall Manach, and she spoke to him in riddles and he answered each one. Her father, hearing of this, sent Cú Chulainn to train with Scáthach the warrior-woman on the Isle of Skye, confident he would not survive the journey. He crossed the Plain of Ill Luck, leaped the Bridge of Leaps, trained for a year under the hardest teacher alive, fought and defeated Scáthach's rival Aoife, and returned to Ireland with the gáe bolga — the lethal belly-spear — and the full knowledge of what he was. He killed Forgall's guards, took Emer, and married her."}, {"type": "story", "img": "assets/stories/fled-bricrenn.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Fled Bricrenn", "sub": "Bricrú's Feast and the Champion's Portion", "hook": "Bricrú built a hall in Ulster specifically to destroy the peace. He promised the Champion's Portion to three men at once. Ulster nearly tore itself apart.", "body": "Fled Bricrenn is one of the most copied Ulster Cycle tales — a story about the one question Ulster kept refusing to answer: who is actually the greatest warrior? Bricrú of the Poison Tongue built a magnificent hall, invited the king and his champions, and privately promised the Champion's Portion — the prime cut of meat that went to the best man present — to three different warriors: Cú Chulainn, Conall Cernach, and Lóegaire Búadach. Each believed himself the rightful claimant. The resulting chaos required outside judges, three separate journeys, and a final supernatural test — the beheading game — that only Cú Chulainn had the courage to complete. The answer, when it came, was what everyone already knew."}, {"type": "story", "img": "assets/stories/aided-con-culainn.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Aided Con Culainn", "sub": "The Death of Cú Chulainn", "hook": "The three spears were made. The prophecy said each would kill a king. They were aimed at the greatest king Ulster had ever known.", "body": "The death of Cú Chulainn was prophesied in fragments across his entire life: that he would be short-lived, that he would be destroyed by women's magic, that three spears forged by the children of Calatín would each kill a king. When Queen Medb finally assembled her coalition for the last campaign against Ulster, the prophecies converged. She sent the children of Calatín — trained in every dark art in the east — against Cú Chulainn's mind before his body. He rode out onto the plain knowing he was going to die, bound himself to a standing stone so he would die on his feet, and waited. He was dead before anyone dared approach him. A crow landing on his shoulder was the only signal."}, {"type": "story", "img": "assets/stories/togail-bruidne-da-derga.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Togail Bruidne Dá Derga", "sub": "The Destruction of Da Derga's Hostel", "hook": "He was the best king Ireland ever had. He loved his foster-brothers too much to be a perfect king. Each act of mercy required breaking another sacred law. The hostel was waiting.", "body": "Togail Bruidne Dá Derga is one of the most archaic and formally perfect texts in early Irish literature. Conaire Mór was a High King of Ireland whose reign brought gold-age prosperity. At his inauguration he was given a set of sacred prohibitions — geasa — that bound his kingship to ritual perfection. His foster-brothers were exiled pirates. He could not turn them away. Each act of mercy toward them required breaking one more geis. By the time his road brought him to Da Derga's Hostel on the Dodder river south of Dublin, every prohibition had been violated. The raiders knew where he was. Mac Cécht fought through the night and journeyed across a magically dried-up Ireland for water to bring a dying king — and arrived too late."}, {"type": "story", "img": "assets/stories/battle-of-ventry.png", "cycle": "fenian", "cycleLabel": "Fenian Cycle", "title": "Cath Finntrágha", "sub": "The Battle of Ventry Harbour", "hook": "The King of the World came to Ireland with the greatest fleet ever assembled. The Fianna stood alone at the waterline for a year.", "body": "The Battle of Ventry is the great defensive epic of the Fenian Cycle — a year-long siege structured as a sequence of single combats between individual Fenian warriors and the champions of Daire Donn's invading host. Daire Donn, the King of the World, landed at Ventry Harbour on the Dingle Peninsula with an army drawn from every nation that acknowledged him. Fionn mac Cumhaill led the Fianna against them on the shore. Each day brought new champions from the fleet; each day a Fenian warrior killed them. The battle lasted a year. Daire Donn himself was killed by Goll mac Morna — the old enmity set aside for Ireland's survival. The fleet was driven into the sea."}, {"type": "story", "img": "assets/stories/battle-of-gabhair.png", "cycle": "fenian", "cycleLabel": "Fenian Cycle", "title": "Cath Gabhra", "sub": "The Battle of Gabhair — End of the Fianna", "hook": "The High King decided the Fianna had grown too powerful. Oscar killed the king. The king killed Oscar. The Fianna never recovered.", "body": "The Battle of Gabhair is the end of the Fenian Cycle as a living institution. Cairbre Lifeachair, High King of Ireland, demanded a tribute that the Fianna had never previously been required to pay — a deliberate provocation, because Fionn mac Cumhaill had become too powerful and too autonomous to be handled any other way. Fionn refused. Cairbre declared war. At the Hill of Gabhair near Dublin, the two forces met. Oscar mac Oisín — the greatest individual warrior the Fianna had ever produced — fought his way through to Cairbre and killed him. Cairbre's spear had already mortally wounded Oscar before he fell. Fionn held Oscar as he died. Oisín watched his son die before him. The Fianna staggered away from Gabhair a fraction of what it had been, and never fully rebuilt."}, {"type": "story", "img": "assets/stories/birth-of-fionn.png", "cycle": "fenian", "cycleLabel": "Fenian Cycle", "title": "Mac Cumhaill ag Teacht", "sub": "The Death of Cumhall and the Birth of Fionn", "hook": "His father was killed before he was born. His name was kept secret for years. Ireland's greatest hero began as a child hiding in the forest, raised by two women who were not his mother.", "body": "Before there was a Fianna led by Fionn mac Cumhaill, there was a Fianna led by Cumhall mac Trénmhóir — and Cumhall was killed by Goll mac Morna at the Battle of Cnucha because he had taken the druid's daughter Muirenn without permission. She was already pregnant when Cumhall died. The child — called Deimne at first, to hide him — was given to two women in the wilderness: Bodhmall the druidess and Liath Luachra the warrior. They raised him in the Slieve Bloom mountains, teaching him to hunt, to move unseen, to survive. They kept him alive long enough for him to become what the prophecy said he would be."}, {"type": "character", "img": "assets/characters/medb.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Medb", "sub": "Queen of Connacht", "hook": "The proud queen whose refusal to be lesser than her husband ignites the war.", "body": "Medb rules Connacht in her own right — a queen before she was a wife. Her defining quality is an absolute refusal to accept inferiority. When the pillow-talk contest reveals that Ailill possesses the White-Horned Bull and she does not, she experiences it not as envy but as a breach of equality. The war she launches to acquire the Brown Bull of Cooley is, in her framing, an act of justice. She negotiates, threatens, bribes, and campaigns throughout the Táin with cold strategic intelligence. Scholarly opinion is divided on whether Medb began as a sovereignty goddess — the land personified, whom a king must ritually wed — or was always a fully-realised literary character."}, {"type": "character", "img": "assets/characters/cu-chulainn.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Cú Chulainn", "sub": "Champion of Ulster", "hook": "The boy champion who alone holds the Ulster ford against the armies of four provinces.", "body": "Cú Chulainn was born Sétanta, son of the god Lugh and the mortal Deichtine. He earned his name by killing the hound of the smith Culann and pledging to serve as guard-dog in its place. He trained under the warrior-woman Scáthach in Scotland. In the Táin, he is seventeen years old, immune to the curse that prostrates Ulster's warriors by virtue of his divine parentage, and must hold the Ulster border alone — fighting single combats at every ford while the province recovers. His most famous single combat is with his foster-brother Ferdia, three days of battle that he wins, and which breaks him."}, {"type": "character", "img": "assets/characters/ferdia.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Ferdia", "sub": "Champion of Connacht", "hook": "Cú Chulainn's foster-brother, pressed by Medb to fight the one man he cannot kill.", "body": "Ferdia's episode is the emotional and moral climax of the Táin — more devastating than any battle. He and Cú Chulainn trained together, fought side by side, and loved each other as brothers. When Medb exhausts her ability to bribe him, she threatens his honour and reputation. Each evening of the three-day combat, the two men dress each other's wounds, share food and medicine, and sleep beside the same fire. On the fourth morning Cú Chulainn uses the gáe bolga — a terrible weapon Scáthach had taught only him — and Ferdia dies. Cú Chulainn's lament over his body is one of the finest passages in the Táin."}, {"type": "character", "img": "assets/characters/the-morrigan.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "The Morrígan", "sub": "Goddess of War and Fate", "hook": "The shapeshifting goddess of fate and war who tests Cú Chulainn and prophesies his death.", "body": "The Morrígan (often translated as 'Phantom Queen') is one of the most powerful figures in the Irish supernatural tradition. She is simultaneously goddess of battle, shapeshifter, prophet, and sovereignty figure. In the Táin she forms one of the story's most ambiguous sub-plots: she approaches Cú Chulainn and declares her love; he dismisses her; she transforms her rejection into a series of attacks during his ford combats — an eel, a grey wolf, a hornless heifer. Each time he wounds her in return. Later, when she disguises herself as an old woman milking a cow and he unwittingly heals her three injuries by accepting three drinks of milk, their relationship concludes in a truce. She is also sometimes a tripartite goddess — Badb, Macha, and Nemain are presented as her three aspects."}, {"type": "character", "img": "assets/characters/conchobar.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Conchobar mac Nessa", "sub": "High King of Ulster", "hook": "Ulster's king — the man whose obsession with Deirdre destroys more than it gains.", "body": "Conchobar appears in both the Táin and Deirdre's story, and the two portrayals are hard to reconcile. In the Táin he is a legitimate and respected king whose warriors cannot act — the tragedy is structural, not personal. In Deirdre he is something darker: a king who imprisons a child on a prophecy's authority, keeps her isolated until he can make her his wife, and when she defies him, engineers the killing of the man she loves rather than accept failure. His deliberate betrayal of Fergus's guarantee of safe passage sends the Ulster cycle into long decline."}, {"type": "character", "img": "assets/characters/fergus-mac-roich.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Fergus mac Róich", "sub": "Exiled Champion of Ulster", "hook": "The great Ulster champion who fights for Connacht, honour-bound by Conchobar's treachery.", "body": "Fergus mac Róich was once king of Ulster before Conchobar. He relinquished his throne and later went into exile after Conchobar used him as an instrument of betrayal in the Deirdre story — Fergus gave his personal guarantee of safe passage to Naoise, and Conchobar dishonoured it. His honour broken, Fergus joined Medb's court. In the Táin he fights for Connacht against his own people — but holds back when the moment comes to face Cú Chulainn, with whom he has a compact of friendship, and deliberately misses Ulster's forces with his sword-strokes. He is a figure defined by competing loyalties he cannot resolve."}, {"type": "character", "img": "assets/characters/ailill.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Ailill", "sub": "King of Connacht", "hook": "Medb's husband and co-ruler, whose bull tips the balance and starts everything.", "body": "Ailill is a more passive force in the Táin than his wife — it is Medb who drives the narrative. But his role is structurally crucial: his possession of the White-Horned Bull, and his pointed observation that this gives him the advantage in their counting contest, is the direct cause of the war. He is not cruel or ambitious; he simply cannot resist noting, from comfortable superiority, that his wife is not quite his equal in one respect. That observation, delivered at the wrong moment to the wrong woman, sets four provinces in motion."}, {"type": "character", "img": "assets/characters/daire.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Dáire mac Fiachna", "sub": "Lord of the Brown Bull", "hook": "The Ulster lord who first agreed to lend the bull — until a drunken boast cost him his honour.", "body": "Dáire mac Fiachna's brief scene contains the Táin's essential irony: the war that devastates two provinces happens because of a piece of drunken bragging. Dáire is initially generous — willing to lend his prize bull for a year in exchange for fair payment. It is only when his hospitality is repaid with an overheard boast that the deal collapses. His injured pride, and his absolute refusal to negotiate after that, is entirely understandable by the story's own social code."}, {"type": "character", "img": "assets/characters/mac-roth.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Mac Roth", "sub": "Medb's Herald and Scout", "hook": "Medb's chief messenger — the man who names the only bull in Ireland to equal the white one.", "body": "Mac Roth occupies a pivotal structural position in the Táin — as the herald, he is the bearer of information that turns a domestic argument into an international crisis. He identifies Donn Cúailnge; leads the embassy that nearly succeeds; and his men, drunk on Dáire's hospitality, boast that Connacht would have taken the bull by force anyway. That boast ends the possibility of a peaceful resolution. Mac Roth also appears elsewhere in the Táin as a scout of almost supernatural ability, able to watch entire armies from a hilltop and describe each warrior's identity from their bearing and equipment."}, {"type": "location", "img": "assets/ulster/emain-macha.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Emain Macha", "sub": "Emain Macha (Navan Fort)", "hook": "Capital of ancient Ulster and seat of King Conchobar mac Nessa — home of the Red Branch Knights and centre of the Ulster Cycle.", "body": "Emain Macha was the royal seat of Ulster throughout most of the Ulster Cycle — home to King Conchobar mac Nessa, the Red Branch warriors, and the infant Cú Chulainn. Archaeological excavation has revealed a massive circular mound and enormous timber structure dating to around 100 BCE, one of the most significant ceremonial monuments in Ireland. The name derives from Macha, a goddess of sovereignty and horses, who is said to have marked out the site's boundary while heavily pregnant, after being forced to race the king's horses. She cursed Ulster's warriors to suffer the pangs of childbirth in their hour of greatest need — the curse that left Cú Chulainn as Ulster's sole defender during the Táin."}, {"type": "location", "img": "assets/ulster/rathcroghan.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Rathcroghan", "sub": "Cruachan / Ráth Cruachan", "hook": "Royal seat of Connacht and home of Queen Medb and Ailill — where the Táin began with the famous pillow-talk about cattle.", "body": "Rathcroghan is one of Ireland's largest and most complex royal archaeological sites, with over 240 recorded monuments across six square kilometres. In the Ulster Cycle it is Cruachan, seat of Medb and Ailill of Connacht. The Táin Bó Cúailnge opens here with the famous pillow-talk in which Medb and Ailill compare their wealth and she discovers his white bull outweighs all she owns. The Cave of Oweynagat (Cave of the Cats), within the complex, is one of three mythological entrances to the Otherworld — Samhain cattle and spirits emerged from it each November. Medb herself is understood as both a historical queen and a sovereignty goddess."}, {"type": "location", "img": "assets/ulster/dun-dealgan.png", "cycle": "ulster", "cycleLabel": "Ulster Cycle", "title": "Dún Dealgan", "sub": "Dún Dealgan", "hook": "Cú Chulainn's stronghold in the plain of Muirthemne — his home territory that he defended alone during the great cattle-raid.", "body": "Dún Dealgan was the fortress of Cú Chulainn in the Plain of Muirthemne (Mag Muirthemne), the broad coastal plain of County Louth between Dundalk and the Cooley Peninsula. This was his particular territory to defend, and it was here that much of the Táin's defensive action played out — Cú Chulainn's series of single combats, his wounding, his magical recovery. Traditionally associated with the mound at Castletown, Dundalk (now Castletown Mount). The town of Dundalk preserves elements of the name's tradition."}];
+
+const TYPE_LABEL = {story:"Story",character:"Character",location:"Sacred Site"};
+
+// ── Build grid ── //
+const grid = document.getElementById('grid');
+PIECES.forEach((p, i) => {
+  const card = document.createElement('article');
+  card.className = 'card';
+  card.setAttribute('role','listitem');
+  card.setAttribute('tabindex','0');
+  card.setAttribute('aria-label', p.title);
+  card.innerHTML = `
+    <img class="card-img" src="${p.img}" alt="${esc(p.title)}" loading="lazy"
+      onerror="this.closest('.card').style.display='none'"/>
+    <div class="card-overlay"></div>
+    <span class="card-type-tag">${TYPE_LABEL[p.type]||''}</span>
+    <div class="card-caption">
+      <span class="card-badge" data-cycle="${esc(p.cycle)}">${esc(p.cycleLabel)}</span>
+      <div class="card-title">${esc(p.title)}</div>
+      <div class="card-hook">${esc(p.hook)}</div>
+    </div>`;
+  card.addEventListener('click', () => openLB(i));
+  card.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' '){e.preventDefault();openLB(i)} });
+  grid.appendChild(card);
+});
+
+// ── Lightbox ── //
+const lb       = document.getElementById('lightbox');
+const lbImg    = document.getElementById('lb-img');
+const lbBadge  = document.getElementById('lb-badge');
+const lbTitle  = document.getElementById('lb-title');
+const lbSub    = document.getElementById('lb-sub');
+const lbHook   = document.getElementById('lb-hook');
+const lbBody   = document.getElementById('lb-body');
+const lbCount  = document.getElementById('lb-counter');
+const lbScroll = document.getElementById('lb-scroll');
+
+let cur = 0;
+
+function openLB(i) {
+  cur = i;
+  render();
+  lb.classList.add('is-open');
+  lb.setAttribute('aria-hidden','false');
+  document.body.style.overflow = 'hidden';
+}
+function closeLB() {
+  lb.classList.remove('is-open');
+  lb.setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+}
+function prev() { cur = (cur - 1 + PIECES.length) % PIECES.length; render(); }
+function next() { cur = (cur + 1) % PIECES.length; render(); }
+
+function render() {
+  const p = PIECES[cur];
+  lbImg.classList.add('fading');
+  setTimeout(() => {
+    lbImg.src = p.img;
+    lbImg.alt = p.title;
+    lbImg.onload = () => lbImg.classList.remove('fading');
+    if(lbImg.complete) lbImg.classList.remove('fading');
+  }, 180);
+
+  lbBadge.textContent = p.cycleLabel + (p.type ? '  ·  ' + (TYPE_LABEL[p.type]||'') : '');
+  lbBadge.dataset.cycle = p.cycle;
+  lbTitle.textContent = p.title;
+  lbSub.textContent   = p.sub;
+  lbHook.textContent  = p.hook;
+  lbBody.textContent  = p.body;
+  lbCount.textContent = (cur + 1) + ' / ' + PIECES.length;
+  lbScroll.scrollTop  = 0;
+}
+
+document.getElementById('lb-close').addEventListener('click', closeLB);
+document.getElementById('lb-prev').addEventListener('click', prev);
+document.getElementById('lb-next').addEventListener('click', next);
+document.getElementById('lb-nav-prev').addEventListener('click', prev);
+document.getElementById('lb-nav-next').addEventListener('click', next);
+
+// Touch swipe
+let tx = 0;
+lb.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, {passive:true});
+lb.addEventListener('touchend',   e => {
+  const d = e.changedTouches[0].clientX - tx;
+  // Only swipe nav on the art portion, not while scrolling text
+  if(Math.abs(d) > 60 && e.target.closest('.lb-art')) d < 0 ? next() : prev();
+});
+
+// Keyboard
+document.addEventListener('keydown', e => {
+  if(!lb.classList.contains('is-open')) return;
+  if(e.key==='ArrowRight') next();
+  else if(e.key==='ArrowLeft') prev();
+  else if(e.key==='Escape') closeLB();
+});
+
+function esc(s){
+  return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
+</script>
+</body>
+</html>

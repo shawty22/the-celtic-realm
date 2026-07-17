@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Living Atlas of Irish Mythology</title>
     <meta name="description" content="An interactive atlas of Ireland's three great mythology cycles — places, people, and stories mapped and explored." />
-    <script type="module" crossorigin src="/the-celtic-realm/assets/index-C8hvY6-G.js"></script>
-    <link rel="stylesheet" crossorigin href="/the-celtic-realm/assets/index-CD4yNF4j.css">
+    <script type="module" crossorigin src="/celtic-realm/assets/index-CfCW4DPt.js"></script>
+    <link rel="stylesheet" crossorigin href="/celtic-realm/assets/index-DPdn7GD7.css">
   </head>
   <body>
     <div id="app">
+
+      <!-- ═══ Gallery Screen ════════════════════════════════════════════════ -->
+      <div id="gallery-screen" role="region" aria-label="Artwork gallery">
+        <img id="gallery-img-a" class="gallery-img" alt="" />
+        <img id="gallery-img-b" class="gallery-img" alt="" />
+        <div class="gallery-vignette"></div>
+        <button class="gallery-nav gallery-prev" id="gallery-prev" aria-label="Previous painting">&#8249;</button>
+        <button class="gallery-nav gallery-next" id="gallery-next" aria-label="Next painting">&#8250;</button>
+        <div class="gallery-caption">
+          <span class="gallery-cycle-badge" id="gallery-cycle"></span>
+          <h2 class="gallery-title" id="gallery-title"></h2>
+          <p class="gallery-subtitle" id="gallery-sub"></p>
+          <p class="gallery-hook" id="gallery-hook"></p>
+          <div class="gallery-footer">
+            <span class="gallery-counter" id="gallery-counter"></span>
+            <button class="gallery-enter-btn" id="gallery-enter">Enter Atlas &#8594;</button>
+          </div>
+        </div>
+      </div>
 
       <!-- ═══ Header ══════════════════════════════════════════════════════ -->
       <header id="atlas-header">
