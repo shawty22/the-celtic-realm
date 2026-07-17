@@ -15,6 +15,23 @@ Opens on **localhost:3010** (configured in `.claude/launch.json`).
 
 ---
 
+## Deployment
+
+The built app is published on the `gh-pages` branch of this repo (Vite build output — `index.html`, `assets/`). It also includes a standalone `gallery.html` — a fullscreen artwork-gallery landing screen that links through into the full atlas.
+
+This is now the **single home** for Celtic Realm. A build was previously duplicated into the `SolasSovereignSystems` repo (served at `solassovereignsystems.ai/celtic-realm/`) so it had somewhere public to live while this repo's Pages setup was pending. That copy is being retired now that `gh-pages` here is current — everything (source on `main`, deployable build on `gh-pages`) lives in this repo going forward.
+
+**To make it publicly reachable:** GitHub Pages for a private repo needs GitHub Pro/Team/Enterprise, or the repo needs to be public. In *Settings → Pages*, set **Source: Deploy from a branch**, branch **`gh-pages`** / root. Optionally add a `CNAME` file on `gh-pages` if this gets its own domain or subdomain.
+
+To rebuild and republish after changes on `main`:
+
+```bash
+npm run build
+# then push the contents of dist/ to the gh-pages branch
+```
+
+---
+
 ## What's in it
 
 **50 researched entries** across three layers:
