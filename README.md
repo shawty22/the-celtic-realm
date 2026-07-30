@@ -71,6 +71,15 @@ npm run dev
 
 Opens on `localhost:3010` (or the port in `.claude/launch.json`). `npm run build` produces a static `dist/` — no server-side component, deploys anywhere that serves static files.
 
+## Deployment
+
+Two deploy paths currently exist for this repo and need to be reconciled rather than run in parallel:
+
+- **`gh-pages` branch** (pre-existing) — a built Vite output (`index.html`, `assets/`, plus a standalone `gallery.html` landing screen) was pushed here directly. A duplicate build previously lived inside the `SolasSovereignSystems` repo (served at `solassovereignsystems.ai/celtic-realm/`) as a stopgap while this repo's own Pages setup was pending — that copy is being retired now that `gh-pages` here is current.
+- **`.github/workflows/deploy.yml`** (added in this pass) — a GitHub Actions workflow that builds and publishes `dist/` automatically on every push to `main`, so the deployed build never drifts from source again.
+
+**Either way, GitHub Pages for a currently-private repo needs GitHub Pro/Team/Enterprise, or the repo needs to be made public** — that decision hasn't been made yet.
+
 ## Data model
 
 Each entry lives in `src/data/{mythological,ulster,fenian}.json`:
