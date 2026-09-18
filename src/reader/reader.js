@@ -8,6 +8,8 @@ import sections from '../source/gods-and-fighting-men-sections.json'
 import provenance from '../source/provenance.json'
 import storyChapterMap from '../data/story-chapter-map.json'
 import catalog from '../data/stories-catalog.json'
+import chapterEntities from '../data/chapter-entities.json'
+import charData from '../data/characters.json'
 
 let readerEl = null
 let currentIdx = 0
@@ -155,26 +157,78 @@ function _openChapter(idx) {
   try { localStorage.setItem('cr-reader-pos', s.id) } catch {}
 }
 
+const _allChars = charData.characters
+
 function _updateMargin(chapterId) {
   const inner = document.getElementById('reader-margin-inner')
   if (!inner) return
-  const stories = _chapStories[chapterId] || []
-  if (!stories.length) {
+
+  const stories  = _chapStories[chapterId] || []
+  const entities = chapterEntities[chapterId] || {}
+  const charIds  = entities.chars || []
+  const locId    = entities.locationId || null
+  const chars    = charIds.map(id => _allChars.find(c => c.id === id)).filter(Boolean)
+
+  const cycleColors = { mythological: '#7a5ead', ulster: '#c8703a', fenian: '#3a8a6e' }
+
+  if (!stories.length && !chars.length && !locId) {
     inner.innerHTML = `<p class="reader-margin-hint">Characters, places, and artwork will appear here as you read.</p>`
     return
   }
-  const cycleColors = { mythological: '#7a5ead', ulster: '#c8703a', fenian: '#3a8a6e' }
-  inner.innerHTML = `
-    <p class="margin-section-label">Related Stories</p>
+
+  let html = ''
+
+  // Characters section
+  if (chars.length) {
+    html += `<p class="margin-section-label">In this chapter</p>
+    <div class="margin-char-chips">${chars.map(c => `
+      <button class="margin-char-chip" data-char-id="${_esc(c.id)}"
+        style="--chip-color:${c.palette?.glow || cycleColors[c.cycle] || '#888'}">
+        ${c.imageFile
+          ? `<img src="/assets/characters/${_esc(c.imageFile)}" alt="${_esc(c.name)}" class="margin-chip-img"
+               onerror="this.style.display='none'">`
+          : `<span class="margin-chip-glyph">${c.cycle === 'mythological' ? '✦' : c.cycle === 'ulster' ? '⚔' : '◈'}</span>`}
+        <span class="margin-chip-name">${_esc(c.name)}</span>
+      </button>
+    `).join('')}</div>`
+  }
+
+  // Atlas location link
+  if (locId) {
+    html += `<button class="margin-atlas-btn" data-loc="${_esc(locId)}">View on Atlas →</button>`
+  }
+
+  // Stories section
+  if (stories.length) {
+    html += `<p class="margin-section-label">Related Stories</p>
     ${stories.map(s => `
       <div class="margin-story-card">
-        <div class="margin-story-cycle" style="background:${cycleColors[s.cycle] || '#555'}">${s.cycleLabel}</div>
+        <div class="margin-story-cycle" style="background:${cycleColors[s.cycle] || '#555'}">${_esc(s.cycleLabel)}</div>
         <h4 class="margin-story-title">${_esc(s.title)}</h4>
         <p class="margin-story-hook">${_esc(s.hook)}</p>
-        <button class="margin-story-btn" data-story="${s.id}">Follow on the map →</button>
+        <button class="margin-story-btn" data-story="${_esc(s.id)}">Follow on the map →</button>
       </div>
-    `).join('')}
-  `
+    `).join('')}`
+  }
+
+  inner.innerHTML = html
+
+  // Wire up character chips → open character modal
+  inner.querySelectorAll('.margin-char-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.dispatchEvent(new CustomEvent('reader:openChar', { detail: { charId: btn.dataset.charId } }))
+    })
+  })
+
+  // Atlas button → close reader, fly to location
+  inner.querySelectorAll('.margin-atlas-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      closeReader()
+      document.dispatchEvent(new CustomEvent('atlas:flyToLocation', { detail: { locationId: btn.dataset.loc } }))
+    })
+  })
+
+  // Story buttons
   inner.querySelectorAll('.margin-story-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       closeReader()

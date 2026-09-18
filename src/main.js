@@ -33,6 +33,7 @@ initFlythrough()
 initCycleModal()
 
 const allData = { mythological: mythData, ulster: ulsterData, fenian: fenianData }
+const _flatEntries = [...mythData, ...ulsterData, ...fenianData]
 buildLayers(map, allData, (entry) => showPanel(entry))
 initStories(map, allData)
 initCharacters(map, allData)
@@ -81,6 +82,18 @@ document.getElementById('home-btn')?.addEventListener('click', flyHome)
 
 document.getElementById('read-btn')?.addEventListener('click', openReader)
 document.getElementById('chars-btn')?.addEventListener('click', openCharsScreen)
+
+// Cross-view entity links fired by Reader margin
+document.addEventListener('reader:openChar', e => {
+  const { charId } = e.detail
+  closeReader()
+  import('./atlas/characters.js').then(m => m.openCharModal(charId, null))
+})
+
+document.addEventListener('atlas:flyToLocation', e => {
+  const entry = _flatEntries.find(x => x.id === e.detail.locationId)
+  if (entry) showPanel(entry)
+})
 document.getElementById('reader-back')?.addEventListener('click', () => {
   // On mobile: show library column, hide reading pane
   document.getElementById('reader-library-col')?.classList.add('col-visible')

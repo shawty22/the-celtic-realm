@@ -308,6 +308,70 @@
   line-height: 1.5;
 }
 
+/* Character chips in margin */
+.margin-char-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.margin-char-chip {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(180, 130, 60, 0.2);
+  border-radius: 20px;
+  padding: 5px 10px 5px 6px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  box-shadow: 0 0 8px -2px var(--chip-color, transparent);
+}
+.margin-char-chip:hover {
+  border-color: var(--chip-color, rgba(180,130,60,0.5));
+  background: rgba(255,255,255,0.07);
+}
+
+.margin-chip-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.margin-chip-glyph {
+  font-size: 1rem;
+  color: var(--chip-color, #c8a96e);
+  flex-shrink: 0;
+}
+
+.margin-chip-name {
+  font-size: 0.72rem;
+  color: #d4b87a;
+  font-family: 'Georgia', serif;
+  white-space: nowrap;
+}
+
+/* Atlas location link */
+.margin-atlas-btn {
+  display: block;
+  width: 100%;
+  background: rgba(180, 130, 60, 0.08);
+  border: 1px solid rgba(180, 130, 60, 0.25);
+  border-radius: 4px;
+  color: #c8a96e;
+  font-size: 0.72rem;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 16px;
+  transition: background 0.15s;
+}
+.margin-atlas-btn:hover { background: rgba(180, 130, 60, 0.18); }
+
 .margin-section-label {
   font-size: 0.6rem;
   font-weight: 700;
