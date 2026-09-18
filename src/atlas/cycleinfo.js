@@ -55,6 +55,25 @@ const CYCLES = {
       <p>Hill of Allen (Co. Kildare), Ben Bulben (Co. Sligo), the Boyne (Salmon of Knowledge), Giant's Causeway (Fionn's bridge to Scotland), Lough Leane (Killarney).</p>
       <p class="cycle-note">Primary sources: <em>Acallam na Senórach</em> (Tales of the Elders), <em>Tóraíocht Dhiarmada agus Ghráinne</em>, <em>Agallamh na Seanórach</em></p>
     `
+  },
+  historical: {
+    title: 'The Historical Cycle',
+    sub: 'Kings and high kings — the saga age',
+    color: '#8a7a5a',
+    body: `
+      <div class="cmi-placeholder-notice">⚠ Content in development — framework only</div>
+      <p>The fourth of Ireland's great mythological and literary cycles, the Historical Cycle (also called the Kings' Cycle or <em>Cycle of the Kings</em>) bridges mythology and recorded history. It concerns the high kings of Ireland from the legendary to the early medieval period.</p>
+      <h4>Scope</h4>
+      <ul>
+        <li><strong>The High Kings</strong> — legendary and semi-historical rulers at Tara: Conn of the Hundred Battles, Cormac mac Airt, Niall of the Nine Hostages</li>
+        <li><strong>The Ossianic bridge</strong> — tales that overlap the Fenian cycle, placing Fionn and the Fianna in a historical political context</li>
+        <li><strong>Battle poetry</strong> — including <em>Cath Almaine</em> and the <em>Caithréim Cellaig</em></li>
+        <li><strong>Early Christian synthesis</strong> — later scribes blended these tales with biblical genealogies, creating the foundation texts of <em>Lebor Gabála Érenn</em></li>
+      </ul>
+      <h4>What is not yet in this atlas</h4>
+      <p>Locations, characters, and stories from the Historical Cycle are not yet populated. The cycle is represented here as a framework — honest about its status — to be filled as the project grows.</p>
+      <p class="cycle-note">Primary sources: <em>Lebor na Cert</em> (Book of Rights), <em>Buile Shuibhne</em>, <em>Fled Dúin na nGéd</em></p>
+    `
   }
 }
 
