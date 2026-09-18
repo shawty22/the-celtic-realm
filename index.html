@@ -128,6 +128,10 @@
           <span class="stories-btn-icon">📖</span>
           <span class="stories-btn-label">Read</span>
         </button>
+        <button id="chars-btn" aria-label="Open characters encyclopedia" title="Characters">
+          <span class="stories-btn-icon">◎</span>
+          <span class="stories-btn-label">Characters</span>
+        </button>
         <button id="stories-btn" aria-label="Open story browser" title="Stories">
           <span class="stories-btn-icon">◎</span>
           <span class="stories-btn-label">Stories</span>
@@ -182,6 +186,27 @@
         <strong>LOW</strong> = mythological placement only
       </div>
 
+
+      <!-- ═══ Characters screen ════════════════════════════════════════════ -->
+      <div id="chars-screen" aria-hidden="true" role="dialog" aria-label="Characters encyclopedia">
+        <div class="chars-backdrop"></div>
+        <div class="chars-panel">
+          <div class="chars-header">
+            <h2 class="chars-header-title">Characters</h2>
+            <div class="chars-tabs">
+              <button class="chars-tab is-active" data-cycle="all">All</button>
+              <button class="chars-tab" data-cycle="mythological">Mythological</button>
+              <button class="chars-tab" data-cycle="ulster">Ulster</button>
+              <button class="chars-tab" data-cycle="fenian">Fenian</button>
+            </div>
+            <div class="chars-search-wrap">
+              <input id="chars-search" type="search" placeholder="Search characters…" autocomplete="off" />
+            </div>
+            <button id="chars-screen-close" class="chars-close-btn" aria-label="Close characters">✕</button>
+          </div>
+          <div id="chars-grid"></div>
+        </div>
+      </div>
 
       <!-- ═══ Stories drawer ═══════════════════════════════════════════════ -->
       <div id="stories-drawer" aria-hidden="true" role="dialog" aria-label="Story browser">

@@ -1,5 +1,6 @@
 import './styles/atlas.css'
 import './styles/reader.css'
+import './styles/chars-screen.css'
 import mythData   from './data/mythological.json'
 import ulsterData from './data/ulster.json'
 import fenianData from './data/fenian.json'
@@ -17,11 +18,13 @@ import { initStories }                   from './atlas/stories.js'
 import { initCharacters }               from './atlas/characters.js'
 import { initGallery }                  from './atlas/gallery.js'
 import { initReader, openReader, closeReader } from './reader/reader.js'
+import { initCharsScreen, openCharsScreen } from './characters/chars-screen.js'
 
 // ── Boot ──────────────────────────────────────────────────────────────────── //
 
 initReader(() => {})
 initGallery(() => {})
+initCharsScreen()
 
 const map = initMap()
 
@@ -77,6 +80,7 @@ document.getElementById('home-btn')?.addEventListener('click', flyHome)
 // ── Read button ───────────────────────────────────────────────────────────── //
 
 document.getElementById('read-btn')?.addEventListener('click', openReader)
+document.getElementById('chars-btn')?.addEventListener('click', openCharsScreen)
 document.getElementById('reader-back')?.addEventListener('click', () => {
   // On mobile: show library column, hide reading pane
   document.getElementById('reader-library-col')?.classList.add('col-visible')
