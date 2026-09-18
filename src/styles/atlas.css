@@ -2814,3 +2814,31 @@ button {
   padding: 10px 14px;
   margin-bottom: 16px;
 }
+
+/* ── Story card actions row (S09) ── */
+.story-card-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.story-card-actions .story-card-btn {
+  flex: 1;
+}
+.story-card-learn-btn {
+  background: rgba(180,130,60,0.08);
+  border: 1px solid rgba(180,130,60,0.25);
+  color: #9a7d50;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.story-card-learn-btn:hover {
+  background: rgba(180,130,60,0.18);
+  color: #c8a96e;
+}

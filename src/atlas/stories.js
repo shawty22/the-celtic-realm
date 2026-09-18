@@ -194,14 +194,25 @@ function _renderDrawer() {
       ${locationsHTML}
       ${castPreview ? `<div class="story-card-cast">${castPreview}</div>` : ''}
       ${sourceHTML}
-      <button class="story-card-btn" data-story-id="${story.id}">
-        Begin story · ${story.beats.length} parts ↗
-      </button>
+      <div class="story-card-actions">
+        <button class="story-card-btn" data-story-id="${story.id}">
+          Begin story · ${story.beats.length} parts ↗
+        </button>
+        <button class="story-card-learn-btn" data-story-id="${story.id}" title="Learn this story">
+          LEARN ◎
+        </button>
+      </div>
     </div>
     `
   }).join('')
   listEl.querySelectorAll('.story-card-btn').forEach(btn => {
     btn.addEventListener('click', () => enterStory(btn.dataset.storyId))
+  })
+  listEl.querySelectorAll('.story-card-learn-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      closeDrawer()
+      document.dispatchEvent(new CustomEvent('learn:openStory', { detail: { storyId: btn.dataset.storyId } }))
+    })
   })
 }
 

@@ -2,6 +2,7 @@ import './styles/atlas.css'
 import './styles/reader.css'
 import './styles/chars-screen.css'
 import './styles/art-screen.css'
+import './styles/learn-screen.css'
 import mythData   from './data/mythological.json'
 import ulsterData from './data/ulster.json'
 import fenianData from './data/fenian.json'
@@ -21,6 +22,7 @@ import { initGallery }                  from './atlas/gallery.js'
 import { initReader, openReader, closeReader, openReaderAtChapter } from './reader/reader.js'
 import { initCharsScreen, openCharsScreen } from './characters/chars-screen.js'
 import { initArtScreen, openArtScreen, openArtAtPiece } from './art/art-screen.js'
+import { initLearnScreen, openLearnForStory } from './learn/learn-screen.js'
 
 // ── Boot ──────────────────────────────────────────────────────────────────── //
 
@@ -28,6 +30,7 @@ initReader(() => {})
 initGallery(() => {})
 initCharsScreen()
 initArtScreen()
+initLearnScreen()
 
 const map = initMap()
 
@@ -105,6 +108,10 @@ document.addEventListener('reader:openChapter', e => {
 
 document.addEventListener('art:openPiece', e => {
   openArtAtPiece(e.detail.artId)
+})
+
+document.addEventListener('learn:openStory', e => {
+  openLearnForStory(e.detail.storyId)
 })
 document.getElementById('reader-back')?.addEventListener('click', () => {
   // On mobile: show library column, hide reading pane
