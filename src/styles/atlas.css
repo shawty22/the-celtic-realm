@@ -2777,3 +2777,25 @@ button {
   .gallery-subtitle { margin-bottom: 14px; }
 }
 
+
+/* ── Atlas cross-view links (S07) ── */
+.panel-cross-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.panel-cross-btn {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(200,168,75,0.25);
+  color: #c8a96e;
+  font-size: 0.78rem;
+  padding: 9px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s;
+}
+.panel-cross-btn:hover {
+  background: rgba(200,168,75,0.14);
+  border-color: rgba(200,168,75,0.5);
+}

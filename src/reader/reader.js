@@ -93,6 +93,16 @@ function _buildReadingPane() {
 
 // ── Open / close ─────────────────────────────────────────────────────────── //
 
+export function openReaderAtChapter(chapterId) {
+  const idx = sections.findIndex(s => s.id === chapterId)
+  if (idx < 0) { openReader(); return }
+  isOpen = true
+  readerEl?.classList.add('is-open')
+  readerEl?.removeAttribute('aria-hidden')
+  document.body.classList.add('reader-active')
+  _openChapter(idx)
+}
+
 export function openReader() {
   isOpen = true
   readerEl?.classList.add('is-open')

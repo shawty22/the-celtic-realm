@@ -80,6 +80,11 @@ export function initArtScreen() {
   _render()
 }
 
+export function openArtAtPiece(artId) {
+  openArtScreen()
+  _openLightbox(artId)
+}
+
 export function openArtScreen() {
   _isOpen = true
   _el?.classList.add('is-open')

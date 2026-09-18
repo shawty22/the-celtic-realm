@@ -18,9 +18,9 @@ import { initCycleModal }                from './atlas/cycleinfo.js'
 import { initStories }                   from './atlas/stories.js'
 import { initCharacters }               from './atlas/characters.js'
 import { initGallery }                  from './atlas/gallery.js'
-import { initReader, openReader, closeReader } from './reader/reader.js'
+import { initReader, openReader, closeReader, openReaderAtChapter } from './reader/reader.js'
 import { initCharsScreen, openCharsScreen } from './characters/chars-screen.js'
-import { initArtScreen, openArtScreen } from './art/art-screen.js'
+import { initArtScreen, openArtScreen, openArtAtPiece } from './art/art-screen.js'
 
 // ── Boot ──────────────────────────────────────────────────────────────────── //
 
@@ -97,6 +97,14 @@ document.addEventListener('reader:openChar', e => {
 document.addEventListener('atlas:flyToLocation', e => {
   const entry = _flatEntries.find(x => x.id === e.detail.locationId)
   if (entry) showPanel(entry)
+})
+
+document.addEventListener('reader:openChapter', e => {
+  openReaderAtChapter(e.detail.chapterId)
+})
+
+document.addEventListener('art:openPiece', e => {
+  openArtAtPiece(e.detail.artId)
 })
 document.getElementById('reader-back')?.addEventListener('click', () => {
   // On mobile: show library column, hide reading pane

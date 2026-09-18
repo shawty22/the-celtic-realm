@@ -1,8 +1,18 @@
 import { getStoriesForLocation } from './stories.js'
 import { getCharacter }         from './characters.js'
-import mythData   from '../data/mythological.json'
-import ulsterData from '../data/ulster.json'
-import fenianData from '../data/fenian.json'
+import mythData         from '../data/mythological.json'
+import ulsterData       from '../data/ulster.json'
+import fenianData       from '../data/fenian.json'
+import chapterEntities  from '../data/chapter-entities.json'
+import catalog          from '../data/stories-catalog.json'
+
+// Reverse: locationId → first chapter ID that references it
+const _locToChapter = {}
+for (const [chapId, ent] of Object.entries(chapterEntities)) {
+  if (ent.locationId && !_locToChapter[ent.locationId]) {
+    _locToChapter[ent.locationId] = chapId
+  }
+}
 
 const _allEntries = [...mythData, ...ulsterData, ...fenianData]
 function _findEntry(id) { return _allEntries.find(e => e.id === id) ?? null }
@@ -66,6 +76,20 @@ export function showPanel(entry) {
       if (loc) showPanel(loc)
     })
   })
+
+  content.querySelectorAll('.panel-cross-btn[data-chapter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      hidePanel()
+      document.dispatchEvent(new CustomEvent('reader:openChapter', { detail: { chapterId: btn.dataset.chapter } }))
+    })
+  })
+
+  content.querySelectorAll('.panel-cross-btn[data-art]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      hidePanel()
+      document.dispatchEvent(new CustomEvent('art:openPiece', { detail: { artId: btn.dataset.art } }))
+    })
+  })
 }
 
 export function hidePanel() {
@@ -125,6 +149,7 @@ function buildHTML(e) {
   const storyLinks    = buildStoryLinksHTML(e)
   const figuresHTML   = buildFiguresHTML(e)
   const relLocsHTML   = buildRelatedLocsHTML(e)
+  const crossLinksHTML = buildCrossLinksHTML(e)
 
   return `
     <div class="panel-header layer-${x(e.layer)}">
@@ -145,6 +170,7 @@ function buildHTML(e) {
       ${storyLinks}
       ${figuresHTML}
       ${relLocsHTML}
+      ${crossLinksHTML}
       ${sourcesHTML}
       ${confHTML}
       ${notesHTML}
@@ -185,6 +211,19 @@ function buildFiguresHTML(e) {
   return `<div class="panel-section">
     <h3 class="panel-section-h">Associated figures</h3>
     <div class="panel-fig-chips">${chips}</div>
+  </div>`
+}
+
+function buildCrossLinksHTML(e) {
+  const chapId = _locToChapter[e.id]
+  const artPiece = catalog.find(s => s.id === e.id && s.imageFile)
+  if (!chapId && !artPiece) return ''
+  return `<div class="panel-section panel-cross-links">
+    <h3 class="panel-section-h">Explore further</h3>
+    <div class="panel-cross-btns">
+      ${chapId ? `<button class="panel-cross-btn" data-chapter="${x(chapId)}">📖 Read in Lady Gregory</button>` : ''}
+      ${artPiece ? `<button class="panel-cross-btn" data-art="${x(artPiece.id)}">🎨 View artwork</button>` : ''}
+    </div>
   </div>`
 }
 
