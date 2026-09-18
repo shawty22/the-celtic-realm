@@ -6,11 +6,25 @@
 
 import sections from '../source/gods-and-fighting-men-sections.json'
 import provenance from '../source/provenance.json'
+import storyChapterMap from '../data/story-chapter-map.json'
+import catalog from '../data/stories-catalog.json'
 
 let readerEl = null
 let currentIdx = 0
 let isOpen = false
 let onCloseCb = null
+
+// Reverse map: chapter id → array of story catalog entries
+const _chapStories = {}
+for (const [storyId, chapterIds] of Object.entries(storyChapterMap)) {
+  if (storyId.startsWith('_')) continue
+  const story = catalog.find(s => s.id === storyId)
+  if (!story) continue
+  for (const cid of chapterIds) {
+    if (!_chapStories[cid]) _chapStories[cid] = []
+    _chapStories[cid].push(story)
+  }
+}
 
 // ── Build DOM ────────────────────────────────────────────────────────────── //
 
@@ -130,12 +144,47 @@ function _openChapter(idx) {
   const ctr = document.getElementById('reader-counter')
   if (ctr) ctr.textContent = `${idx + 1} / ${sections.length}`
 
+  // Populate living margin with related story cards
+  _updateMargin(s.id)
+
   // Scroll text to top
   bodyEl?.scrollTo(0, 0)
   document.getElementById('reader-pane')?.scrollTo(0, 0)
 
   // Save reading position
   try { localStorage.setItem('cr-reader-pos', s.id) } catch {}
+}
+
+function _updateMargin(chapterId) {
+  const inner = document.getElementById('reader-margin-inner')
+  if (!inner) return
+  const stories = _chapStories[chapterId] || []
+  if (!stories.length) {
+    inner.innerHTML = `<p class="reader-margin-hint">Characters, places, and artwork will appear here as you read.</p>`
+    return
+  }
+  const cycleColors = { mythological: '#7a5ead', ulster: '#c8703a', fenian: '#3a8a6e' }
+  inner.innerHTML = `
+    <p class="margin-section-label">Related Stories</p>
+    ${stories.map(s => `
+      <div class="margin-story-card">
+        <div class="margin-story-cycle" style="background:${cycleColors[s.cycle] || '#555'}">${s.cycleLabel}</div>
+        <h4 class="margin-story-title">${_esc(s.title)}</h4>
+        <p class="margin-story-hook">${_esc(s.hook)}</p>
+        <button class="margin-story-btn" data-story="${s.id}">Follow on the map →</button>
+      </div>
+    `).join('')}
+  `
+  inner.querySelectorAll('.margin-story-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      closeReader()
+      document.dispatchEvent(new CustomEvent('atlas:enterStory', { detail: { storyId: btn.dataset.story, beatIndex: 0 } }))
+    })
+  })
+}
+
+function _esc(s) {
+  return String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
 }
 
 function _showLibrary() {

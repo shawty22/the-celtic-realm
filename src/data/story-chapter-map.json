@@ -1,0 +1,14 @@
+{
+  "_note": "Maps story catalog IDs to relevant Gods-and-Fighting-Men chapter IDs",
+  "cath-maige-tuired": ["gfm-000","gfm-001","gfm-002","gfm-003","gfm-004","gfm-005","gfm-006","gfm-007"],
+  "oidheadh-chlainne-tuireann": ["gfm-003"],
+  "tochmarc-etaine": ["gfm-014"],
+  "voyage-of-bran": ["gfm-017","gfm-022"],
+  "children-of-lir": ["gfm-008"],
+  "birth-of-fionn": ["gfm-022","gfm-023","gfm-024","gfm-025","gfm-026"],
+  "salmon-of-knowledge": ["gfm-023"],
+  "oisin": ["gfm-026","gfm-080","gfm-082","gfm-083","gfm-084","gfm-085"],
+  "battle-of-ventry": ["gfm-031","gfm-032","gfm-033","gfm-034","gfm-035","gfm-036","gfm-037","gfm-038","gfm-039","gfm-040","gfm-041","gfm-042","gfm-043","gfm-044"],
+  "pursuit-of-diarmuid": ["gfm-059","gfm-060","gfm-061","gfm-062","gfm-063","gfm-064","gfm-065","gfm-066","gfm-067","gfm-068","gfm-069","gfm-070","gfm-071","gfm-072"],
+  "battle-of-gabhair": ["gfm-075","gfm-076","gfm-077","gfm-078","gfm-079","gfm-080","gfm-081"]
+}
