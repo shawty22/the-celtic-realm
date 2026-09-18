@@ -1,4 +1,5 @@
 import './styles/atlas.css'
+import './styles/reader.css'
 import mythData   from './data/mythological.json'
 import ulsterData from './data/ulster.json'
 import fenianData from './data/fenian.json'
@@ -15,9 +16,11 @@ import { initCycleModal }                from './atlas/cycleinfo.js'
 import { initStories }                   from './atlas/stories.js'
 import { initCharacters }               from './atlas/characters.js'
 import { initGallery }                  from './atlas/gallery.js'
+import { initReader, openReader, closeReader } from './reader/reader.js'
 
 // ── Boot ──────────────────────────────────────────────────────────────────── //
 
+initReader(() => {})
 initGallery(() => {})
 
 const map = initMap()
@@ -70,6 +73,15 @@ document.getElementById('arch-toggle')?.addEventListener('click', (e) => {
 // ── Home button ───────────────────────────────────────────────────────────── //
 
 document.getElementById('home-btn')?.addEventListener('click', flyHome)
+
+// ── Read button ───────────────────────────────────────────────────────────── //
+
+document.getElementById('read-btn')?.addEventListener('click', openReader)
+document.getElementById('reader-back')?.addEventListener('click', () => {
+  // On mobile: show library column, hide reading pane
+  document.getElementById('reader-library-col')?.classList.add('col-visible')
+  document.getElementById('reader-pane')?.classList.remove('col-visible')
+})
 
 // ── Base map switcher ─────────────────────────────────────────────────────── //
 

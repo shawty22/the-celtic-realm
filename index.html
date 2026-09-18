@@ -28,6 +28,56 @@
         </div>
       </div>
 
+      <!-- ═══ Reader Screen ══════════════════════════════════════════════ -->
+      <div id="reader-screen" aria-hidden="true" role="dialog" aria-label="Read Lady Gregory">
+        <div class="reader-layout">
+          <!-- Sidebar: table of contents -->
+          <nav id="reader-library-col" class="reader-library-col col-visible" aria-label="Table of contents">
+            <div class="reader-lib-header">
+              <div class="reader-lib-brand">
+                <span class="reader-lib-glyph">☽</span>
+                <div>
+                  <h2 class="reader-lib-title">Gods and Fighting Men</h2>
+                  <p class="reader-lib-author">Lady Augusta Gregory · 1904</p>
+                </div>
+              </div>
+              <button id="reader-close" class="reader-close-btn" aria-label="Close reader">✕</button>
+            </div>
+            <div id="reader-library" class="reader-library"></div>
+          </nav>
+
+          <!-- Reading pane -->
+          <main id="reader-pane" class="reader-pane" role="main">
+            <div class="reader-pane-inner">
+              <!-- Text column -->
+              <article class="reader-text-col">
+                <div class="reader-chapter-head">
+                  <p id="reader-chapter-meta" class="reader-chapter-meta"></p>
+                  <h2 id="reader-chapter-title" class="reader-chapter-title"></h2>
+                </div>
+                <div id="reader-chapter-body" class="reader-chapter-body"></div>
+                <div class="reader-source-note" id="reader-source-note"></div>
+                <div class="reader-chapter-nav">
+                  <button id="reader-prev" class="reader-nav-btn" aria-label="Previous chapter">← Previous</button>
+                  <span id="reader-counter" class="reader-counter"></span>
+                  <button id="reader-next" class="reader-nav-btn" aria-label="Next chapter">Next →</button>
+                </div>
+              </article>
+
+              <!-- Living margin (iPad landscape / desktop) -->
+              <aside class="reader-margin" aria-label="Contextual margin">
+                <div class="reader-margin-inner" id="reader-margin-inner">
+                  <p class="reader-margin-hint">Characters, places, and artwork will appear here as you read.</p>
+                </div>
+              </aside>
+            </div>
+
+            <!-- Mobile back-to-contents -->
+            <button class="reader-back-btn" id="reader-back" aria-label="Back to contents">← Contents</button>
+          </main>
+        </div>
+      </div>
+
       <!-- ═══ Header ══════════════════════════════════════════════════════ -->
       <header id="atlas-header">
         <div class="header-brand">
@@ -74,6 +124,10 @@
             </span>
           </button>
         </nav>
+        <button id="read-btn" aria-label="Open source reader" title="Read">
+          <span class="stories-btn-icon">📖</span>
+          <span class="stories-btn-label">Read</span>
+        </button>
         <button id="stories-btn" aria-label="Open story browser" title="Stories">
           <span class="stories-btn-icon">◎</span>
           <span class="stories-btn-label">Stories</span>

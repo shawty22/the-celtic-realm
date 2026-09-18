@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "id": "gregory-gfm",
+      "title": "Gods and Fighting Men",
+      "subtitle": "The Story of the Tuatha De Danaan and of the Fianna of Ireland",
+      "author": "Lady Augusta Gregory",
+      "year": 1904,
+      "publisher": "John Murray, London",
+      "edition": "First edition",
+      "acquisition": {
+        "source": "Project Gutenberg",
+        "ebook_id": 14465,
+        "url": "https://www.gutenberg.org/ebooks/14465",
+        "acquired": "2026-09",
+        "license": "Public domain (US and Ireland)"
+      },
+      "notes": "Primary v1 source corpus. Source prose preserved verbatim; structural metadata (book/chapter/section boundaries) normalised separately. Not silently modernised or rewritten.",
+      "file": "gods-and-fighting-men.txt"
+    }
+  ]
+}
