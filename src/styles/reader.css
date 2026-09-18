@@ -499,3 +499,41 @@
 body.reader-active {
   overflow: hidden;
 }
+
+/* ── Continue Reading banner (S10) ── */
+.lib-continue-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  margin: 0 0 8px;
+  background: rgba(180, 130, 60, 0.06);
+  border-bottom: 1px solid rgba(180, 130, 60, 0.15);
+}
+.lib-continue-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6a5535;
+}
+.lib-continue-btn {
+  background: none;
+  border: none;
+  color: #c8a96e;
+  font-size: 0.82rem;
+  font-family: 'Georgia', serif;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1.4;
+}
+.lib-continue-btn:hover { text-decoration: underline; color: #f0dca0; }
+
+/* Search highlight pulse (S10) */
+@keyframes search-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(200,169,110,0.6); }
+  70%  { box-shadow: 0 0 0 12px rgba(200,169,110,0); }
+  100% { box-shadow: 0 0 0 0 rgba(200,169,110,0); }
+}
+.search-highlight { animation: search-pulse 1.2s ease; }

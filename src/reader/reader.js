@@ -56,7 +56,22 @@ function _buildLibrary() {
     grouped[part][book].push(s)
   }
 
-  let html = ''
+  // Continue Reading banner
+  let savedBanner = ''
+  try {
+    const savedId = localStorage.getItem('cr-reader-pos')
+    if (savedId) {
+      const saved = sections.find(s => s.id === savedId)
+      if (saved) {
+        savedBanner = `<div class="lib-continue-banner">
+          <span class="lib-continue-label">Continue reading</span>
+          <button class="lib-continue-btn" data-id="${savedId}">${_fmt(saved.chapter)}</button>
+        </div>`
+      }
+    }
+  } catch {}
+
+  let html = savedBanner
   for (const [part, books] of Object.entries(grouped)) {
     html += `<div class="lib-part"><h3 class="lib-part-title">${_fmt(part)}</h3>`
     for (const [book, chaps] of Object.entries(books)) {
@@ -108,7 +123,14 @@ export function openReader() {
   readerEl?.classList.add('is-open')
   readerEl?.removeAttribute('aria-hidden')
   document.body.classList.add('reader-active')
-  // Start at library view (no chapter open)
+  // Restore last reading position, or show library
+  try {
+    const saved = localStorage.getItem('cr-reader-pos')
+    if (saved) {
+      const idx = sections.findIndex(s => s.id === saved)
+      if (idx >= 0) { _openChapter(idx); return }
+    }
+  } catch {}
   _showLibrary()
 }
 

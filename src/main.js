@@ -3,6 +3,7 @@ import './styles/reader.css'
 import './styles/chars-screen.css'
 import './styles/art-screen.css'
 import './styles/learn-screen.css'
+import './styles/search-palette.css'
 import mythData   from './data/mythological.json'
 import ulsterData from './data/ulster.json'
 import fenianData from './data/fenian.json'
@@ -23,6 +24,7 @@ import { initReader, openReader, closeReader, openReaderAtChapter } from './read
 import { initCharsScreen, openCharsScreen } from './characters/chars-screen.js'
 import { initArtScreen, openArtScreen, openArtAtPiece } from './art/art-screen.js'
 import { initLearnScreen, openLearnForStory } from './learn/learn-screen.js'
+import { initSearch, openSearch } from './search/search-palette.js'
 
 // ── Boot ──────────────────────────────────────────────────────────────────── //
 
@@ -31,6 +33,7 @@ initGallery(() => {})
 initCharsScreen()
 initArtScreen()
 initLearnScreen()
+initSearch()
 
 const map = initMap()
 
@@ -89,6 +92,7 @@ document.getElementById('home-btn')?.addEventListener('click', flyHome)
 document.getElementById('read-btn')?.addEventListener('click', openReader)
 document.getElementById('chars-btn')?.addEventListener('click', openCharsScreen)
 document.getElementById('art-btn')?.addEventListener('click', openArtScreen)
+document.getElementById('search-btn')?.addEventListener('click', () => openSearch())
 
 // Cross-view entity links fired by Reader margin
 document.addEventListener('reader:openChar', e => {
@@ -112,6 +116,28 @@ document.addEventListener('art:openPiece', e => {
 
 document.addEventListener('learn:openStory', e => {
   openLearnForStory(e.detail.storyId)
+})
+
+// Search palette routing
+document.addEventListener('search:openStory', e => {
+  // Open stories drawer and highlight the story
+  document.getElementById('stories-btn')?.click()
+  // Slight delay so drawer is open, then scroll to story card
+  setTimeout(() => {
+    const card = document.querySelector(`.story-card[data-story-id="${CSS.escape(e.detail.storyId)}"]`)
+    card?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    card?.classList.add('search-highlight')
+    setTimeout(() => card?.classList.remove('search-highlight'), 1500)
+  }, 150)
+})
+
+document.addEventListener('search:openChar', e => {
+  import('./atlas/characters.js').then(m => m.openCharModal(e.detail.charId, null))
+})
+
+document.addEventListener('search:openPlace', e => {
+  const entry = _flatEntries.find(x => x.id === e.detail.placeId)
+  if (entry) { showPanel(entry); flyTo(entry) }
 })
 document.getElementById('reader-back')?.addEventListener('click', () => {
   // On mobile: show library column, hide reading pane

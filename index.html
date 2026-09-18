@@ -156,6 +156,7 @@
           <span class="stories-btn-icon">◎</span>
           <span class="stories-btn-label">Stories</span>
         </button>
+        <button id="search-btn" aria-label="Search (⌘K)" title="Search">🔍</button>
         <button id="home-btn" aria-label="Reset to Ireland view" title="Home">⌂</button>
         <div class="bm-switcher" aria-label="Base map style">
           <button class="bm-btn is-active" data-bm="terrain" title="Terrain">⛰</button>
@@ -364,6 +365,24 @@
       </div>
 
     </div>
+    <!-- S10: Search palette -->
+    <div id="search-palette" aria-hidden="true" role="dialog" aria-label="Search">
+      <div class="search-backdrop"></div>
+      <div class="search-panel">
+        <div class="search-input-row">
+          <span class="search-icon">🔍</span>
+          <input id="search-input" type="search" placeholder="Search stories, characters, places…" autocomplete="off" spellcheck="false" />
+          <button class="search-close-btn" aria-label="Close search">ESC</button>
+        </div>
+        <div id="search-results"></div>
+        <div class="search-hint-row">
+          <span><kbd>↑↓</kbd> navigate</span>
+          <span><kbd>↵</kbd> open</span>
+          <span><kbd>⌘K</kbd> toggle</span>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
