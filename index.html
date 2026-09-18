@@ -128,6 +128,10 @@
           <span class="stories-btn-icon">📖</span>
           <span class="stories-btn-label">Read</span>
         </button>
+        <button id="art-btn" aria-label="Open art library" title="Art">
+          <span class="stories-btn-icon">🎨</span>
+          <span class="stories-btn-label">Art</span>
+        </button>
         <button id="chars-btn" aria-label="Open characters encyclopedia" title="Characters">
           <span class="stories-btn-icon">◎</span>
           <span class="stories-btn-label">Characters</span>
@@ -186,6 +190,46 @@
         <strong>LOW</strong> = mythological placement only
       </div>
 
+
+      <!-- ═══ Art screen ══════════════════════════════════════════════════ -->
+      <div id="art-screen" aria-hidden="true" role="dialog" aria-label="Art library">
+        <div class="art-backdrop"></div>
+        <div class="art-panel">
+          <div class="art-header">
+            <h2 class="art-header-title">Art Library</h2>
+            <div class="art-tabs">
+              <button class="art-tab is-active" data-cycle="all">All</button>
+              <button class="art-tab" data-cycle="mythological">Mythological</button>
+              <button class="art-tab" data-cycle="ulster">Ulster</button>
+              <button class="art-tab" data-cycle="fenian">Fenian</button>
+            </div>
+            <button id="art-screen-close" class="art-close-btn" aria-label="Close art library">✕</button>
+          </div>
+          <div id="art-grid" role="list"></div>
+        </div>
+      </div>
+
+      <!-- ═══ Art lightbox ════════════════════════════════════════════════ -->
+      <div id="art-lightbox" aria-hidden="true" role="dialog" aria-label="Artwork viewer">
+        <div class="art-lb-backdrop"></div>
+        <button class="art-lb-close" id="art-lightbox-close" aria-label="Close">✕</button>
+        <div class="art-lb-layout">
+          <div class="art-lb-img-wrap">
+            <img id="art-lb-img" alt="" />
+          </div>
+          <div class="art-lb-info">
+            <div id="art-lb-cycle"></div>
+            <h2 id="art-lb-title"></h2>
+            <p id="art-lb-sub"></p>
+            <p id="art-lb-hook"></p>
+            <button id="art-lb-story-btn">Follow on the map →</button>
+            <div class="art-lb-nav">
+              <button class="art-lb-nav-btn" id="art-lb-prev">← Previous</button>
+              <button class="art-lb-nav-btn" id="art-lb-next">Next →</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- ═══ Characters screen ════════════════════════════════════════════ -->
       <div id="chars-screen" aria-hidden="true" role="dialog" aria-label="Characters encyclopedia">
