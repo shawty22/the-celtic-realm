@@ -134,12 +134,12 @@ export function openReader() {
   _showLibrary()
 }
 
-export function closeReader() {
+export function closeReader(silent = false) {
   isOpen = false
   readerEl?.classList.remove('is-open')
   readerEl?.setAttribute('aria-hidden', 'true')
   document.body.classList.remove('reader-active')
-  onCloseCb?.()
+  if (!silent) onCloseCb?.()
 }
 
 // ── Chapter navigation ───────────────────────────────────────────────────── //

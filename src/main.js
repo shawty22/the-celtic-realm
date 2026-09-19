@@ -4,6 +4,7 @@ import './styles/chars-screen.css'
 import './styles/art-screen.css'
 import './styles/learn-screen.css'
 import './styles/search-palette.css'
+import './styles/primary-nav.css'
 import mythData   from './data/mythological.json'
 import ulsterData from './data/ulster.json'
 import fenianData from './data/fenian.json'
@@ -22,20 +23,28 @@ import { initCharacters }               from './atlas/characters.js'
 import { initGallery }                  from './atlas/gallery.js'
 import { initReader, openReader, closeReader, openReaderAtChapter } from './reader/reader.js'
 import { initCharsScreen, openCharsScreen } from './characters/chars-screen.js'
-import { initArtScreen, openArtScreen, openArtAtPiece } from './art/art-screen.js'
-import { initLearnScreen, openLearnForStory } from './learn/learn-screen.js'
+import { initArtScreen, openArtScreen, openArtAtPiece, closeArtScreen } from './art/art-screen.js'
+import { initLearnScreen, openLearnForStory, openLearnPicker, closeLearnScreen } from './learn/learn-screen.js'
 import { initSearch, openSearch } from './search/search-palette.js'
+import { initViewShell, activateView } from './shell/view-controller.js'
 
 // ── Boot ──────────────────────────────────────────────────────────────────── //
 
-initReader(() => {})
-initGallery(() => {})
+// Reader close → return to Atlas view
+initReader(() => activateView('atlas'))
+initGallery(() => {
+  // Gallery dismissed → show primary nav and enter READ view
+  document.body.classList.add('app-ready')
+  activateView('read')
+  openReader()
+})
 initCharsScreen()
 initArtScreen()
 initLearnScreen()
 initSearch()
 
 const map = initMap()
+window.__atlas = { map }
 
 initPanel((entry) => flyTo(entry))
 initFlythrough()
@@ -51,6 +60,9 @@ const tainRoute = buildRoute(map, tainRouteData)
 let tainVisible = false
 
 buildArchLayer(map, archData, (site, meta) => showArchPanel(site, meta))
+
+// View shell — initialise AFTER all modules are ready
+initViewShell({ openLearnFn: openLearnPicker })
 
 map.on('click', () => {
   document.dispatchEvent(new Event('atlas:mapclick'))
@@ -87,26 +99,51 @@ document.getElementById('arch-toggle')?.addEventListener('click', (e) => {
 
 document.getElementById('home-btn')?.addEventListener('click', flyHome)
 
-// ── Read button ───────────────────────────────────────────────────────────── //
+// ── Atlas-header buttons ──────────────────────────────────────────────────── //
 
-document.getElementById('read-btn')?.addEventListener('click', openReader)
 document.getElementById('chars-btn')?.addEventListener('click', openCharsScreen)
-document.getElementById('art-btn')?.addEventListener('click', openArtScreen)
 document.getElementById('search-btn')?.addEventListener('click', () => openSearch())
+
+// ── View lifecycle hooks ──────────────────────────────────────────────────── //
+
+document.addEventListener('view:changed', e => {
+  const v = e.detail.view
+  // Open the right screen for this view
+  if (v === 'art')  openArtScreen()
+  if (v === 'read') openReader()
+  // Close screens we're leaving
+  if (v !== 'read')  closeReader(true)  // silent: skip onCloseCb to avoid loop
+  if (v !== 'art')   closeArtScreen()
+  if (v !== 'learn') closeLearnScreen()
+})
+
+// Art / learn close buttons → switch to atlas view
+document.getElementById('art-screen-close')?.addEventListener('click', () => activateView('atlas'))
+document.querySelector('.art-backdrop')?.addEventListener('click', () => activateView('atlas'))
+document.getElementById('learn-screen-close')?.addEventListener('click', () => activateView('atlas'))
+document.querySelector('.learn-backdrop')?.addEventListener('click', () => activateView('atlas'))
 
 // Cross-view entity links fired by Reader margin
 document.addEventListener('reader:openChar', e => {
   const { charId } = e.detail
-  closeReader()
   import('./atlas/characters.js').then(m => m.openCharModal(charId, null))
 })
 
 document.addEventListener('atlas:flyToLocation', e => {
   const entry = _flatEntries.find(x => x.id === e.detail.locationId)
-  if (entry) showPanel(entry)
+  if (entry) {
+    activateView('atlas')
+    showPanel(entry)
+    flyTo(entry)
+  }
+})
+
+document.addEventListener('atlas:enterStory', e => {
+  activateView('atlas')
 })
 
 document.addEventListener('reader:openChapter', e => {
+  activateView('read')
   openReaderAtChapter(e.detail.chapterId)
 })
 
@@ -120,15 +157,17 @@ document.addEventListener('learn:openStory', e => {
 
 // Search palette routing
 document.addEventListener('search:openStory', e => {
-  // Open stories drawer and highlight the story
-  document.getElementById('stories-btn')?.click()
-  // Slight delay so drawer is open, then scroll to story card
+  // Switch to atlas and open stories drawer
+  activateView('atlas')
   setTimeout(() => {
-    const card = document.querySelector(`.story-card[data-story-id="${CSS.escape(e.detail.storyId)}"]`)
-    card?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-    card?.classList.add('search-highlight')
-    setTimeout(() => card?.classList.remove('search-highlight'), 1500)
-  }, 150)
+    document.getElementById('stories-btn')?.click()
+    setTimeout(() => {
+      const card = document.querySelector(`.story-card[data-story-id="${CSS.escape(e.detail.storyId)}"]`)
+      card?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      card?.classList.add('search-highlight')
+      setTimeout(() => card?.classList.remove('search-highlight'), 1500)
+    }, 150)
+  }, 80)
 })
 
 document.addEventListener('search:openChar', e => {
@@ -137,7 +176,7 @@ document.addEventListener('search:openChar', e => {
 
 document.addEventListener('search:openPlace', e => {
   const entry = _flatEntries.find(x => x.id === e.detail.placeId)
-  if (entry) { showPanel(entry); flyTo(entry) }
+  if (entry) { activateView('atlas'); showPanel(entry); flyTo(entry) }
 })
 document.getElementById('reader-back')?.addEventListener('click', () => {
   // On mobile: show library column, hide reading pane

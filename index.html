@@ -32,7 +32,7 @@
           <p class="gallery-hook" id="gallery-hook"></p>
           <div class="gallery-footer">
             <span class="gallery-counter" id="gallery-counter"></span>
-            <button class="gallery-enter-btn" id="gallery-enter">Enter Atlas &#8594;</button>
+            <button class="gallery-enter-btn" id="gallery-enter">Begin reading &#8594;</button>
           </div>
         </div>
       </div>
@@ -141,23 +141,14 @@
             </span>
           </button>
         </nav>
-        <button id="read-btn" aria-label="Open source reader" title="Read">
-          <span class="stories-btn-icon">📖</span>
-          <span class="stories-btn-label">Read</span>
-        </button>
-        <button id="art-btn" aria-label="Open art library" title="Art">
-          <span class="stories-btn-icon">🎨</span>
-          <span class="stories-btn-label">Art</span>
+        <button id="stories-btn" aria-label="Open story browser" title="Stories">
+          <span class="stories-btn-icon">◎</span>
+          <span class="stories-btn-label">Stories</span>
         </button>
         <button id="chars-btn" aria-label="Open characters encyclopedia" title="Characters">
           <span class="stories-btn-icon">◎</span>
           <span class="stories-btn-label">Characters</span>
         </button>
-        <button id="stories-btn" aria-label="Open story browser" title="Stories">
-          <span class="stories-btn-icon">◎</span>
-          <span class="stories-btn-label">Stories</span>
-        </button>
-        <button id="search-btn" aria-label="Search (⌘K)" title="Search">🔍</button>
         <button id="home-btn" aria-label="Reset to Ireland view" title="Home">⌂</button>
         <div class="bm-switcher" aria-label="Base map style">
           <button class="bm-btn is-active" data-bm="terrain" title="Terrain">⛰</button>
@@ -366,6 +357,30 @@
       </div>
 
     </div>
+    <!-- Primary navigation (READ · ART · ATLAS · LEARN) -->
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <button class="pnav-btn is-active" data-view="read" aria-pressed="true">
+        <span class="pnav-icon">☽</span>
+        <span class="pnav-label">Read</span>
+      </button>
+      <button class="pnav-btn" data-view="art" aria-pressed="false">
+        <span class="pnav-icon">◈</span>
+        <span class="pnav-label">Art</span>
+      </button>
+      <button class="pnav-btn" data-view="atlas" aria-pressed="false">
+        <span class="pnav-icon">◉</span>
+        <span class="pnav-label">Atlas</span>
+      </button>
+      <button class="pnav-btn" data-view="learn" aria-pressed="false">
+        <span class="pnav-icon">✧</span>
+        <span class="pnav-label">Learn</span>
+      </button>
+      <button class="pnav-search-btn" id="search-btn" aria-label="Search (⌘K)">
+        <span class="pnav-icon">⌕</span>
+        <span class="pnav-label">Search</span>
+      </button>
+    </nav>
+
     <!-- S10: Search palette -->
     <div id="search-palette" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Search">
       <div class="search-backdrop"></div>

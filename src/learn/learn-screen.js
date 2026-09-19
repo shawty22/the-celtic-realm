@@ -86,6 +86,44 @@ export function closeLearnScreen() {
   document.body.classList.remove('learn-active')
 }
 
+// Open learn picker — shows story selector if no story loaded; else resumes last story
+export function openLearnPicker() {
+  if (_story) {
+    openLearnForStory(_story.id)
+    return
+  }
+  _isOpen = true
+  _el?.classList.add('is-open')
+  _el?.removeAttribute('aria-hidden')
+  document.body.classList.add('learn-active')
+
+  const headEl = document.getElementById('learn-story-header')
+  if (headEl) headEl.innerHTML = '<h2 class="learn-story-title">Choose a story</h2>'
+
+  const body = document.getElementById('learn-body')
+  if (!body) return
+
+  // Render a story picker grid
+  const picks = catalog.filter(s => s.beats?.length > 0)
+  const cycleColors = { mythological: '#7a5ead', ulster: '#c8703a', fenian: '#3a8a6e' }
+  body.innerHTML = `
+    <div class="learn-picker">
+      <p class="learn-picker-hint">Select a story below to begin Outline, Recall, or Retell.</p>
+      <div class="learn-picker-grid">
+        ${picks.map(s => `
+          <button class="learn-picker-card" data-story-id="${_esc(s.id)}">
+            <span class="learn-picker-cycle" style="background:${cycleColors[s.cycle] || '#555'}">${_esc(s.cycleLabel || s.cycle)}</span>
+            <span class="learn-picker-title">${_esc(s.title)}</span>
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  `
+  body.querySelectorAll('.learn-picker-card').forEach(btn => {
+    btn.addEventListener('click', () => openLearnForStory(btn.dataset.storyId))
+  })
+}
+
 // ── Mode rendering ──────────────────────────────────────────────────────── //
 
 function _renderMode() {
