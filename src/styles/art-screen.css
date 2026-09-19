@@ -197,7 +197,7 @@
 #art-lightbox {
   position: fixed;
   inset: 0;
-  z-index: 600;
+  z-index: 1200;
   display: none;
   align-items: center;
   justify-content: center;
