@@ -2141,22 +2141,23 @@ button {
 /* ── Artwork slot ────────────────────────────────────────────────────────── */
 .cmod-art {
   width: 100%;
-  height: 160px;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 16px;
   border: 1px solid rgba(200,168,75,0.15);
   position: relative;
   background: rgba(16,10,6,0.6);
+  /* No fixed height — let artwork show at natural aspect ratio */
 }
 .cmod-art-inner {
   width: 100%;
-  height: 100%;
   position: relative;
+  /* Height is driven by the image for has-art; placeholder keeps min-height */
+  min-height: 120px;
 }
 .cmod-art-placeholder {
   width: 100%;
-  height: 100%;
+  height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2198,12 +2199,10 @@ button {
   margin-top: 6px;
 }
 .cmod-art-img {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  height: auto;
+  /* Natural aspect ratio — no cropping */
 }
 
 /* ── Modal content sections ──────────────────────────────────────────────── */
