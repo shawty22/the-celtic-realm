@@ -6,7 +6,7 @@
 <p align="center"><i>A Living Atlas of Irish Mythology</i></p>
 
 <p align="center">
-  <img alt="status" src="https://img.shields.io/badge/status-beta-b8791f">
+  <img alt="status" src="https://img.shields.io/badge/status-live-2f8a5f">
   <img alt="license" src="https://img.shields.io/badge/license-MIT-3f8f5f">
   <img alt="stack" src="https://img.shields.io/badge/stack-Vite%20%2B%20Leaflet-2f7d75">
 </p>
@@ -78,7 +78,7 @@ Two deploy paths currently exist for this repo and need to be reconciled rather 
 - **`gh-pages` branch** (pre-existing) — a built Vite output (`index.html`, `assets/`, plus a standalone `gallery.html` landing screen) was pushed here directly. A duplicate build previously lived inside the `SolasSovereignSystems` repo (served at `solassovereignsystems.ai/celtic-realm/`) as a stopgap while this repo's own Pages setup was pending — that copy is being retired now that `gh-pages` here is current.
 - **`.github/workflows/deploy.yml`** (added in this pass) — a GitHub Actions workflow that builds and publishes `dist/` automatically on every push to `main`, so the deployed build never drifts from source again.
 
-**Either way, GitHub Pages for a currently-private repo needs GitHub Pro/Team/Enterprise, or the repo needs to be made public** — that decision hasn't been made yet.
+The repo is public so GitHub Pages deploys automatically on every push to `main`.
 
 ## Data model
 
@@ -109,18 +109,37 @@ See [`ADDING.md`](ADDING.md) for the full guide to adding a new entry or an enti
 - Committing to a `confidence` field on every entry from day one made it much easier to stay honest about folklore vs. archaeologically-attested claims, instead of retrofitting caveats later.
 - An earlier prototype ("The Otherworld Hearth" — an animated creature diorama, Chapter I of this project) is preserved on the `archive/otherworld-hearth-prototype` branch and tagged `v0.1-otherworld-hearth`, fully recoverable rather than deleted.
 
-## Roadmap / Future direction
+## Future direction
 
-- [ ] Deploy to GitHub Pages (static build, no blockers)
-- [ ] Artwork pass — illustrations for the remaining placeholder slots
-- [ ] Entry search across names, summaries, counties
-- [ ] Click-through on `associatedFigures` to jump between related entries
-- [ ] Diarmuid & Gráinne route (equivalent to the Táin Route) and an animated Oisín's-return route
+- [ ] Artwork pass — illustrations for the remaining placeholder slots (17 stories need images)
+- [ ] Cú Chulainn audio narration (M4B render — ~85 chunks, `render-audio.py --voice onyx`)
+- [ ] Diarmuid & Gráinne chase route (equivalent to the Táin Route overlay)
 - [ ] Cycle-era timeline showing the three cycles relative to each other and to early history
+- [ ] More story beats — currently 18 stories, ~150+ more Irish mythological tales to document
+- [ ] Irish language pronunciation audio for place names and character names
 
 ## Current maturity
 
-**Beta.** Core map, three cycles, story mode, character browser, and the cinematic flythrough are all built and working locally. Not yet deployed publicly.
+**Live at https://shawty22.github.io/the-celtic-realm/**
+
+All sprints S00–S15 complete:
+
+| Sprint | Feature |
+|--------|---------|
+| S01–S02 | Source acquisition + iPad-first Reader shell |
+| S03 | Guided story layer + living margin |
+| S04 | Characters browser — 79 character encyclopedia |
+| S05 | Entity linking — Reader margin surfaces characters, atlas, stories |
+| S06 | ART library — full-screen gallery with lightbox |
+| S07 | Atlas integration — bidirectional links between all views |
+| S08 | Four-cycle architecture — Historical/Kings cycle placeholder |
+| S09 | LEARN screen — Outline, Recall (flip cards), Retell modes |
+| S10 | Search palette (⌘K) across stories/characters/places/chapters |
+| S11 | PWA — manifest, service worker, offline-first app shell |
+| S12 | Responsive & accessibility polish — skip link, aria-modal, focus-visible |
+| S13 | Content QA — all 83 story beats have valid entity references |
+| S14 | Production deployment to GitHub Pages via CI/CD |
+| S15 | Portfolio handoff |
 
 ## License
 
