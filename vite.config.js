@@ -3,7 +3,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
   root: '.',
-  base: './',
+  base: '/',
   server: {
     port: parseInt(process.env.PORT) || 3010,
     open: true
