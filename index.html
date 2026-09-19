@@ -15,6 +15,7 @@
     <link rel="icon" type="image/svg+xml" href="./icon.svg" />
   </head>
   <body>
+    <a href="#atlas-header" class="skip-link">Skip to map</a>
     <div id="app">
 
       <!-- ═══ Gallery Screen ════════════════════════════════════════════════ -->
@@ -37,7 +38,7 @@
       </div>
 
       <!-- ═══ Reader Screen ══════════════════════════════════════════════ -->
-      <div id="reader-screen" aria-hidden="true" role="dialog" aria-label="Read Lady Gregory">
+      <div id="reader-screen" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Read Lady Gregory">
         <div class="reader-layout">
           <!-- Sidebar: table of contents -->
           <nav id="reader-library-col" class="reader-library-col col-visible" aria-label="Table of contents">
@@ -209,7 +210,7 @@
 
 
       <!-- ═══ Learn screen ════════════════════════════════════════════════ -->
-      <div id="learn-screen" aria-hidden="true" role="dialog" aria-label="Learn this story">
+      <div id="learn-screen" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Learn this story">
         <div class="learn-backdrop"></div>
         <div class="learn-panel">
           <div class="learn-header">
@@ -226,7 +227,7 @@
       </div>
 
       <!-- ═══ Art screen ══════════════════════════════════════════════════ -->
-      <div id="art-screen" aria-hidden="true" role="dialog" aria-label="Art library">
+      <div id="art-screen" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Art library">
         <div class="art-backdrop"></div>
         <div class="art-panel">
           <div class="art-header">
@@ -244,7 +245,7 @@
       </div>
 
       <!-- ═══ Art lightbox ════════════════════════════════════════════════ -->
-      <div id="art-lightbox" aria-hidden="true" role="dialog" aria-label="Artwork viewer">
+      <div id="art-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Artwork viewer">
         <div class="art-lb-backdrop"></div>
         <button class="art-lb-close" id="art-lightbox-close" aria-label="Close">✕</button>
         <div class="art-lb-layout">
@@ -266,7 +267,7 @@
       </div>
 
       <!-- ═══ Characters screen ════════════════════════════════════════════ -->
-      <div id="chars-screen" aria-hidden="true" role="dialog" aria-label="Characters encyclopedia">
+      <div id="chars-screen" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Characters encyclopedia">
         <div class="chars-backdrop"></div>
         <div class="chars-panel">
           <div class="chars-header">
@@ -287,7 +288,7 @@
       </div>
 
       <!-- ═══ Stories drawer ═══════════════════════════════════════════════ -->
-      <div id="stories-drawer" aria-hidden="true" role="dialog" aria-label="Story browser">
+      <div id="stories-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Story browser">
         <div class="stories-drawer-backdrop"></div>
         <aside class="stories-drawer-panel">
           <div class="stories-drawer-header">
@@ -325,7 +326,7 @@
       </div>
 
       <!-- ═══ Cycle info modal ══════════════════════════════════════════════ -->
-      <div id="cycle-modal" aria-hidden="true" role="dialog">
+      <div id="cycle-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mythology cycle information">
         <div class="cycle-modal-backdrop"></div>
         <div class="cycle-modal-card">
           <button class="cycle-modal-close" aria-label="Close">✕</button>
@@ -334,7 +335,7 @@
       </div>
 
       <!-- ═══ Character modal ═════════════════════════════════════════════════ -->
-      <div id="char-modal" aria-hidden="true" role="dialog" aria-label="Character detail">
+      <div id="char-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Character detail">
         <div class="char-modal-backdrop"></div>
         <div class="char-modal-card">
           <button id="char-modal-close" class="char-modal-close" aria-label="Close character panel">✕</button>
@@ -366,7 +367,7 @@
 
     </div>
     <!-- S10: Search palette -->
-    <div id="search-palette" aria-hidden="true" role="dialog" aria-label="Search">
+    <div id="search-palette" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Search">
       <div class="search-backdrop"></div>
       <div class="search-panel">
         <div class="search-input-row">

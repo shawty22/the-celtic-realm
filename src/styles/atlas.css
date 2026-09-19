@@ -2842,3 +2842,31 @@ button {
   background: rgba(180,130,60,0.18);
   color: #c8a96e;
 }
+
+/* ── A11y: Skip link & focus styles (S12) ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  background: #0d0a07;
+  color: #c8a96e;
+  padding: 8px 16px;
+  border: 1px solid rgba(200,168,75,0.4);
+  border-radius: 0 0 6px 6px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: top 0.1s;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #c8a96e;
+  outline-offset: 2px;
+}
+
+/* Visible focus ring for keyboard users */
+:focus-visible {
+  outline: 2px solid #c8a96e;
+  outline-offset: 2px;
+}
