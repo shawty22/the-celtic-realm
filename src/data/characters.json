@@ -3133,6 +3133,766 @@
       "sourceTrail": [
         "Gregory, Gods and Fighting Men"
       ]
+    },
+    {
+      "id": "aine",
+      "name": "Áine",
+      "nameAlternate": [
+        "Aine of Knockaine"
+      ],
+      "nameIrish": "Áine",
+      "pronunciation": "AWN-yeh",
+      "title": "Goddess of Summer, Love and Sovereignty",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "☀",
+      "palette": {
+        "glow": "#f0c040",
+        "deep": "#5a3a10"
+      },
+      "summary": "A sovereignty and solar goddess associated with Knockainey, Munster. She bestows the gifts of summer, cattle, and fertility.",
+      "plain": "Áine is one of the most beloved Irish goddesses, associated with the sun, midsummer, and the sovereignty of Munster. The Hill of Knockainey in Limerick bears her name. She was said to be daughter of Manannán mac Lír.",
+      "description": "Áine represents the life-giving power of the summer sun. As a sovereignty goddess she confers legitimacy on kings. Midsummer bonfires were lit in her honour at Knockainey. In later folklore she became a queen of the fairy mounds, beloved protector of cattle and crops.",
+      "imageFile": "aine.png",
+      "relatedStories": [
+        "book-of-invasions"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "manannan-mac-lir",
+        "lugh"
+      ],
+      "sourceTrail": {
+        "primary": "Various Munster tradition texts; Cath Maige Tuired",
+        "earliest": "Medieval Irish mythological texts c. 1100–1200 CE",
+        "oral": "Midsummer festival at Knockainey, Co. Limerick, attested in 19th-century folklore",
+        "confidence": "medium",
+        "notes": "Áine's traditions survived strongly in Munster folk practice."
+      }
+    },
+    {
+      "id": "amergin",
+      "name": "Amergin",
+      "nameAlternate": [
+        "Amergen",
+        "Amhairghín"
+      ],
+      "nameIrish": "Amhairghín",
+      "pronunciation": "AV-er-gin",
+      "title": "Druid-Poet and First Voice of Ireland",
+      "cycle": "mythological",
+      "type": "person",
+      "glyph": "ᚐ",
+      "palette": {
+        "glow": "#60a88a",
+        "deep": "#1a3828"
+      },
+      "summary": "The druid-bard of the Milesians who composed the first poem ever spoken on Irish soil as the Sons of Míl landed.",
+      "plain": "Amergin White-Knee was the chief poet and druid of the Milesian invaders. As their fleet approached Ireland the Tuatha Dé Danann raised a magical storm. Amergin calmed it by chanting a poem of primal identity — becoming the wind, the wave, and the land itself.",
+      "description": "Amergin's incantation — 'I am the wind upon the sea' — is one of the oldest texts in the Irish language and one of the most remarkable pieces of archaic European poetry. It asserts identity with all of creation, a shamanic or druidic technique of sympathetic magic. He arbitrated the contest between the Milesians and the Tuatha Dé Danann, allowing the gods to retire beneath the hills.",
+      "imageFile": "amergin.png",
+      "relatedStories": [
+        "book-of-invasions"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "cessair",
+        "partholon"
+      ],
+      "sourceTrail": {
+        "primary": "Lebor Gabála Érenn (Book of Invasions)",
+        "earliest": "Medieval recensions c. 1100 CE; poem possibly much older",
+        "oral": "Archaic bardic tradition preserving very early Indo-European themes",
+        "confidence": "high",
+        "notes": "The poem 'Cauldron of Poesy' and related texts suggest Amergin's song preserves genuinely ancient material."
+      }
+    },
+    {
+      "id": "badb",
+      "name": "Badb",
+      "nameAlternate": [
+        "Badb Catha",
+        "Badhhbh"
+      ],
+      "nameIrish": "Badhbh",
+      "pronunciation": "BIVE",
+      "title": "Crow Goddess of Battle and Prophecy",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "🐦",
+      "palette": {
+        "glow": "#8a4a6a",
+        "deep": "#2a1020"
+      },
+      "summary": "A war goddess who appears as a crow over battlefields, prophesying death. One of the three sisters of the Morrigan.",
+      "plain": "Badb takes the form of a crow or raven and haunts battlefields, driving warriors to frenzy or prophesying the outcome of battles. She is one of three sisters alongside the Morrigan and Macha.",
+      "description": "Badb — 'Crow' or 'Scald-crow' — embodies the chaos and terror of battle. Her cries over a field signal coming slaughter. She appears in the Ulster Cycle driving enemies mad. In Cath Maige Tuired she and her sisters prophesied doom for the Fomorians. The Washing of the Ford (caíning) motif — a crone washing bloodstained armour — is often attributed to her.",
+      "imageFile": "badb.png",
+      "relatedStories": [
+        "cath-maige-tuired",
+        "tain-bo-cuailnge"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "the-morrigan",
+        "macha",
+        "nemain"
+      ],
+      "sourceTrail": {
+        "primary": "Cath Maige Tuired; Táin Bó Cúailnge",
+        "earliest": "Lebor na hUidre (c. 1100 CE)",
+        "oral": "Battle-goddess worship attested across early Celtic cultures",
+        "confidence": "high",
+        "notes": "Badb, Macha and the Morrigan form a triple war-goddess complex."
+      }
+    },
+    {
+      "id": "boann",
+      "name": "Boann",
+      "nameAlternate": [
+        "Boand",
+        "Bóinn"
+      ],
+      "nameIrish": "Bóinn",
+      "pronunciation": "BOAN",
+      "title": "Goddess of the River Boyne",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "〜",
+      "palette": {
+        "glow": "#60b8d8",
+        "deep": "#1a3858"
+      },
+      "summary": "The goddess who gave her name to the River Boyne. Mother of Aonghus Óg by the Dagda.",
+      "plain": "Boann circled the sacred well of Segais against the rules and its waters burst forth to become the River Boyne, costing her an eye, an arm, and a leg. She is the mother of Aonghus Óg by the Dagda.",
+      "description": "Boann is a sovereignty and river goddess whose transgression of the sacred well is a creation myth for Ireland's great river. The Boyne valley — home to Newgrange (Brú na Bóinne) — is her landscape. Her union with the Dagda and the birth of Aonghus required the Dagda to stop the sun for nine months so the pregnancy seemed like a single night.",
+      "imageFile": "boann.png",
+      "relatedStories": [
+        "book-of-invasions",
+        "tochmarc-etaine"
+      ],
+      "relatedPlaces": [
+        "bru-na-boinne"
+      ],
+      "relatedCharacters": [
+        "dagda",
+        "aonghus-og",
+        "manannan-mac-lir"
+      ],
+      "sourceTrail": {
+        "primary": "Dindsenchas (place-lore poetry); Tochmarc Étaíne",
+        "earliest": "c. 1000–1100 CE manuscripts",
+        "oral": "River cult associated with the Boyne valley megalithic complex",
+        "confidence": "high",
+        "notes": "Brú na Bóinne (Newgrange) is explicitly linked to Boann, the Dagda, and Aonghus in medieval texts."
+      }
+    },
+    {
+      "id": "brigid",
+      "name": "Brigid",
+      "nameAlternate": [
+        "Bríde",
+        "Brig",
+        "St. Brigid"
+      ],
+      "nameIrish": "Brighid",
+      "pronunciation": "BREED",
+      "title": "Goddess of Healing, Poetry and Smithcraft",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "🔥",
+      "palette": {
+        "glow": "#f09040",
+        "deep": "#4a2010"
+      },
+      "summary": "Triple goddess of healing, poetry and the forge. Daughter of the Dagda, who gave her name to Imbolc and survives as Saint Brigid of Kildare.",
+      "plain": "Brigid is one of the most important and durable of Irish goddesses. She presides over three sacred crafts: the healing arts, bardic poetry, and the blacksmith's fire. She was euhemerised into the Christian Saint Brigid of Kildare.",
+      "description": "Brigid's fire was kept eternally burning at Kildare in both the pagan and Christian periods — an unbroken sacred flame tended by nineteen priestesses or nuns on rotation. As goddess she embodies creative heat in all its forms: the warmth that heals, the fire that inspires, and the flame that transforms metal. Imbolc (1 February) is her feast, the first breath of spring.",
+      "imageFile": "brigid.png",
+      "relatedStories": [
+        "cath-maige-tuired"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "dagda",
+        "ogma",
+        "goibniu"
+      ],
+      "sourceTrail": {
+        "primary": "Cath Maige Tuired; various medieval glossaries",
+        "earliest": "Earliest recorded c. 700–900 CE; Kildare fire attested 7th century",
+        "oral": "One of the most continuously venerated figures in Irish tradition",
+        "confidence": "high",
+        "notes": "The identification of the goddess Brigid with Saint Brigid of Kildare is deliberate and ancient."
+      }
+    },
+    {
+      "id": "cessair",
+      "name": "Cessair",
+      "nameAlternate": [
+        "Cesair",
+        "Kessair"
+      ],
+      "nameIrish": "Cesair",
+      "pronunciation": "KESS-ir",
+      "title": "First Settler of Ireland",
+      "cycle": "mythological",
+      "type": "person",
+      "glyph": "⛵",
+      "palette": {
+        "glow": "#a08060",
+        "deep": "#3a2810"
+      },
+      "summary": "Granddaughter of Noah, she led the first migration to Ireland forty days before the Flood.",
+      "plain": "Cessair led a company of fifty women and three men to Ireland before the Biblical Flood. When the Flood came, she and all her people perished — except the immortal Fintan mac Bóchra, who survived by shapeshifting.",
+      "description": "Cessair represents the Lebor Gabála's attempt to reconcile Irish origin myths with Biblical chronology. As Noah's granddaughter she is given a respectable genealogy while remaining part of the mythological settlement tradition. Her fifty women and three men create a primordial, utopian image of early Ireland. Fintan's survival and his millennia-long witness to Irish history makes him the ultimate authority figure in medieval Irish learning.",
+      "imageFile": "cessair.png",
+      "relatedStories": [
+        "book-of-invasions"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "partholon",
+        "amergin"
+      ],
+      "sourceTrail": {
+        "primary": "Lebor Gabála Érenn (Book of Invasions)",
+        "earliest": "c. 1000–1100 CE",
+        "oral": "May preserve older pre-Christian settlement tradition adapted to Biblical framework",
+        "confidence": "medium",
+        "notes": "The Cessair narrative is unique to Irish tradition and blends Biblical and native mythological elements."
+      }
+    },
+    {
+      "id": "cethlenn",
+      "name": "Cethlenn",
+      "nameAlternate": [
+        "Caitlín",
+        "Cethleann"
+      ],
+      "nameIrish": "Ceithlinn",
+      "pronunciation": "KEH-hlin",
+      "title": "Fomorian Queen and Prophetess",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "⚡",
+      "palette": {
+        "glow": "#9060a0",
+        "deep": "#30183a"
+      },
+      "summary": "Wife of Balor and a Fomorian prophetess. Her spear-cast at the Dagda wounded him mortally during the Second Battle of Mag Tuired.",
+      "plain": "Cethlenn prophesied the ruin of the Tuatha Dé Danann at the Second Battle of Mag Tuired. She fought in the battle herself, wounding the Dagda with a spear-cast. Enniskillen (Inis Cethlenn) in Fermanagh is named for her.",
+      "description": "Cethlenn is one of the few female Fomorians given individual character in the myths. As wife of Balor she shares his dark sovereignty over the sea and the powers of chaos. Her prophecy and her own participation in battle mark her as a figure of genuine power, not merely a consort. The town of Enniskillen preserves her name across more than a thousand years.",
+      "imageFile": "cethlenn.png",
+      "relatedStories": [
+        "cath-maige-tuired-second"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "balor",
+        "dagda",
+        "lugh"
+      ],
+      "sourceTrail": {
+        "primary": "Cath Maige Tuired (Second Battle of Mag Tuired)",
+        "earliest": "c. 1100–1200 CE",
+        "oral": "Enniskillen place-name tradition",
+        "confidence": "medium",
+        "notes": "Inis Cethlenn = Enniskillen, Co. Fermanagh."
+      }
+    },
+    {
+      "id": "cichol",
+      "name": "Cíocal",
+      "nameAlternate": [
+        "Cichol Gricenchos"
+      ],
+      "nameIrish": "Cíocal",
+      "pronunciation": "KHEE-kol",
+      "title": "First Fomorian Leader",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "👁",
+      "palette": {
+        "glow": "#6070a0",
+        "deep": "#18203a"
+      },
+      "summary": "The primordial Fomorian leader who opposed the Partholónians in the first battle on Irish soil.",
+      "plain": "Cíocal led the Fomorians against Partholón's people in the first recorded battle of Ireland. The Fomorians represent the dark, chaotic forces of the earth and sea that predate the ordered gods.",
+      "description": "Cíocal Gricenchos — the name may mean 'without cattle or food' — represents the Fomorians at their most elemental: forces of primordial darkness and disorder. The battle against Partholón is the first military conflict in Irish mythological history, setting the pattern of Fomorian resistance to every new wave of settlers.",
+      "imageFile": "cichol.png",
+      "relatedStories": [
+        "book-of-invasions"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "partholon",
+        "balor",
+        "tethra"
+      ],
+      "sourceTrail": {
+        "primary": "Lebor Gabála Érenn",
+        "earliest": "c. 1000–1100 CE",
+        "oral": "Fomorian traditions likely pre-Christian",
+        "confidence": "low",
+        "notes": "Cíocal is among the most obscure Fomorian figures; only the battle is attested."
+      }
+    },
+    {
+      "id": "cliodhna",
+      "name": "Clíodhna",
+      "nameAlternate": [
+        "Cliona",
+        "Clídna"
+      ],
+      "nameIrish": "Clíodhna",
+      "pronunciation": "KLEE-na",
+      "title": "Queen of the Munster Banshees",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "🌊",
+      "palette": {
+        "glow": "#40a8c0",
+        "deep": "#103848"
+      },
+      "summary": "A sea goddess and fairy queen of Munster, associated with three magical birds and a wave at Glandore Harbour.",
+      "plain": "Clíodhna was a goddess of beauty who fled the Land of Promise with a mortal lover. She was swept away by a great wave while sleeping on the shore. The tidal wave of Clíodhna at Glandore, Co. Cork, is named for her.",
+      "description": "Clíodhna is counted among the most beautiful of all divine women. Her three magical birds sang the sick into healing sleep. Her story — love for a mortal, flight from the Otherworld, and death by sea — is an archetype of the tragic fairy mistress. The wave at Glandore (tonn Clíodhna) is one of the three great waves of Ireland.",
+      "imageFile": "cliodhna.png",
+      "relatedStories": [],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "manannan-mac-lir"
+      ],
+      "sourceTrail": {
+        "primary": "Dindsenchas; Munster tradition",
+        "earliest": "c. 900–1100 CE",
+        "oral": "Glandore wave tradition, Co. Cork",
+        "confidence": "medium",
+        "notes": "One of the three mystical waves of Ireland: Tonn Tuile, Tonn Rudraithe, and Tonn Clíodhna."
+      }
+    },
+    {
+      "id": "credne",
+      "name": "Crédne",
+      "nameAlternate": [
+        "Credne",
+        "Creidhne"
+      ],
+      "nameIrish": "Creidne",
+      "pronunciation": "KRAY-nyeh",
+      "title": "Divine Metalsmith of the Tuatha Dé Danann",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "⚒",
+      "palette": {
+        "glow": "#d0a040",
+        "deep": "#4a3010"
+      },
+      "summary": "The divine goldsmith and bronzesmith of the Tuatha Dé Danann, who crafted the weapons and ornaments of the gods.",
+      "plain": "Crédne worked alongside Goibniu the smith and Luchta the wright as one of the three divine craftsmen. He fashioned the silver arm for Nuada and forged the rivets for the gods' weapons at the Second Battle of Mag Tuired.",
+      "description": "Crédne Cerd ('Crédne the Craftsman') is the divine metalworker who provides the ornamental and golden work of the gods while Goibniu works iron. His craft is inseparable from Nuada's silver arm — without it, Nuada could not regain his kingship. The triad of Goibniu, Crédne, and Luchta represents the complete spectrum of divine craft.",
+      "imageFile": "credne.png",
+      "relatedStories": [
+        "cath-maige-tuired-second"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "goibniu",
+        "nuada",
+        "dian-cecht",
+        "lugh"
+      ],
+      "sourceTrail": {
+        "primary": "Cath Maige Tuired",
+        "earliest": "c. 1100–1200 CE",
+        "oral": "Divine craftsman tradition common across early Celtic cultures",
+        "confidence": "high",
+        "notes": "The Trí Dé Dána — Goibniu, Crédne and Luchta — are the three divine craftsmen of the Tuatha Dé Danann."
+      }
+    },
+    {
+      "id": "donn",
+      "name": "Donn",
+      "nameAlternate": [
+        "The Dark One",
+        "Donn Fírinne"
+      ],
+      "nameIrish": "Donn",
+      "pronunciation": "DUN",
+      "title": "Lord of the Dead",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "☽",
+      "palette": {
+        "glow": "#7060a0",
+        "deep": "#201830"
+      },
+      "summary": "The god of the dead and the ancestor of the Irish. The dead were said to gather at his house on Bull Rock off the Kerry coast.",
+      "plain": "Donn is the oldest son of Míl Espáine, leader of the Milesian invasion. He drowned before reaching Ireland and his spirit became lord of the dead at Tech Duinn — his house on a rock off the Kerry coast.",
+      "description": "Donn is a liminal figure — the ancestor who never quite arrived, who stands at the threshold between the living world and what lies beyond. Tech Duinn, his island home, is one of Ireland's primary Otherworld entrances. The dead were said to call at his house before going on. His name simply means 'dark' or 'brown,' suggesting he may be very ancient — a chthonic deity older than the mythological cycle.",
+      "imageFile": "donn.png",
+      "relatedStories": [
+        "book-of-invasions"
+      ],
+      "relatedPlaces": [
+        "tech-duinn"
+      ],
+      "relatedCharacters": [
+        "amergin",
+        "cessair"
+      ],
+      "sourceTrail": {
+        "primary": "Lebor Gabála Érenn; Dindsenchas",
+        "earliest": "c. 900–1100 CE",
+        "oral": "Bull Rock (Tech Duinn) cult, Co. Kerry — possibly very ancient",
+        "confidence": "medium",
+        "notes": "Donn may be one of the oldest attested Irish deity names, cognate with the Gaulish Dis Pater."
+      }
+    },
+    {
+      "id": "elatha",
+      "name": "Elatha",
+      "nameAlternate": [
+        "Elada",
+        "Elathan"
+      ],
+      "nameIrish": "Elatha",
+      "pronunciation": "EL-a-ha",
+      "title": "Fomorian Prince and Father of Bres",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "🌊",
+      "palette": {
+        "glow": "#8090b0",
+        "deep": "#202838"
+      },
+      "summary": "A beautiful Fomorian prince who fathered Bres with the goddess Ériu. One of the most noble Fomorian figures.",
+      "plain": "Elatha came to Ériu by night across a silver-bright sea, gleaming like the sun, with golden hair. Their union produced Bres, who would briefly reign as king of the Tuatha Dé Danann.",
+      "description": "Elatha's appearance in the myths is striking — he is described as the most beautiful of the Fomorians, almost indistinguishable from a god of light. His encounter with Ériu is a sacred marriage motif. When Bres is overthrown and goes to seek help from his Fomorian father, Elatha responds with dignity and sadness. He is one of the most complex Fomorian figures: darkly noble, morally nuanced.",
+      "imageFile": "elatha.png",
+      "relatedStories": [
+        "cath-maige-tuired",
+        "cath-maige-tuired-second"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "bres",
+        "balor",
+        "lugh"
+      ],
+      "sourceTrail": {
+        "primary": "Cath Maige Tuired",
+        "earliest": "c. 1100–1200 CE",
+        "oral": "Fomorian kingship tradition",
+        "confidence": "high",
+        "notes": "Elatha's beauty is one of the clearest signs that the Fomorians are not simply evil in Irish myth."
+      }
+    },
+    {
+      "id": "eochaid-mac-eirc",
+      "name": "Eochaid mac Éirc",
+      "nameAlternate": [
+        "Eochaid Feidhlech"
+      ],
+      "nameIrish": "Eochaid mac Éirc",
+      "pronunciation": "YO-khee mak ERK",
+      "title": "High King of the Fir Bolg",
+      "cycle": "mythological",
+      "type": "person",
+      "glyph": "⚔",
+      "palette": {
+        "glow": "#a08060",
+        "deep": "#3a2810"
+      },
+      "summary": "The last High King of the Fir Bolg, slain at the First Battle of Mag Tuired against the Tuatha Dé Danann.",
+      "plain": "Eochaid mac Éirc ruled Ireland as High King of the Fir Bolg when the Tuatha Dé Danann arrived. He died at the First Battle of Mag Tuired when his water supply was cut off during battle.",
+      "description": "Eochaid mac Éirc is the noble opponent whose death marks the end of the Fir Bolg era. His exchanges with Nuada over the terms of battle show a code of honour respected by both peoples. He is no villain — his defeat is the tragic consequence of his people's moment in history ending.",
+      "imageFile": "eochaid-mac-eirc.png",
+      "relatedStories": [
+        "cath-maige-tuired"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "nuada",
+        "sreng",
+        "dagda"
+      ],
+      "sourceTrail": {
+        "primary": "Cath Maige Tuired (First Battle)",
+        "earliest": "c. 1100–1200 CE",
+        "oral": "Fir Bolg tradition",
+        "confidence": "medium",
+        "notes": "The pre-battle negotiation between Eochaid and Nuada is one of the earliest examples of chivalric exchange in Irish literature."
+      }
+    },
+    {
+      "id": "macha",
+      "name": "Macha",
+      "nameAlternate": [
+        "Macha Mongruad",
+        "Macha wife of Nemed"
+      ],
+      "nameIrish": "Macha",
+      "pronunciation": "MAH-kha",
+      "title": "Goddess of Sovereignty, War and the Land",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "🐴",
+      "palette": {
+        "glow": "#c06050",
+        "deep": "#402018"
+      },
+      "summary": "A triple goddess: warrior, queen and sovereign. She founded Emain Macha and cursed the men of Ulster to suffer birth-pangs in their hour of need.",
+      "plain": "Three women named Macha appear in Irish myth: a goddess wife of Nemed; a queen who founded Emain Macha; and the woman who, forced to race the king's horses while heavily pregnant, cursed the men of Ulster with labour pains for nine generations.",
+      "description": "Macha embodies the indivisibility of sovereignty and the land. Her curse on Ulster — that men would suffer the pangs of childbirth in their greatest need — comes directly from her violation and humiliation. It is one of the most powerful oaths in Irish mythology and drives the entire plot of the Ulster Cycle by removing Ulster's warriors at the moment Medb invades. Her name is embedded in the landscape: Emain Macha, Ard Macha (Armagh).",
+      "imageFile": "macha.png",
+      "relatedStories": [
+        "tain-bo-cuailnge",
+        "cath-maige-tuired"
+      ],
+      "relatedPlaces": [
+        "emain-macha"
+      ],
+      "relatedCharacters": [
+        "the-morrigan",
+        "badb",
+        "nemain",
+        "conchobar"
+      ],
+      "sourceTrail": {
+        "primary": "Táin Bó Cúailnge; Noínden Ulad (The Debility of the Ulstermen)",
+        "earliest": "Lebor na hUidre (c. 1100 CE)",
+        "oral": "Sovereignty goddess tradition; Armagh place-name",
+        "confidence": "high",
+        "notes": "Armagh (Ard Macha, 'Macha's Height') preserves her name to this day."
+      }
+    },
+    {
+      "id": "nemain",
+      "name": "Nemain",
+      "nameAlternate": [
+        "Nemon",
+        "Neamhain"
+      ],
+      "nameIrish": "Neamhain",
+      "pronunciation": "NEV-in",
+      "title": "Goddess of Battle Frenzy",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "⚡",
+      "palette": {
+        "glow": "#a04860",
+        "deep": "#381828"
+      },
+      "summary": "A battle goddess who drives warriors to frenzy and panic. One of the three sisters of the war-goddess complex alongside Badb and Macha.",
+      "plain": "Nemain — 'frenzy' or 'panic' — personifies the chaos of battle at its height. She shrieks over battlefields and her war-cry alone could kill men with fear.",
+      "description": "Nemain is the most purely destructive aspect of the Irish triple war goddess. Where the Morrigan is strategic and Badb is prophetic, Nemain is the wild chaos of the killing ground itself. In the Táin, her screech over the armies causes warriors to fall dead of terror. She and Badb together sometimes function as a pair rather than part of the larger triple.",
+      "imageFile": "nemain.png",
+      "relatedStories": [
+        "cath-maige-tuired",
+        "tain-bo-cuailnge"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "the-morrigan",
+        "badb",
+        "macha"
+      ],
+      "sourceTrail": {
+        "primary": "Cath Maige Tuired; Táin Bó Cúailnge",
+        "earliest": "c. 1100 CE",
+        "oral": "Battle goddess tradition",
+        "confidence": "medium",
+        "notes": "Nemain is sometimes described as wife of Neit, a god of battle."
+      }
+    },
+    {
+      "id": "ogma",
+      "name": "Ogma",
+      "nameAlternate": [
+        "Ogmios",
+        "Ogham"
+      ],
+      "nameIrish": "Ogma",
+      "pronunciation": "OG-ma",
+      "title": "God of Eloquence, Strength and the Written Word",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "ᚑ",
+      "palette": {
+        "glow": "#90a870",
+        "deep": "#283818"
+      },
+      "summary": "The champion of the Tuatha Dé Danann and inventor of the Ogham script. A god of eloquence, strength and learning.",
+      "plain": "Ogma was the champion warrior of the Tuatha Dé Danann and the inventor of Ogham — the earliest form of writing in Ireland. He embodies the dual ideal of physical strength and intellectual power.",
+      "description": "Ogma Sun-Face (Grian-ainech) is the warrior-poet divine, the man who proves that eloquence and martial excellence are not opposites but one power. The Gaulish Ogmios was depicted as an elderly Hercules leading willing listeners by chains of gold from his tongue to their ears — persuasion as power. Ogma's invention of Ogham represents the moment writing enters Irish civilisation, which Irish tradition dates to before the Christian missions.",
+      "imageFile": "ogma.png",
+      "relatedStories": [
+        "cath-maige-tuired",
+        "cath-maige-tuired-second"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "dagda",
+        "lugh",
+        "brigid"
+      ],
+      "sourceTrail": {
+        "primary": "Cath Maige Tuired",
+        "earliest": "c. 1100–1200 CE",
+        "oral": "Ogham script tradition — oldest Irish writing system, c. 300–600 CE inscriptions",
+        "confidence": "high",
+        "notes": "Ogma cognates with the Gaulish Ogmios described by Lucian c. 160 CE — one of the clearest pan-Celtic deity identifications."
+      }
+    },
+    {
+      "id": "partholon",
+      "name": "Partholón",
+      "nameAlternate": [
+        "Partholon",
+        "Partholan"
+      ],
+      "nameIrish": "Partholón",
+      "pronunciation": "PAR-ho-lone",
+      "title": "Leader of the Second Settlement of Ireland",
+      "cycle": "mythological",
+      "type": "person",
+      "glyph": "⛵",
+      "palette": {
+        "glow": "#80a060",
+        "deep": "#283818"
+      },
+      "summary": "Leader of the second group of settlers, who cleared the plains of Ireland and introduced agriculture, trade and hospitality.",
+      "plain": "Partholón led his people from Greece to Ireland and began the work of civilisation: clearing forests to create plains, introducing cattle, building the first guest-house, and brewing ale. His people were eventually wiped out by plague.",
+      "description": "Partholón represents the second wave of mythological settlement and the introduction of civilised arts. He cleared four plains, established the first trading contracts, and built the first guesthouse — the foundation of the Irish concept of hospitality (flaithiúlacht). The destruction of his people by plague on the Ben Eadair plain in a single week is a haunting, apocalyptic episode.",
+      "imageFile": "partholon.png",
+      "relatedStories": [
+        "book-of-invasions"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "cessair",
+        "amergin",
+        "cichol"
+      ],
+      "sourceTrail": {
+        "primary": "Lebor Gabála Érenn",
+        "earliest": "c. 1000–1100 CE",
+        "oral": "Settlement tradition",
+        "confidence": "medium",
+        "notes": "Partholón's name may derive from Bartholomew (Bartholomaios), reflecting later Biblical harmonisation."
+      }
+    },
+    {
+      "id": "scota",
+      "name": "Scota",
+      "nameAlternate": [
+        "Scotta"
+      ],
+      "nameIrish": "Scota",
+      "pronunciation": "SKO-ta",
+      "title": "Mythical Ancestress of the Gaelic Peoples",
+      "cycle": "mythological",
+      "type": "person",
+      "glyph": "👑",
+      "palette": {
+        "glow": "#9070b0",
+        "deep": "#302040"
+      },
+      "summary": "An Egyptian princess, daughter of Pharaoh, and mythical ancestress of the Gaels. Two women named Scota appear in the Book of Invasions.",
+      "plain": "Scota — whose name means 'Irishwoman' — is a legendary Egyptian princess married to the Milesian ancestor. The Irish origin legend connects the Gaelic peoples to Egypt via Moses and Pharaoh, legitimising their antiquity.",
+      "description": "Scota's story is the Lebor Gabála's most ambitious piece of mythological geography: connecting the Gaels to the Egyptian pharaonic tradition. Two Scota figures appear — one wife of Nél and mother of Gaedheal Glas, and another wife of Míl Espáine who died fighting the Tuatha Dé Danann. Her grave (Feart na Scota) near Tralee in Kerry is still identified in folklore.",
+      "imageFile": "scota.png",
+      "relatedStories": [
+        "book-of-invasions"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "amergin",
+        "cessair"
+      ],
+      "sourceTrail": {
+        "primary": "Lebor Gabála Érenn",
+        "earliest": "c. 1000–1100 CE",
+        "oral": "Feart na Scota, near Tralee, Co. Kerry",
+        "confidence": "low",
+        "notes": "The Egyptian connection is a learned medieval invention intended to give the Irish a classically respectable origin."
+      }
+    },
+    {
+      "id": "sreng",
+      "name": "Sreng",
+      "nameAlternate": [
+        "Sreng mac Sengainn"
+      ],
+      "nameIrish": "Sreang",
+      "pronunciation": "SRANG",
+      "title": "Champion of the Fir Bolg",
+      "cycle": "mythological",
+      "type": "person",
+      "glyph": "⚔",
+      "palette": {
+        "glow": "#a07840",
+        "deep": "#382810"
+      },
+      "summary": "The greatest warrior of the Fir Bolg, who severed Nuada's arm at the First Battle of Mag Tuired.",
+      "plain": "Sreng and Nuada met before the battle as envoys, and each admired the other's weapons. In the battle itself, Sreng's terrible spear-cast severed Nuada's arm, forcing the king's abdication. In recognition of his prowess, Connacht was given to his people.",
+      "description": "Sreng is the Fir Bolg's finest warrior — a figure of genuine honour and terrible skill. His exchange with Nuada before the battle is a scene of mutual respect between enemies. His victory over the king — an act that paradoxically changes Irish history — is not a villain's triumph but a champion's. The settlement granting Connacht to the Fir Bolg means their legacy endures in the shape of Ireland's provinces.",
+      "imageFile": "sreng.png",
+      "relatedStories": [
+        "cath-maige-tuired"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "nuada",
+        "eochaid-mac-eirc",
+        "dagda"
+      ],
+      "sourceTrail": {
+        "primary": "Cath Maige Tuired (First Battle)",
+        "earliest": "c. 1100–1200 CE",
+        "oral": "Fir Bolg tradition; Connacht provincial tradition",
+        "confidence": "medium",
+        "notes": "Sreng's spear-cast creates the conditions for the entire succeeding mythology — Bres's tyranny, the second battle, Lugh's rise."
+      }
+    },
+    {
+      "id": "tethra",
+      "name": "Tethra",
+      "nameAlternate": [
+        "Tethrae"
+      ],
+      "nameIrish": "Tethra",
+      "pronunciation": "TEH-ra",
+      "title": "Fomorian King and Ruler of the Otherworld",
+      "cycle": "mythological",
+      "type": "deity",
+      "glyph": "🌊",
+      "palette": {
+        "glow": "#506080",
+        "deep": "#182030"
+      },
+      "summary": "A Fomorian king slain at the Second Battle of Mag Tuired, whose sword Orna spoke of its deeds and whose realm became an Otherworld domain.",
+      "plain": "Tethra ruled the Fomorians as one of their kings. He was slain by Ogma at the Second Battle of Mag Tuired. Ogma took his sword Orna, which recited all the deeds it had performed — one of the few speaking weapons in Irish mythology.",
+      "description": "Tethra combines two roles: he is a warrior-king of the chaos forces, and after death his name becomes synonymous with a region of the Otherworld — 'Mag Tethra', the plain of Tethra. His speaking sword Orna belongs to the tradition of magical weapons with consciousness. In death as in life, Tethra bridges the seen and unseen worlds.",
+      "imageFile": "tethra.png",
+      "relatedStories": [
+        "cath-maige-tuired-second"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "balor",
+        "ogma",
+        "cichol"
+      ],
+      "sourceTrail": {
+        "primary": "Cath Maige Tuired",
+        "earliest": "c. 1100–1200 CE",
+        "oral": "Fomorian tradition",
+        "confidence": "medium",
+        "notes": "Tethra's sword Orna is one of the Four Treasures parallel traditions — weapons with voices."
+      }
     }
   ]
 }
