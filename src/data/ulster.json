@@ -482,5 +482,37 @@
     ],
     "confidence": "high",
     "notes": "Positioned midway along the army's march route (Co. Westmeath/Longford area). The text is the foundational document of the Ulster Cycle."
+  },
+  {
+    "id": "muirthemne",
+    "name": "Muirthemne Plain",
+    "nameIrish": "Mag Muirthemne",
+    "layer": "ulster",
+    "cycle": "ulster",
+    "type": "location",
+    "lat": 54.0,
+    "lng": -6.4,
+    "county": "Louth",
+    "province": "Leinster",
+    "era": "Iron Age (mythological)",
+    "shortSummary": "The homeland of Cú Chulainn, between the Cooley Mountains and the Boyne. Scene of his training, battles, and death.",
+    "explanation": "Mag Muirthemne (the Plain of Muirthemne) was the territory around modern Co. Louth where Cú Chulainn grew up at Emain Macha's southern edge. It was here that many of the events of the Ulster Cycle took place, and it was here that Cú Chulainn died, tied to a pillar stone on the plain.",
+    "associatedFigures": [
+      "cu-chulainn",
+      "laeg"
+    ],
+    "associatedStories": [
+      "aided-con-culainn"
+    ],
+    "relatedLocations": [
+      "emain-macha",
+      "ben-bulben"
+    ],
+    "imageFile": "",
+    "sources": [
+      "Gregory, Gods and Fighting Men"
+    ],
+    "confidence": 0.85,
+    "notes": "General location approximation; the plain spans modern south Co. Louth."
   }
 ]

@@ -3104,6 +3104,35 @@
         "confidence": "high",
         "notes": "The Slieve Bloom mountains (Sliabh Bladhma, Co. Offaly/Laois) are explicitly named as the location of Fionn's upbringing in several versions."
       }
+    },
+    {
+      "id": "laeg",
+      "name": "Láeg mac Riangabra",
+      "nameAlternate": "Laeg",
+      "nameIrish": "Láeg mac Riangabra",
+      "pronunciation": "LAYG mak REEN-yah-vra",
+      "title": "Charioteer of Cú Chulainn",
+      "cycle": "ulster",
+      "type": "hero",
+      "glyph": "🐎",
+      "side": "ulster",
+      "palette": {
+        "glow": "#c8703a"
+      },
+      "summary": "The faithful charioteer of Cú Chulainn, Láeg was more than a driver — he was a companion, confidant, and spiritual guide who followed his lord even to the Otherworld.",
+      "plain": "Láeg drove Cú Chulainn's chariot in every great battle and helped him prepare for combat. When Cú Chulainn died at the pillar stone, Láeg was by his side.",
+      "description": "",
+      "imageFile": "",
+      "relatedStories": [
+        "aided-con-culainn"
+      ],
+      "relatedPlaces": [],
+      "relatedCharacters": [
+        "cu-chulainn"
+      ],
+      "sourceTrail": [
+        "Gregory, Gods and Fighting Men"
+      ]
     }
   ]
 }
