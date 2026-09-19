@@ -1963,5 +1963,150 @@
         "zoom": 9
       }
     ]
+  },
+  {
+    "id": "book-of-invasions",
+    "title": "Lebor Gabála Érenn",
+    "titleSub": "The Book of the Taking of Ireland",
+    "cycle": "mythological",
+    "cycleLabel": "Mythological Cycle",
+    "hook": "Six waves of settlers — gods, monsters, and mortals — each claiming Ireland from those who came before.",
+    "source": "Lebor Gabála Érenn — compiled c. 11th century from older texts",
+    "imageFile": "book-of-invasions.png",
+    "description": "The Book of Invasions is Ireland's mythological origin story — a medieval attempt to reconcile pagan cosmology with Christian history. It traces six successive waves of settlers: the doomed people of Cessair before the Flood; Partholón's colony, wiped out by plague; the Nemedians, defeated by Fomorian oppression; the Fir Bolg, who divided and named the provinces of Ireland; the Tuatha Dé Danann, the divine race who would become the gods; and finally the Gaels (Milesians), the ancestors of the historical Irish. The text is a unique document — part theology, part genealogy, part epic — that sought to make Ireland's mythological past legible within a Christian framework while preserving the older tradition.",
+    "sourceTrail": {
+      "primary": "Lebor Gabála Érenn (The Book of the Taking of Ireland)",
+      "earliest": "Compiled c. 1050 CE from earlier texts, preserved in multiple recensions",
+      "oral": "Synthesises older mythological and pseudo-historical traditions; shaped by monastic scribes",
+      "confidence": "high",
+      "notes": "The main compilation is found in the Book of Leinster and several other manuscripts. R. A. S. Macalister's edition (Irish Texts Society, 1938–1956) is the standard reference."
+    },
+    "icon": "◈",
+    "cast": [],
+    "beats": []
+  },
+  {
+    "id": "cath-maige-tuired-second",
+    "title": "Cath Maige Tuired",
+    "titleSub": "The Second Battle of Moytura",
+    "cycle": "mythological",
+    "cycleLabel": "Mythological Cycle",
+    "hook": "The gods of Ireland stand against an ancient darkness — and a young king must prove himself worthy.",
+    "source": "Cath Maige Tuired — preserved in 16th-century manuscript from earlier sources",
+    "imageFile": "cath-maige-tuired-second.png",
+    "description": "The Second Battle of Moytura is one of the great mythological texts of early Ireland. The Tuatha Dé Danann, led by the ill-fated Nuada and then the young Lugh, face the Fomorians — ancient forces of darkness and oppression led by Balor of the Evil Eye. The story turns on Lugh's arrival at Tara: a young man who proves his worth by being master of every art. The battle itself is a set-piece of divine warfare, with each craftsman god using their skill as a weapon. It ends with Lugh slaying his own grandfather Balor with a sling-stone through the eye that had been destroying armies. The text is remarkable for its poetry, its theology of skill, and its meditation on what makes a king — or a god — worthy.",
+    "sourceTrail": {
+      "primary": "Cath Maige Tuired (The Battle of Mag Tuired)",
+      "earliest": "Harleian MS 5280, c. 1583 CE; drawing on texts from c. 9th–10th century",
+      "oral": "Core of the Mythological Cycle; central text of the Tuatha Dé Danann tradition",
+      "confidence": "high",
+      "notes": "Elizabeth Gray's 1982 edition (Irish Texts Society) is the standard reference. The First Battle of Moytura (Cath Maige Tuired Cunga) is a separate, later text."
+    },
+    "icon": "◈",
+    "cast": [
+      { "characterId": "nuada", "role": "The dispossessed king — loses his arm and his throne in the first battle" },
+      { "characterId": "lugh", "role": "The young champion — arrives at Tara as master of all arts, leads the gods to victory" },
+      { "characterId": "dagda", "role": "Father of the Gods — his cauldron feeds the army; his union with the Morrigan before battle" },
+      { "characterId": "balor", "role": "The Fomorian king — his evil eye destroys armies; slain by his own grandson" }
+    ],
+    "beats": []
+  },
+  {
+    "id": "death-of-connla",
+    "title": "Aided Aenfir Aífe",
+    "titleSub": "The Death of Aife's Only Son",
+    "cycle": "ulster",
+    "cycleLabel": "Ulster Cycle",
+    "hook": "A warrior's son comes searching for his father — and neither can turn back from what follows.",
+    "source": "Aided Aenfir Aífe — preserved in several medieval manuscripts",
+    "imageFile": "death-of-connla.png",
+    "description": "One of the most tragic stories in Irish mythology. When Cú Chulainn trained with the warrior-woman Aife in Scotland, he left her with a son he never knew — Connla. Years later, a boy arrives at the Ulster shore wearing a ring and refusing to give his name to any man. By the warrior code, Cú Chulainn must fight him. Both know, at the end, who they were to each other. The story is a meditation on the laws of heroic culture and what they cost — a system of honour that cannot bend, even when it destroys what it should protect. It has echoes throughout world literature (Sohrab and Rustam, Hildebrandslied) but the Irish version is perhaps the most emotionally direct.",
+    "sourceTrail": {
+      "primary": "Aided Aenfir Aífe (The Death of Aife's Only Son)",
+      "earliest": "Several manuscript versions; key text in the Book of Leinster",
+      "oral": "Part of the Ulster Cycle; closely linked to the Cú Chulainn story cycle",
+      "confidence": "high",
+      "notes": "One of the canonical 'Death Tales' (Aided) of the Ulster Cycle."
+    },
+    "icon": "⚔",
+    "cast": [
+      { "characterId": "cu-chulainn", "role": "The father who cannot know his son — bound by the warrior code to fight" },
+      { "characterId": "aoife-warrior", "role": "The mother — trained Connla in full knowledge of what would happen" }
+    ],
+    "beats": []
+  },
+  {
+    "id": "fled-duin-na-ngead",
+    "title": "Fled Dúin na nGéd",
+    "titleSub": "The Feast of the Fort of Geese",
+    "cycle": "ulster",
+    "cycleLabel": "Ulster Cycle",
+    "hook": "A king holds a great feast — and the guests bring old debts and new treacheries.",
+    "source": "Fled Dúin na nGéd — 9th–10th century composition",
+    "imageFile": "fled-duin-na-ngead.png",
+    "description": "A feast-tale in the Ulster tradition, Fled Dúin na nGéd centres on Domhnall mac Áedo, High King of Ireland, and a disastrous gathering that becomes the seed of the Battle of Magh Rath. The story turns on the complex obligations of Irish feast culture — who may enter, who is honoured, what a slight means between kings. Conall Cernach and the warriors of Ulster play key roles. The text is notable for its combination of political realism and mythological elements, and for its role in the longer narrative cycle leading to the great 7th-century battle at Magh Rath (637 CE).",
+    "sourceTrail": {
+      "primary": "Fled Dúin na nGéd (The Feast of the Fort of Geese)",
+      "earliest": "Composed c. 9th–10th century; preserved in later manuscripts",
+      "oral": "Part of the Ulster Cycle feast-tale tradition",
+      "confidence": "medium",
+      "notes": "Edited by Myles Dillon (Medieval and Modern Irish Series, 1946)."
+    },
+    "icon": "◈",
+    "cast": [
+      { "characterId": "conall-cernach", "role": "The Ulster champion at the feast" }
+    ],
+    "beats": []
+  },
+  {
+    "id": "sickbed-cu-chulainn",
+    "title": "Serglige Con Culainn",
+    "titleSub": "The Sick-Bed of Cú Chulainn",
+    "cycle": "ulster",
+    "cycleLabel": "Ulster Cycle",
+    "hook": "A vision of two women beats the hero into a year-long sleep — and draws him into the Otherworld.",
+    "source": "Serglige Con Culainn — preserved in the Book of the Dun Cow (c. 1100 CE)",
+    "imageFile": "sickbed-cu-chulainn.png",
+    "description": "One of the most dream-like texts in Irish mythology. At Samhain, Cú Chulainn sees two women in supernatural garments who beat him unconscious. He falls into a year-long sleep, visited by visions of the Otherworld and the love of Fand, wife of Manannán mac Lir. He enters the Síde — the fairy mounds — to fight as a champion in Otherworld conflicts and wins Fand's love. The complications multiply: Emer, his wife, arrives with fifty women armed with knives. Eventually Manannán shakes his cloak between Fand and Cú Chulainn so they can never meet again, and the druids give Cú Chulainn a drink of forgetfulness. The text is remarkable for its handling of desire, loyalty, and the porous boundary between the mortal and immortal worlds.",
+    "sourceTrail": {
+      "primary": "Serglige Con Culainn (The Wasting Sickness of Cú Chulainn)",
+      "earliest": "Book of the Dun Cow (Lebor na hUidre), c. 1100 CE",
+      "oral": "Part of the Ulster Cycle; linked to the Otherworld visit tradition",
+      "confidence": "high",
+      "notes": "One of the longest surviving Cú Chulainn tales. Myles Dillon's edition (Modern Language Association, 1941) is the standard reference."
+    },
+    "icon": "⚔",
+    "cast": [
+      { "characterId": "cu-chulainn", "role": "The hero felled by supernatural women and drawn into the Otherworld" },
+      { "characterId": "emer", "role": "The wife — arrives armed, ready to defend her marriage" },
+      { "characterId": "manannan-mac-lir", "role": "The god who claims Fand — and ends the affair with his cloak" }
+    ],
+    "beats": []
+  },
+  {
+    "id": "acallam-na-senorach",
+    "title": "Acallam na Senórach",
+    "titleSub": "Tales of the Elders of Ireland",
+    "cycle": "fenian",
+    "cycleLabel": "Fenian Cycle",
+    "hook": "Two ancient warriors meet Saint Patrick and walk with him through an Ireland mapped in memory.",
+    "source": "Acallam na Senórach — composed c. 1200 CE",
+    "imageFile": "acallam-na-senorach.png",
+    "description": "One of the longest surviving texts in medieval Irish literature, the Acallam is a frame narrative in which Oisín and Caílte mac Rónáin — the last surviving Fianna warriors, kept alive past their time by supernatural means — encounter Saint Patrick. Rather than conflict, what develops is a remarkable conversation: Patrick listens as the old warriors walk through Ireland naming every place in the landscape, explaining the stories behind them. The text is a meditation on memory, loss, the passing of the heroic age, and the uneasy coexistence of pagan and Christian Ireland. It is also Ireland's great place-name mythology (dindshenchas in narrative form) — every hill, ford, and standing stone comes freighted with story.",
+    "sourceTrail": {
+      "primary": "Acallam na Senórach (Colloquy of the Ancients)",
+      "earliest": "Composed c. 1200 CE; preserved in several manuscripts including the Book of Lismore",
+      "oral": "Final synthesis of the Fenian Cycle oral tradition; incorporating much older material",
+      "confidence": "high",
+      "notes": "Ann Dooley and Harry Roe's translation (Oxford World's Classics, 1999) is the standard modern edition. The text is partly preserved in the Yellow Book of Lecan."
+    },
+    "icon": "◈",
+    "cast": [
+      { "characterId": "oisin", "role": "The poet-warrior who outlived the Fianna — Fionn's son, last of a vanished age" },
+      { "characterId": "caolite-mac-ronain", "role": "The fast runner, keeper of place-lore — walks with Patrick across Ireland naming every landmark" },
+      { "characterId": "st-patrick", "role": "The listening saint — his scribes record everything; he is moved more than he expected to be" },
+      { "characterId": "fionn-mac-cumhaill", "role": "The absent hero — remembered in every story told along the road" }
+    ],
+    "beats": []
   }
 ]
