@@ -36,10 +36,12 @@ const NO_FLY = new Set(['manannan', 'tir-na-nog'])
 let gmLoaded = false
 let Map3DElement_ = null
 let overlayMap = null
+let _leafletMap = null
 
 let _overlay, _container, _loading, _placeName, _locLabel
 
-export function initFlythrough() {
+export function initFlythrough(leafletMap) {
+  _leafletMap = leafletMap || null
   _overlay   = document.getElementById('flythrough-overlay')
   _container = document.getElementById('ft3d-container')
   _loading   = document.getElementById('ft3d-loading')
@@ -67,7 +69,10 @@ export function canFly(entry) {
 export async function flyTo(entry) {
   const key = import.meta.env.VITE_GOOGLE_MAPS_KEY
   if (!key) {
-    alert('Add VITE_GOOGLE_MAPS_KEY to .env.local and restart the dev server.')
+    // No API key — silently fall back to Leaflet pan/zoom
+    if (_leafletMap && entry.lat != null && entry.lng != null) {
+      _leafletMap.setView([entry.lat, entry.lng], 12, { animate: true })
+    }
     return
   }
 

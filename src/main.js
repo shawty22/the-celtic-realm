@@ -47,7 +47,7 @@ const map = initMap()
 window.__atlas = { map }
 
 initPanel((entry) => flyTo(entry))
-initFlythrough()
+initFlythrough(map)
 initCycleModal()
 
 const allData = { mythological: mythData, ulster: ulsterData, fenian: fenianData }
