@@ -263,15 +263,10 @@ function _buildCharModalHTML(char, roleInStory, story) {
 
 function _highlightCharacterPlaces(char) {
   if (!char.relatedPlaces?.length) return
-  const ids = new Set(char.relatedPlaces)
-  document.querySelectorAll('.atlas-marker').forEach(el => {
-    const loc = el.dataset?.locationId || el.getAttribute('data-location-id')
-    if (loc && ids.has(loc)) {
-      el.classList.add('char-highlight-pulse')
-      setTimeout(() => el.classList.remove('char-highlight-pulse'), 4000)
-    }
-  })
   closeCharModal()
+  document.dispatchEvent(new CustomEvent('atlas:highlightPlaces', {
+    detail: { placeIds: char.relatedPlaces }
+  }))
 }
 
 function _cycleGlyph(cycle) {

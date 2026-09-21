@@ -67,6 +67,12 @@ export function makeIcon(entry) {
   })
 }
 
+// Registry: entryId → Leaflet marker
+const _registry = new Map()
+
+export function getMarker(entryId) { return _registry.get(entryId) }
+export function allMarkers() { return _registry }
+
 export function placeMarker(entry, layerGroup, onSelect) {
   const icon   = makeIcon(entry)
   const marker = L.marker([entry.lat, entry.lng], { icon, title: entry.name })
@@ -87,5 +93,6 @@ export function placeMarker(entry, layerGroup, onSelect) {
   })
 
   layerGroup.addLayer(marker)
+  _registry.set(entry.id, marker)
   return marker
 }

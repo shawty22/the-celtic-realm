@@ -12,7 +12,7 @@ import tainRouteData from './data/tain-route.json'
 import archData   from './data/archaeology.json'
 
 import { initMap, setBaseLayer, flyHome, hasMaptiler } from './atlas/map.js'
-import { buildLayers, toggleLayer }      from './atlas/layers.js'
+import { buildLayers, toggleLayer, highlightPlaces } from './atlas/layers.js'
 import { buildRoute, showRoute, hideRoute } from './atlas/route.js'
 import { initPanel, showPanel }          from './atlas/panel.js'
 import { initFlythrough, flyTo }         from './atlas/flythrough.js'
@@ -140,6 +140,12 @@ document.addEventListener('atlas:flyToLocation', e => {
 
 document.addEventListener('atlas:enterStory', e => {
   activateView('atlas')
+})
+
+document.addEventListener('atlas:highlightPlaces', e => {
+  activateView('atlas')
+  // Small delay so the view transition finishes before we pan/zoom
+  setTimeout(() => highlightPlaces(e.detail.placeIds, map), 350)
 })
 
 document.addEventListener('reader:openChapter', e => {

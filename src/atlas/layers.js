@@ -1,5 +1,5 @@
 import L from 'leaflet'
-import { placeMarker } from './markers.js'
+import { placeMarker, getMarker } from './markers.js'
 
 const state = {
   mythological: { active: true, group: null },
@@ -39,4 +39,34 @@ export function toggleLayer(layerId, map) {
 
 export function getLayerActive(layerId) {
   return state[layerId]?.active ?? false
+}
+
+export function highlightPlaces(placeIds, map) {
+  if (!placeIds?.length) return
+  const ids = new Set(placeIds)
+  const found = []
+
+  ids.forEach(id => {
+    const marker = getMarker(id)
+    if (!marker) return
+    // Ensure the layer is visible
+    const el = marker.getElement()
+    if (el) {
+      el.classList.remove('char-highlight-pulse')
+      void el.offsetWidth // reflow to restart animation
+      el.classList.add('char-highlight-pulse')
+      setTimeout(() => el.classList.remove('char-highlight-pulse'), 5000)
+    }
+    found.push(marker)
+  })
+
+  // Fit map to show all highlighted places
+  if (found.length && map) {
+    if (found.length === 1) {
+      map.setView(found[0].getLatLng(), Math.max(map.getZoom(), 9), { animate: true })
+    } else {
+      const group = L.featureGroup(found)
+      map.fitBounds(group.getBounds().pad(0.3), { animate: true, maxZoom: 10 })
+    }
+  }
 }
