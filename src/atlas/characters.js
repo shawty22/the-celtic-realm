@@ -182,11 +182,12 @@ function _buildCharModalHTML(char, roleInStory, story) {
       </div>`
     : ''
 
-  const descHTML = char.description
+  const descText = char.description || char.plain || ''
+  const descHTML = descText
     ? `<div class="cmod-section">
-        <p class="cmod-description">${_x(char.description)}</p>
+        <p class="cmod-description">${_autoLinkChars(descText, char.id)}</p>
       </div>`
-    : `<div class="cmod-section"><p class="cmod-description">${_x(char.plain)}</p></div>`
+    : ''
 
   const relatedStoriesHTML = char.relatedStories?.length
     ? `<div class="cmod-section">
@@ -267,6 +268,61 @@ function _highlightCharacterPlaces(char) {
   document.dispatchEvent(new CustomEvent('atlas:highlightPlaces', {
     detail: { placeIds: char.relatedPlaces }
   }))
+}
+
+// ── Character name auto-linking ───────────────────────────────────────────── //
+
+let _nameIndex = null
+function _getNameIndex() {
+  if (_nameIndex) return _nameIndex
+  _nameIndex = []
+  for (const c of chars) {
+    if (c.name) _nameIndex.push({ name: c.name, id: c.id, cycle: c.cycle })
+    if (Array.isArray(c.nameAlternate)) {
+      for (const alt of c.nameAlternate) {
+        if (alt) _nameIndex.push({ name: alt, id: c.id, cycle: c.cycle })
+      }
+    }
+  }
+  _nameIndex.sort((a, b) => b.name.length - a.name.length)
+  return _nameIndex
+}
+
+function _autoLinkChars(rawText, currentCharId) {
+  if (!rawText) return ''
+  const index = _getNameIndex().filter(e => e.id !== currentCharId)
+  if (!index.length) return _x(rawText)
+
+  const isLetterish = (c) => c && /[\wÀ-ɏ]/.test(c)
+  const replacements = []
+
+  for (const { name, id, cycle } of index) {
+    let pos = 0
+    while (pos < rawText.length) {
+      const idx = rawText.indexOf(name, pos)
+      if (idx === -1) break
+      const before = idx > 0 ? rawText[idx - 1] : ''
+      const after  = rawText[idx + name.length] || ''
+      if (!isLetterish(before) && !isLetterish(after)) {
+        const end = idx + name.length
+        const overlaps = replacements.some(r => idx < r[1] && end > r[0])
+        if (!overlaps) replacements.push([idx, end, id, cycle, name])
+      }
+      pos = idx + 1
+    }
+  }
+
+  replacements.sort((a, b) => a[0] - b[0])
+
+  let result = ''
+  let last = 0
+  for (const [start, end, id, cycle, name] of replacements) {
+    result += _x(rawText.slice(last, start))
+    result += `<button class="char-chip char-open-btn cycle-chip-${_x(cycle)}" data-char-id="${_x(id)}">${_x(name)}</button>`
+    last = end
+  }
+  result += _x(rawText.slice(last))
+  return result
 }
 
 function _cycleGlyph(cycle) {

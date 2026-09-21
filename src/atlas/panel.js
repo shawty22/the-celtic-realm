@@ -201,16 +201,27 @@ function buildStoryLinksHTML(e) {
 
 function buildFiguresHTML(e) {
   if (!e.associatedFigures?.length) return ''
-  const chips = e.associatedFigures.map(id => {
+  const cards = e.associatedFigures.map(id => {
     const c = getCharacter(id)
     if (!c) return ''
-    return `<button class="char-chip panel-fig-chip cycle-chip-${x(c.cycle)}"
-      data-char-id="${x(c.id)}" aria-label="${x(c.name)}">${x(c.name)}</button>`
+    const imgSrc = c.imageFile ? `/assets/characters/${x(c.imageFile)}` : ''
+    const glyph = c.glyph || '◎'
+    return `<button class="panel-fig-card char-chip cycle-border-${x(c.cycle)}"
+      data-char-id="${x(c.id)}" aria-label="Open ${x(c.name)}">
+      <div class="panel-fig-portrait">
+        ${imgSrc
+          ? `<img src="${imgSrc}" alt="${x(c.name)}" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />`
+          : ''}
+        <span class="panel-fig-glyph" style="${imgSrc ? 'display:none' : ''}">${glyph}</span>
+      </div>
+      <span class="panel-fig-name">${x(c.name)}</span>
+    </button>`
   }).filter(Boolean).join('')
-  if (!chips) return ''
+  if (!cards) return ''
   return `<div class="panel-section">
     <h3 class="panel-section-h">Associated figures</h3>
-    <div class="panel-fig-chips">${chips}</div>
+    <div class="panel-fig-cards">${cards}</div>
   </div>`
 }
 

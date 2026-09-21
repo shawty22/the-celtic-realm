@@ -2226,6 +2226,14 @@ button {
   line-height: 1.6;
   margin: 0;
 }
+.cmod-description .char-chip {
+  white-space: normal;
+  vertical-align: baseline;
+  font-size: 12px;
+  padding: 1px 7px;
+  margin: 0 1px;
+  display: inline;
+}
 .cmod-role-text {
   font-size: 13px;
   font-style: italic;
@@ -2402,6 +2410,78 @@ button {
   border-color: var(--sf-color, var(--myth));
   transform: scale(1.25);
 }
+
+/* ── Panel figure portrait cards ─────────────────────────────────────────── */
+.panel-fig-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.panel-fig-card {
+  -webkit-appearance: none;
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 66px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(200,168,75,0.18);
+  border-radius: 6px;
+  padding: 5px 4px 6px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  text-align: center;
+  /* override .char-chip defaults */
+  white-space: normal;
+  height: auto;
+  position: static;
+  font-size: inherit;
+  font-style: normal;
+}
+.panel-fig-card:hover {
+  background: rgba(200,168,75,0.12);
+  border-color: rgba(200,168,75,0.4);
+}
+.panel-fig-portrait {
+  width: 52px;
+  height: 65px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.panel-fig-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.panel-fig-glyph {
+  font-size: 22px;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.panel-fig-name {
+  font-size: 9.5px;
+  font-family: var(--serif);
+  color: var(--parchment);
+  opacity: 0.85;
+  line-height: 1.2;
+  word-break: break-word;
+  max-width: 100%;
+}
+.cycle-border-mythological { border-color: rgba(200,168,75,0.35); }
+.cycle-border-ulster        { border-color: rgba(139,32,32,0.45); }
+.cycle-border-fenian        { border-color: rgba(45,90,61,0.55); }
 
 /* ── Panel figure chips & location chips ─────────────────────────────────── */
 .panel-fig-chips, .panel-loc-chips {
