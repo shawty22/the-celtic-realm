@@ -5,6 +5,7 @@
  */
 
 import sections from '../source/gods-and-fighting-men-sections.json'
+import modernText from '../source/gods-and-fighting-men-modern.json'
 import provenance from '../source/provenance.json'
 import storyChapterMap from '../data/story-chapter-map.json'
 import catalog from '../data/stories-catalog.json'
@@ -17,6 +18,13 @@ let readerEl = null
 let currentIdx = 0
 let isOpen = false
 let onCloseCb = null
+
+// Modern retelling index: id → body_modern
+const _modernMap = new Map(modernText.map(e => [e.id, e.body_modern]))
+
+const LS_MODERN = 'cr-modern-mode'
+function isModernMode() { try { return localStorage.getItem(LS_MODERN) === '1' } catch { return false } }
+function setModernMode(on) { try { localStorage.setItem(LS_MODERN, on ? '1' : '0') } catch {} }
 
 // Reverse map: chapter id → array of story catalog entries
 const _chapStories = {}
@@ -45,6 +53,17 @@ export function initReader(onClose) {
   document.getElementById('reader-close')?.addEventListener('click', closeReader)
   document.addEventListener('keydown', _onKey)
 
+  // Modern retelling toggle
+  const modernBtn = document.getElementById('reader-modern-toggle')
+  if (modernBtn) {
+    _updateModernBtn(modernBtn)
+    modernBtn.addEventListener('click', () => {
+      setModernMode(!isModernMode())
+      _updateModernBtn(modernBtn)
+      _rerenderBody()
+    })
+  }
+
   // Enriched mode toggle button
   const enrichBtn = document.getElementById('reader-enriched-toggle')
   if (enrichBtn) {
@@ -52,9 +71,6 @@ export function initReader(onClose) {
     enrichBtn.addEventListener('click', () => {
       setEnrichedMode(!isEnrichedMode())
       _updateEnrichedBtn(enrichBtn)
-      // Re-render current chapter so annotations activate on mode change (they're
-      // always in the DOM — the toggle only changes CSS classes — so no re-render
-      // needed, but refresh the button label)
     })
   }
 
@@ -72,6 +88,20 @@ function _updateEnrichedBtn(btn) {
   btn.classList.toggle('is-active', on)
   btn.title = on ? 'Switch to traditional reading' : 'Switch to enriched reading (hyperlinks + tooltips)'
   btn.setAttribute('aria-pressed', String(on))
+}
+
+function _updateModernBtn(btn) {
+  const on = isModernMode()
+  btn.classList.toggle('is-active', on)
+  btn.title = on ? 'Switch to Lady Gregory original' : 'Switch to modern retelling'
+  btn.setAttribute('aria-pressed', String(on))
+}
+
+function _rerenderBody() {
+  const s = sections[currentIdx]
+  if (!s) return
+  const bodyEl = document.getElementById('reader-chapter-body')
+  if (bodyEl) bodyEl.innerHTML = _renderBody(s)
 }
 
 function _buildLibrary() {
@@ -197,7 +227,7 @@ function _openChapter(idx) {
 
   if (titleEl) titleEl.textContent = _fmt(s.chapter)
   if (metaEl)  metaEl.textContent  = `${_fmt(s.book)} · ${_fmt(s.part)}`
-  if (bodyEl)  bodyEl.innerHTML    = _renderBody(s.body)
+  if (bodyEl)  bodyEl.innerHTML    = _renderBody(s)
   if (srcEl)   srcEl.innerHTML     = _sourceNote()
 
   // Nav buttons
@@ -340,7 +370,8 @@ function _fmt(str) {
     .trim()
 }
 
-function _renderBody(text) {
+function _renderBody(s) {
+  const text = (isModernMode() && _modernMap.get(s.id)) ? _modernMap.get(s.id) : s.body
   return text
     .split(/\n{2,}/)
     .map(para => para.trim())

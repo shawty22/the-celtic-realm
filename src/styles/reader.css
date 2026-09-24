@@ -546,10 +546,16 @@ body.reader-active {
 .reader-chapter-head {
   position: relative;
 }
-.reader-enriched-toggle {
+.reader-toggles {
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.reader-enriched-toggle,
+.reader-modern-toggle {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -564,22 +570,27 @@ body.reader-active {
   cursor: pointer;
   transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
-.reader-enriched-toggle:hover {
+.reader-enriched-toggle:hover,
+.reader-modern-toggle:hover {
   border-color: rgba(200,169,110,0.45);
   color: rgba(200,169,110,0.85);
   background: rgba(200,169,110,0.1);
 }
-.reader-enriched-toggle.is-active {
+.reader-enriched-toggle.is-active,
+.reader-modern-toggle.is-active {
   border-color: rgba(200,169,110,0.5);
   background: rgba(200,169,110,0.14);
   color: #c8a96e;
 }
 .er-toggle-icon { font-size: 12px; }
-/* Show "Enriched" label when active, "Traditional" when not */
 .reader-enriched-toggle .er-toggle-label-on  { display: none; }
 .reader-enriched-toggle .er-toggle-label-off { display: inline; }
 .reader-enriched-toggle.is-active .er-toggle-label-on  { display: inline; }
 .reader-enriched-toggle.is-active .er-toggle-label-off { display: none; }
+.reader-modern-toggle .mod-toggle-label-on  { display: none; }
+.reader-modern-toggle .mod-toggle-label-off { display: inline; }
+.reader-modern-toggle.is-active .mod-toggle-label-on  { display: inline; }
+.reader-modern-toggle.is-active .mod-toggle-label-off { display: none; }
 
 /* ── Annotated token spans ───────────────────────────────────────────────── */
 .er-token {
