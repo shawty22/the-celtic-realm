@@ -1,0 +1,208 @@
+{
+  "_note": "Supplementary entities for the enriched reader: groups/peoples + minor characters. charAliases maps text spellings to existing character IDs.",
+
+  "charAliases": {
+    "Dagda": "dagda",
+    "the Dagda": "dagda",
+    "Angus": "aonghus-og",
+    "Aengus": "aonghus-og",
+    "Morrigu": "the-morrigan",
+    "Morrigan": "the-morrigan",
+    "Manannan": "manannan-mac-lir",
+    "Conchubar": "conchobar",
+    "Cuchulain": "cu-chulainn",
+    "Cuchulainn": "cu-chulainn",
+    "Setanta": "cu-chulainn",
+    "Lugh": "lugh",
+    "Bres": "bres",
+    "Nuada": "nuada",
+    "Finn": "fionn-mac-cumhaill",
+    "Fionn": "fionn-mac-cumhaill",
+    "Grania": "grainne",
+    "Diarmuid": "diarmuid",
+    "Caoilte": "caolite-mac-ronain",
+    "Caolte": "caolite-mac-ronain",
+    "Oisin": "oisin",
+    "Goll": "goll-mac-morna",
+    "Etain": "etain",
+    "Niamh": "niamh",
+    "Ferdiad": "ferdia",
+    "Scathach": "scathach",
+    "Fergus": "fergus-mac-roich",
+    "Dian Cecht": "dian-cecht",
+    "Goibniu": "goibniu",
+    "Oscar": "oscar",
+    "Brian": "brian",
+    "Balor": "balor",
+    "Cian": "cian",
+    "Lir": "lir",
+    "Fionnuala": "fionnuala",
+    "Conall": "conall-cernach",
+    "Cathbad": "cathbad",
+    "Deirdre": "deirdre",
+    "Naoise": "naoise",
+    "Medb": "medb",
+    "Ailill": "ailill",
+    "Conchobar": "conchobar",
+    "Laeg": "laeg",
+    "Emer": "emer",
+    "Midir": "midir",
+    "Brigit": "brigid",
+    "Brigid": "brigid",
+    "Mananan": "manannan-mac-lir",
+    "Bodh Dearg": "bodb-dearg",
+    "Bodb Dearg": "bodb-dearg",
+    "Ogma": "ogma",
+    "Amergin": "amergin",
+    "Culann": "culann"
+  },
+
+  "groups": [
+    {
+      "id": "tuatha-de-danaan",
+      "type": "people",
+      "cycle": "mythological",
+      "matchNames": ["Tuatha de Danaan", "Tuatha Dé Danann", "Tuatha", "people of Dana", "Men of Dea", "children of Dana"],
+      "name": "Tuatha Dé Danann",
+      "title": "The People of the Goddess Danu",
+      "summary": "The divine race of Ireland — masters of magic, art, and craftsmanship who came from four mystical northern cities (Falias, Gorias, Finias, Murias). They defeated the Fir Bolg at Mag Tuired and ruled Ireland until the coming of the Milesians, after which they retreated into the sídhe (fairy mounds)."
+    },
+    {
+      "id": "fir-bolg",
+      "type": "people",
+      "cycle": "mythological",
+      "matchNames": ["Fir Bolg", "Firbolgs", "Firbolg", "Fir Bholg"],
+      "name": "Fir Bolg",
+      "title": "The Bag-Men of Ireland",
+      "summary": "The third mythical race to inhabit Ireland before the Tuatha Dé Danann. Held Mag Tuired (the Plain of Pillars) as their seat of power. Defeated at the First Battle of Mag Tuired, though their leader Sreng won respect for his single combat with Nuada."
+    },
+    {
+      "id": "fomor",
+      "type": "people",
+      "cycle": "mythological",
+      "matchNames": ["Fomor", "Fomorians", "Fomorian", "Fomors"],
+      "name": "Fomor",
+      "title": "The Dark Gods of the Deep",
+      "summary": "Ancient adversaries of the Tuatha Dé Danann, dwelling beyond or beneath the western sea. Associated with darkness, chaos, and the primal forces opposing divine order. Their great king Balor of the Evil Eye was slain by Lugh at the Second Battle of Mag Tuired."
+    },
+    {
+      "id": "fianna",
+      "type": "group",
+      "cycle": "fenian",
+      "matchNames": ["Fianna", "Fian", "the Fianna", "Fians"],
+      "name": "The Fianna",
+      "title": "Ireland's Warrior Brotherhood",
+      "summary": "Elite warrior band of Ireland led by Fionn mac Cumhaill. To join, a candidate had to compose poetry, withstand a spear-throw while buried to the waist, and outrun the Fianna through the forest without breaking a twig. They guarded Ireland and served the High King."
+    },
+    {
+      "id": "red-branch",
+      "type": "group",
+      "cycle": "ulster",
+      "matchNames": ["Red Branch", "Red Branch Knights", "Red Branch men"],
+      "name": "Red Branch",
+      "title": "Warriors of Ulster",
+      "summary": "The warrior elite of Ulster, headquartered at Emain Macha under King Conchobar mac Nessa. Their champions included Cú Chulainn, Fergus mac Róich, Conall Cernach, and many others. Their exploits form the heart of the Ulster Cycle."
+    },
+    {
+      "id": "milesians",
+      "type": "people",
+      "cycle": "mythological",
+      "matchNames": ["Milesians", "Milesian", "Sons of Mil", "Sons of Miled", "sons of Mil"],
+      "name": "Milesians",
+      "title": "The Gaelic Ancestors",
+      "summary": "The sons of Míl Espáine (Mil of Spain), the mythological ancestors of the Gaelic Irish. After defeating the Tuatha Dé Danann, they divided Ireland with them: the upper world went to the Milesians, the underground realm (sídhe) to the Tuatha Dé Danann."
+    },
+    {
+      "id": "sidhe",
+      "type": "place-type",
+      "cycle": "mythological",
+      "matchNames": ["Sidhe", "Shee", "fairy mounds", "fairy hills"],
+      "name": "Sídhe",
+      "title": "The Fairy Mounds",
+      "summary": "The underground halls and palaces where the Tuatha Dé Danann retreated after their defeat by the Milesians. Each great mound (síde) was ruled by a chief — the Dagda's son Aonghus held Brú na Bóinne, Lir held Sídh Fionnachaidh, Manannán ruled the western Otherworld."
+    }
+  ],
+
+  "minorChars": [
+    {
+      "id": "ruadan",
+      "type": "char",
+      "cycle": "mythological",
+      "matchNames": ["Ruadan"],
+      "name": "Ruadan",
+      "title": "Son of Bres and Brigid",
+      "summary": "Son of Bres mac Elatha and the goddess Brigid. He was sent to spy on the smith Goibniu but was slain by him. Brigid's lament over Ruadan's body is said to be the origin of the keening cry (caoineadh) in Ireland.",
+      "imageFile": null
+    },
+    {
+      "id": "elcmar",
+      "type": "char",
+      "cycle": "mythological",
+      "matchNames": ["Elcmar"],
+      "name": "Elcmar",
+      "title": "Lord of Brú na Bóinne",
+      "summary": "A powerful figure of the Tuatha Dé Danann associated with Brú na Bóinne. The Dagda tricked him while Aonghus Óg was born, and Aonghus later outwitted Elcmar to claim the great mound as his own dwelling.",
+      "imageFile": null
+    },
+    {
+      "id": "cridenbel",
+      "type": "char",
+      "cycle": "mythological",
+      "matchNames": ["Cridenbel"],
+      "name": "Cridenbel",
+      "title": "The Satirist",
+      "summary": "A malicious satirist who levied three choice portions of food from Bres each evening, slowly draining his strength. The Dagda advised Bres to place gold coins in the portions; Cridenbel swallowed them and died. This tale is used as a legal precedent in the Brehon Laws.",
+      "imageFile": null
+    },
+    {
+      "id": "ethne",
+      "type": "char",
+      "cycle": "mythological",
+      "matchNames": ["Ethne", "Ethnea"],
+      "name": "Ethne",
+      "title": "Daughter of Balor",
+      "summary": "Daughter of Balor of the Evil Eye, the Fomorian king. Balor locked her in a tower to prevent the fulfilment of a prophecy, but Cian mac Dian Cécht reached her and she bore Lugh Lámhfhada — who would indeed kill his grandfather Balor.",
+      "imageFile": null
+    },
+    {
+      "id": "dana-goddess",
+      "type": "char",
+      "cycle": "mythological",
+      "matchNames": ["Dana", "Danu"],
+      "name": "Danu",
+      "title": "The Mother Goddess",
+      "summary": "The divine mother whose name the Tuatha Dé Danann (People of the Goddess Danu) bear. Though seldom named directly in surviving texts, she represents the earth and fertility principle, analogous to the Vedic Aditi. Some scholars identify her with the land-goddess Anu.",
+      "imageFile": null
+    },
+    {
+      "id": "conan-mac-morna",
+      "type": "char",
+      "cycle": "fenian",
+      "matchNames": ["Conan", "Conan Maol", "Conan the Bald"],
+      "name": "Conan mac Morna",
+      "title": "The Bald — Braggart of the Fianna",
+      "summary": "The sharp-tongued, boastful warrior of the Fianna, brother to Goll mac Morna. Known for his cowardice in contrast to his bluster, and for his biting wit. Often depicted as comic relief to Fionn's heroism, yet capable of fierce action when needed.",
+      "imageFile": null
+    },
+    {
+      "id": "cumhall",
+      "type": "char",
+      "cycle": "fenian",
+      "matchNames": ["Cumhal", "Cumhall"],
+      "name": "Cumhall mac Trénmhóir",
+      "title": "Father of Fionn",
+      "summary": "Father of Fionn mac Cumhaill and former captain of the Fianna. He was slain by Goll mac Morna at the Battle of Cnucha before Fionn was born, setting in motion the feud between Clan Morna and Clan Bascna that runs through the Fenian Cycle.",
+      "imageFile": null
+    },
+    {
+      "id": "conaire-mor",
+      "type": "char",
+      "cycle": "mythological",
+      "matchNames": ["Conaire", "Conaire Mor", "Conaire Mór"],
+      "name": "Conaire Mór",
+      "title": "High King of Ireland",
+      "summary": "A great and just High King whose reign brought prosperity, but who was trapped by fate into breaking all his sacred geasa (prohibitions) one by one. His story ends in the Destruction of Da Derga's Hostel, one of the great tragic tales of Irish mythology.",
+      "imageFile": null
+    }
+  ]
+}

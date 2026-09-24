@@ -537,3 +537,184 @@ body.reader-active {
   100% { box-shadow: 0 0 0 0 rgba(200,169,110,0); }
 }
 .search-highlight { animation: search-pulse 1.2s ease; }
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   ENRICHED READER — toggle button, annotated tokens, hover tooltip
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+/* ── Toggle button ───────────────────────────────────────────────────────── */
+.reader-chapter-head {
+  position: relative;
+}
+.reader-enriched-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(200,169,110,0.2);
+  background: rgba(200,169,110,0.06);
+  color: rgba(200,169,110,0.55);
+  font-size: 11px;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.reader-enriched-toggle:hover {
+  border-color: rgba(200,169,110,0.45);
+  color: rgba(200,169,110,0.85);
+  background: rgba(200,169,110,0.1);
+}
+.reader-enriched-toggle.is-active {
+  border-color: rgba(200,169,110,0.5);
+  background: rgba(200,169,110,0.14);
+  color: #c8a96e;
+}
+.er-toggle-icon { font-size: 12px; }
+/* Show "Enriched" label when active, "Traditional" when not */
+.reader-enriched-toggle .er-toggle-label-on  { display: none; }
+.reader-enriched-toggle .er-toggle-label-off { display: inline; }
+.reader-enriched-toggle.is-active .er-toggle-label-on  { display: inline; }
+.reader-enriched-toggle.is-active .er-toggle-label-off { display: none; }
+
+/* ── Annotated token spans ───────────────────────────────────────────────── */
+.er-token {
+  /* Base: invisible — looks like normal text */
+  cursor: default;
+  border-radius: 2px;
+  transition: background 0.1s, color 0.1s;
+}
+
+/* Tokens become interactive only in enriched mode */
+body.reader-enriched .er-token {
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+body.reader-enriched .er-token.er-char {
+  color: #d4a855;
+  border-bottom-color: rgba(200,169,110,0.4);
+}
+body.reader-enriched .er-token.er-char.er-has-art {
+  color: #c8a96e;
+  border-bottom-color: rgba(200,169,110,0.65);
+  border-bottom-style: solid;
+}
+body.reader-enriched .er-token.er-place {
+  color: #7fc47f;
+  border-bottom-color: rgba(100,180,100,0.45);
+}
+body.reader-enriched .er-token.er-people,
+body.reader-enriched .er-token.er-group {
+  color: #9bb8d4;
+  border-bottom-color: rgba(100,150,200,0.4);
+}
+body.reader-enriched .er-token:hover {
+  background: rgba(200,169,110,0.1);
+}
+body.reader-enriched .er-token.er-place:hover {
+  background: rgba(100,180,100,0.1);
+}
+body.reader-enriched .er-token.er-people:hover,
+body.reader-enriched .er-token.er-group:hover {
+  background: rgba(100,150,200,0.1);
+}
+
+/* ── Hover tooltip ───────────────────────────────────────────────────────── */
+.er-tooltip {
+  position: fixed;
+  z-index: 9000;
+  max-width: 280px;
+  min-width: 200px;
+  background: #1a1208;
+  border: 1px solid rgba(200,169,110,0.28);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(200,169,110,0.06);
+  pointer-events: auto;
+  font-family: 'Georgia', serif;
+  overflow: hidden;
+}
+.er-tooltip[hidden] { display: none !important; }
+
+.er-tip-inner {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+}
+.er-tip-portrait {
+  flex-shrink: 0;
+  width: 54px;
+  height: 68px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+}
+.er-tip-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.er-tip-glyph {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  opacity: 0.5;
+  border-radius: 50%;
+  border: 1px solid rgba(200,169,110,0.15);
+  background: rgba(200,169,110,0.04);
+}
+.er-tip-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.er-tip-cycle {
+  font-size: 9.5px;
+  font-family: sans-serif;
+  letter-spacing: 0.06em;
+  padding: 2px 6px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.er-tip-type {
+  font-size: 9.5px;
+  font-family: sans-serif;
+  letter-spacing: 0.06em;
+  color: rgba(200,169,110,0.5);
+  text-transform: uppercase;
+}
+.er-tip-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e8d9b0;
+  line-height: 1.2;
+}
+.er-tip-title {
+  font-size: 10.5px;
+  font-style: italic;
+  color: rgba(200,169,110,0.7);
+  line-height: 1.3;
+}
+.er-tip-summary {
+  font-size: 11px;
+  color: rgba(232,217,176,0.55);
+  line-height: 1.45;
+  margin: 4px 0 0;
+}
+.er-tip-action {
+  font-size: 10px;
+  color: rgba(200,169,110,0.5);
+  font-style: italic;
+  margin-top: 4px;
+}

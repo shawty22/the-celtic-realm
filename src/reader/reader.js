@@ -10,6 +10,8 @@ import storyChapterMap from '../data/story-chapter-map.json'
 import catalog from '../data/stories-catalog.json'
 import chapterEntities from '../data/chapter-entities.json'
 import charData from '../data/characters.json'
+import { annotateText, isEnrichedMode, setEnrichedMode, initEnrichedMode } from './annotator.js'
+import { initTooltip } from './tooltip.js'
 
 let readerEl = null
 let currentIdx = 0
@@ -37,9 +39,39 @@ export function initReader(onClose) {
 
   _buildLibrary()
   _buildReadingPane()
+  initEnrichedMode()
+  initTooltip()
 
   document.getElementById('reader-close')?.addEventListener('click', closeReader)
   document.addEventListener('keydown', _onKey)
+
+  // Enriched mode toggle button
+  const enrichBtn = document.getElementById('reader-enriched-toggle')
+  if (enrichBtn) {
+    _updateEnrichedBtn(enrichBtn)
+    enrichBtn.addEventListener('click', () => {
+      setEnrichedMode(!isEnrichedMode())
+      _updateEnrichedBtn(enrichBtn)
+      // Re-render current chapter so annotations activate on mode change (they're
+      // always in the DOM — the toggle only changes CSS classes — so no re-render
+      // needed, but refresh the button label)
+    })
+  }
+
+  // reader:flyToPlace → close reader and fly atlas
+  document.addEventListener('reader:flyToPlace', e => {
+    closeReader()
+    document.dispatchEvent(new CustomEvent('atlas:flyToLocation', {
+      detail: { locationId: e.detail.placeId }
+    }))
+  })
+}
+
+function _updateEnrichedBtn(btn) {
+  const on = isEnrichedMode()
+  btn.classList.toggle('is-active', on)
+  btn.title = on ? 'Switch to traditional reading' : 'Switch to enriched reading (hyperlinks + tooltips)'
+  btn.setAttribute('aria-pressed', String(on))
 }
 
 function _buildLibrary() {
@@ -313,7 +345,7 @@ function _renderBody(text) {
     .split(/\n{2,}/)
     .map(para => para.trim())
     .filter(Boolean)
-    .map(para => `<p>${para.replace(/\n/g, ' ')}</p>`)
+    .map(para => `<p>${annotateText(para.replace(/\n/g, ' '))}</p>`)
     .join('\n')
 }
 
