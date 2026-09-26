@@ -23,7 +23,12 @@ let onCloseCb = null
 const _modernMap = new Map(modernText.map(e => [e.id, e.body_modern]))
 
 const LS_MODERN = 'cr-modern-mode'
-function isModernMode() { try { return localStorage.getItem(LS_MODERN) === '1' } catch { return false } }
+function isModernMode() {
+  try {
+    const val = localStorage.getItem(LS_MODERN)
+    return val === null ? true : val === '1'  // default ON for new visitors
+  } catch { return true }
+}
 function setModernMode(on) { try { localStorage.setItem(LS_MODERN, on ? '1' : '0') } catch {} }
 
 // Reverse map: chapter id → array of story catalog entries
@@ -95,6 +100,13 @@ function _updateModernBtn(btn) {
   btn.classList.toggle('is-active', on)
   btn.title = on ? 'Switch to Lady Gregory original' : 'Switch to modern retelling'
   btn.setAttribute('aria-pressed', String(on))
+  const pdfLink = document.getElementById('reader-pdf-link')
+  if (pdfLink) {
+    pdfLink.href = on
+      ? '/downloads/celtic-realm-modern.pdf'
+      : '/downloads/celtic-realm-lady-gregory.pdf'
+    pdfLink.title = on ? 'Download modern retelling as PDF' : 'Download Lady Gregory original as PDF'
+  }
 }
 
 function _rerenderBody() {

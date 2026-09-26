@@ -210,6 +210,7 @@
   border-bottom: 1px solid rgba(180, 130, 60, 0.2);
   margin-bottom: 32px;
   padding-bottom: 16px;
+  padding-top: 36px; /* space for absolute-positioned toggles on desktop */
 }
 
 .reader-chapter-meta {
@@ -554,6 +555,15 @@ body.reader-active {
   align-items: center;
   gap: 6px;
 }
+@media (max-width: 600px) {
+  .reader-chapter-head { padding-top: 8px; }
+  .reader-toggles {
+    position: static;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    justify-content: flex-start;
+  }
+}
 .reader-enriched-toggle,
 .reader-modern-toggle {
   display: flex;
@@ -591,6 +601,28 @@ body.reader-active {
 .reader-modern-toggle .mod-toggle-label-off { display: inline; }
 .reader-modern-toggle.is-active .mod-toggle-label-on  { display: inline; }
 .reader-modern-toggle.is-active .mod-toggle-label-off { display: none; }
+
+.reader-pdf-link {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(200,169,110,0.2);
+  background: rgba(200,169,110,0.06);
+  color: rgba(200,169,110,0.55);
+  font-size: 11px;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.reader-pdf-link:hover {
+  border-color: rgba(200,169,110,0.45);
+  color: rgba(200,169,110,0.85);
+  background: rgba(200,169,110,0.1);
+}
 
 /* ── Annotated token spans ───────────────────────────────────────────────── */
 .er-token {
