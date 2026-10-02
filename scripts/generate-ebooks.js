@@ -205,9 +205,35 @@ p { margin: 0 0 0.9em; text-align: justify; hyphens: auto; orphans: 2; widows: 2
 .card figcaption { line-height: 1.3; margin-top: 5px; }
 .card .cname { display: block; font-size: 14px; font-weight: bold; color: #1f3d27; }
 .card .ctitle { display: block; font-size: 11.5px; font-style: italic; color: #555; }
-.plate { margin: 1.6em 0; page-break-inside: avoid; text-align: center; }
-.plate img { width: 100%; max-width: 100%; display: block; border: 2px solid #c8a96e; border-radius: 3px; }
-.plate figcaption { font-size: 12.5px; font-style: italic; color: #6b5423; margin-top: 6px; letter-spacing: 0.04em; }
+.plate {
+  page-break-before: always;
+  page-break-after: always;
+  break-before: page;
+  break-after: page;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.plate img {
+  width: 85%;
+  max-width: 600px;
+  display: block;
+  border: 2px solid #c8a96e;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+.plate figcaption {
+  font-size: 12.5px;
+  font-style: italic;
+  color: #6b5423;
+  margin-top: 24px;
+  letter-spacing: 0.04em;
+}
 `;
 
 function buildHtml(mode) {
