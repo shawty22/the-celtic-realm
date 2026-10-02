@@ -72,16 +72,18 @@ function bodyToHtml(text) {
 
 // For modern retelling: build body HTML with inline full-width character plates
 // inserted after the first paragraph in which each character is first mentioned.
-function bodyToHtmlWithPlates(text, chapterId) {
+// Pass introducedChars Set to track which characters have already been introduced.
+function bodyToHtmlWithPlates(text, chapterId, introducedChars) {
   const entry = chapterEntities[chapterId];
   if (!entry || !Array.isArray(entry.chars) || entry.chars.length === 0) {
     return bodyToHtml(text);
   }
 
-  // Build list of characters that have images, preserving order from chapter-entities
+  // Build list of characters that have images and haven't been introduced yet,
+  // preserving order from chapter-entities
   const charsWithImages = entry.chars
     .map((id) => charById[id])
-    .filter((c) => c && c.imageFile);
+    .filter((c) => c && c.imageFile && !introducedChars.has(c.id));
 
   if (charsWithImages.length === 0) return bodyToHtml(text);
 
@@ -119,6 +121,7 @@ function bodyToHtmlWithPlates(text, chapterId) {
         if (!uri) continue;
         const caption = c.title ? `${esc(c.name)} — ${esc(c.title)}` : esc(c.name);
         parts.push(`<figure class="plate"><img src="${uri}" alt="${esc(c.name)}"><figcaption>${caption}</figcaption></figure>`);
+        introducedChars.add(c.id);  // Mark as introduced
       }
     }
   }
@@ -241,6 +244,7 @@ function buildHtml(mode) {
   const subtitle = isModern ? 'A Modern Retelling' : 'Lady Gregory';
   let toc = '', content = '', lastPart = null, lastBook = null, n = 0;
   let missingModern = 0, portraitChapters = 0;
+  const introducedChars = new Set();  // Track which characters have been introduced
 
   for (const s of sections) {
     n++;
@@ -264,9 +268,9 @@ function buildHtml(mode) {
     }
     let chapterBody;
     if (isModern) {
-      chapterBody = bodyToHtmlWithPlates(body, s.id);
+      chapterBody = bodyToHtmlWithPlates(body, s.id, introducedChars);
       const entry = chapterEntities[s.id];
-      if (entry && Array.isArray(entry.chars) && entry.chars.some((id) => charById[id]?.imageFile)) portraitChapters++;
+      if (entry && Array.isArray(entry.chars) && entry.chars.some((id) => charById[id]?.imageFile && !introducedChars.has(id))) portraitChapters++;
     } else {
       const portraits = portraitsHtml(s.id);
       if (portraits) portraitChapters++;
