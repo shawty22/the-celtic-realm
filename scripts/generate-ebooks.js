@@ -70,62 +70,38 @@ function bodyToHtml(text) {
     .join('\n');
 }
 
-// For modern retelling: build body HTML with inline full-width character plates
-// inserted after the first paragraph in which each character is first mentioned.
-// Pass introducedChars Set to track which characters have already been introduced.
+// For modern retelling: return {textHtml, platesHtml, newChars}
+// Separates story text from character plates (text flows complete, plates follow after)
 function bodyToHtmlWithPlates(text, chapterId, introducedChars) {
+  const textHtml = bodyToHtml(text);
+
   const entry = chapterEntities[chapterId];
   if (!entry || !Array.isArray(entry.chars) || entry.chars.length === 0) {
-    return bodyToHtml(text);
+    return { textHtml, platesHtml: '', newChars: [] };
   }
 
-  // Build list of characters that have images and haven't been introduced yet,
-  // preserving order from chapter-entities
+  // Build list of characters that have images and haven't been introduced yet
   const charsWithImages = entry.chars
     .map((id) => charById[id])
     .filter((c) => c && c.imageFile && !introducedChars.has(c.id));
 
-  if (charsWithImages.length === 0) return bodyToHtml(text);
+  if (charsWithImages.length === 0) {
+    return { textHtml, platesHtml: '', newChars: [] };
+  }
 
-  const paras = String(text || '')
-    .split(/\n\s*\n/)
-    .map((p) => p.replace(/\s*\n\s*/g, ' ').trim())
-    .filter(Boolean);
-
-  // For each character, find the first paragraph index where their name appears.
-  // Fall back to paragraph 0 if none found.
-  const insertAfter = new Map(); // paragraphIndex -> [char, ...]
-  const placed = new Set();
-
+  // Build plates HTML (all after the chapter text)
+  const plateParts = [];
+  const newChars = [];
   for (const c of charsWithImages) {
-    // Build regex from name + alternates
-    const names = [c.name, ...(c.nameAlternate || [])].filter(Boolean);
-    const pattern = new RegExp('\\b(' + names.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')\\b', 'i');
-    let found = -1;
-    for (let i = 0; i < paras.length; i++) {
-      if (pattern.test(paras[i])) { found = i; break; }
-    }
-    const idx = found >= 0 ? found : 0;
-    if (!insertAfter.has(idx)) insertAfter.set(idx, []);
-    insertAfter.get(idx).push(c);
-    placed.add(c.id);
+    const uri = imageDataUri(c.imageFile, 900);
+    if (!uri) continue;
+    const caption = c.title ? `${esc(c.name)} — ${esc(c.title)}` : esc(c.name);
+    plateParts.push(`<figure class="plate"><img src="${uri}" alt="${esc(c.name)}"><figcaption>${caption}</figcaption></figure>`);
+    introducedChars.add(c.id);
+    newChars.push(c);
   }
 
-  // Build output
-  const parts = [];
-  for (let i = 0; i < paras.length; i++) {
-    parts.push(`<p>${esc(paras[i])}</p>`);
-    if (insertAfter.has(i)) {
-      for (const c of insertAfter.get(i)) {
-        const uri = imageDataUri(c.imageFile, 900);
-        if (!uri) continue;
-        const caption = c.title ? `${esc(c.name)} — ${esc(c.title)}` : esc(c.name);
-        parts.push(`<figure class="plate"><img src="${uri}" alt="${esc(c.name)}"><figcaption>${caption}</figcaption></figure>`);
-        introducedChars.add(c.id);  // Mark as introduced
-      }
-    }
-  }
-  return parts.join('\n');
+  return { textHtml, platesHtml: plateParts.join('\n'), newChars };
 }
 
 function portraitsHtml(chapterId) {
@@ -237,6 +213,12 @@ p { margin: 0 0 0.9em; text-align: justify; hyphens: auto; orphans: 2; widows: 2
   margin-top: 24px;
   letter-spacing: 0.04em;
 }
+.artindex { page-break-after: always; margin: 0 0 2em; }
+.artindex h2 { font-size: 30px; font-weight: normal; text-align: center; margin: 0 0 1.2em; color: #1f3d27; }
+.artlist { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8em 1.5em; }
+.artitem { display: flex; flex-direction: column; line-height: 1.4; }
+.artname { font-weight: bold; font-size: 14px; color: #1f3d27; }
+.arttitle { font-size: 12px; font-style: italic; color: #666; }
 `;
 
 function buildHtml(mode) {
@@ -244,7 +226,8 @@ function buildHtml(mode) {
   const subtitle = isModern ? 'A Modern Retelling' : 'Lady Gregory';
   let toc = '', content = '', lastPart = null, lastBook = null, n = 0;
   let missingModern = 0, portraitChapters = 0;
-  const introducedChars = new Set();  // Track which characters have been introduced
+  const introducedChars = new Set();
+  const artIndexList = [];  // Track all introduced characters for art index
 
   for (const s of sections) {
     n++;
@@ -268,9 +251,10 @@ function buildHtml(mode) {
     }
     let chapterBody;
     if (isModern) {
-      chapterBody = bodyToHtmlWithPlates(body, s.id, introducedChars);
-      const entry = chapterEntities[s.id];
-      if (entry && Array.isArray(entry.chars) && entry.chars.some((id) => charById[id]?.imageFile && !introducedChars.has(id))) portraitChapters++;
+      const result = bodyToHtmlWithPlates(body, s.id, introducedChars);
+      chapterBody = result.textHtml + result.platesHtml;
+      if (result.newChars.length > 0) portraitChapters++;
+      result.newChars.forEach(c => artIndexList.push(c));
     } else {
       const portraits = portraitsHtml(s.id);
       if (portraits) portraitChapters++;
@@ -282,8 +266,18 @@ function buildHtml(mode) {
   if (missingModern) console.warn(`  [${mode}] WARNING: ${missingModern} chapters had no modern text; used original`);
   console.log(`  [${mode}] ${portraitChapters} chapters carry portrait artwork`);
 
+  // Build Art Index (alphabetical list of all introduced characters)
+  const artIndex = artIndexList.length > 0
+    ? `<section class="artindex"><h2>Art Index</h2><div class="artlist">${
+        artIndexList
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map(c => `<div class="artitem"><span class="artname">${esc(c.name)}</span>${c.title ? `<span class="arttitle">${esc(c.title)}</span>` : ''}</div>`)
+          .join('\n')
+      }</div></section>`
+    : '';
+
   const cover = `<section class="cover">${knotBorderSvg()}<div class="orn">&#10087;</div><h1>Gods and Fighting Men</h1><div class="sub">${subtitle}</div><div class="orn">&#9753; &#10022; &#10087;</div><div class="by">${isModern ? 'After Lady Gregory' : 'The Celtic Realm'}</div></section>`;
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Gods and Fighting Men — ${subtitle}</title><style>${CSS}</style></head><body>${cover}<section class="toc"><h2>Contents</h2>${toc}</section>${content}</body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Gods and Fighting Men — ${subtitle}</title><style>${CSS}</style></head><body>${cover}<section class="toc"><h2>Contents</h2>${toc}</section>${artIndex}${content}</body></html>`;
 }
 
 async function main() {
